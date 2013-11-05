@@ -27,7 +27,7 @@ class Case{
 		void afficher();
 		virtual std::string toString();
 
-        virtual void trouverChemin(int de, std::vector<Case*> &res, Plateau* p );
+        virtual void trouverChemin(int de, std::vector<Case*> &res, Plateau* p ); // methode qui trouve tous les chemins possibles
 
 
 
