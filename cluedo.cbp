@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cluedo" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/cluedo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/comptes/E119850X/Desktop/sfml/SFML/include" />
+					<Add directory="/home/olivia/Desktop/sfml/SFML/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="GLEW" />
+					<Add directory="/comptes/E119850X/Desktop/sfml/SFML/lib" />
+					<Add directory="/home/olivia/Desktop/sfml/SFML/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/cluedo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Case.cpp" />
+		<Unit filename="Case.h" />
+		<Unit filename="Ecran.h" />
+		<Unit filename="EcranAccueil.cpp" />
+		<Unit filename="EcranAccueil.h" />
+		<Unit filename="EcranJeu.cpp" />
+		<Unit filename="EcranJeu.h" />
+		<Unit filename="EtatCase.cpp" />
+		<Unit filename="EtatCase.h" />
+		<Unit filename="Jeu.cpp" />
+		<Unit filename="Jeu.h" />
+		<Unit filename="Joueur.cpp" />
+		<Unit filename="Joueur.h" />
+		<Unit filename="ManagerEcran.cpp" />
+		<Unit filename="ManagerEcran.h" />
+		<Unit filename="Mur.cpp" />
+		<Unit filename="Mur.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="Plateau.cpp" />
+		<Unit filename="Plateau.h" />
+		<Unit filename="Plein.cpp" />
+		<Unit filename="Plein.h" />
+		<Unit filename="Porte.cpp" />
+		<Unit filename="Porte.h" />
+		<Unit filename="Vide.cpp" />
+		<Unit filename="Vide.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

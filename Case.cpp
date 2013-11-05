@@ -1,0 +1,157 @@
+#include "Case.h"
+#include "Plateau.h"
+
+using namespace std;
+
+/**
+ *Constructeur par defaut
+ */
+Case::Case(): etatCourant_(NULL), plein_(NULL), vide_(NULL){
+    rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+}
+
+/**
+ *Constructeur
+ */
+Case::Case(int a, int b) : x_(b),y_(a){
+    plein_ = new Plein(*this);
+    vide_ = new Vide(*this);
+    etatCourant_= vide_;
+
+    rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+}
+
+/**
+ *Constructeur de recopie
+ */
+Case::Case(const Case& c){
+	x_= c.x_;   //on peut appeler les attributs des memes classes
+	y_ = c.y_;
+	plein_ = c.plein_;
+	vide_=c.vide_;
+	etatCourant_= c.etatCourant_;
+
+	rectangle = c.rectangle;
+}
+
+
+/**
+ * Destructeur
+ */
+Case::~Case(){
+    delete plein_;
+    delete vide_;
+    delete rectangle;
+}
+
+
+void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
+    //on insere l'element courant
+    res.push_back(this);
+
+    //On va parcourir les cases tant que les des sont supérieurs a zero
+    if(de!=0){
+
+        /*
+         * Algorithme qui va chercher recursivement les endroits sur lequels le joueur peut se deplacer
+         * Passage dans chaque case (haut, bas, gauche droite) en verifiant la presence dans le tableau de valeur
+         *
+         * Pas de deplacement diagonal.
+         */
+
+        // La case du haut
+        if(p->caseValide(x_,y_-1)){
+            Case* cHaut = p->getCase(x_,y_-1);
+            if(std::find(res.begin(), res.end(), cHaut) == res.end())
+                cHaut->trouverChemin(de-1, res,p);
+
+        }
+
+
+        // La case à gauche
+        if(p->caseValide(x_-1,y_)){
+            Case* cGauche = p->getCase(x_-1,y_);
+            if(std::find(res.begin(), res.end(), cGauche) == res.end())
+                cGauche->trouverChemin(de-1, res,p);
+        }
+
+        // La case du bas
+        if(p->caseValide(x_,y_+1)){
+            Case* cBas = p->getCase(x_,y_+1);
+            if(std::find(res.begin(), res.end(), cBas) == res.end())
+                cBas->trouverChemin(de-1, res,p);
+        }
+
+        // La case à droite
+        if(p->caseValide(x_+1,y_)){
+            Case* cDroite = p->getCase(x_+1,y_);
+            if(std::find(res.begin(), res.end(), cDroite) == res.end())
+                cDroite->trouverChemin(de-1, res,p);
+        }
+    }
+
+}
+
+void Case::colorerCase(){
+    rectangle->setFillColor(sf::Color(0, 90, 240,150));
+}
+
+
+
+/**
+ * Méthode qui retrourne une string repésentant la case du type: [x][y]
+ * @return res l'emplacement de la case
+ */
+std::string Case::toString(){
+
+	std::string res;
+
+	std::ostringstream oss;
+	//oss << "["<< x_ << "]" << "["<< y_ << "]";
+    oss<<".";
+	res = oss.str();
+
+	return res;
+}
+
+pair<int,int> Case::pointHG(int tailleCase, int ecartX, int ecartY){
+
+    pair<int,int> u;
+    u.first = x_*tailleCase+ecartX;
+    u.second = y_*tailleCase+ecartY;
+
+    return u;
+}
+
+pair<int,int> Case::milieu(int tailleCase, pair<int,int> a){
+
+    pair<int,int> u;
+    u.first = a.first+(tailleCase/2);
+    u.second = a.second+(tailleCase/2);
+
+    return u;
+
+}
+
+
+
+	/********************************************************/
+	/**********************Getters***************************/
+
+/**
+ * Assesseur de x_
+ * @return x_ l'absisse de la case
+ */
+int Case::getX(){
+	return x_;
+}
+
+/**
+ * Assesseur de y_
+ *	@return y_ l'ordonnee de la case
+ */
+int Case::getY(){
+	return y_;
+}
+
+
