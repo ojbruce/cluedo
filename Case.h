@@ -44,6 +44,7 @@ class Case{
 		virtual int getX();
 		virtual int getY();
 
+        //Les etats
 		EtatCase* getEtat();
         Plein* getPlein();
         Vide* getVide();
