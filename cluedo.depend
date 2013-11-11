@@ -1062,19 +1062,16 @@
 1383503780 source:/comptes/E119850X/Desktop/cluedo/ManagerEcran.cpp
 	"ManagerEcran.h"
 
-1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
+1384194596 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Case.h
+1384194365 /home/olivia/Desktop/ProjetCluedo/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
 	<utility>
 	<vector>
-	"EtatCase.h"
-	"Plein.h"
-	"Vide.h"
 
 1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/EtatCase.h
 
@@ -1105,7 +1102,7 @@
 	"Case.h"
 	"Piece.h"
 
-1384187782 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
+1384192465 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Case.h"
@@ -1144,7 +1141,7 @@
 	"EcranJeu.h"
 	"EcranAccueil.h"
 
-1384187861 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
+1384192904 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
 	"Joueur.h"
 
 1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/main.cpp
@@ -1180,12 +1177,21 @@
 1384185423 /home/olivia/Desktop/ProjetCluedo/cluedo/Carte.h
 	<string>
 
-1384186730 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
+1384194365 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
 	"Partie.h"
 
-1384186730 /home/olivia/Desktop/ProjetCluedo/cluedo/Partie.h
+1384192890 /home/olivia/Desktop/ProjetCluedo/cluedo/Partie.h
+	<vector>
+	<cstdlib>
+	"time.h"
+	"Joueur.h"
+	"Carte.h"
+	"Plateau.h"
 
-1384187923 /home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.h
+1384188484 /home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.h
 	<string>
 	"Case.h"
+
+1384188129 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.cpp
+	"Personnage.h"
 

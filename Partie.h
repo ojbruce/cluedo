@@ -7,18 +7,18 @@
 
 #include "Joueur.h"
 #include "Carte.h"
+#include "Plateau.h"
 
 
 class Partie
 {
     public:
         Partie();
-        Partie(int nbJ);
+        Partie(int nbJ, Plateau* plat);
         ~Partie();
 
         int lancerDe();
-        void lancerTour(Joueur j){
-        }
+        void lancerTour(Joueur j);
 
 
     private:
@@ -26,6 +26,8 @@ class Partie
         int nbJoueur_;       //Le nombre de joueur
         Carte* tabMystere_[3];   //Les 3 cartes désignant le lieu, le crimier, l'arme
         vector <Joueur> tabJoueur_;
+
+        Plateau* p;
 
 
 };
