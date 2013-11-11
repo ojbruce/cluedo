@@ -1105,11 +1105,12 @@
 	"Case.h"
 	"Piece.h"
 
-1384186132 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
+1384187782 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Case.h"
 	"Carte.h"
+	"Personnage.h"
 
 1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranAccueil.cpp
 	"EcranAccueil.h"
@@ -1143,7 +1144,7 @@
 	"EcranJeu.h"
 	"EcranAccueil.h"
 
-1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
+1384187861 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
 	"Joueur.h"
 
 1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/main.cpp
@@ -1179,8 +1180,12 @@
 1384185423 /home/olivia/Desktop/ProjetCluedo/cluedo/Carte.h
 	<string>
 
-1384183017 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
+1384186730 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
 	"Partie.h"
 
-1384185489 /home/olivia/Desktop/ProjetCluedo/cluedo/Partie.h
+1384186730 /home/olivia/Desktop/ProjetCluedo/cluedo/Partie.h
+
+1384187923 /home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.h
+	<string>
+	"Case.h"
 
