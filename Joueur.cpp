@@ -1,9 +1,10 @@
 #include "Joueur.h"
 
-Joueur::Joueur(): position_(NULL), pion_(NULL)
-{   nom_= "Joueur";}
+Joueur::Joueur():  perso_ (NULL), position_(NULL),pion_(NULL){}
 
-Joueur::Joueur(Case* pos, string nom): nom_(nom), position_(pos), pion_(NULL)  {}
+Joueur::Joueur(Personnage* perso): perso_(perso), pion_(NULL){
+    position_= perso_->getPositionDepart();
+    }
 
 
 Joueur::~Joueur()
