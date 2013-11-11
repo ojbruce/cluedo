@@ -17,6 +17,7 @@ class Joueur
         Joueur();
         Joueur(Personnage* p);
 
+        Case* getPosition();  // Retourne la positon du joueur
         void setPosition(Case* c);  //met la position du joueur à jour
 
         //A voir ajouter la dernier piece visitee

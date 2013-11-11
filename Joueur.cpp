@@ -12,6 +12,11 @@ Joueur::~Joueur()
     //dtor
 }
 
+
+Case* Joueur::getPosition(){
+    return position_;
+}
+
 void Joueur::setPosition(Case* c){
     position_=c;
 }
