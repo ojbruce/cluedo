@@ -6,19 +6,18 @@ using namespace std;
 /**
  *Constructeur par defaut
  */
-Case::Case(): etatCourant_(NULL), plein_(NULL), vide_(NULL){
+Case::Case() {
     rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+    estVide = true;
 }
 
 /**
  *Constructeur
  */
 Case::Case(int a, int b) : x_(b),y_(a){
-    plein_ = new Plein(*this);
-    vide_ = new Vide(*this);
-    etatCourant_= vide_;
 
     rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+    estVide = true;
 }
 
 /**
@@ -27,9 +26,7 @@ Case::Case(int a, int b) : x_(b),y_(a){
 Case::Case(const Case& c){
 	x_= c.x_;   //on peut appeler les attributs des memes classes
 	y_ = c.y_;
-	plein_ = c.plein_;
-	vide_=c.vide_;
-	etatCourant_= c.etatCourant_;
+    estVide = c.estVide;
 
 	rectangle = c.rectangle;
 }
@@ -39,57 +36,61 @@ Case::Case(const Case& c){
  * Destructeur
  */
 Case::~Case(){
-    delete plein_;
-    delete vide_;
     delete rectangle;
 }
 
 
 void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
-    //on insere l'element courant
-    res.push_back(this);
 
-    //On va parcourir les cases tant que les des sont supérieurs a zero
-    if(de!=0){
+    //on verifie si la case est vide
+    if(estVide){
+        //on insere l'element courant
+        res.push_back(this);
 
-        /*
-         * Algorithme qui va chercher recursivement les endroits sur lequels le joueur peut se deplacer
-         * Passage dans chaque case (haut, bas, gauche droite) en verifiant la presence dans le tableau de valeur
-         *
-         * Pas de deplacement diagonal.
-         */
+        //On va parcourir les cases tant que les des sont supérieurs a zero
+        if(de!=0){
 
-        // La case du haut
-        if(p->caseValide(x_,y_-1)){
-            Case* cHaut = p->getCase(x_,y_-1);
-            if(std::find(res.begin(), res.end(), cHaut) == res.end())
-                cHaut->trouverChemin(de-1, res,p);
+            /*
+             * Algorithme qui va chercher recursivement les endroits sur lequels le joueur peut se deplacer
+             * Passage dans chaque case (haut, bas, gauche droite) en verifiant la presence dans le tableau de valeur
+             *
+             * Pas de deplacement diagonal.
+             */
 
-        }
+            /*
+             * p->caseValide(x,y) retourne si la position de la case est bien dans le plateau
+             */
 
+            // La case du haut
+            if(p->caseValide(x_,y_-1)){
+                Case* cHaut = p->getCase(x_,y_-1);
+                if(std::find(res.begin(), res.end(), cHaut) == res.end())
+                    cHaut->trouverChemin(de-1, res,p);
 
-        // La case à gauche
-        if(p->caseValide(x_-1,y_)){
-            Case* cGauche = p->getCase(x_-1,y_);
-            if(std::find(res.begin(), res.end(), cGauche) == res.end())
-                cGauche->trouverChemin(de-1, res,p);
-        }
+            }
 
-        // La case du bas
-        if(p->caseValide(x_,y_+1)){
-            Case* cBas = p->getCase(x_,y_+1);
-            if(std::find(res.begin(), res.end(), cBas) == res.end())
-                cBas->trouverChemin(de-1, res,p);
-        }
+            // La case à gauche
+            if(p->caseValide(x_-1,y_)){
+                Case* cGauche = p->getCase(x_-1,y_);
+                if(std::find(res.begin(), res.end(), cGauche) == res.end())
+                    cGauche->trouverChemin(de-1, res,p);
+            }
 
-        // La case à droite
-        if(p->caseValide(x_+1,y_)){
-            Case* cDroite = p->getCase(x_+1,y_);
-            if(std::find(res.begin(), res.end(), cDroite) == res.end())
-                cDroite->trouverChemin(de-1, res,p);
+            // La case du bas
+            if(p->caseValide(x_,y_+1)){
+                Case* cBas = p->getCase(x_,y_+1);
+                if(std::find(res.begin(), res.end(), cBas) == res.end())
+                    cBas->trouverChemin(de-1, res,p);
+            }
+
+            // La case à droite
+            if(p->caseValide(x_+1,y_)){
+                Case* cDroite = p->getCase(x_+1,y_);
+                if(std::find(res.begin(), res.end(), cDroite) == res.end())
+                    cDroite->trouverChemin(de-1, res,p);
+            }
         }
     }
-
 }
 
 void Case::colorerCase(){
@@ -107,7 +108,6 @@ std::string Case::toString(){
 	std::string res;
 
 	std::ostringstream oss;
-	//oss << "["<< x_ << "]" << "["<< y_ << "]";
     oss<<".";
 	res = oss.str();
 
@@ -154,4 +154,18 @@ int Case::getY(){
 	return y_;
 }
 
+/**
+ * Assesseur de estVide
+ *	@return estVide si la case estvide ou non
+ */
+int Case::getEstVide(){
+    return estVide;
+}
+
+/**
+ * Modificateur de estVide
+ */
+void Case::setEstVide(bool b){
+    estVide =b;
+}
 

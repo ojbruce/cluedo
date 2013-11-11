@@ -8,9 +8,6 @@
 #include <utility>
 #include <vector>
 
-#include "EtatCase.h"
-#include "Plein.h"
-#include "Vide.h"
 
 class Plateau;
 
@@ -19,7 +16,6 @@ class Case{
 	public:
 		Case();                          //Constructeur par defaut
 		Case(int a, int b);              //Constructeur avec x et y
-
 
 
 		virtual ~Case();                //Destructeur du plateau
@@ -40,43 +36,31 @@ class Case{
         //coloration de la case
         void colorerCase();
 
-		//Getter
+		//Getter Setter
 		virtual int getX();
 		virtual int getY();
+		virtual int getEstVide();
+		virtual void setEstVide(bool b);
 
-        //Les etats
-		EtatCase* getEtat();
-        Plein* getPlein();
-        Vide* getVide();
 
 
    protected:
-        //Coordonnee //Vector2f
+        //Coordonnee
         int x_;	//largeur du point en haut
         int y_;	//hauteur du point en bas
 
-        //taille de case
-        const static int taille_ =26;
+        //Etat plein/vide
+        bool estVide;
 
-        //ETAT
-        EtatCase* etatCourant_;
-        Plein* plein_;
-        Vide* vide_;
+        const static int taille_ =26;   //taille de case
 
-        //La forme s'affichant sur la case
-        sf::RectangleShape* rectangle;
+        sf::RectangleShape* rectangle;  //La forme s'affichant sur la case
 
 
     private:
         //On empeche l'appel du constructeur de copie et de operator
         Case(const Case& c);            //Constructeur de recopie
         Case& operator=(Case const&);   // opérateur d'affectation
-
-
-   	/*Pointeur vers Joueur pour savoir si il y a
-   	* un joueur dans la case ou dans Joueur
-   	*/
-
 
 
 };
