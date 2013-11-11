@@ -6,7 +6,7 @@ ManagerEcran::ManagerEcran()
     ecranJeu = new EcranJeu();
     ecranAccueil = new EcranAccueil();
 
-    ecranCourant = ecranAccueil;
+    ecranCourant = ecranJeu;
 }
 
 ManagerEcran::~ManagerEcran()

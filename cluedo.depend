@@ -1062,3 +1062,125 @@
 1383503780 source:/comptes/E119850X/Desktop/cluedo/ManagerEcran.cpp
 	"ManagerEcran.h"
 
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
+	"Case.h"
+	"Plateau.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Case.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<sstream>
+	<utility>
+	<vector>
+	"EtatCase.h"
+	"Plein.h"
+	"Vide.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/EtatCase.h
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Plein.h
+	"EtatCase.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Vide.h
+	"EtatCase.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Plateau.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Case.h"
+	"Piece.h"
+	"Mur.h"
+	"Porte.h"
+	"Joueur.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Piece.h
+	<iostream>
+	"Case.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Mur.h
+	"Case.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Porte.h
+	<vector>
+	"Case.h"
+	"Piece.h"
+
+1384186132 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Case.h"
+	"Carte.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranAccueil.cpp
+	"EcranAccueil.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/EcranAccueil.h
+	"Ecran.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Ecran.h
+	<SFML/Graphics.hpp>
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranJeu.cpp
+	"EcranJeu.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/EcranJeu.h
+	<SFML/Graphics.hpp>
+	"Ecran.h"
+	"Plateau.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EtatCase.cpp
+	"EtatCase.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Jeu.cpp
+	"Jeu.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/Jeu.h
+	<SFML/Graphics.hpp>
+	"ManagerEcran.h"
+
+1384106334 /home/olivia/Desktop/ProjetCluedo/cluedo/ManagerEcran.h
+	"Ecran.h"
+	"EcranJeu.h"
+	"EcranAccueil.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
+	"Joueur.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/main.cpp
+	<iostream>
+	"Jeu.h"
+
+1384185512 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ManagerEcran.cpp
+	"ManagerEcran.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Mur.cpp
+	"Mur.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Piece.cpp
+	"Piece.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Plateau.cpp
+	"Plateau.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Plein.cpp
+	"Plein.h"
+	"Case.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
+	"Porte.h"
+
+1384106334 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Vide.cpp
+	"Vide.h"
+	"Case.h"
+
+1384185452 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Carte.cpp
+	"Carte.h"
+
+1384185423 /home/olivia/Desktop/ProjetCluedo/cluedo/Carte.h
+	<string>
+
+1384183017 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
+	"Partie.h"
+
+1384185489 /home/olivia/Desktop/ProjetCluedo/cluedo/Partie.h
+
