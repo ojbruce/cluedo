@@ -2,6 +2,8 @@
 #define DONNEES_H
 
 #include<string>
+#include<vector>
+
 #include "Carte.h"
 #include "Personnage.h"
 
@@ -13,18 +15,25 @@ class Donnees
 
         // Initialiser les donnees
         Donnees();
+        ~Donnees();
 
         Carte getCarte(int indice); // Getter d'une carte du tableau de Carte
         Personnage getPersonnage(string nom);   // Getter d'un personnage du tableau de Personnage
 
+        //vector<Carte*> initCarteMystere();      //va renvoyer les 3 cartes
+
     private:
 
         //Attributs
-        Carte tableauCartes[24];
-        Personnage tableauPersonnages[8];
+        //Carte tabCartes[24];
+        //Personnage tabPerso[8];
+
+
+
 
         //Methodes
-        initT
+        //void initTabCarte();
+        //void initTabPerso();
 
 
 };

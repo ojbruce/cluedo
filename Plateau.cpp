@@ -1,10 +1,16 @@
 #include "Plateau.h"
 
+using namespace sf;
+using namespace std;
 
 Plateau::Plateau(): shape(NULL)
 {
 	//on récupere limage du plateau et on l'affiche
-	im.loadFromFile("PlateauOk.png");
+	if(!im.loadFromFile("PlateauOk.png"))
+	{
+	    cerr << "bug" << endl;
+    }
+
 	im.setSmooth(true);
 	plateau.setTexture(im);
 
@@ -20,7 +26,7 @@ Plateau::Plateau(): shape(NULL)
 
     //on initialise notre tableau de case
 	initCases();
-
+    cerr<< "Creation du plateau"<<endl;
 }
 
 
@@ -113,6 +119,7 @@ bool Plateau::caseValide(int x, int y){
  *
 **/
 void Plateau::afficher(sf::RenderWindow &window){
+    //on affiche le plateau
 	window.draw(plateau);
 	if(shape!= NULL ){
 		window.draw(*shape);
@@ -143,7 +150,7 @@ void Plateau::afficher(){
  *
  **/
 void Plateau::positionSouris(sf::RenderWindow &window){
-
+    cerr <<"passage dans souris"<< endl;
     //On recupere la postion de la souris lorsque l'on a cliqué
 	sf::Vector2i souris = sf::Mouse::getPosition(window);
 	cerr <<"x: " << souris.x << "y: " << souris.y << endl;

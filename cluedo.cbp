@@ -32,9 +32,17 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="/comptes/E119850X/Desktop/sfml/SFML/include" />
+					<Add directory="/home/olivia/Desktop/sfml/SFML/include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="GLEW" />
+					<Add directory="/comptes/E119850X/Desktop/sfml/SFML/lib" />
+					<Add directory="/home/olivia/Desktop/sfml/SFML/lib" />
 				</Linker>
 			</Target>
 		</Build>
@@ -65,6 +73,8 @@
 		<Unit filename="Mur.h" />
 		<Unit filename="Partie.cpp" />
 		<Unit filename="Partie.h" />
+		<Unit filename="Personnage.cpp" />
+		<Unit filename="Personnage.h" />
 		<Unit filename="Piece.cpp" />
 		<Unit filename="Piece.h" />
 		<Unit filename="Plateau.cpp" />

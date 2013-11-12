@@ -10,9 +10,6 @@
 #include "Porte.h"
 #include "Joueur.h"
 
-using namespace sf;
-using namespace std;
-
 class Plateau{
 
 	public:
@@ -55,8 +52,8 @@ class Plateau{
 		const static int ecartY_=30;
 
 		//Image du plateau
-		Texture im;
-		Sprite plateau;
+		sf::Texture im;
+		sf::Sprite plateau;
 
 		//Joueur j1
 		Joueur j1;
