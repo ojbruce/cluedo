@@ -19,5 +19,4 @@ EcranAccueil::~EcranAccueil()
 
 void EcranAccueil::update(sf::RenderWindow &window,sf::Event event){
     window.draw(accueil);
-
 }

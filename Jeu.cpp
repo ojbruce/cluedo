@@ -20,22 +20,19 @@ void Jeu::lancerJeu(){
 
    	while (window.isOpen())
     {
-
         sf::Event event;
         while (window.pollEvent(event))
         {
-
      	   	//Gere la fermeture de la fenetre
             if (event.type == sf::Event::Closed)
                 window.close();
-            if (event.type == sf::Event::Resized){}
-               //on ne fait rien
 
        	}
 
 
       	window.clear();
 
+        //on update l'ecran acec l'evenement
         manEcran.update(window, event);
 
         //On affiche les changements
