@@ -46,6 +46,8 @@
 		<Unit filename="Carte.h" />
 		<Unit filename="Case.cpp" />
 		<Unit filename="Case.h" />
+		<Unit filename="Donnees.cpp" />
+		<Unit filename="Donnees.h" />
 		<Unit filename="Ecran.h" />
 		<Unit filename="EcranAccueil.cpp" />
 		<Unit filename="EcranAccueil.h" />

@@ -20,4 +20,3 @@ string Personnage::getNom(){
 string Personnage::getCouleur(){
     return couleur;
 }
-

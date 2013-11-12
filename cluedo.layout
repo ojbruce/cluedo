@@ -1,139 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Porte.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Case.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plateau.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Case.h" open="0" top="0" tabpos="13">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EcranJeu.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Ecran.h" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="EcranAccueil.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EcranJeu.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="EcranAccueil.h" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EtatCase.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="EcranJeu.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="EcranJeu.h" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plein.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="EtatCase.h" open="0" top="0" tabpos="13">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Jeu.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="18" />
 	</File>
-	<File name="Piece.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Jeu.h" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Joueur.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Joueur.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Vide.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Joueur.h" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Mur.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="ManagerEcran.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="ManagerEcran.h" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Porte.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Mur.cpp" open="0" top="0" tabpos="11">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plein.cpp" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Mur.h" open="0" top="0" tabpos="9">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EcranAccueil.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Partie.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Ecran.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Partie.h" open="1" top="0" tabpos="5">
+		<Cursor position="186" topLine="1" />
 	</File>
-	<File name="EcranAccueil.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Piece.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Piece.h" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Piece.h" open="0" top="0" tabpos="10">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Case.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Plateau.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plateau.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Plateau.h" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Mur.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Plein.cpp" open="0" top="0" tabpos="15">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Jeu.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="41" topLine="0" />
-		</Cursor>
+	<File name="Plein.h" open="0" top="0" tabpos="14">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Vide.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Porte.cpp" open="0" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Jeu.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Porte.h" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Case.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="Vide.cpp" open="0" top="0" tabpos="16">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="Vide.h" open="0" top="0" tabpos="17">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="0" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
