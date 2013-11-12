@@ -8,7 +8,7 @@ class EcranAccueil : public Ecran
 {
     public:
         EcranAccueil();
-        void update(sf::RenderWindow &window);
+        void update(sf::RenderWindow &window, sf::Event event);
         virtual ~EcranAccueil();
 
     protected:

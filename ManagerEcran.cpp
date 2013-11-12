@@ -14,6 +14,6 @@ ManagerEcran::~ManagerEcran()
     //dtor
 
 }
-void ManagerEcran::update(sf::RenderWindow &window){
-    ecranCourant->update(window);
+void ManagerEcran::update(sf::RenderWindow &window, sf::Event event){
+    ecranCourant->update(window, event);
 }

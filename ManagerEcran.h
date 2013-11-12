@@ -11,7 +11,7 @@ class ManagerEcran
         ManagerEcran();
         virtual ~ManagerEcran();
 
-        void update(sf::RenderWindow &window);
+        void update(sf::RenderWindow &window, sf::Event event);
 
     protected:
     private:

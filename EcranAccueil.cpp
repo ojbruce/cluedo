@@ -17,7 +17,7 @@ EcranAccueil::~EcranAccueil()
     //dtor
 }
 
-void EcranAccueil::update(sf::RenderWindow &window){
+void EcranAccueil::update(sf::RenderWindow &window,sf::Event event){
     window.draw(accueil);
 
 }

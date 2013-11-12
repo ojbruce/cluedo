@@ -17,14 +17,6 @@ void Jeu::lancerJeu(){
 
     //charger les donnees
 
-    /*/Creation dun plateau
-    Plateau p;
-    p.afficher();
-
-    Joueur j;
-
-
-    p.trouverChemin(window);*/
 
    	while (window.isOpen())
     {
@@ -44,7 +36,7 @@ void Jeu::lancerJeu(){
 
       	window.clear();
 
-        manEcran.update(window);
+        manEcran.update(window, event);
 
         //On affiche les changements
         window.display();

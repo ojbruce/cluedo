@@ -10,13 +10,14 @@ EcranJeu::~EcranJeu()
     //dtor
 }
 
-void EcranJeu::update(sf::RenderWindow &window){
+void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
    // plateau.afficher();
 
-    sf::Event event;
+
     while (window.pollEvent(event))
     {
         //Gere la fermeture de la fenetre
+
         if (event.type == sf::Event::Closed)
             window.close();
         //si on recoit un evenement souris pressee

@@ -11,7 +11,7 @@ class EcranJeu : public Ecran
         EcranJeu();
         virtual ~EcranJeu();
 
-        void update(sf::RenderWindow &window);
+        void update(sf::RenderWindow &window, sf::Event event);
 
     protected:
     private:
