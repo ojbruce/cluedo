@@ -1,12 +1,14 @@
 #ifndef DONNEES_H
 #define DONNEES_H
 
+
+#include <iostream>
+#include <fstream>
 #include<string>
 #include<vector>
 #include <cstdlib> //pour le random
 #include "time.h"
 
-#include "Lecteur.h"
 #include "Carte.h"
 #include "Personnage.h"
 #include "Joueur.h"
@@ -16,7 +18,7 @@ class Donnees
 	public:
 
         // Initialiser les donnees
-         Donnees();
+         Donnees(Plateau* p);
         ~Donnees();
 
         //Carte getCarte(int indice); // Getter d'une carte du tableau de Carte
