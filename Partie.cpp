@@ -11,6 +11,8 @@ Partie::Partie(int nbJ,  Plateau* plat): donnees(p),partieFini_(false),nbJoueur_
     //initialise le tableau des cartes mysteres
     tabMystere_ = donnees.initCarteMystere();
      cerr<<"Partie::initialisation tableau de carte Mystere fini"<< endl;
+
+     /**distribution des cartes au joueur**/
 }
 
 Partie::~Partie()

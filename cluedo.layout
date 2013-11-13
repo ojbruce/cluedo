@@ -4,20 +4,20 @@
 	<File name="Carte.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="93" topLine="0" />
 	</File>
-	<File name="Carte.h" open="0" top="0" tabpos="8">
+	<File name="Carte.h" open="1" top="0" tabpos="12">
 		<Cursor position="143" topLine="0" />
 	</File>
 	<File name="Case.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Case.h" open="0" top="0" tabpos="12">
-		<Cursor position="31" topLine="0" />
+	<File name="Case.h" open="1" top="0" tabpos="8">
+		<Cursor position="139" topLine="0" />
 	</File>
-	<File name="Donnees.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="1403" topLine="31" />
+	<File name="Donnees.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="1228" topLine="21" />
 	</File>
 	<File name="Donnees.h" open="1" top="0" tabpos="3">
-		<Cursor position="165" topLine="8" />
+		<Cursor position="249" topLine="5" />
 	</File>
 	<File name="Ecran.h" open="0" top="0" tabpos="12">
 		<Cursor position="163" topLine="0" />
@@ -61,16 +61,16 @@
 	<File name="Mur.h" open="0" top="0" tabpos="9">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="25" topLine="0" />
+	<File name="Partie.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="254" topLine="0" />
 	</File>
-	<File name="Partie.h" open="0" top="0" tabpos="4">
-		<Cursor position="235" topLine="5" />
+	<File name="Partie.h" open="1" top="0" tabpos="10">
+		<Cursor position="709" topLine="5" />
 	</File>
 	<File name="Personnage.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="295" topLine="5" />
+		<Cursor position="186" topLine="0" />
 	</File>
-	<File name="Personnage.h" open="1" top="1" tabpos="6">
+	<File name="Personnage.h" open="1" top="0" tabpos="6">
 		<Cursor position="395" topLine="1" />
 	</File>
 	<File name="Piece.cpp" open="0" top="0" tabpos="12">
@@ -80,9 +80,9 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="Plateau.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="3273" topLine="99" />
+		<Cursor position="9718" topLine="398" />
 	</File>
-	<File name="Plateau.h" open="0" top="0" tabpos="6">
+	<File name="Plateau.h" open="1" top="0" tabpos="9">
 		<Cursor position="1673" topLine="0" />
 	</File>
 	<File name="Plein.cpp" open="0" top="0" tabpos="15">
@@ -104,6 +104,6 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="101" topLine="0" />
+		<Cursor position="237" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

@@ -44,6 +44,7 @@ Donnees::Donnees(Plateau* p)
             tabPersonnages.push_back(personnage);
          }
 
+
          // On ferme le fichier
         fichier.close();
 
@@ -71,6 +72,7 @@ Donnees::Donnees(Plateau* p)
 Donnees::~Donnees()
 {
     //dtor
+    cerr<<"Donnee::destruction des Donnees"<< endl;
 }
 
 
@@ -83,17 +85,17 @@ vector<Carte*> Donnees::initCarteMystere(){
     srand(time(NULL)); // place le rand à un endroit diferent selon le time
     //0-8 piece
     int indice = rand() % 9;
-    cerr << "cartepiece" << indice << endl;
+    cerr << "Donnees::cartepiece " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     //9-16 persos
     indice = rand() % 8+9;
-    cerr << "carteperso" << indice << endl;
+    cerr << "Donnees::carteperso " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     //17-23 armes
     indice = rand() % 7+17;
-    cerr << "cartearme" << indice << endl;
+    cerr << "Donnees::cartearme " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     return res;
@@ -108,9 +110,8 @@ vector<Joueur> Donnees::initJoueur(int n){
     vector<Joueur> tabJoueur;
     int i =1;
 
+    cerr << "Donnees::initJoueur" << endl;
     srand(time(NULL));
-
-
 
 
    do{

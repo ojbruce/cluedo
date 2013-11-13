@@ -3,7 +3,10 @@
 
 
 
-Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(pio), posDepart(NULL){}
+Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(pio), posDepart(NULL)
+{
+    cerr<<"Personnage : Construction : " << nom << endl;
+}
 
 /**
  *Retourne les cartes mysteres
@@ -11,7 +14,7 @@ Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(
  */
 Personnage::~Personnage()
 {
-    cerr<<"Personnage:: destruction"<< endl;
+    cerr<<"Personnage:: destruction : " << nom << endl;
 }
 
 void Personnage::setPositionDepart(Case* cas){
