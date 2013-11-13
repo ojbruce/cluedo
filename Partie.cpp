@@ -1,11 +1,11 @@
 #include "Partie.h"
 
-Partie::Partie(): partieFini_(false){}
+//Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat):  partieFini_(false),nbJoueur_(nbJ),p(plat) {
+Partie::Partie(int nbJ,  Plateau* plat): donnees(p),partieFini_(false),nbJoueur_(nbJ),p(plat) {
 
     //initialise le tableau de joueur
-    tabJoueur_= donnees.initJoueur();
+    tabJoueur_= donnees.initJoueur(nbJ);
 
     //initialise le tableau des cartes mysteres
     tabMystere_ = donnees.initCarteMystere();
@@ -25,6 +25,10 @@ int Partie::lancerDe(){
     return rand() % 11+2;
 }
 
+/**
+ *
+ *
+ **/
 void Partie::lancerTour(Joueur j){
     //Le joueur "lance" le de
     int de = lancerDe();

@@ -409,11 +409,12 @@
 	"Case.h"
 	"Piece.h"
 
-1384263978 source:/comptes/E119850X/Desktop/cluedo/main.cpp
+1384341050 source:/comptes/E119850X/Desktop/cluedo/main.cpp
 	<iostream>
 	"Jeu.h"
+	"Partie.h"
 
-1384263164 /comptes/E119850X/Desktop/cluedo/Plateau.h
+1384340719 /comptes/E119850X/Desktop/cluedo/Plateau.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Case.h"
@@ -762,7 +763,7 @@
 1384334013 source:/comptes/E119850X/Desktop/cluedo/Joueur.cpp
 	"Joueur.h"
 
-1384334171 /comptes/E119850X/Desktop/cluedo/Joueur.h
+1384340122 /comptes/E119850X/Desktop/cluedo/Joueur.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Case.h"
@@ -1200,14 +1201,14 @@
 1384241378 /comptes/E119850X/Desktop/cluedo/Carte.h
 	<string>
 
-1384332979 /comptes/E119850X/Desktop/cluedo/Personnage.h
+1384341486 /comptes/E119850X/Desktop/cluedo/Personnage.h
 	<string>
 	"Case.h"
 
-1384329591 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1384341072 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
-1384332979 /comptes/E119850X/Desktop/cluedo/Partie.h
+1384341072 /comptes/E119850X/Desktop/cluedo/Partie.h
 	<vector>
 	<cstdlib>
 	"time.h"
@@ -1219,20 +1220,21 @@
 1384334222 source:/comptes/E119850X/Desktop/cluedo/Personnage.cpp
 	"Personnage.h"
 
-1384334116 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
+1384339785 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
 	"Donnees.h"
 
-1384333798 /comptes/E119850X/Desktop/cluedo/Donnees.h
+1384340823 /comptes/E119850X/Desktop/cluedo/Donnees.h
+	<iostream>
+	<fstream>
 	<string>
 	<vector>
 	<cstdlib>
 	"time.h"
-	"Lecteur.h"
 	"Carte.h"
 	"Personnage.h"
 	"Joueur.h"
 
-1384328521 /comptes/E119850X/Desktop/cluedo/Lecteur.h
+1384338132 /comptes/E119850X/Desktop/cluedo/Lecteur.h
 	<string>
 	<vector>
 	<iostream>
@@ -1240,6 +1242,6 @@
 	"Personnage.h"
 	"Carte.h"
 
-1384332515 source:/comptes/E119850X/Desktop/cluedo/Lecteur.cpp
+1384338132 source:/comptes/E119850X/Desktop/cluedo/Lecteur.cpp
 	"Lecteur.h"
 

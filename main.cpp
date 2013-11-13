@@ -2,15 +2,16 @@
 
 #include "Jeu.h"
 
+#include "Partie.h"
+
 
 using namespace std;
 
 
 int main(void)
 {
-
-   Jeu j;
-   j.lancerJeu();
+Plateau* p = new Plateau();
+   Partie partie(2, p);
 
 
 

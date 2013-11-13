@@ -14,7 +14,7 @@
 class Partie
 {
     public:
-        Partie();
+        //Partie();
         Partie(int nbJ, Plateau* plat);
         ~Partie();
 
