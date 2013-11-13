@@ -8,6 +8,7 @@
 #include "Joueur.h"
 #include "Carte.h"
 #include "Plateau.h"
+#include "Donnees.h"
 
 
 class Partie
@@ -22,10 +23,13 @@ class Partie
 
 
     private:
+        //Attributs
+        Donnees donnees; //la classe contenant les donnees
+
         bool partieFini_;    //Determine si la partie est finie
         int nbJoueur_;       //Le nombre de joueur
-        vector<Carte*> tabMystere_;   //Les 3 cartes désignant le lieu, le crimier, l'arme
-        vector <Joueur> tabJoueur_;
+        vector<Carte*> tabMystere_;     //Les 3 cartes désignant le lieu, le crimier, l'arme
+        vector <Joueur> tabJoueur_;     //Le tableau contenant lezs joueurs
 
         Plateau* p;
 

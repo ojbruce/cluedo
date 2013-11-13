@@ -20,3 +20,13 @@ string Personnage::getNom(){
 string Personnage::getCouleur(){
     return couleur;
 }
+
+//Operateur externe
+bool Personnage::operator== (Personnage const &p2)
+{
+  if(nom == p2.nom){
+    return true;
+  }else{
+    return false;
+  }
+}

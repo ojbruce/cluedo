@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-Donnees::Donnees(string fichier)
+Donnees::Donnees()
 {
     Lecteur lecteur;
     tabCartes = lecteur.getCartes();
@@ -41,5 +41,14 @@ vector<Carte*> Donnees::initCarteMystere(){
     return res;
 }
 
+/**
+ * Va renvoyer un n nombre de joueur avec des persos aléatoires
+ *
+ **/
+vector<Carte*> Donnees::initJoueur(int n){
 
+    for(int i=0; i<n; i++){
+
+    }
+}
 

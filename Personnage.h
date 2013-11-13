@@ -12,6 +12,7 @@ class Personnage
     public:
         Personnage();
         Personnage(string nom, string couleur); //Constructeur
+        bool operator== (Personnage const &p2);
         virtual ~Personnage();  //destructeur
 
         //Getters
@@ -26,5 +27,7 @@ class Personnage
 
         Case* posDepart;    //la position de depart
 };
+
+
 
 #endif // PERSONNAGE_H

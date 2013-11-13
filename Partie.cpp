@@ -7,6 +7,7 @@ Partie::Partie(int nbJ,  Plateau* plat):  partieFini_(false),nbJoueur_(nbJ),p(pl
 
 
     //initialise le tableau des cartes mysteres
+    tabMystere_ = donnees.initCarteMystere();
 }
 
 Partie::~Partie()
