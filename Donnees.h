@@ -12,6 +12,7 @@
 #include "Carte.h"
 #include "Personnage.h"
 #include "Joueur.h"
+#include "Plateau.h"
 
 class Donnees
 {

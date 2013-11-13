@@ -10,7 +10,7 @@ Donnees::Donnees(Plateau* p)
     tabPersonnages = lecteur.getPersonnages(p);*/
 
     // Ouverture du fichier contenant les donnees du jeu
-    ifstream fichier("donnees.txt", ios::in);
+    ifstream fichier("Donnees/donnees.txt", ios::in);
 
     if(fichier)
     {
@@ -47,15 +47,22 @@ Donnees::Donnees(Plateau* p)
          // On ferme le fichier
         fichier.close();
 
+        //position des persos
+        tabPersonnages[0].setPositionDepart(p->getCase(14,0));
+        tabPersonnages[1].setPositionDepart(p->getCase(16,24));
+        tabPersonnages[2].setPositionDepart(p->getCase(0,17));
+        tabPersonnages[3].setPositionDepart(p->getCase(23,6));
+        tabPersonnages[4].setPositionDepart(p->getCase(23,19));
+        tabPersonnages[5].setPositionDepart(p->getCase(0,7));
+        tabPersonnages[6].setPositionDepart(p->getCase(7,24));
+        tabPersonnages[7].setPositionDepart(p->getCase(9,0));
+
 
     }
     else
     {
         cerr << "Impossible d'ouvrir le fichier de donnees." << endl;
     }
-
-    //position des persos
-    tabPersonnages[0]=
 
 
 }

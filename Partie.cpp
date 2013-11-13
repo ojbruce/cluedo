@@ -6,14 +6,17 @@ Partie::Partie(int nbJ,  Plateau* plat): donnees(p),partieFini_(false),nbJoueur_
 
     //initialise le tableau de joueur
     tabJoueur_= donnees.initJoueur(nbJ);
+    cerr<<"Partie::initialisation tableau de joueur fini"<< endl;
 
     //initialise le tableau des cartes mysteres
     tabMystere_ = donnees.initCarteMystere();
+     cerr<<"Partie::initialisation tableau de carte Mystere fini"<< endl;
 }
 
 Partie::~Partie()
 {
     //dtor
+    cerr<<"Partie::Destruction"<< endl;
 }
 
 /**
