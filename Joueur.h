@@ -31,8 +31,8 @@ class Joueur
         Personnage* perso_;  // Le personnage qu'incarne le joueur
         Case* position_;    //La position du joueur
 
-        Carte* tabCarteDepart[12];  //tab des cartes de depart max 12
-        Carte* tabCarteVu[24];      //tab des cartes vus pendant le jeu max 24
+        vector<Carte*> tabCarteDepart[12];  //tab des cartes de depart max 12
+        vector<Carte*> tabCarteVu[24];      //tab des cartes vus pendant le jeu max 24
 
 
         //Le pion du joueur
