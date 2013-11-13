@@ -3,7 +3,7 @@
 
 Personnage::Personnage(){}
 
-Personnage::Personnage(string n, string c): nom(n), couleur(c), posDepart(NULL){}
+Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(pio), posDepart(NULL){}
 
 Personnage::~Personnage()
 {
@@ -21,7 +21,6 @@ string Personnage::getCouleur(){
     return couleur;
 }
 
-//Operateur externe
 bool Personnage::operator== (Personnage const &p2)
 {
   if(nom == p2.nom){

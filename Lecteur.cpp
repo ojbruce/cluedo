@@ -34,8 +34,8 @@ Lecteur::Lecteur()
          // On initialise le tableau de Personnages
          for(i=25 ; i<33 ; ++i)
          {
-            fichier >> ch1 >> ch2 >> ch3;
-            Personnage personnage(ch1+" "+ch2,ch3);
+            fichier >> ch1 >> ch2 >> ch3>>ch4;
+            Personnage personnage(ch1+" "+ch2,ch3,ch4);
             tabPersonnages.push_back(personnage);
          }
 
