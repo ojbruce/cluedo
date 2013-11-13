@@ -1,13 +1,21 @@
 #include "Personnage.h"
 
 
-Personnage::Personnage(){}
+
 
 Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(pio), posDepart(NULL){}
 
+/**
+ *Retourne les cartes mysteres
+ *
+ */
 Personnage::~Personnage()
 {
     delete posDepart;
+}
+
+void Personnage::setPositionDepart(Case* cas){
+    posDepart = cas;
 }
 
 Case* Personnage::getPositionDepart(){
