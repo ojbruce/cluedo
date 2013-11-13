@@ -3,10 +3,13 @@
 
 #include<string>
 #include<vector>
+#include <cstdlib> //pour le random
+#include "time.h"
 
 #include "Lecteur.h"
 #include "Carte.h"
 #include "Personnage.h"
+#include "Joueur.h"
 
 class Donnees
 {
@@ -20,7 +23,7 @@ class Donnees
         //Personnage getPersonnage(std::string nom);   // Getter d'un personnage du tableau de Personnage
 
         vector<Carte*> initCarteMystere();      //va renvoyer les 3 cartes
-        vector<Carte*> initJoueur(int n);      //va renvoyer un n nombre de joueur avec des persos aléatoires
+        vector<Joueur> initJoueur(int n);      //va renvoyer un n nombre de joueur avec des persos aléatoires
 
     private:
 
