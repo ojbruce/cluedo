@@ -3,8 +3,7 @@
 using namespace std;
 
 
-Donnees::Donnees(Plateau* p)
-{
+Donnees::Donnees(Plateau* p){
     /*Lecteur lecteur;
     tabCartes = lecteur.getCartes();
     tabPersonnages = lecteur.getPersonnages(p);*/
@@ -127,6 +126,50 @@ vector<Joueur> Donnees::initJoueur(int n){
         }
 
     } while(i<n);
+
     return tabJoueur;
 }
 
+/**
+ * Methodes qui va distribuer les cartes aux joueurs
+ *
+ **/
+void Donnees::distribuerCarte(vector<Joueur> lesJoueurs){
+
+    srand(time(NULL));
+
+    //tableau d'int
+    vector<int> temoin;
+
+    for(int i =0; i<24; i++){
+        temoin.push_back(i);
+    }
+
+    //On initialise une taille et un indice
+    int taille = 24;
+    int indice;
+    unsigned int j =0;
+
+    //Tant qu'il y a des cartes
+    do{
+        indice= rand() % taille;
+        cerr << "salut" << endl;
+        lesJoueurs.at(j).ajouterCarteDepart(&tabCartes.at(indice));
+        lesJoueurs.at(j).ajouterCarteVu(&tabCartes.at(indice));
+
+        temoin.erase(temoin.begin() +indice);
+        j++;
+        taille--;
+
+        if(j == lesJoueurs.size())
+            j = 0;
+
+    }while(!temoin.empty());
+
+
+
+
+
+
+
+}

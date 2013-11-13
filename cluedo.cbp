@@ -61,8 +61,6 @@
 		<Unit filename="EcranAccueil.h" />
 		<Unit filename="EcranJeu.cpp" />
 		<Unit filename="EcranJeu.h" />
-		<Unit filename="EtatCase.cpp" />
-		<Unit filename="EtatCase.h" />
 		<Unit filename="Jeu.cpp" />
 		<Unit filename="Jeu.h" />
 		<Unit filename="Joueur.cpp" />

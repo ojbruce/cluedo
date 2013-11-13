@@ -3,36 +3,40 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include <vector>
+
 
 #include"Case.h"
 #include"Carte.h"
 #include"Personnage.h"
 
-using namespace sf;
-using namespace std;
+
 
 class Joueur
 {
     public:
-        Joueur();
-        Joueur(Personnage* p);
-        bool operator== (Joueur const &p2);
+        Joueur();                           //Constructeur par defaut
+        Joueur(Personnage* p);              //Constructeur avec un personnage prédéfini
+        bool operator== (Joueur const &p2); // Operateur d'egalite
 
-        Case* getPosition();  // Retourne la positon du joueur
-        void setPosition(Case* c);  //met la position du joueur à jour
+        Case* getPosition();                // Retourne la positon du joueur
+        void setPosition(Case* c);          //met la position du joueur à jour
 
-        //A voir ajouter la dernier piece visitee
+        /*A voir ajouter la dernier piece visitee*/
+
+        void ajouterCarteDepart(Carte* c);  //Ajoute les cartes de depart du joueur
+        void ajouterCarteVu(Carte* c);      //Ajoute les cartes vu par le joueur
 
         void afficher(int x, int y);
         virtual ~Joueur();
 
     private:
 
-        Personnage* perso_;  // Le personnage qu'incarne le joueur
+        Personnage* perso_; // Le personnage qu'incarne le joueur
         Case* position_;    //La position du joueur
 
-        vector<Carte*> tabCarteDepart[12];  //tab des cartes de depart max 12
-        vector<Carte*> tabCarteVu[24];      //tab des cartes vus pendant le jeu max 24
+        vector<Carte*> tabCarteDepart;  //tab des cartes de depart max 12
+        vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24
 
 
         //Le pion du joueur
