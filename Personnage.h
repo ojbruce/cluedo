@@ -11,7 +11,7 @@ class Personnage
 {
     public:
         Personnage();
-        Personnage(string nom, string couleur, Case* pos); //Constructeur
+        Personnage(string nom, string couleur); //Constructeur
         virtual ~Personnage();  //destructeur
 
         //Getters

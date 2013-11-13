@@ -4,12 +4,12 @@ Joueur::Joueur():  perso_ (NULL), position_(NULL),pion_(NULL){}
 
 Joueur::Joueur(Personnage* perso): perso_(perso), pion_(NULL){
     position_= perso_->getPositionDepart();
-    }
+}
 
 
 Joueur::~Joueur()
 {
-    //dtor
+
 }
 
 

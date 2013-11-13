@@ -5,6 +5,7 @@ Partie::Partie(): partieFini_(false){}
 Partie::Partie(int nbJ,  Plateau* plat):  partieFini_(false),nbJoueur_(nbJ),p(plat) {
     //initialise le tableau de joueur
 
+
     //initialise le tableau des cartes mysteres
 }
 
@@ -23,8 +24,9 @@ int Partie::lancerDe(){
 }
 
 void Partie::lancerTour(Joueur j){
-
+    //Le joueur "lance" le de
     int de = lancerDe();
+    cerr<< "le joueur a fait " << de << endl;
 
     vector<Case*> cheminPosssible; // notre tableau des chemins possibles pour le tour
     Case* posCourante = j.getPosition();    //la position du joueur avant le debut du tour
@@ -35,6 +37,12 @@ void Partie::lancerTour(Joueur j){
     //tant que la case n'est pas bonne on recupere la case cliqué
     //si la case est dans cheminPossible on continue sinon on recommence
     //
+    bool caseValide = false;
+
+    while(!caseValide){
+
+
+    }
 
     //On bouge le joueur
     posCourante->setEstVide(true);

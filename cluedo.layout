@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Release" />
-	<File name="Carte.cpp" open="1" top="0" tabpos="9">
+	<File name="Carte.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="93" topLine="0" />
 	</File>
-	<File name="Carte.h" open="1" top="0" tabpos="8">
+	<File name="Carte.h" open="0" top="0" tabpos="8">
 		<Cursor position="143" topLine="0" />
 	</File>
 	<File name="Case.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Case.h" open="1" top="0" tabpos="12">
+	<File name="Case.h" open="0" top="0" tabpos="12">
 		<Cursor position="31" topLine="0" />
 	</File>
-	<File name="Donnees.cpp" open="1" top="0" tabpos="6">
+	<File name="Donnees.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="318" topLine="11" />
 	</File>
-	<File name="Donnees.h" open="1" top="0" tabpos="7">
+	<File name="Donnees.h" open="0" top="0" tabpos="7">
 		<Cursor position="427" topLine="5" />
 	</File>
-	<File name="Ecran.h" open="1" top="0" tabpos="16">
-		<Cursor position="0" topLine="0" />
+	<File name="Ecran.h" open="1" top="0" tabpos="12">
+		<Cursor position="163" topLine="0" />
 	</File>
-	<File name="EcranAccueil.cpp" open="0" top="0" tabpos="10">
-		<Cursor position="0" topLine="0" />
+	<File name="EcranAccueil.cpp" open="1" top="1" tabpos="14">
+		<Cursor position="363" topLine="0" />
 	</File>
-	<File name="EcranAccueil.h" open="0" top="0" tabpos="9">
-		<Cursor position="0" topLine="0" />
+	<File name="EcranAccueil.h" open="1" top="0" tabpos="13">
+		<Cursor position="210" topLine="0" />
 	</File>
-	<File name="EcranJeu.cpp" open="1" top="0" tabpos="14">
-		<Cursor position="211" topLine="0" />
+	<File name="EcranJeu.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="286" topLine="0" />
 	</File>
-	<File name="EcranJeu.h" open="1" top="0" tabpos="15">
-		<Cursor position="0" topLine="0" />
+	<File name="EcranJeu.h" open="1" top="0" tabpos="10">
+		<Cursor position="115" topLine="0" />
 	</File>
 	<File name="EtatCase.h" open="0" top="0" tabpos="13">
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="Jeu.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="737" topLine="11" />
+		<Cursor position="611" topLine="8" />
 	</File>
 	<File name="Jeu.h" open="1" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
@@ -49,11 +49,11 @@
 	<File name="Joueur.h" open="0" top="0" tabpos="9">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="ManagerEcran.cpp" open="1" top="0" tabpos="13">
-		<Cursor position="208" topLine="0" />
+	<File name="ManagerEcran.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="104" topLine="0" />
 	</File>
-	<File name="ManagerEcran.h" open="0" top="0" tabpos="8">
-		<Cursor position="0" topLine="0" />
+	<File name="ManagerEcran.h" open="1" top="0" tabpos="11">
+		<Cursor position="275" topLine="0" />
 	</File>
 	<File name="Mur.cpp" open="0" top="0" tabpos="11">
 		<Cursor position="0" topLine="0" />
@@ -62,7 +62,7 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="Partie.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="507" topLine="0" />
+		<Cursor position="383" topLine="0" />
 	</File>
 	<File name="Partie.h" open="1" top="0" tabpos="5">
 		<Cursor position="481" topLine="1" />
@@ -73,11 +73,11 @@
 	<File name="Piece.h" open="0" top="0" tabpos="10">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plateau.cpp" open="1" top="0" tabpos="11">
-		<Cursor position="2885" topLine="104" />
+	<File name="Plateau.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="2867" topLine="104" />
 	</File>
-	<File name="Plateau.h" open="1" top="1" tabpos="10">
-		<Cursor position="179" topLine="0" />
+	<File name="Plateau.h" open="1" top="0" tabpos="6">
+		<Cursor position="179" topLine="37" />
 	</File>
 	<File name="Plein.cpp" open="0" top="0" tabpos="15">
 		<Cursor position="0" topLine="0" />

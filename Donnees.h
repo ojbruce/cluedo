@@ -4,36 +4,31 @@
 #include<string>
 #include<vector>
 
+#include "Lecteur.h"
 #include "Carte.h"
 #include "Personnage.h"
-
-using namespace std;
 
 class Donnees
 {
 	public:
 
         // Initialiser les donnees
-        Donnees();
+         Donnees(std::string fichier);
         ~Donnees();
 
-        Carte getCarte(int indice); // Getter d'une carte du tableau de Carte
-        Personnage getPersonnage(string nom);   // Getter d'un personnage du tableau de Personnage
+        //Carte getCarte(int indice); // Getter d'une carte du tableau de Carte
+        //Personnage getPersonnage(std::string nom);   // Getter d'un personnage du tableau de Personnage
 
-        //vector<Carte*> initCarteMystere();      //va renvoyer les 3 cartes
+        vector<Carte*> initCarteMystere();      //va renvoyer les 3 cartes
 
     private:
 
         //Attributs
-        //Carte tabCartes[24];
-        //Personnage tabPerso[8];
+        std::vector<Carte> tabCartes;   // Vecteur contenant les 24 cartes du jeu
+        std::vector<Personnage> tabPersonnages; // Vecteur contenant les 8 personnages
 
 
 
-
-        //Methodes
-        //void initTabCarte();
-        //void initTabPerso();
 
 
 };

@@ -1,30 +1,29 @@
 #include "Donnees.h"
 
+using namespace std;
 
-Donnees::Donnees()
+
+
+
+Donnees::Donnees(string fichier)
 {
-    //initTabCarte();
-    //initTabPerso();
+    Lecteur lecteur;
+    tabCartes = lecteur.getCartes();
+    tabPersonnages = lecteur.getPersonnages();
 }
+
 
 Donnees::~Donnees()
 {
     //dtor
 }
 
-/*void Donnees::initTabCarte(){
-
-}
-
-void Donnees::initTabPerso(){
-
-}*/
 
 /**
  *Retourne les cartes mysteres
  *
  */
-/*vector<Carte*> Donnees::initCarteMystere(){
+vector<Carte*> Donnees::initCarteMystere(){
     vector<Carte*> res(3);
     srand(time(NULL)); // place le rand à un endroit diferent selon le time
     //0-8 piece
@@ -40,7 +39,7 @@ void Donnees::initTabPerso(){
     res.push_back(&tabCartes[indice]);
 
     return res;
-}*/
+}
 
 
 

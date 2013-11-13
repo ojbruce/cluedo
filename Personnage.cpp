@@ -3,7 +3,7 @@
 
 Personnage::Personnage(){}
 
-Personnage::Personnage(string n, string c, Case* pos): nom(n), couleur(c), posDepart(pos){}
+Personnage::Personnage(string n, string c): nom(n), couleur(c), posDepart(NULL){}
 
 Personnage::~Personnage()
 {

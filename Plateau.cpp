@@ -82,9 +82,6 @@ void Plateau::trouverChemin(sf::RenderWindow &window){
 
         window.draw(*sherr);
     }
-
-
-
 }
 
 
@@ -394,11 +391,6 @@ void Plateau::initCases(){
 
 	delete tab[18][17];
 	tab[18][17]=new Case(18,17);
-
-
-	//Les cases espions
-
-	//les cases cheminSecret
 
 
 	//On remplit notre tableau à double dimension de case normal pour ce qui reste

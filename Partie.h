@@ -24,7 +24,7 @@ class Partie
     private:
         bool partieFini_;    //Determine si la partie est finie
         int nbJoueur_;       //Le nombre de joueur
-        Carte* tabMystere_[3];   //Les 3 cartes désignant le lieu, le crimier, l'arme
+        vector<Carte*> tabMystere_;   //Les 3 cartes désignant le lieu, le crimier, l'arme
         vector <Joueur> tabJoueur_;
 
         Plateau* p;
