@@ -27,3 +27,12 @@ void Joueur::afficher(int x, int y){
     pion_->setFillColor(sf::Color::Blue);
     pion_->setPosition(x, y);
 }
+
+bool Joueur::operator== (Joueur const &p2)
+{
+  if(perso_ == p2.perso_){
+    return true;
+  }else{
+    return false;
+  }
+}

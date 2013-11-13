@@ -16,6 +16,7 @@ class Joueur
     public:
         Joueur();
         Joueur(Personnage* p);
+        bool operator== (Joueur const &p2);
 
         Case* getPosition();  // Retourne la positon du joueur
         void setPosition(Case* c);  //met la position du joueur à jour

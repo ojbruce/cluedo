@@ -24,7 +24,7 @@ class Partie
 
     private:
         //Attributs
-        Donnees donnees; //la classe contenant les donnees
+        Donnees donnees;     //la classe contenant les donnees
 
         bool partieFini_;    //Determine si la partie est finie
         int nbJoueur_;       //Le nombre de joueur
