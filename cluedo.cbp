@@ -67,6 +67,8 @@
 		<Unit filename="Jeu.h" />
 		<Unit filename="Joueur.cpp" />
 		<Unit filename="Joueur.h" />
+		<Unit filename="Lecteur.cpp" />
+		<Unit filename="Lecteur.h" />
 		<Unit filename="ManagerEcran.cpp" />
 		<Unit filename="ManagerEcran.h" />
 		<Unit filename="Mur.cpp" />

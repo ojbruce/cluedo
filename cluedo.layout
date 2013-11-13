@@ -13,25 +13,25 @@
 	<File name="Case.h" open="0" top="0" tabpos="12">
 		<Cursor position="31" topLine="0" />
 	</File>
-	<File name="Donnees.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="318" topLine="11" />
+	<File name="Donnees.cpp" open="1" top="1" tabpos="9">
+		<Cursor position="1148" topLine="42" />
 	</File>
-	<File name="Donnees.h" open="0" top="0" tabpos="7">
-		<Cursor position="427" topLine="5" />
+	<File name="Donnees.h" open="1" top="0" tabpos="8">
+		<Cursor position="596" topLine="5" />
 	</File>
-	<File name="Ecran.h" open="1" top="0" tabpos="12">
+	<File name="Ecran.h" open="0" top="0" tabpos="12">
 		<Cursor position="163" topLine="0" />
 	</File>
-	<File name="EcranAccueil.cpp" open="1" top="1" tabpos="14">
+	<File name="EcranAccueil.cpp" open="0" top="0" tabpos="14">
 		<Cursor position="363" topLine="0" />
 	</File>
-	<File name="EcranAccueil.h" open="1" top="0" tabpos="13">
+	<File name="EcranAccueil.h" open="0" top="0" tabpos="13">
 		<Cursor position="210" topLine="0" />
 	</File>
-	<File name="EcranJeu.cpp" open="1" top="0" tabpos="8">
+	<File name="EcranJeu.cpp" open="0" top="0" tabpos="8">
 		<Cursor position="286" topLine="0" />
 	</File>
-	<File name="EcranJeu.h" open="1" top="0" tabpos="10">
+	<File name="EcranJeu.h" open="0" top="0" tabpos="10">
 		<Cursor position="115" topLine="0" />
 	</File>
 	<File name="EtatCase.h" open="0" top="0" tabpos="13">
@@ -43,16 +43,19 @@
 	<File name="Jeu.h" open="1" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+	<File name="Joueur.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="488" topLine="3" />
 	</File>
-	<File name="Joueur.h" open="0" top="0" tabpos="9">
-		<Cursor position="0" topLine="0" />
+	<File name="Joueur.h" open="1" top="0" tabpos="6">
+		<Cursor position="282" topLine="10" />
 	</File>
-	<File name="ManagerEcran.cpp" open="1" top="0" tabpos="9">
+	<File name="Lecteur.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="61" topLine="30" />
+	</File>
+	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="104" topLine="0" />
 	</File>
-	<File name="ManagerEcran.h" open="1" top="0" tabpos="11">
+	<File name="ManagerEcran.h" open="0" top="0" tabpos="11">
 		<Cursor position="275" topLine="0" />
 	</File>
 	<File name="Mur.cpp" open="0" top="0" tabpos="11">
@@ -61,11 +64,17 @@
 	<File name="Mur.h" open="0" top="0" tabpos="9">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="383" topLine="0" />
+	<File name="Partie.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="150" topLine="0" />
 	</File>
-	<File name="Partie.h" open="1" top="0" tabpos="5">
-		<Cursor position="481" topLine="1" />
+	<File name="Partie.h" open="1" top="0" tabpos="4">
+		<Cursor position="737" topLine="5" />
+	</File>
+	<File name="Personnage.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="138" topLine="0" />
+	</File>
+	<File name="Personnage.h" open="1" top="0" tabpos="13">
+		<Cursor position="665" topLine="1" />
 	</File>
 	<File name="Piece.cpp" open="0" top="0" tabpos="12">
 		<Cursor position="0" topLine="0" />
@@ -73,11 +82,11 @@
 	<File name="Piece.h" open="0" top="0" tabpos="10">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plateau.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="2867" topLine="104" />
+	<File name="Plateau.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="2045" topLine="132" />
 	</File>
-	<File name="Plateau.h" open="1" top="0" tabpos="6">
-		<Cursor position="179" topLine="37" />
+	<File name="Plateau.h" open="0" top="0" tabpos="6">
+		<Cursor position="179" topLine="0" />
 	</File>
 	<File name="Plein.cpp" open="0" top="0" tabpos="15">
 		<Cursor position="0" topLine="0" />
