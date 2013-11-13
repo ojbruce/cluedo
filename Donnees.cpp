@@ -4,9 +4,6 @@ using namespace std;
 
 
 Donnees::Donnees(Plateau* p){
-    /*Lecteur lecteur;
-    tabCartes = lecteur.getCartes();
-    tabPersonnages = lecteur.getPersonnages(p);*/
 
     // Ouverture du fichier contenant les donnees du jeu
     ifstream fichier("Donnees/donnees.txt", ios::in);
@@ -82,19 +79,17 @@ Donnees::~Donnees()
 vector<Carte*> Donnees::initCarteMystere(){
     vector<Carte*> res(3);
     srand(time(NULL)); // place le rand à un endroit diferent selon le time
+
     //0-8 piece
     int indice = rand() % 9;
-    cerr << "Donnees::cartepiece " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     //9-16 persos
     indice = rand() % 8+9;
-    cerr << "Donnees::carteperso " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     //17-23 armes
     indice = rand() % 7+17;
-    cerr << "Donnees::cartearme " << tabCartes[indice].getNom() << endl;
     res.push_back(&tabCartes[indice]);
 
     return res;
@@ -107,7 +102,7 @@ vector<Carte*> Donnees::initCarteMystere(){
 vector<Joueur> Donnees::initJoueur(int n){
     //tableau de joueur à retourner
     vector<Joueur> tabJoueur;
-    int i =1;
+    int i =0;
 
     cerr << "Donnees::initJoueur" << endl;
     srand(time(NULL));
@@ -150,10 +145,9 @@ void Donnees::distribuerCarte(vector<Joueur> lesJoueurs){
     int indice;
     unsigned int j =0;
 
-    //Tant qu'il y a des cartes
+    //Tant qu'il y a des cartes on ajoute
     do{
         indice= rand() % taille;
-        cerr << "salut" << endl;
         lesJoueurs.at(j).ajouterCarteDepart(&tabCartes.at(indice));
         lesJoueurs.at(j).ajouterCarteVu(&tabCartes.at(indice));
 
@@ -165,11 +159,6 @@ void Donnees::distribuerCarte(vector<Joueur> lesJoueurs){
             j = 0;
 
     }while(!temoin.empty());
-
-
-
-
-
 
 
 }

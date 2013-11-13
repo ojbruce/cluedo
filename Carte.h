@@ -10,7 +10,6 @@ class Carte
         Carte(string nom, string chemin);   // Constructeur
         virtual ~Carte();                  //Destructeur
 
-
         // Getter
         string getNom();        //retourne le nom
         string getChemin();     //retourne le chemin

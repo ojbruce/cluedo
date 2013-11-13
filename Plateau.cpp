@@ -26,7 +26,7 @@ Plateau::Plateau(): shape(NULL)
 
     //on initialise notre tableau de case
 	initCases();
-    cerr<< "Creation du plateau"<<endl;
+    cerr<< "Plateau::Creation du plateau"<<endl;
 }
 
 

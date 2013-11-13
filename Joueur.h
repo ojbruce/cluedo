@@ -19,6 +19,7 @@ class Joueur
         Joueur(Personnage* p);              //Constructeur avec un personnage prédéfini
         bool operator== (Joueur const &p2); // Operateur d'egalite
 
+        Personnage* getPerso();
         Case* getPosition();                // Retourne la positon du joueur
         void setPosition(Case* c);          //met la position du joueur à jour
 

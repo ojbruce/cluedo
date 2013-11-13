@@ -49,6 +49,14 @@ void Joueur::afficher(int x, int y){
  * Getter de la position
  * @retrun position_ la posion du joueur
  **/
+Personnage* Joueur::getPerso(){
+    return perso_;
+}
+
+/**
+ * Getter de la position
+ * @retrun position_ la posion du joueur
+ **/
 Case* Joueur::getPosition(){
     return position_;
 }

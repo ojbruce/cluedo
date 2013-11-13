@@ -18,22 +18,24 @@ class Partie
         Partie(int nbJ, Plateau* plat);
         ~Partie();
 
-        int lancerDe();
-        void lancerTour(Joueur j);
+        void lancerTour(Joueur j); // Va lancer le tour dans une partie
+        void lancerPartie(); // Va lancer le tour dans une partie
 
 
     private:
         //Attributs
-        Donnees donnees;     //la classe contenant les donnees
+        Donnees donnees;                //la classe contenant les donnees
 
-        bool partieFini_;    //Determine si la partie est finie
-        int nbJoueur_;       //Le nombre de joueur
+        bool partieFini_;               //Determine si la partie est finie
+        int nbJoueur_;                  //Le nombre de joueur
         vector<Carte*> tabMystere_;     //Les 3 cartes désignant le lieu, le crimier, l'arme
         vector <Joueur> tabJoueur_;     //Le tableau contenant les joueurs
 
-        Plateau* p;
+        Plateau* p;         //Le plateau de jeu
 
-
+        //Methodes
+        int lancerDe();     //lancer De
+        void positionnerJoueur();
 };
 
 #endif // PARTIE_H

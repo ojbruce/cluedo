@@ -36,8 +36,8 @@ string Porte::getNom() const{
 
 void Porte::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     //on insere l'element courant
+    cerr<<"porte"<<endl;
     res.push_back(this);
-
 }
 
 

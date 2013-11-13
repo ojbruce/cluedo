@@ -2,7 +2,7 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat): donnees(p),partieFini_(false),nbJoueur_(nbJ),p(plat) {
+Partie::Partie(int nbJ,  Plateau* plat): donnees(plat),partieFini_(false),nbJoueur_(nbJ),p(plat) {
 
     //initialise le tableau de joueur
     tabJoueur_= donnees.initJoueur(nbJ);
@@ -12,8 +12,13 @@ Partie::Partie(int nbJ,  Plateau* plat): donnees(p),partieFini_(false),nbJoueur_
     tabMystere_ = donnees.initCarteMystere();
      cerr<<"Partie::initialisation tableau de carte Mystere fini"<< endl;
 
-     /**distribution des cartes au joueur**/
+     //distribution des cartes aux joueurs
      donnees.distribuerCarte(tabJoueur_);
+     cerr<<"Partie::distribution des cartes"<< endl;
+
+    //positionner les joueurs
+    //afficher les joueurs
+
 }
 
 Partie::~Partie()
@@ -38,18 +43,26 @@ int Partie::lancerDe(){
 void Partie::lancerTour(Joueur j){
     //Le joueur "lance" le de
     int de = lancerDe();
-    cerr<< "le joueur a fait " << de << endl;
+    cerr<< "Partie::le joueur a fait " << de << endl;
 
-    vector<Case*> cheminPosssible; // notre tableau des chemins possibles pour le tour
+    vector<Case*> chemin; // notre tableau des chemins possibles pour le tour
+
     Case* posCourante = j.getPosition();    //la position du joueur avant le debut du tour
 
     //on cherche les positions possibles
-    posCourante->trouverChemin(de,cheminPosssible,p);
+    posCourante->trouverChemin(de,chemin,p);
+
+    //Affichage des chemins
+     for(unsigned int i=0; i<chemin.size(); i++){
+
+        cerr<<"chemin: x "<< chemin[i]->getX() <<" y :"<< chemin[i]->getY()<<endl;
+
+    }
 
     //tant que la case n'est pas bonne on recupere la case cliqué
     //si la case est dans cheminPossible on continue sinon on recommence
     //
-    bool caseValide = false;
+    /*bool caseValide = false;
 
     while(!caseValide){
 
@@ -57,10 +70,17 @@ void Partie::lancerTour(Joueur j){
     }
 
     //On bouge le joueur
-    posCourante->setEstVide(true);
+    posCourante->setEstVide(true);*/
     //pas fini
-
-
 
 }
 
+void Partie::lancerPartie(){
+
+
+    for(unsigned int i=0; i< tabJoueur_.size(); i++){
+        cerr<< "Partie::joueur " << tabJoueur_.at(i).getPerso()->getNom() << endl;
+        lancerTour(tabJoueur_.at(i));
+    }
+
+}
