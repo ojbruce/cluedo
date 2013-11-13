@@ -55,6 +55,8 @@ Donnees::Donnees(Plateau* p)
     }
 
     //position des persos
+    tabPersonnages[0]=
+
 
 }
 
