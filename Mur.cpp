@@ -19,7 +19,6 @@ std::string Mur::toString(){
 
 
 void Mur::trouverChemin(int de, vector<Case*> &res, Plateau* p){
-    //on ne fait rien
 }
 
 

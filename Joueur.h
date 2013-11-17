@@ -28,8 +28,6 @@ class Joueur
         void ajouterCarteDepart(Carte* c);  //Ajoute les cartes de depart du joueur
         void ajouterCarteVu(Carte* c);      //Ajoute les cartes vu par le joueur
 
-        void afficher(int x, int y);
-
         //Affiche le joueur
         void update(sf::RenderWindow &App);
 

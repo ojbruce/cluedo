@@ -47,6 +47,7 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
         //on insere l'element courant
         res.push_back(this);
 
+
         //On va parcourir les cases tant que les des sont supérieurs a zero
         if(de!=0){
 
