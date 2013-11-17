@@ -7,7 +7,7 @@ using namespace std;
  *Constructeur par defaut
  */
 Case::Case() {
-    rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+    //rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
     estVide = true;
 }
 
@@ -16,7 +16,7 @@ Case::Case() {
  */
 Case::Case(int a, int b) : x_(b),y_(a){
 
-    rectangle = new sf::RectangleShape(sf::Vector2f(26, 26));
+    //rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
     estVide = true;
 }
 

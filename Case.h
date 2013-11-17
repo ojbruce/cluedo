@@ -52,9 +52,9 @@ class Case{
         //Etat plein/vide
         bool estVide;
 
-        const static int taille_ =26;   //taille de case
+        const static int taille_ =20;   //taille de case
 
-        sf::RectangleShape* rectangle;  //La forme s'affichant sur la case
+        //sf::RectangleShape* rectangle;  //La forme s'affichant sur la case
 
 
     private:

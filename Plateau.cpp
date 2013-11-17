@@ -6,7 +6,7 @@ using namespace std;
 Plateau::Plateau(): shape(NULL)
 {
 	//on récupere limage du plateau et on l'affiche
-	if(!im.loadFromFile("PlateauOk.png"))
+	if(!im.loadFromFile("Donnees/plateaurefait.png"))
 	{
 	    cerr << "bug" << endl;
     }

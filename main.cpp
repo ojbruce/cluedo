@@ -21,6 +21,8 @@ int main(void)
 
     partie.lancerPartie();
 
+    Jeu j; j.lancerJeu();
+
 
 
 

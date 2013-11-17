@@ -43,10 +43,10 @@ class Plateau{
 		//Constantes du plateau
 		const static int largPlateau_ = 24; 	//largeur de plateau
 		const static int hautPlateau_ = 25;		//hauteur de plateau
-		const static int tailleCase_ =26;       //taille de case
+		const static int tailleCase_ =20;       //taille de case
 
-		const static int ecartX_=41;
-		const static int ecartY_=30;
+		const static int ecartX_=20;
+		const static int ecartY_=20;
 
 		//Image du plateau
 		sf::Texture im;
