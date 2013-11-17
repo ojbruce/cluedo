@@ -15,9 +15,6 @@ void Jeu::lancerJeu(){
     //Creation d'une fenetre
     sf::RenderWindow window(sf::VideoMode(1200, 700), "Jeu du cluedo", sf::Style::Titlebar|sf::Style::Close);
 
-    //charger les donnees
-
-
    	while (window.isOpen())
     {
         sf::Event event;
@@ -26,7 +23,6 @@ void Jeu::lancerJeu(){
      	   	//Gere la fermeture de la fenetre
             if (event.type == sf::Event::Closed)
                 window.close();
-
        	}
 
 

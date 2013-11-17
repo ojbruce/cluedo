@@ -169,3 +169,16 @@ void Case::setEstVide(bool b){
     estVide =b;
 }
 
+/**
+ * Operateur d'egalite
+ * @param p2 le second joueur
+ **/
+bool Case::operator== (Case const &c2)
+{
+  if(x_==c2.x_ && y_==c2.y_){
+    return true;
+  }else{
+    return false;
+  }
+}
+

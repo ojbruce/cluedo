@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 #include "Ecran.h"
 #include "Plateau.h"
+#include "Partie.h"
+#include "ZoneAffichageTexte.h"
 
 class EcranJeu : public Ecran
 {
@@ -16,6 +18,9 @@ class EcranJeu : public Ecran
     protected:
     private:
         Plateau p;
+        ZoneAffichageTexte zoneText;
+        Partie part;
+
 };
 
 #endif // ECRANJEU_H

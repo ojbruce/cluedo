@@ -8,7 +8,6 @@ Plateau::Plateau(): shape(NULL)
 	//on récupere limage du plateau et on l'affiche
 	if(!im.loadFromFile("Donnees/plateaurefait.png"))
 	{
-	    cerr << "bug" << endl;
     }
 
 	im.setSmooth(true);
@@ -54,9 +53,6 @@ Case* Plateau::trouverCase(int x, int y){
         cptY++;
     }
 
-    // Attention gerer les erreurs quand on dépasse du plateau Exception
-    cerr<< "renvoie x: "<<tab[cptY][cptX]->getX()<< ", y :" << tab[cptY][cptX]->getY()<<endl;
-
     return tab[cptY][cptX];
 }
 
@@ -64,8 +60,8 @@ Case* Plateau::trouverCase(int x, int y){
 
 void Plateau::trouverChemin(sf::RenderWindow &window){
     //notre tableau de pointeur vers case
-    vector<Case*> chemin;
-    tab[0][9]->trouverChemin(15, chemin,this );
+   /* vector<Case*> chemin;
+    tab[0][9]->trouverChemin(15, chemin,this, );
     sf::CircleShape* sherr = new sf::CircleShape(2);
     sherr->setFillColor(sf::Color::Blue);
 
@@ -81,7 +77,7 @@ void Plateau::trouverChemin(sf::RenderWindow &window){
         sherr->setPosition(p.first, p.second);
 
         window.draw(*sherr);
-    }
+    }*/
 }
 
 

@@ -16,7 +16,6 @@ class EcranAccueil : public Ecran
 
         //Image du plateau
 		sf::Texture imFond;
-		sf::Texture butJouer;
 		sf::Sprite accueil;
 
 };

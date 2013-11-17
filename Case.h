@@ -17,6 +17,7 @@ class Case{
 		Case();                          //Constructeur par defaut
 		Case(int a, int b);              //Constructeur avec x et y
 
+        bool operator== (Case const &c2); // Operateur d'egalite
 
 		virtual ~Case();                //Destructeur du plateau
 

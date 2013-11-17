@@ -40,9 +40,6 @@ class Joueur
         vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24
 
 
-        //Le pion du joueur
-        static const int taillePion_=8;
-        sf::CircleShape *pion_;
 
 
 };

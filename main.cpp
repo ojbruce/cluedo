@@ -10,7 +10,7 @@ using namespace std;
 
 int main(void)
 {
-    cerr<<"Main:: CreationPlateau"<< endl;
+   /* cerr<<"Main:: CreationPlateau"<< endl;
     Plateau* p = new Plateau();
     p->afficher();
 
@@ -20,13 +20,13 @@ int main(void)
     cerr<<"Main:: Partie creer"<< endl << endl;
 
     partie.lancerPartie();
+    delete p;*/
 
     Jeu j; j.lancerJeu();
 
 
 
 
-    delete p;
 
     return 0;
 }

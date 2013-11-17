@@ -1,6 +1,6 @@
 #include "EcranJeu.h"
 
-EcranJeu::EcranJeu()
+EcranJeu::EcranJeu(): part(2,&p, &zoneText)
 {
     //ctor
 }
@@ -10,9 +10,13 @@ EcranJeu::~EcranJeu()
     //dtor
 }
 
+
+/**
+ *
+ *
+ */
 void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
    // plateau.afficher();
-
 
     while (window.pollEvent(event))
     {
@@ -22,11 +26,14 @@ void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
         //si on recoit un evenement souris pressee
         if (event.type == sf::Event::MouseButtonPressed){
             //on retroune la position de la souris et on affiche un pion à la position
-            p.positionSouris(window);
+            part.update(window);
         }
     }
 
     //on maj l'affichage du plateau
     p.afficher(window);
+    part.afficher(window);
+
+
 
 }

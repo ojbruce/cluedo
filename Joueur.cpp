@@ -3,9 +3,9 @@
 
 using namespace std;
 
-Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24),pion_(NULL){}
+Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24){}
 
-Joueur::Joueur(Personnage* perso): perso_(perso), pion_(NULL){
+Joueur::Joueur(Personnage* perso): perso_(perso){
     position_= perso_->getPositionDepart();
 }
 
@@ -39,9 +39,6 @@ void Joueur::ajouterCarteVu(Carte* c){
  **/
 void Joueur::afficher(int x, int y){
 
-    pion_ = new sf::CircleShape(7);
-    pion_->setFillColor(sf::Color::Blue);
-    pion_->setPosition(x, y);
 }
 
 

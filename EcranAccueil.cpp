@@ -6,7 +6,6 @@ EcranAccueil::EcranAccueil()
     imFond.loadFromFile("accueil.png");
 	imFond.setSmooth(true);
 
-	butJouer.loadFromFile("jouerBut.png");
 
 	accueil.setTexture(imFond);
 
