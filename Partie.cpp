@@ -59,8 +59,9 @@ void Partie::update(sf::RenderWindow &window){
             de = lancerDe();
             cerr<< "Partie::De = "<< de <<" " <<j.getPerso()->getNom() << endl;
 
-            Case* posCourante = j.getPosition();    //la position du joueur avant le debut du tour
-            posCourante->trouverChemin(de,chemin,p,true);                           //on cherche les positions possibles
+            Case* posCourante = j.getPosition();        //la position du joueur avant le debut du tour
+            posCourante->setEstVide(true);               // avant de chercher on vide la case
+            posCourante->trouverChemin(de,chemin,p);    //on cherche les positions possibles
 
             cerr<< "Partie:: taille chemin possible " <<chemin.size()<<endl;
 
