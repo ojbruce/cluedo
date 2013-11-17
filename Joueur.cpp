@@ -26,7 +26,9 @@ Joueur::~Joueur()
 void Joueur::update(sf::RenderWindow &window){
     joueur.setPosition(position_->getX()*20+21,position_->getY()*20+21);
 
-	window.draw(joueur);
+    sf::CircleShape shape(7);
+    shape.setPosition(position_->getX()*20+21,position_->getY()*20+21);
+	window.draw(shape);
 }
 
 /**

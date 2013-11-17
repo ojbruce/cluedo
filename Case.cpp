@@ -7,7 +7,7 @@ using namespace std;
  *Constructeur par defaut
  */
 Case::Case() {
-    //rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
+    rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
     estVide = true;
 }
 
@@ -16,7 +16,7 @@ Case::Case() {
  */
 Case::Case(int a, int b) : x_(b),y_(a){
 
-    //rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
+    rectangle = new sf::RectangleShape(sf::Vector2f(20, 20));
     estVide = true;
 }
 
@@ -28,7 +28,7 @@ Case::Case(const Case& c){
 	y_ = c.y_;
     estVide = c.estVide;
 
-	//rectangle = c.rectangle;
+	rectangle = c.rectangle;
 }
 
 
@@ -36,7 +36,7 @@ Case::Case(const Case& c){
  * Destructeur
  */
 Case::~Case(){
-   // delete rectangle;
+   delete rectangle;
 }
 
 
@@ -94,8 +94,10 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     }
 }
 
-void Case::colorerCase(){
-    //rectangle->setFillColor(sf::Color(0, 90, 240,150));
+void Case::update(sf::RenderWindow &window){
+   rectangle->setFillColor(sf::Color(0, 90, 240,150));
+   rectangle->setPosition(x_*20+20,y_*20+20);
+   window.draw(*rectangle);
 }
 
 

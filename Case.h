@@ -35,7 +35,7 @@ class Case{
         //virtual void action();
 
         //coloration de la case
-        void colorerCase();
+        void update(sf::RenderWindow &window);
 
 		//Getter Setter
 		virtual int getX();
@@ -55,7 +55,7 @@ class Case{
 
         const static int taille_ =20;   //taille de case
 
-        //sf::RectangleShape* rectangle;  //La forme s'affichant sur la case
+        sf::RectangleShape* rectangle;  //La forme s'affichant sur la case
 
 
     private:

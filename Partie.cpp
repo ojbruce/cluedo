@@ -2,7 +2,7 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zone1): donnees(plat),partieFini_(false), deClique_(false), joueurCourant(0),nbJoueur_(nbJ),p(plat), zoneText(zone1) {
+Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zone1): donnees(plat),partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zone1) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
@@ -41,10 +41,6 @@ void Partie::update(sf::RenderWindow &window){
 
     //on recupere la position
     sf::Vector2i souris = sf::Mouse::getPosition(window);
-
-    //Variables
-    int de;
-
 
 	if(p->positionValide(souris.x,souris.y)){
 
@@ -108,20 +104,36 @@ void Partie::update(sf::RenderWindow &window){
 
 void Partie::afficher(sf::RenderWindow &window){
 
-    sf::Text* joueur = new sf::Text("J:" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
+    std::stringstream sstm;
+    sstm << "De= " << de;
+    std::string result = sstm.str();
+    sf::Text* text;
+
+    sf::Text* joueur = new sf::Text("Joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
     joueur->setPosition(220,220);
-    joueur->setCharacterSize(10);
+    joueur->setCharacterSize(11);
 
-    texte->setPosition(220,300);
-    texte->setCharacterSize(15);
+    //Le texte depend de ce qui est clique ou pas
+    if(!deClique_)
+        text = new sf::Text("Cliquer pour\nLancer le de", font);
+    else
+        text = new sf::Text(result, font);
 
+    text->setPosition(220,300);
+    text->setCharacterSize(11);
+
+    //affichage du chemin bleu
+    for(unsigned int j=0; j < chemin.size(); j++){
+        chemin.at(j)->update(window);
+    }
+
+    //affichage du joueur
     for(unsigned int i=0; i < tabJoueur_.size(); i++){
         tabJoueur_.at(i).update(window);
     }
 
-
     window.draw(*joueur);
-    window.draw(*texte);
+    window.draw(*text);
 
 }
 
