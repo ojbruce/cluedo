@@ -29,6 +29,10 @@ class Joueur
         void ajouterCarteVu(Carte* c);      //Ajoute les cartes vu par le joueur
 
         void afficher(int x, int y);
+
+        //Affiche le joueur
+        void update(sf::RenderWindow &App);
+
         virtual ~Joueur();
 
     private:
@@ -38,6 +42,9 @@ class Joueur
 
         vector<Carte*> tabCarteDepart;  //tab des cartes de depart max 12
         vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24
+
+        sf::Texture im;
+        sf::Sprite joueur;
 
 
 

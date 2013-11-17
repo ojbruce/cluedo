@@ -121,8 +121,11 @@ void Partie::afficher(sf::RenderWindow &window){
     texte->setCharacterSize(15);
 
 
+
     window.draw(*joueur);
     window.draw(*texte);
+
+    tabJoueur_.at(0).update(window);
 }
 
 

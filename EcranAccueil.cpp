@@ -3,7 +3,7 @@
 EcranAccueil::EcranAccueil()
 {
     //ctor
-    imFond.loadFromFile("accueil.png");
+    imFond.loadFromFile("Images/accueil.png");
 	imFond.setSmooth(true);
 
 

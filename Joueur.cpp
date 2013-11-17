@@ -6,13 +6,25 @@ using namespace std;
 Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24){}
 
 Joueur::Joueur(Personnage* perso): perso_(perso){
+    //La position du joueur
     position_= perso_->getPositionDepart();
+
+    //Les images
+	if(!im.loadFromFile(perso_->getPion())){}
+
+	//im.setSmooth(true);
+	joueur.setTexture(im);
 }
 
 
 Joueur::~Joueur()
 {
 
+}
+
+void Joueur::update(sf::RenderWindow &window){
+    joueur.setPosition(position_->getX(),position_->getY());
+	window.draw(joueur);
 }
 
 /**

@@ -19,14 +19,17 @@ void Personnage::setPositionDepart(Case* cas){
 }
 
 Case* Personnage::getPositionDepart(){
-
-
     return posDepart;
 }
 
 string Personnage::getNom(){
     return nom;
 }
+
+string Personnage::getPion(){
+    return pion;
+}
+
 string Personnage::getCouleur(){
     return couleur;
 }
