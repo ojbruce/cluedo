@@ -28,7 +28,7 @@ Case::Case(const Case& c){
 	y_ = c.y_;
     estVide = c.estVide;
 
-	rectangle = c.rectangle;
+	//rectangle = c.rectangle;
 }
 
 
@@ -36,7 +36,7 @@ Case::Case(const Case& c){
  * Destructeur
  */
 Case::~Case(){
-    delete rectangle;
+   // delete rectangle;
 }
 
 
@@ -94,7 +94,7 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
 }
 
 void Case::colorerCase(){
-    rectangle->setFillColor(sf::Color(0, 90, 240,150));
+    //rectangle->setFillColor(sf::Color(0, 90, 240,150));
 }
 
 
@@ -126,8 +126,8 @@ pair<int,int> Case::pointHG(int tailleCase, int ecartX, int ecartY){
 pair<int,int> Case::milieu(int tailleCase, pair<int,int> a){
 
     pair<int,int> u;
-    u.first = a.first+(tailleCase/2);
-    u.second = a.second+(tailleCase/2);
+    u.first = a.first+(tailleCase/4);
+    u.second = a.second+(tailleCase/4);
 
     return u;
 

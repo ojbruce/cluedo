@@ -66,7 +66,7 @@ void Plateau::trouverChemin(sf::RenderWindow &window){
     //notre tableau de pointeur vers case
     vector<Case*> chemin;
     tab[0][9]->trouverChemin(15, chemin,this );
-    sf::CircleShape* sherr = new sf::CircleShape(7);
+    sf::CircleShape* sherr = new sf::CircleShape(2);
     sherr->setFillColor(sf::Color::Blue);
 
 
