@@ -83,6 +83,8 @@
 		<Unit filename="Porte.h" />
 		<Unit filename="Vide.cpp" />
 		<Unit filename="Vide.h" />
+		<Unit filename="ZoneAffichageTexte.cpp" />
+		<Unit filename="ZoneAffichageTexte.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
