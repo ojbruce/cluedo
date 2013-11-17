@@ -10,8 +10,8 @@ Joueur::Joueur(Personnage* perso): perso_(perso){
     position_= perso_->getPositionDepart();
 
     //Les images
-	//if(!im.loadFromFile(perso_->getPion())){}
-    if(!im.loadFromFile("Images/blanc.png")){}
+	if(!im.loadFromFile(perso_->getPion())){}
+    //if(!im.loadFromFile("Images/blanc.png")){}
 
 	im.setSmooth(true);
 	joueur.setTexture(im);
@@ -24,7 +24,7 @@ Joueur::~Joueur()
 }
 
 void Joueur::update(sf::RenderWindow &window){
-    joueur.setPosition(position_->getX()*20+20,position_->getY()*20+20);
+    joueur.setPosition(position_->getX()*20+21,position_->getY()*20+21);
 
 	window.draw(joueur);
 }
@@ -69,7 +69,6 @@ Case* Joueur::getPosition(){
  * @param c la posion du joueur
  **/
 void Joueur::setPosition(Case* c){
-    cerr<<"Joueur changement de position"<<endl;
     position_=c;
 }
 

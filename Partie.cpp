@@ -69,9 +69,10 @@ void Partie::update(sf::RenderWindow &window){
         //si le joueur clique sur des cases et à cliquer sur le dé avant
         if(deClique_ && !(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 ) ){
 
-            //Verifier que la case cliquer est bien dans le tableau des chemins
+            //On trouve la case
             Case* nCase= p->trouverCase(souris.x,souris.y);
 
+            //Verifier que la case cliquer est bien dans le tableau des chemins
             if(std::find(chemin.begin(), chemin.end(), nCase) == chemin.end()){
                 //chemin ne contient pas la case elle n'est donc pas valide
                 cerr<< "Partie::case en dehors du champ du dé" <<endl;
@@ -80,14 +81,11 @@ void Partie::update(sf::RenderWindow &window){
 
                 //on peut deplacer le joueur
                 j.getPosition()->setEstVide(true);   //ancienne case vide
-                cerr<< "Joueurav:: pos" << j.getPosition()->getX() <<" "<< j.getPosition()->getY()<< endl;
                 j.setPosition(nCase);               // deplacer dasn nouvelle case
-                cerr<< "Joueurap:: pos" << j.getPosition()->getX() <<" "<< j.getPosition()->getY()<< endl;
                 nCase->setEstVide(false);            //nouvelle case pleine
 
-                cerr<< "Partie:: Joueuer deplacer" <<endl;
-
                 //On est dans la nouvelle case
+
 
 
                 //On change les elements de la classe pour que le jeu continue
