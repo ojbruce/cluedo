@@ -44,20 +44,17 @@ void Partie::update(sf::RenderWindow &window){
 
 	if(p->positionValide(souris.x,souris.y)){
 
+        //on prend le joueur par refernce
         Joueur &j =tabJoueur_.at(joueurCourant);
-        cerr<< "Joueur:: debutTou" << j.getPosition()->getX() <<" "<< j.getPosition()->getY()<< endl;
 
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
         if(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 && !deClique_ ){
 
-            de = lancerDe();
-            cerr<< "Partie::De = "<< de <<" " <<j.getPerso()->getNom() << endl;
+            de = lancerDe();                            //on lance le de
 
             Case* posCourante = j.getPosition();        //la position du joueur avant le debut du tour
             posCourante->setEstVide(true);               // avant de chercher on vide la case
             posCourante->trouverChemin(de,chemin,p);    //on cherche les positions possibles
-
-            cerr<< "Partie:: taille chemin possible " <<chemin.size()<<endl;
 
             deClique_=true;
         }
@@ -115,7 +112,7 @@ void Partie::afficher(sf::RenderWindow &window){
 
     //Le texte depend de ce qui est clique ou pas
     if(!deClique_)
-        text = new sf::Text("Cliquer pour\nLancer le de", font);
+        text = new sf::Text(L"Cliquer au centre\npour\nlancer le dé", font);
     else
         text = new sf::Text(result, font);
 

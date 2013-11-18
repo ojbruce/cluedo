@@ -31,7 +31,7 @@ class Partie
 
         bool partieFini_;               //Determine si la partie est finie
         bool deClique_;                 // Determine si le joueur a lancer le de ou pas
-        int joueurCourant;              //Le joueur courant
+        unsigned int joueurCourant;              //Le joueur courant
         int de;
 
         unsigned int nbJoueur_;         //Le nombre de joueur
