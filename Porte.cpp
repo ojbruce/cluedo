@@ -35,8 +35,13 @@ string Porte::getNom() const{
 
 
 void Porte::trouverChemin(int de, vector<Case*> &res, Plateau* p){
-    //on insere l'element courant
-    res.push_back(this);
+    //tester le taille du res
+    if(res.size() == 0)
+        Case::trouverChemin(de, res, p);
+    else
+        //on insere l'element courant
+        if(std::find(res.begin(), res.end(), this) == res.end())
+        res.push_back(this);
 }
 
 
