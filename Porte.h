@@ -12,15 +12,18 @@ using namespace std;
 class Porte : public Piece
 {
     public:
-        Porte(string nom);                //Constructeur de porte par defaut: appel case
-        Porte(string nom, int a, int b);    //Constructeur de porte avec coordonnee : appel case
+        Porte(string nom, Case* c=NULL);                //Constructeur de porte par defaut: appel case
+        Porte(string nom, int a, int b, Case* c=NULL);    //Constructeur de porte avec coordonnee : appel case
 
-        Porte(const Porte& p, int a, int b); //Construction d'une porte avec une autre porte=meme piece
+        Porte(const Porte& p, int a, int b, Case* c=NULL); //Construction d'une porte avec une autre porte=meme piece
 
         void ajouterPiece(Piece* p);
+        void setCheminSecret(Case* c);
+
 
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
+        virtual void action();
 
         string getNom() const;
         virtual ~Porte();
@@ -30,6 +33,9 @@ class Porte : public Piece
         //Un ensemble de case pièce
         vector <Piece*> tabPiece_;
         string nom_;
+
+        //Certaines pieces ont un passage secret
+        Case* cheminSecret;
 };
 
 #endif // PORTE_H

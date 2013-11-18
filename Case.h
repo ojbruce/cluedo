@@ -25,30 +25,29 @@ class Case{
 		virtual std::string toString();
 
         virtual void trouverChemin(int de, std::vector<Case*> &res, Plateau* p ); // methode qui trouve tous les chemins possibles
-
-
+        virtual void action();
 
         //renvoie le point en haut à gauche de la case en fonction de l'affichage
 		std::pair<int,int> pointHG(int tailleCase, int ecartX, int ecartY);
         std::pair<int,int> milieu(int tailleCase, std::pair<int,int> a);
 
-        //virtual void action();
 
-        //coloration de la case
-        void update(sf::RenderWindow &window);
+
+
+        void update(sf::RenderWindow &window);       //coloration de la case
 
 		//Getter Setter
-		virtual int getX();
-		virtual int getY();
-		virtual int getEstVide();
-		virtual void setEstVide(bool b);
+		virtual int getX();                         //retroune le x
+		virtual int getY();                         //Retourne le y
+		virtual int getEstVide();                   //Retroune si la case est vide
+		virtual void setEstVide(bool b);            //Modifie lsi la case est vide
 
 
 
    protected:
         //Coordonnee
-        int x_;	//largeur du point en haut
-        int y_;	//hauteur du point en bas
+        int x_;	    //largeur du point en haut
+        int y_;	    //hauteur du point en bas
 
         //Etat plein/vide
         bool estVide;

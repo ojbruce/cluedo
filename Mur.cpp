@@ -17,9 +17,24 @@ std::string Mur::toString(){
 	return res;
 }
 
+/**
+ * Methode qui va réaliser l'action selon la case
+ */
+void Mur::action(){
+    //appeler par une Porte on va appeler un ecran
 
-void Mur::trouverChemin(int de, vector<Case*> &res, Plateau* p){
+
+
+
 }
+
+/**
+ * Methode qui trouve tous les chemins possibles
+ * @param de le nombre a parcourir
+ * @param res le vetor des chemins
+ * @param p le plateau
+ */
+void Mur::trouverChemin(int de, vector<Case*> &res, Plateau* p){}
 
 
 Mur::~Mur()

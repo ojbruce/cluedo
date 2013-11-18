@@ -377,34 +377,34 @@
 1381696614 source:/home/olivia/Templates/cluedo/Porte.cpp
 	"Porte.h"
 
-1384781352 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
+1384783949 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1384779905 /comptes/E119850X/Desktop/cluedo/Case.h
+1384783430 /comptes/E119850X/Desktop/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
 	<utility>
 	<vector>
 
-1384779905 source:/comptes/E119850X/Desktop/cluedo/Mur.cpp
+1384783949 source:/comptes/E119850X/Desktop/cluedo/Mur.cpp
 	"Mur.h"
 
-1384241378 /comptes/E119850X/Desktop/cluedo/Mur.h
+1384783950 /comptes/E119850X/Desktop/cluedo/Mur.h
 	"Case.h"
 
-1384241378 source:/comptes/E119850X/Desktop/cluedo/Piece.cpp
+1384783949 source:/comptes/E119850X/Desktop/cluedo/Piece.cpp
 	"Piece.h"
 
-1384241378 /comptes/E119850X/Desktop/cluedo/Piece.h
+1384783950 /comptes/E119850X/Desktop/cluedo/Piece.h
 	<iostream>
 	"Case.h"
 
 1384782360 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
 	"Porte.h"
 
-1384241378 /comptes/E119850X/Desktop/cluedo/Porte.h
+1384784382 /comptes/E119850X/Desktop/cluedo/Porte.h
 	<vector>
 	"Case.h"
 	"Piece.h"
@@ -1211,11 +1211,11 @@
 1384360948 /comptes/E119850X/Desktop/cluedo/Carte.h
 	<string>
 
-1384341486 /comptes/E119850X/Desktop/cluedo/Personnage.h
+1384783149 /comptes/E119850X/Desktop/cluedo/Personnage.h
 	<string>
 	"Case.h"
 
-1384782629 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1384784278 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
 1384782667 /comptes/E119850X/Desktop/cluedo/Partie.h
@@ -1282,4 +1282,9 @@
 
 1384779905 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
+
+1384783100 source:/comptes/E119850X/Desktop/cluedo/CaseAbstraite.cpp
+	"CaseAbstraite.h"
+
+1384783100 /comptes/E119850X/Desktop/cluedo/CaseAbstraite.h
 

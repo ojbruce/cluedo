@@ -20,6 +20,23 @@ std::string Piece::toString(){
 }
 
 
+/**
+ * Methode qui va réaliser l'action selon la case
+ */
+void Piece::action(){
+    //appeler par une Porte on va appeler un ecran
+
+
+
+
+}
+
+/**
+ * Methode qui trouve tous les chemins possibles
+ * @param de le nombre a parcourir
+ * @param res le vetor des chemins
+ * @param p le plateau
+ */
 void Piece::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     //on ne fait rien
 

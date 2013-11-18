@@ -78,7 +78,7 @@ void Partie::update(sf::RenderWindow &window){
                 nCase->setEstVide(false);            //nouvelle case pleine
 
                 //On est dans la nouvelle case
-
+                nCase->action();
 
 
                 //On change les elements de la classe pour que le jeu continue

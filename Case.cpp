@@ -39,7 +39,19 @@ Case::~Case(){
    delete rectangle;
 }
 
+/**
+ * Methode qui va réaliser l'action selon la case
+ */
+void Case::action(){
+    //appeler par une case couloir on ne fait rien
+}
 
+/**
+ * Methode qui trouve tous les chemins possibles
+ * @param de le nombre a parcourir
+ * @param res le vetor des chemins
+ * @param p le plateau
+ */
 void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
 
     //on verifie si la case est vide
@@ -91,6 +103,10 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     }
 }
 
+/**
+ * Methode qui affiche la case
+ *
+ */
 void Case::update(sf::RenderWindow &window){
    rectangle->setFillColor(sf::Color(0, 90, 240,150));
    rectangle->setPosition(x_*20+20,y_*20+20);

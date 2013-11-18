@@ -13,6 +13,7 @@ class Mur : public Case
         Mur(int a, int b);
         virtual ~Mur();
 
+        virtual void action();
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
 
