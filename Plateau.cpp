@@ -114,6 +114,8 @@ bool Plateau::caseValide(int x, int y){
 void Plateau::afficher(sf::RenderWindow &window){
     //on affiche le plateau
 	window.draw(plateau);
+
+
 	if(shape!= NULL ){
 		window.draw(*shape);
 		//trouverChemin(window);

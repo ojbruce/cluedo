@@ -42,7 +42,6 @@ class Joueur
         vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24
 
         sf::Texture im;
-        sf::Sprite joueur;
 
 
 

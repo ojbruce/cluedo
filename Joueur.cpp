@@ -10,11 +10,8 @@ Joueur::Joueur(Personnage* perso): perso_(perso){
     position_= perso_->getPositionDepart();
 
     //Les images
-	//if(!im.loadFromFile(perso_->getPion())){}
-    if(!im.loadFromFile("Images/blanc.png")){}
+	if(!im.loadFromFile(perso_->getPion())){}
 
-	im.setSmooth(true);
-	joueur.setTexture(im);
 }
 
 
@@ -24,11 +21,19 @@ Joueur::~Joueur()
 }
 
 void Joueur::update(sf::RenderWindow &window){
-    joueur.setPosition(position_->getX()*20+21,position_->getY()*20+21);
+
 
     sf::CircleShape shape(7);
     shape.setPosition(position_->getX()*20+21,position_->getY()*20+21);
-	window.draw(shape);
+
+
+	sf::Sprite joueur1;
+	joueur1.setTexture(im);
+
+	joueur1.setPosition(position_->getX()*20+21,position_->getY()*20+21);
+
+    window.draw(joueur1);
+	//window.draw(shape);
 }
 
 /**
