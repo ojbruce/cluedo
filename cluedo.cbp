@@ -79,10 +79,8 @@
 		<Unit filename="Piece.h" />
 		<Unit filename="Plateau.cpp" />
 		<Unit filename="Plateau.h" />
-		<Unit filename="Plein.h" />
 		<Unit filename="Porte.cpp" />
 		<Unit filename="Porte.h" />
-		<Unit filename="Vide.h" />
 		<Unit filename="ZoneAffichageTexte.cpp" />
 		<Unit filename="ZoneAffichageTexte.h" />
 		<Unit filename="main.cpp" />

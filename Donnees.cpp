@@ -72,6 +72,10 @@ Donnees::~Donnees()
 }
 
 
+Carte* Donnees::getCarte(int ind){
+    return &tabCartes[ind];
+}
+
 /**
  *Retourne les cartes mysteres
  *

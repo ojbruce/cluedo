@@ -22,7 +22,7 @@ class Donnees
          Donnees(Plateau* p);
         ~Donnees();
 
-        //Carte getCarte(int indice); // Getter d'une carte du tableau de Carte
+        Carte* getCarte(int indice); // Getter d'une carte du tableau de Carte
         //Personnage getPersonnage(std::string nom);   // Getter d'un personnage du tableau de Personnage
 
         vector<Carte*> initCarteMystere();                  //va renvoyer les 3 cartes

@@ -10,6 +10,8 @@ class Carte
         Carte(string nom, string chemin);   // Constructeur
         virtual ~Carte();                  //Destructeur
 
+        bool operator== (Carte const &c2); // Operateur d'egalite
+
         // Getter
         string getNom();        //retourne le nom
         string getChemin();     //retourne le chemin

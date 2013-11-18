@@ -377,11 +377,11 @@
 1381696614 source:/home/olivia/Templates/cluedo/Porte.cpp
 	"Porte.h"
 
-1384783949 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
+1384797448 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1384783430 /comptes/E119850X/Desktop/cluedo/Case.h
+1384796376 /comptes/E119850X/Desktop/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
@@ -401,7 +401,7 @@
 	<iostream>
 	"Case.h"
 
-1384784591 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
+1384797448 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
 	"Porte.h"
 
 1384784382 /comptes/E119850X/Desktop/cluedo/Porte.h
@@ -757,7 +757,7 @@
 	<string>
 	<vector>
 
-1384794578 source:/comptes/E119850X/Desktop/cluedo/Plateau.cpp
+1384795190 source:/comptes/E119850X/Desktop/cluedo/Plateau.cpp
 	"Plateau.h"
 
 1384795141 source:/comptes/E119850X/Desktop/cluedo/Joueur.cpp
@@ -1205,21 +1205,22 @@
 1384713006 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.cpp
 	"Personnage.h"
 
-1384241378 source:/comptes/E119850X/Desktop/cluedo/Carte.cpp
+1384798531 source:/comptes/E119850X/Desktop/cluedo/Carte.cpp
 	"Carte.h"
 
-1384360948 /comptes/E119850X/Desktop/cluedo/Carte.h
+1384798508 /comptes/E119850X/Desktop/cluedo/Carte.h
 	<string>
 
 1384783149 /comptes/E119850X/Desktop/cluedo/Personnage.h
 	<string>
 	"Case.h"
 
-1384784278 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1384798653 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
-1384782667 /comptes/E119850X/Desktop/cluedo/Partie.h
+1384798594 /comptes/E119850X/Desktop/cluedo/Partie.h
 	<SFML/Graphics.hpp>
+	<iostream>
 	<vector>
 	<cstdlib>
 	"time.h"
@@ -1232,10 +1233,10 @@
 1384779905 source:/comptes/E119850X/Desktop/cluedo/Personnage.cpp
 	"Personnage.h"
 
-1384364091 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
+1384798564 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
 	"Donnees.h"
 
-1384351544 /comptes/E119850X/Desktop/cluedo/Donnees.h
+1384797448 /comptes/E119850X/Desktop/cluedo/Donnees.h
 	<iostream>
 	<fstream>
 	<string>

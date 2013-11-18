@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 
+#include <iostream>
 #include <vector>
 #include <cstdlib> //pour le random
 #include "time.h"
@@ -36,6 +37,7 @@ class Partie
 
         unsigned int nbJoueur_;         //Le nombre de joueur
         vector<Carte*> tabMystere_;     //Les 3 cartes désignant le lieu, le crimier, l'arme
+        vector<Carte*> tabSoupcon_;     //Les 3 cartes désignant le lieu, le crimier, l'arme
         vector <Joueur> tabJoueur_;     //Le tableau contenant les joueurs
         vector<Case*> chemin;           //Le tableau de chemin
 

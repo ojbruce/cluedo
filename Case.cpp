@@ -187,7 +187,7 @@ void Case::setEstVide(bool b){
 
 /**
  * Operateur d'egalite
- * @param p2 le second joueur
+ * @param c2 la seconde case
  **/
 bool Case::operator== (Case const &c2)
 {

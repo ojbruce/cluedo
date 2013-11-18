@@ -53,8 +53,14 @@ string Porte::getNom() const{
  */
 void Porte::action(){
     //appeler par une Porte on va appeler un ecran
+    cerr<< "Porte::action"<<endl;
+
+    //on decide si on soupconne ou pas
+
+    //on decide de 3 cartes
 
 
+    //Renvoie un bool et 3 pointeur vers cartes
 
 
 }

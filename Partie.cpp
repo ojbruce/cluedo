@@ -39,13 +39,11 @@ int Partie::lancerDe(){
 
 void Partie::update(sf::RenderWindow &window){
 
-    //on recupere la position
-    sf::Vector2i souris = sf::Mouse::getPosition(window);
+    sf::Vector2i souris = sf::Mouse::getPosition(window);   //on recupere la position
 
 	if(p->positionValide(souris.x,souris.y)){
 
-        //on prend le joueur par refernce
-        Joueur &j =tabJoueur_.at(joueurCourant);
+        Joueur &j =tabJoueur_.at(joueurCourant);    //on prend le joueur par refernce
 
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
         if(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 && !deClique_ ){
@@ -59,11 +57,11 @@ void Partie::update(sf::RenderWindow &window){
             deClique_=true;
         }
 
-        //si le joueur clique sur des cases et à cliquer sur le dé avant
-        if(deClique_ && !(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 ) ){
 
-            //On trouve la case
-            Case* nCase= p->trouverCase(souris.x,souris.y);
+        if(deClique_ && !(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 ) ){
+            //si le joueur clique sur des cases et à cliquer sur le dé avant
+
+            Case* nCase= p->trouverCase(souris.x,souris.y);     //On trouve la case
 
             //Verifier que la case cliquer est bien dans le tableau des chemins
             if(std::find(chemin.begin(), chemin.end(), nCase) == chemin.end()){
@@ -78,7 +76,26 @@ void Partie::update(sf::RenderWindow &window){
                 nCase->setEstVide(false);            //nouvelle case pleine
 
                 //On est dans la nouvelle case
-                nCase->action();
+                nCase->action(); // Va renvoyer les 3 cartes et si on soupconne
+
+
+                int x;
+                cout <<"lol"<<endl;
+                cin >>x;
+
+                //on verifie que les cartes sont les mysteres
+                //Carte* c1=donnees.getCarte(0);
+                //Carte* c2=donnees.getCarte(5);
+                //Carte* c3=donnees.getCarte(10);
+
+                //std::find(tabMystere_.begin(), tabMystere_.end(), c1) == tabMystere_.end(){tabSoupcon_.push_back(c1);}
+                //std::find(tabMystere_.begin(), tabMystere_.end(), c2) == tabMystere_.end(){tabSoupcon_.push_back(c2);}
+                //std::find(tabMystere_.begin(), tabMystere_.end(), c3) == tabMystere_.end(){tabSoupcon_.push_back(c3);}
+
+
+
+
+
 
 
                 //On change les elements de la classe pour que le jeu continue
