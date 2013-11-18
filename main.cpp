@@ -24,9 +24,5 @@ int main(void)
 
     Jeu j; j.lancerJeu();
 
-
-
-
-
     return 0;
 }

@@ -10,8 +10,8 @@ Joueur::Joueur(Personnage* perso): perso_(perso){
     position_= perso_->getPositionDepart();
 
     //Les images
-	if(!im.loadFromFile(perso_->getPion())){}
-    //if(!im.loadFromFile("Images/blanc.png")){}
+	//if(!im.loadFromFile(perso_->getPion())){}
+    if(!im.loadFromFile("Images/blanc.png")){}
 
 	im.setSmooth(true);
 	joueur.setTexture(im);

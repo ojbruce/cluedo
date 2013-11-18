@@ -44,8 +44,9 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
 
     //on verifie si la case est vide
     if(estVide){
-        //on insere l'element courant
-        res.push_back(this);
+        //on insere l'element courant si il n'est pas deja present
+        if(std::find(res.begin(), res.end(), this) == res.end())
+            res.push_back(this);
 
 
         //On va parcourir les cases tant que les des sont supérieurs a zero
@@ -65,30 +66,26 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
             // La case du haut
             if(p->caseValide(x_,y_-1)){
                 Case* cHaut = p->getCase(x_,y_-1);
-                if(std::find(res.begin(), res.end(), cHaut) == res.end())
-                    cHaut->trouverChemin(de-1, res,p);
+                cHaut->trouverChemin(de-1, res,p);
 
             }
 
             // La case à gauche
             if(p->caseValide(x_-1,y_)){
                 Case* cGauche = p->getCase(x_-1,y_);
-                if(std::find(res.begin(), res.end(), cGauche) == res.end())
-                    cGauche->trouverChemin(de-1, res,p);
+                cGauche->trouverChemin(de-1, res,p);
             }
 
             // La case du bas
             if(p->caseValide(x_,y_+1)){
                 Case* cBas = p->getCase(x_,y_+1);
-                if(std::find(res.begin(), res.end(), cBas) == res.end())
-                    cBas->trouverChemin(de-1, res,p);
+                cBas->trouverChemin(de-1, res,p);
             }
 
             // La case à droite
             if(p->caseValide(x_+1,y_)){
                 Case* cDroite = p->getCase(x_+1,y_);
-                if(std::find(res.begin(), res.end(), cDroite) == res.end())
-                    cDroite->trouverChemin(de-1, res,p);
+                cDroite->trouverChemin(de-1, res,p);
             }
         }
     }
