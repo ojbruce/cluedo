@@ -106,7 +106,7 @@ void Partie::afficher(sf::RenderWindow &window){
     std::string result = sstm.str();
     sf::Text* text;
 
-    sf::Text* joueur = new sf::Text("Joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
+    sf::Text* joueur = new sf::Text("A vous joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
     joueur->setPosition(220,220);
     joueur->setCharacterSize(11);
 

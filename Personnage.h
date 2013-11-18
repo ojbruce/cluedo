@@ -14,7 +14,7 @@ class Personnage
 
         Personnage(string nom, string couleur,string pion); //Constructeur
         bool operator== (Personnage const &p2);             //Operateur egalite
-        virtual ~Personnage();  //destructeur
+        virtual ~Personnage();                              //destructeur
 
         //Setters
         void setPositionDepart(Case* cas);
@@ -23,7 +23,7 @@ class Personnage
         Case* getPositionDepart();  //Recupere la position de depart
         string getNom();            //Recupere le nom
         string getCouleur();        //Recupere la couleur
-        string getPion();
+        string getPion();           //Recupere le chemin vers le pion
 
 
     private:
