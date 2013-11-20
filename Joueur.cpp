@@ -20,12 +20,10 @@ Joueur::~Joueur()
 
 }
 
+/**
+ * Methode qui update le joueur
+ */
 void Joueur::update(sf::RenderWindow &window){
-
-
-    sf::CircleShape shape(7);
-    shape.setPosition(position_->getX()*20+21,position_->getY()*20+21);
-
 
 	sf::Sprite joueur1;
 	joueur1.setTexture(im);
@@ -33,7 +31,6 @@ void Joueur::update(sf::RenderWindow &window){
 	joueur1.setPosition(position_->getX()*20+21,position_->getY()*20+21);
 
     window.draw(joueur1);
-	//window.draw(shape);
 }
 
 /**

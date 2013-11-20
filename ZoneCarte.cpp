@@ -3,6 +3,7 @@
 ZoneCarte::ZoneCarte(): limY_(550)
 {
     //ctor
+    if(!texture.loadFromFile("Images/carteVide.png")){}
 }
 
 ZoneCarte::~ZoneCarte()
@@ -27,6 +28,20 @@ void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
 
         posx+=108;
 
+    }
+
+    if(posx != 1296){
+
+        for(unsigned int j=0; j < vec.size(); j++){
+
+            sp.setTexture(texture);
+            sp.setPosition(posx,limY_);
+
+            window.draw(sp);
+
+            posx+=108;
+
+        }
     }
 
 }

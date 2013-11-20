@@ -17,7 +17,9 @@ class ZoneCarte
         void afficherCarte(Joueur j, sf::RenderWindow &window);
 
     private:
-        int limY_;
+        int limY_; //La limite vers le bas en y
+
+        sf::Texture texture;
 
 };
 
