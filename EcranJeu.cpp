@@ -1,8 +1,9 @@
 #include "EcranJeu.h"
 
-EcranJeu::EcranJeu(Donnees d): part(3,&p, &zoneText, &zoneCarte, d)
+EcranJeu::EcranJeu(Donnees &d): part(3,&p, &zoneText, &zoneCarte, d)
 {
     //ctor
+    cerr<<"EcranJeu::Crea "<<endl;
 }
 
 EcranJeu::~EcranJeu()
@@ -16,7 +17,7 @@ EcranJeu::~EcranJeu()
  *
  */
 void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
-   // plateau.afficher();
+
     while (window.pollEvent(event))
     {
         //Gere la fermeture de la fenetre

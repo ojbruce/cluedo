@@ -377,35 +377,37 @@
 1381696614 source:/home/olivia/Templates/cluedo/Porte.cpp
 	"Porte.h"
 
-1384797448 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
+1384964433 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1384796376 /comptes/E119850X/Desktop/cluedo/Case.h
+1384964433 /comptes/E119850X/Desktop/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
 	<utility>
 	<vector>
 
-1384783949 source:/comptes/E119850X/Desktop/cluedo/Mur.cpp
+1384964433 source:/comptes/E119850X/Desktop/cluedo/Mur.cpp
 	"Mur.h"
 
-1384783950 /comptes/E119850X/Desktop/cluedo/Mur.h
+1384964433 /comptes/E119850X/Desktop/cluedo/Mur.h
 	"Case.h"
 
-1384783949 source:/comptes/E119850X/Desktop/cluedo/Piece.cpp
+1384964433 source:/comptes/E119850X/Desktop/cluedo/Piece.cpp
 	"Piece.h"
 
-1384783950 /comptes/E119850X/Desktop/cluedo/Piece.h
+1384964433 /comptes/E119850X/Desktop/cluedo/Piece.h
 	<iostream>
 	"Case.h"
 
-1384797448 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
+1384965283 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
 	"Porte.h"
 
-1384784382 /comptes/E119850X/Desktop/cluedo/Porte.h
+1384965377 /comptes/E119850X/Desktop/cluedo/Porte.h
 	<vector>
+	<iostream>
+	<cstdlib>
 	"Case.h"
 	"Piece.h"
 
@@ -1048,17 +1050,17 @@
 1384264748 /comptes/E119850X/Desktop/cluedo/Ecran.h
 	<SFML/Graphics.hpp>
 
-1384961232 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
+1384968520 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
 	"EcranJeu.h"
 
-1384961173 /comptes/E119850X/Desktop/cluedo/EcranJeu.h
+1384968648 /comptes/E119850X/Desktop/cluedo/EcranJeu.h
 	<SFML/Graphics.hpp>
 	"Ecran.h"
 	"Plateau.h"
 	"Partie.h"
 	"ZoneAffichageTexte.h"
 
-1384961173 /comptes/E119850X/Desktop/cluedo/ManagerEcran.h
+1384968648 /comptes/E119850X/Desktop/cluedo/ManagerEcran.h
 	"Ecran.h"
 	"EcranJeu.h"
 	"EcranAccueil.h"
@@ -1209,7 +1211,7 @@
 1384944537 source:/comptes/E119850X/Desktop/cluedo/Carte.cpp
 	"Carte.h"
 
-1384944537 /comptes/E119850X/Desktop/cluedo/Carte.h
+1384962455 /comptes/E119850X/Desktop/cluedo/Carte.h
 	<SFML/Graphics.hpp>
 	<string>
 
@@ -1217,10 +1219,10 @@
 	<string>
 	"Case.h"
 
-1384961289 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1384968384 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
-1384960796 /comptes/E119850X/Desktop/cluedo/Partie.h
+1384968308 /comptes/E119850X/Desktop/cluedo/Partie.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<vector>
@@ -1282,9 +1284,10 @@
 1384709243 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
 
-1384779905 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
+1384967675 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
+	<SFML/Graphics.hpp>
 
-1384779905 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
+1384967721 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
 
 1384783100 source:/comptes/E119850X/Desktop/cluedo/CaseAbstraite.cpp

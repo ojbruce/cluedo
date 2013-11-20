@@ -18,7 +18,7 @@ Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* z
 
     //distribution des cartes aux joueurs
     donnees.distribuerCarte(tabJoueur_);
-
+    cerr<<"Creation Partie"<<endl;
 }
 
 Partie::~Partie()
@@ -75,11 +75,7 @@ void Partie::update(sf::RenderWindow &window){
                 nCase->setEstVide(false);            //nouvelle case pleine
 
                 //On est dans la nouvelle case
-                nCase->action(); // Va renvoyer les 3 cartes et si on soupconne
-
-
-
-
+                //bool gagn = nCase->action(); // Va renvoyer les 3 cartes et si on soupconne 1 accusation 0 soupcon
 
 
                 //On change les elements de la classe pour que le jeu continue
@@ -93,6 +89,13 @@ void Partie::update(sf::RenderWindow &window){
                     joueurCourant++;
                 else
                     joueurCourant =0;
+
+                /*if(gagn){
+                    tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
+                    if(tabJoueur_.size()==1){
+                        partieFini_=true;
+                    }
+                }*/
             }
         }
 
@@ -140,5 +143,8 @@ void Partie::afficher(sf::RenderWindow &window){
 
 }
 
+bool Partie::getPartieFini(){
+    return partieFini_;
+}
 
 

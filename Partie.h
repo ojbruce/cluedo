@@ -26,6 +26,8 @@ class Partie
         void update(sf::RenderWindow &window);
         void afficher(sf::RenderWindow &window);
 
+        bool getPartieFini();
+
 
     private:
         //Attributs
