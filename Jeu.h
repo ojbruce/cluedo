@@ -16,9 +16,11 @@ class Jeu
 
         void lancerJeu();
 
-    protected:
+
     private:
+        //Donnees donnees;
         ManagerEcran manEcran;
+
 
 };
 

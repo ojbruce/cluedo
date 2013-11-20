@@ -3,18 +3,12 @@
 using namespace sf;
 using namespace std;
 
-Plateau::Plateau(): shape(NULL)
+Plateau::Plateau()
 {
 	//on récupere limage du plateau et on l'affiche
-	if(!im.loadFromFile("Donnees/plateaurefait.png"))
-	{
-    }
-
+	if(!im.loadFromFile("Donnees/plateaurefait.png")){}
 	im.setSmooth(true);
 	plateau.setTexture(im);
-
-	//On place le perso à sa position
-	j1.setPosition(tab[0][9]);
 
     //on met les pointeurs vers cases à NULL
     for(int i=0; i<hautPlateau_;i++){
@@ -57,75 +51,41 @@ Case* Plateau::trouverCase(int x, int y){
 }
 
 
-
-void Plateau::trouverChemin(sf::RenderWindow &window){
-    //notre tableau de pointeur vers case
-   /* vector<Case*> chemin;
-    tab[0][9]->trouverChemin(15, chemin,this, );
-    sf::CircleShape* sherr = new sf::CircleShape(2);
-    sherr->setFillColor(sf::Color::Blue);
-
-
-    for(unsigned int i=0; i<chemin.size(); i++){
-
-        cerr<<"chemin: x "<< chemin[i]->getX() <<" y :"<< chemin[i]->getY()<<endl;
-        //pair<int, int> p = chemin[i]->milieu(tailleCase_, chemin[i]->pointHG(tailleCase_, ecartX_,ecartY_));
-
-        pair<int, int> p= chemin[i]->pointHG(tailleCase_, ecartX_,ecartY_); //permet de trouver le haut gauche de la case
-        p = chemin[i]->milieu(tailleCase_, p);    //trouve une positon pour le cercle
-
-        sherr->setPosition(p.first, p.second);
-
-        window.draw(*sherr);
-    }*/
-}
-
-
-
-
-
-/*****************************************************************
-***********************Methode pour case**************************
-******************************************************************/
-
+/**
+ * Retourne un pointeur vers une case du tableau
+ *
+ */
 Case* Plateau::getCase(int x, int y){
     return tab[y][x];
 }
 
+/**
+ * Pour Case::trouverChemin verifie si on ne depasse pas les bords du tableau
+ *
+ */
 bool Plateau::caseValide(int x, int y){
     //verification des positions invalides
     if(x < 0 || y < 0 || x >= largPlateau_ || y >= hautPlateau_)
         return false;
     else
         return true;
-
 }
 
-
-
-/*******************************************************************
-**************************Affichage*********************************
-********************************************************************/
+//Affichage
 
 /**
  * Methode qui affiche l'image du plateau
- *
+ * Affichage de l'interface
 **/
 void Plateau::afficher(sf::RenderWindow &window){
     //on affiche le plateau
 	window.draw(plateau);
-
-
-	if(shape!= NULL ){
-		window.draw(*shape);
-		//trouverChemin(window);
-    }
 }
 
 
 /**
  * Methode qui affiche la structure du plateau
- *
+ * Affichage d'erreur
  **/
 void Plateau::afficher(){
 
@@ -140,35 +100,11 @@ void Plateau::afficher(){
 }
 
 
-/**
- * Methode qui renvoie la position de la souris
- *
- **/
-void Plateau::positionSouris(sf::RenderWindow &window){
-    cerr <<"passage dans souris"<< endl;
-    //On recupere la postion de la souris lorsque l'on a cliqué
-	sf::Vector2i souris = sf::Mouse::getPosition(window);
-	cerr <<"x: " << souris.x << "y: " << souris.y << endl;
-
-    //si la position est valide on positionne le point
-    if(positionValide(souris.x,souris.y)){
-        //On trouve la case du plateau ou on va afficher notre pion
-        Case *trouver=trouverCase(souris.x,souris.y);
-        pair<int, int> p= trouver->pointHG(tailleCase_, ecartX_,ecartY_); //permet de trouver le haut gauche de la case
-        p = trouver->milieu(tailleCase_, p);    //trouve une positon pour le cercle
-
-        //On positionne le cercle
-        shape = new sf::CircleShape(7);
-        shape->setFillColor(sf::Color::Blue);
-        shape->setPosition(p.first, p.second);
-    }
-
-}
 
 /**
- * Methode qui renvoie si la position sur laquelle on clique est dans le tableau du plateau
+ * Methode qui renvoie si la position de la souris est sur le plateau
  *
- */
+*/
 bool Plateau::positionValide(int x, int y){
 
     bool valid = true;

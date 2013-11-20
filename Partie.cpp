@@ -2,7 +2,7 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC): donnees(plat),partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
+Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC): partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
@@ -13,13 +13,11 @@ Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* z
     //initialise le tableau des cartes mysteres
     tabMystere_ = donnees.initCarteMystere();
 
-     //distribution des cartes aux joueurs
-     donnees.distribuerCarte(tabJoueur_);
+    //distribution des cartes aux joueurs
+    donnees.distribuerCarte(tabJoueur_);
 
-
-
-    //afficher les joueurs
-
+    donnees.positionnerPerso(p);
+    cerr<<"Fin creation partie" <<endl;
 }
 
 Partie::~Partie()
@@ -38,7 +36,7 @@ int Partie::lancerDe(){
 }
 
 void Partie::update(sf::RenderWindow &window){
-
+    cerr<<"lala"<<endl;
     sf::Vector2i souris = sf::Mouse::getPosition(window);   //on recupere la position
 
 	if(p->positionValide(souris.x,souris.y)){

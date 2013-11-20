@@ -9,6 +9,7 @@
 #include "Mur.h"
 #include "Porte.h"
 #include "Joueur.h"
+#include "Donnees.h"
 
 class Plateau{
 
@@ -19,26 +20,20 @@ class Plateau{
 		void afficher();                                /*affichage pour eventuel erreur*/
 		void afficher(sf::RenderWindow &window);		//méthode qui va afficher le plateau
 
-		void positionSouris(sf::RenderWindow &window);  // Retrouve la position de la souris sur le plateau
+
 		bool positionValide(int x, int y);              //Retourne si la position actuelle de la souris est bien sur le plateau
+        bool caseValide(int x, int y);                  // Renvoie si la case est valide dans le plateau
 
-		Case* trouverCase(int x, int y);                // trouve la case à la position x et y
-
-        void trouverChemin(sf::RenderWindow &window);   //permet d'indiquer tous les chemins à partir d'un jet de de
-
-
-		bool caseValide(int x, int y);                  // Renvoie si la case est valide dans le plateau
+		Case* trouverCase(int x, int y);                // trouve la case à la position x et y en fonction de l'ecran
 
         //accesseur
         Case* getCase(int x, int y);
 
 
-    protected:
     private:
         //Initier les cases
         void initCases();
         void creerMur(int a, int b);
-
 
 		//Constantes du plateau
 		const static int largPlateau_ = 24; 	//largeur de plateau
@@ -51,12 +46,6 @@ class Plateau{
 		//Image du plateau
 		sf::Texture im;
 		sf::Sprite plateau;
-
-		//Joueur j1
-		Joueur j1;
-
-		//Image du pion bleu
-		sf::CircleShape *shape;
 
 		//Tableau a deux dimensions de case
 		Case* tab[hautPlateau_][largPlateau_];
