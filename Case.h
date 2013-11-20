@@ -25,7 +25,7 @@ class Case{
 		virtual std::string toString();
 
         virtual void trouverChemin(int de, std::vector<Case*> &res, Plateau* p ); // methode qui trouve tous les chemins possibles
-        virtual void action();
+        virtual bool action();
 
         //renvoie le point en haut à gauche de la case en fonction de l'affichage
 		std::pair<int,int> pointHG(int tailleCase, int ecartX, int ecartY);

@@ -2,12 +2,14 @@
 #define PORTE_H
 
 #include <vector>
+#include <iostream>
+#include <cstdlib>
 
 //Pour l'heritage
 #include "Case.h"
 #include "Piece.h"
 
-using namespace std;
+
 
 class Porte : public Piece
 {
@@ -23,7 +25,7 @@ class Porte : public Piece
 
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
-        virtual void action();
+        virtual bool action();
 
         string getNom() const;
         virtual ~Porte();
@@ -36,6 +38,7 @@ class Porte : public Piece
 
         //Certaines pieces ont un passage secret
         Case* cheminSecret;
+        sf::Text porte;
 };
 
 #endif // PORTE_H

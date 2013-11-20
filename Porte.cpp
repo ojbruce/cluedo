@@ -1,4 +1,7 @@
 #include "Porte.h"
+
+using namespace std;
+
 /**
  *Constructeur
  */
@@ -51,18 +54,32 @@ string Porte::getNom() const{
 /**
  * Methode qui va réaliser l'action selon la case
  */
-void Porte::action(){
+bool Porte::action(){
     //appeler par une Porte on va appeler un ecran
     cerr<< "Porte::action"<<endl;
 
+    std::string soup;
+    std::string nom1;
+    std::string nom2;
+
+    cout<<"Accuser ou Soupconner? a/c" << endl;
+    cin>>soup;
+
+    cout<<"Entrer deux noms: " << endl;
+    cin>>nom1;
+    cin>>nom2;
+
     //on decide si on soupconne ou pas
+    if(soup=="a"){
+        return true;
+
+    }else if(soup=="c"){
+
+    }
 
     //on decide de 3 cartes
-
-
     //Renvoie un bool et 3 pointeur vers cartes
-
-
+    return false;
 }
 
 /**

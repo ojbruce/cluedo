@@ -42,8 +42,9 @@ Case::~Case(){
 /**
  * Methode qui va réaliser l'action selon la case
  */
-void Case::action(){
-    //appeler par une case couloir on ne fait rien
+bool Case::action(){
+    //on renvoie false c'est qu'il n'a pas gagne
+    return false;
 }
 
 /**

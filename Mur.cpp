@@ -20,12 +20,9 @@ std::string Mur::toString(){
 /**
  * Methode qui va réaliser l'action selon la case
  */
-void Mur::action(){
+bool Mur::action(){
     //appeler par une Porte on va appeler un ecran
-
-
-
-
+    return false;
 }
 
 /**
