@@ -11,7 +11,6 @@ Personnage::Personnage(string n, string c, string pio): nom(n), couleur(c),pion(
  */
 Personnage::~Personnage()
 {
-    //cerr<<"Personnage:: destruction : " << nom << endl;
 }
 
 void Personnage::setPositionDepart(Case* cas){

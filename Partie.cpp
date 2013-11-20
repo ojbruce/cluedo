@@ -7,6 +7,9 @@ Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* z
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
 
+    //on positionne les joueurs creer dans donnee
+    donnees.positionnerPerso(p);
+
     //initialise le tableau de joueur
     tabJoueur_= donnees.initJoueur(nbJ);
 
@@ -16,8 +19,6 @@ Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* z
     //distribution des cartes aux joueurs
     donnees.distribuerCarte(tabJoueur_);
 
-    donnees.positionnerPerso(p);
-    cerr<<"Fin creation partie" <<endl;
 }
 
 Partie::~Partie()
@@ -36,7 +37,7 @@ int Partie::lancerDe(){
 }
 
 void Partie::update(sf::RenderWindow &window){
-    cerr<<"lala"<<endl;
+
     sf::Vector2i souris = sf::Mouse::getPosition(window);   //on recupere la position
 
 	if(p->positionValide(souris.x,souris.y)){
@@ -139,6 +140,7 @@ void Partie::afficher(sf::RenderWindow &window){
     for(unsigned int j=0; j < chemin.size(); j++){
         chemin.at(j)->update(window);
     }
+
 
     //affichage du joueur
     for(unsigned int i=0; i < tabJoueur_.size(); i++){

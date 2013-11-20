@@ -15,6 +15,5 @@ ManagerEcran::~ManagerEcran()
 
 }
 void ManagerEcran::update(sf::RenderWindow &window, sf::Event event){
-    cerr<<"hello"<<endl;
     ecranCourant->update(window, event);
 }

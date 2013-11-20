@@ -17,7 +17,6 @@ EcranJeu::~EcranJeu()
  */
 void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
    // plateau.afficher();
-
     while (window.pollEvent(event))
     {
         //Gere la fermeture de la fenetre
@@ -27,6 +26,7 @@ void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
         if (event.type == sf::Event::MouseButtonPressed){
             //on retroune la position de la souris et on affiche un pion à la position
             part.update(window);
+
         }
     }
 
