@@ -2,7 +2,7 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zone1): donnees(plat),partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zone1) {
+Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC): donnees(plat),partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
@@ -79,9 +79,9 @@ void Partie::update(sf::RenderWindow &window){
                 nCase->action(); // Va renvoyer les 3 cartes et si on soupconne
 
 
-                int x;
-                cout <<"lol"<<endl;
-                cin >>x;
+                //int x;
+                //cout <<"Entrer un nom"<<endl;
+               //cin >>x;
 
                 //on verifie que les cartes sont les mysteres
                 //Carte* c1=donnees.getCarte(0);
@@ -136,6 +136,7 @@ void Partie::afficher(sf::RenderWindow &window){
     text->setPosition(220,300);
     text->setCharacterSize(11);
 
+
     //affichage du chemin bleu
     for(unsigned int j=0; j < chemin.size(); j++){
         chemin.at(j)->update(window);
@@ -145,6 +146,9 @@ void Partie::afficher(sf::RenderWindow &window){
     for(unsigned int i=0; i < tabJoueur_.size(); i++){
         tabJoueur_.at(i).update(window);
     }
+
+    //afficher les cartes du joueur en cour
+    zoneCarte->afficherCarte(tabJoueur_.at(joueurCourant), window);
 
     window.draw(*joueur);
     window.draw(*text);

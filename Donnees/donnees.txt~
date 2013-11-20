@@ -1,38 +1,38 @@
 **************************************************************
 ********** Donnees necessaires au tableau de Cartes **********
 **************************************************************
-Ballroom /Images/ballroom.png
-Billiard-room /Images/billiardroom.png
-Conservatory /Images/conservatory.png
-Dining-room /Images/diningroom.png
-Hall /Images/hall.png
-Kitchen /Images/kitchen.png
-Library /Images/library.png
-Lounge /Images/lounge.png
-Study /Images/study.png
-Reverend-Green /Images/green.png
-Mrs-Meadow-Brook /Images/meadowbrook.png
-Colonel-Mustard /Images/mustard.png
-Mrs-Peacock /Images/peacock.png
-Professor-Plum /Images/plum.png
-Mr-Rusty /Images/rusty.png
-Miss-Scarlett /Images/scarlett.png
-Mrs-White /Images/white.png
-Jade-Hairpin /Images/hairpin.png
-Letter-Opener /Images/letteropener.png
-Crystal-Paperweight /Images/paperweight.png
-Rare-Book /Images/rarebook.png
-Gold-Pen /Images/pen.png
-Revolver /Images/revolver.png
-Telescope /Images/telescope.png
+Ballroom Images/ballroom.png
+Billiard-room Images/billiardroom.png
+Conservatory Images/conservatory.png
+Dining-room Images/diningroom.png
+Hall Images/hall.png
+Kitchen Images/kitchen.png
+Library Images/library.png
+Lounge Images/lounge.png
+Study Images/study.png
+Reverend-Green Images/green.png
+Mrs-Meadow-Brook Images/meadowbrook.png
+Colonel-Mustard Images/mustard.png
+Mrs-Peacock Images/peacock.png
+Professor-Plum Images/plum.png
+Mr-Rusty Images/rusty.png
+Miss-Scarlett Images/scarlett.png
+Mrs-White Images/white.png
+Jade-Hairpin Images/hairpin.png
+Letter-Opener Images/letteropener.png
+Crystal-Paperweight Images/paperweight.png
+Rare-Book Images/rarebook.png
+Gold-Pen Images/pen.png
+Revolver Images/revolver.png
+Telescope Images/telescope.png
 **************************************************************
 ******* Donnees necessaires au tableau de Personnages ********
 **************************************************************
-Reverend Green vert /Images/vert.png
-Mrs Meadow-Brook turquoise /Images/turquoise.png
-Colonel Mustard jaune /Images/jaune.png
-Mrs Peacock bleu /Images/bleu.png
-Professor Plum violet /Images/violet.png
-Mr Rusty orange /Images/orange.png
-Miss Scarlett rouge /Images/rouge.png
-Mrs White blanc /Images/blanc.png
+Reverend Green vert Images/vert.png
+Mrs Meadow-Brook turquoise Images/turquoise.png
+Colonel Mustard jaune Images/jaune.png
+Mrs Peacock bleu Images/bleu.png
+Professor Plum violet Images/violet.png
+Mr Rusty orange Images/orange.png
+Miss Scarlett rouge Images/rouge.png
+Mrs White blanc Images/blanc.png

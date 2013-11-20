@@ -3,9 +3,11 @@
 /**
 * Constructeur
 */
-Carte::Carte(string nom, string chemin){
-    this->nom = nom;
-    this->chemin = chemin;
+Carte::Carte(string n, string ch){
+    nom = n;
+    chemin = ch;
+
+     if(!texture.loadFromFile(chemin)){}
 }
 
 Carte::~Carte(){}
@@ -15,7 +17,15 @@ Carte::~Carte(){}
  * @return nom le nom de la carte
  */
 string Carte::getNom(){
-    return this->nom;
+    return nom;
+}
+
+/**
+ * Recupere la texture de la carte
+ * @return nom le nom de la carte
+ */
+sf::Texture& Carte::getTexture(){
+    return texture;
 }
 
 /**
@@ -23,7 +33,7 @@ string Carte::getNom(){
 * @return chemin le chemin absolu vers la carte
 */
 string Carte::getChemin(){
-    return this->chemin;
+    return chemin;
 }
 
 /**

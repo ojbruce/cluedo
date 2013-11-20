@@ -4,7 +4,7 @@
 Ballroom Images/ballroom.png
 Billiard-room Images/billiardroom.png
 Conservatory Images/conservatory.png
-Dining-room /Images/diningroom.png
+Dining-room Images/diningroom.png
 Hall Images/hall.png
 Kitchen Images/kitchen.png
 Library Images/library.png
@@ -21,7 +21,7 @@ Mrs-White Images/white.png
 Jade-Hairpin Images/hairpin.png
 Letter-Opener Images/letteropener.png
 Crystal-Paperweight Images/paperweight.png
-Rare-Book Images/rarebook.png
+Rare-Book Images/book.png
 Gold-Pen Images/pen.png
 Revolver Images/revolver.png
 Telescope Images/telescope.png

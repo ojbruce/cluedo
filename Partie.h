@@ -13,13 +13,14 @@
 #include "Plateau.h"
 #include "Donnees.h"
 #include "ZoneAffichageTexte.h"
+#include "ZoneCarte.h"
 
 
 class Partie
 {
     public:
         //Partie();
-        Partie(int nbJ, Plateau* plat, ZoneAffichageTexte* zone1);
+        Partie(int nbJ, Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC);
         ~Partie();
 
         void update(sf::RenderWindow &window);
@@ -43,6 +44,7 @@ class Partie
 
         Plateau* p;                     //Le plateau de jeu
         ZoneAffichageTexte* zoneText;   //La zone de texte
+        ZoneCarte* zoneCarte;  //La zone des cartes
 
         sf::Text* texte;
         sf::Font font;

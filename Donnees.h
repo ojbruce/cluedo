@@ -27,7 +27,7 @@ class Donnees
 
         vector<Carte*> initCarteMystere();                  //va renvoyer les 3 cartes
         vector<Joueur> initJoueur(int n);                   //va renvoyer un n nombre de joueur avec des persos aléatoires
-        void distribuerCarte(vector<Joueur> lesJoueurs);    //va distribuer les cartes aux joueurs
+        void distribuerCarte(vector<Joueur> &lesJoueurs);    //va distribuer les cartes aux joueurs
 
 
     private:

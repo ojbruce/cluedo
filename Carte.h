@@ -1,7 +1,9 @@
 #ifndef DEF_CARTE
 #define DEF_CARTE
 
+#include <SFML/Graphics.hpp>
 #include<string>
+
 using namespace std;
 
 class Carte
@@ -15,13 +17,13 @@ class Carte
         // Getter
         string getNom();        //retourne le nom
         string getChemin();     //retourne le chemin
+        sf::Texture& getTexture();
 
     private:
 
         string nom;
         string chemin;
-
-
+        sf::Texture texture;
 };
 
 #endif

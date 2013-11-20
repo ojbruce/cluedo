@@ -13,7 +13,7 @@ Jeu::~Jeu()
 void Jeu::lancerJeu(){
 
     //Creation d'une fenetre
-    sf::RenderWindow window(sf::VideoMode(1200, 700), "Jeu du cluedo", sf::Style::Titlebar|sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(1296, 710), "Jeu du cluedo", sf::Style::Titlebar|sf::Style::Close);
 
    	while (window.isOpen())
     {

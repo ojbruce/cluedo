@@ -17,9 +17,11 @@ class EcranJeu : public Ecran
 
     protected:
     private:
-        Plateau p;
-        ZoneAffichageTexte zoneText;
-        Partie part;
+        Plateau p;                      //Le plateau
+        ZoneAffichageTexte zoneText;    //La zone des textes
+        ZoneCarte zoneCarte;  //La zone des cartes
+
+        Partie part;                    //La partie
 
 };
 

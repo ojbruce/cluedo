@@ -1,6 +1,6 @@
 #include "EcranJeu.h"
 
-EcranJeu::EcranJeu(): part(2,&p, &zoneText)
+EcranJeu::EcranJeu(): part(2,&p, &zoneText, &zoneCarte)
 {
     //ctor
 }
@@ -12,7 +12,7 @@ EcranJeu::~EcranJeu()
 
 
 /**
- *
+ *  Methode qui update l'ecran et l'affiche
  *
  */
 void EcranJeu::update(sf::RenderWindow &window, sf::Event event){

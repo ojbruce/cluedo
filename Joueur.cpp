@@ -51,9 +51,15 @@ void Joueur::ajouterCarteDepart(Carte* c){
  **/
 void Joueur::ajouterCarteVu(Carte* c){
     tabCarteVu.push_back(c);
-
 }
 
+/**
+ * Getter des cartes vus
+ * @return le tableau de carte
+ **/
+vector<Carte*> Joueur::getCarteVu(){
+    return tabCarteVu;
+}
 
 /**
  * Getter de la position

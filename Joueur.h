@@ -18,12 +18,7 @@ class Joueur
         Joueur();                           //Constructeur par defaut
         Joueur(Personnage* p);              //Constructeur avec un personnage prédéfini
         bool operator== (Joueur const &p2); // Operateur d'egalite
-
-        Personnage* getPerso();
-        Case* getPosition();                // Retourne la positon du joueur
-        void setPosition(Case* c);          //met la position du joueur à jour
-
-        /*A voir ajouter la dernier piece visitee*/
+        virtual ~Joueur();
 
         void ajouterCarteDepart(Carte* c);  //Ajoute les cartes de depart du joueur
         void ajouterCarteVu(Carte* c);      //Ajoute les cartes vu par le joueur
@@ -31,12 +26,17 @@ class Joueur
         //Affiche le joueur
         void update(sf::RenderWindow &App);
 
-        virtual ~Joueur();
+        //Getter- Setter
+        vector<Carte*> getCarteVu();        //Retourne le tableau de carte
+        Personnage* getPerso();             //Retourne le perso
+        Case* getPosition();                // Retourne la positon du joueur
+        void setPosition(Case* c);          //met la position du joueur à jour
+
 
     private:
 
-        Personnage* perso_; // Le personnage qu'incarne le joueur
-        Case* position_;    //La position du joueur
+        Personnage* perso_;             // Le personnage qu'incarne le joueur
+        Case* position_;                //La position du joueur
 
         vector<Carte*> tabCarteDepart;  //tab des cartes de depart max 12
         vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24

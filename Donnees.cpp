@@ -133,7 +133,7 @@ vector<Joueur> Donnees::initJoueur(int n){
  * Methodes qui va distribuer les cartes aux joueurs
  *
  **/
-void Donnees::distribuerCarte(vector<Joueur> lesJoueurs){
+void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
     srand(time(NULL));
 
@@ -152,8 +152,13 @@ void Donnees::distribuerCarte(vector<Joueur> lesJoueurs){
     //Tant qu'il y a des cartes on ajoute
     do{
         indice= rand() % taille;
-        lesJoueurs.at(j).ajouterCarteDepart(&tabCartes.at(indice));
-        lesJoueurs.at(j).ajouterCarteVu(&tabCartes.at(indice));
+        Joueur &joueur =lesJoueurs.at(j);
+
+        //lesJoueurs.at(j).ajouterCarteDepart(&tabCartes.at(indice));
+        //lesJoueurs.at(j).ajouterCarteVu(&tabCartes.at(indice));
+        //new
+        joueur.ajouterCarteDepart(&tabCartes.at(indice));
+        joueur.ajouterCarteVu(&tabCartes.at(indice));
 
         temoin.erase(temoin.begin() +indice);
         j++;
