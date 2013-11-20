@@ -40,6 +40,7 @@ void Partie::update(sf::RenderWindow &window){
 
     sf::Vector2i souris = sf::Mouse::getPosition(window);   //on recupere la position
 
+
 	if(p->positionValide(souris.x,souris.y)){
 
         Joueur &j =tabJoueur_.at(joueurCourant);    //on prend le joueur par refernce
@@ -107,6 +108,7 @@ void Partie::afficher(sf::RenderWindow &window){
 
     std::stringstream sstm;
     sstm << "De= " << de;
+
     std::string result = sstm.str();
     sf::Text* text;
 
@@ -137,6 +139,8 @@ void Partie::afficher(sf::RenderWindow &window){
 
     //afficher les cartes du joueur en cour
     zoneCarte->afficherCarte(tabJoueur_.at(joueurCourant), window);
+    zoneText->afficher(window);
+
 
     window.draw(*joueur);
     window.draw(*text);

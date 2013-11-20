@@ -46,7 +46,7 @@ class Partie
 
         Plateau* p;                     //Le plateau de jeu
         ZoneAffichageTexte* zoneText;   //La zone de texte
-        ZoneCarte* zoneCarte;  //La zone des cartes
+        ZoneCarte* zoneCarte;           //La zone des cartes
 
         sf::Text* texte;
         sf::Font font;

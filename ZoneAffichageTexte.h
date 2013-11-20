@@ -2,6 +2,7 @@
 #define ZONEAFFICHAGETEXTE_H
 
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 class ZoneAffichageTexte
 {
@@ -17,7 +18,7 @@ class ZoneAffichageTexte
         int finX;   //La fin de la zone en x 1296
         int posCouranteX;
 
-         sf::Font font;
+        sf::Font font;
 };
 
 #endif // ZONEAFFICHAGETEXTE_H

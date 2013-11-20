@@ -1050,7 +1050,7 @@
 1384264748 /comptes/E119850X/Desktop/cluedo/Ecran.h
 	<SFML/Graphics.hpp>
 
-1384968520 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
+1384968706 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
 	"EcranJeu.h"
 
 1384968648 /comptes/E119850X/Desktop/cluedo/EcranJeu.h
@@ -1065,7 +1065,7 @@
 	"EcranJeu.h"
 	"EcranAccueil.h"
 
-1384961173 source:/comptes/E119850X/Desktop/cluedo/ManagerEcran.cpp
+1384968648 source:/comptes/E119850X/Desktop/cluedo/ManagerEcran.cpp
 	"ManagerEcran.h"
 
 1384728441 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
@@ -1219,10 +1219,10 @@
 	<string>
 	"Case.h"
 
-1384968384 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1384970549 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
-1384968308 /comptes/E119850X/Desktop/cluedo/Partie.h
+1384971025 /comptes/E119850X/Desktop/cluedo/Partie.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<vector>
@@ -1284,10 +1284,11 @@
 1384709243 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
 
-1384967675 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
+1384970076 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
 	<SFML/Graphics.hpp>
+	<iostream>
 
-1384967721 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
+1384970499 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
 
 1384783100 source:/comptes/E119850X/Desktop/cluedo/CaseAbstraite.cpp
