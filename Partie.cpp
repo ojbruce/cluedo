@@ -2,7 +2,7 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC): partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
+Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees d): donnees(d), partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
@@ -76,21 +76,6 @@ void Partie::update(sf::RenderWindow &window){
 
                 //On est dans la nouvelle case
                 nCase->action(); // Va renvoyer les 3 cartes et si on soupconne
-
-
-                //int x;
-                //cout <<"Entrer un nom"<<endl;
-               //cin >>x;
-
-                //on verifie que les cartes sont les mysteres
-                //Carte* c1=donnees.getCarte(0);
-                //Carte* c2=donnees.getCarte(5);
-                //Carte* c3=donnees.getCarte(10);
-
-                //std::find(tabMystere_.begin(), tabMystere_.end(), c1) == tabMystere_.end(){tabSoupcon_.push_back(c1);}
-                //std::find(tabMystere_.begin(), tabMystere_.end(), c2) == tabMystere_.end(){tabSoupcon_.push_back(c2);}
-                //std::find(tabMystere_.begin(), tabMystere_.end(), c3) == tabMystere_.end(){tabSoupcon_.push_back(c3);}
-
 
 
 

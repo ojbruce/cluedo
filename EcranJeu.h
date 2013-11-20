@@ -10,7 +10,7 @@
 class EcranJeu : public Ecran
 {
     public:
-        EcranJeu();
+        EcranJeu(Donnees d);
         virtual ~EcranJeu();
 
         void update(sf::RenderWindow &window, sf::Event event);
@@ -19,7 +19,7 @@ class EcranJeu : public Ecran
     private:
         Plateau p;                      //Le plateau
         ZoneAffichageTexte zoneText;    //La zone des textes
-        ZoneCarte zoneCarte;  //La zone des cartes
+        ZoneCarte zoneCarte;            //La zone des cartes
 
         Partie part;                    //La partie
 

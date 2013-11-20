@@ -18,7 +18,7 @@ class Jeu
 
 
     private:
-        //Donnees donnees;
+        Donnees donnees;
         ManagerEcran manEcran;
 
 

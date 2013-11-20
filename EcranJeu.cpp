@@ -1,6 +1,6 @@
 #include "EcranJeu.h"
 
-EcranJeu::EcranJeu(): part(3,&p, &zoneText, &zoneCarte)
+EcranJeu::EcranJeu(Donnees d): part(3,&p, &zoneText, &zoneCarte, d)
 {
     //ctor
 }

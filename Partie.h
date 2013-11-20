@@ -20,7 +20,7 @@ class Partie
 {
     public:
         //Partie();
-        Partie(int nbJ, Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC);
+        Partie(int nbJ, Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees d);
         ~Partie();
 
         void update(sf::RenderWindow &window);

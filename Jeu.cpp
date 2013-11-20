@@ -1,9 +1,6 @@
 #include "Jeu.h"
 
-Jeu::Jeu()
-{
-    //ctor
-}
+Jeu::Jeu():manEcran(donnees){}
 
 Jeu::~Jeu()
 {

@@ -8,7 +8,7 @@
 class ManagerEcran
 {
     public:
-        ManagerEcran();
+        ManagerEcran(Donnees d);
         virtual ~ManagerEcran();
 
         void update(sf::RenderWindow &window, sf::Event event);
