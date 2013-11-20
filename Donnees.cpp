@@ -61,7 +61,6 @@ Donnees::Donnees(Plateau* p){
         cerr << "Impossible d'ouvrir le fichier de donnees." << endl;
     }
 
-
 }
 
 
@@ -137,8 +136,7 @@ void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
     srand(time(NULL));
 
-    //tableau d'int
-    vector<int> temoin;
+    vector<int> temoin; //tableau d'int
 
     for(int i =0; i<24; i++){
         temoin.push_back(i);
@@ -147,20 +145,27 @@ void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
     //On initialise une taille et un indice
     int taille = 24;
     int indice;
+    int carte;
     unsigned int j =0;
 
     //Tant qu'il y a des cartes on ajoute
     do{
         indice= rand() % taille;
-        Joueur &joueur =lesJoueurs.at(j);
+        carte = temoin[indice];
 
-        //lesJoueurs.at(j).ajouterCarteDepart(&tabCartes.at(indice));
-        //lesJoueurs.at(j).ajouterCarteVu(&tabCartes.at(indice));
-        //new
-        joueur.ajouterCarteDepart(&tabCartes.at(indice));
-        joueur.ajouterCarteVu(&tabCartes.at(indice));
+        Joueur& joueur =lesJoueurs.at(j);
+
+        for(unsigned int i =0; i<temoin.size(); i++){
+            cerr<< temoin[i]<<endl;
+        }
+
+        cerr<< tabCartes.at(carte).getNom()<<" "<<endl;
+
+        joueur.ajouterCarteDepart(&tabCartes.at(carte));
+        joueur.ajouterCarteVu(&tabCartes.at(carte));
 
         temoin.erase(temoin.begin() +indice);
+        //cerr<< temoin.at(indice)<<endl;
         j++;
         taille--;
 
