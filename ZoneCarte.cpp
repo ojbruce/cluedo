@@ -13,7 +13,7 @@ ZoneCarte::~ZoneCarte()
 
 void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
 
-    vector<Carte*> vec = j.getCarteVu();
+    vector<Carte*> vec = j.getCarteDepart();
     int posx=0;
 
     sf::Sprite sp;

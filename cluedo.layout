@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Carte.cpp" open="1" top="0" tabpos="14">
+	<File name="Carte.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="376" topLine="13" />
 	</File>
-	<File name="Carte.h" open="1" top="0" tabpos="15">
-		<Cursor position="326" topLine="0" />
+	<File name="Carte.h" open="1" top="0" tabpos="4">
+		<Cursor position="514" topLine="0" />
 	</File>
 	<File name="Case.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="727" topLine="24" />
@@ -16,7 +16,7 @@
 	<File name="Donnees.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="4294" topLine="9" />
 	</File>
-	<File name="Donnees.h" open="1" top="0" tabpos="1">
+	<File name="Donnees.h" open="0" top="0" tabpos="1">
 		<Cursor position="791" topLine="5" />
 	</File>
 	<File name="Ecran.h" open="0" top="0" tabpos="12">
@@ -25,49 +25,49 @@
 	<File name="EcranAccueil.cpp" open="0" top="0" tabpos="14">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EcranAccueil.h" open="1" top="0" tabpos="2">
+	<File name="EcranAccueil.h" open="0" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="EcranJeu.cpp" open="1" top="0" tabpos="12">
+	<File name="EcranJeu.cpp" open="0" top="0" tabpos="12">
 		<Cursor position="314" topLine="0" />
 	</File>
-	<File name="EcranJeu.h" open="1" top="0" tabpos="11">
+	<File name="EcranJeu.h" open="0" top="0" tabpos="11">
 		<Cursor position="240" topLine="0" />
 	</File>
 	<File name="Jeu.cpp" open="0" top="0" tabpos="8">
 		<Cursor position="47" topLine="0" />
 	</File>
-	<File name="Jeu.h" open="1" top="0" tabpos="3">
+	<File name="Jeu.h" open="0" top="0" tabpos="3">
 		<Cursor position="222" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="1" top="1" tabpos="13">
-		<Cursor position="229" topLine="32" />
+	<File name="Joueur.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1370" topLine="50" />
 	</File>
-	<File name="Joueur.h" open="1" top="0" tabpos="4">
-		<Cursor position="1275" topLine="11" />
+	<File name="Joueur.h" open="1" top="0" tabpos="2">
+		<Cursor position="961" topLine="11" />
 	</File>
 	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="65" topLine="0" />
 	</File>
-	<File name="ManagerEcran.h" open="1" top="0" tabpos="5">
+	<File name="ManagerEcran.h" open="0" top="0" tabpos="5">
 		<Cursor position="185" topLine="0" />
 	</File>
 	<File name="Mur.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="398" topLine="0" />
 	</File>
-	<File name="Mur.h" open="1" top="0" tabpos="6">
+	<File name="Mur.h" open="0" top="0" tabpos="6">
 		<Cursor position="221" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="0" tabpos="10">
-		<Cursor position="2975" topLine="45" />
+	<File name="Partie.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="2975" topLine="36" />
 	</File>
-	<File name="Partie.h" open="1" top="0" tabpos="7">
+	<File name="Partie.h" open="0" top="0" tabpos="7">
 		<Cursor position="1202" topLine="21" />
 	</File>
 	<File name="Personnage.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="202" topLine="6" />
 	</File>
-	<File name="Personnage.h" open="1" top="0" tabpos="8">
+	<File name="Personnage.h" open="0" top="0" tabpos="8">
 		<Cursor position="712" topLine="2" />
 	</File>
 	<File name="Piece.cpp" open="0" top="0" tabpos="8">
@@ -79,7 +79,7 @@
 	<File name="Plateau.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="84" topLine="60" />
 	</File>
-	<File name="Plateau.h" open="1" top="0" tabpos="9">
+	<File name="Plateau.h" open="0" top="0" tabpos="9">
 		<Cursor position="996" topLine="18" />
 	</File>
 	<File name="Porte.cpp" open="0" top="0" tabpos="7">
@@ -94,8 +94,8 @@
 	<File name="ZoneAffichageTexte.h" open="0" top="0" tabpos="5">
 		<Cursor position="483" topLine="0" />
 	</File>
-	<File name="ZoneCarte.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="236" topLine="0" />
+	<File name="ZoneCarte.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="280" topLine="0" />
 	</File>
 	<File name="ZoneCarte.h" open="0" top="0" tabpos="0">
 		<Cursor position="320" topLine="0" />

@@ -19,6 +19,7 @@ class Carte
         // Getter
         string getNom();        //retourne le nom
         string getChemin();     //retourne le chemin
+
         sf::Texture& getTexture();
 
     private:

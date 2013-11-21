@@ -53,9 +53,9 @@ void Joueur::ajouterCarteVu(Carte* c){
 /**
  * Getter des cartes vus
  * @return le tableau de carte
- **/
-vector<Carte*> Joueur::getCarteVu(){
-    return tabCarteVu;
+**/
+vector<Carte*> Joueur::getCarteDepart(){
+    return tabCarteDepart;
 }
 
 /**
@@ -72,6 +72,10 @@ Personnage* Joueur::getPerso(){
  **/
 Case* Joueur::getPosition(){
     return position_;
+}
+
+st::string Joueur::getNom(){
+    return perso_.getNom();
 }
 
 /**
