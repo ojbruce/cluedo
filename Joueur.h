@@ -30,7 +30,7 @@ class Joueur
         vector<Carte*> getCarteDepart();    //Retourne le tableau de carte
         Personnage* getPerso();             //Retourne le perso
         Case* getPosition();                //Retourne la positon du joueur
-        st::string getNom();                //Retourne le nom du personnage qu'incarne le joueur
+        std::string getNom();                //Retourne le nom du personnage qu'incarne le joueur
         void setPosition(Case* c);          //Met la position du joueur à jour
 
 

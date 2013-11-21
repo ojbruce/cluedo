@@ -40,11 +40,11 @@
 	<File name="Jeu.h" open="0" top="0" tabpos="3">
 		<Cursor position="222" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1370" topLine="50" />
+	<File name="Joueur.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="1363" topLine="59" />
 	</File>
 	<File name="Joueur.h" open="1" top="0" tabpos="2">
-		<Cursor position="961" topLine="11" />
+		<Cursor position="944" topLine="14" />
 	</File>
 	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="65" topLine="0" />
@@ -58,7 +58,7 @@
 	<File name="Mur.h" open="0" top="0" tabpos="6">
 		<Cursor position="221" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="1" tabpos="6">
+	<File name="Partie.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="2975" topLine="36" />
 	</File>
 	<File name="Partie.h" open="0" top="0" tabpos="7">

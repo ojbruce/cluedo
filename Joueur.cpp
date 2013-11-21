@@ -74,8 +74,8 @@ Case* Joueur::getPosition(){
     return position_;
 }
 
-st::string Joueur::getNom(){
-    return perso_.getNom();
+std::string Joueur::getNom(){
+    return perso_->getNom();
 }
 
 /**
