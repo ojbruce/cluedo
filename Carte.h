@@ -13,6 +13,7 @@ class Carte
         virtual ~Carte();                  //Destructeur
 
         bool operator== (Carte const &c2); // Operateur d'egalite
+        //bool operator== (std::string const &c2); // Operateur d'egalite
 
 
         // Getter

@@ -7,7 +7,7 @@ Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* z
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
 
-    //on positionne les joueurs creer dans donnee
+    //Set la position de depart du personnage
     donnees.positionnerPerso(p);
 
     //initialise le tableau de joueur
