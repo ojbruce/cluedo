@@ -1,14 +1,12 @@
 #include "Partie.h"
 
-//Partie::Partie():  donnees(p), partieFini_(false){}
-
-Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees* d): donnees(d), deClique_(false),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
+Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, DonneesJeu* d): donnees(d), deClique_(false),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
 
 
-    donnees.preparerPartie(p);
+    donnees->preparerPartie(p);
 
     cerr<<"Creation Partie"<<endl;
 }
@@ -27,23 +25,21 @@ void Partie::update(sf::RenderWindow &window){
 
 	if(p->positionValide(souris.x,souris.y)){
 
-        Joueur &j =tabJoueur_.at(joueurCourant);    //on prend le joueur par refernce
+        //Joueur &j =tabJoueur_.at(joueurCourant);    //on prend le joueur par refernce
+        Joueur &j=*donnees->getJoueurCourant();
 
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
         if(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 && !deClique_ ){
 
-            de = lancerDe();                            //on lance le de
-
             Case* posCourante = j.getPosition();        //la position du joueur avant le debut du tour
             posCourante->setEstVide(true);               // avant de chercher on vide la case
-            posCourante->trouverChemin(de,chemin,p);    //on cherche les positions possibles
+            posCourante->trouverChemin(donnees->lancerDe(),chemin,p);    //on cherche les positions possibles
 
             deClique_=true;
         }
 
 
         if(deClique_ && !(souris.y >=220 && souris.y<=360 && souris.x>=220 && souris.x<=320 ) ){
-            //si le joueur clique sur des cases et à cliquer sur le dé avant
 
             Case* nCase= p->trouverCase(souris.x,souris.y);     //On trouve la case
 
@@ -69,18 +65,8 @@ void Partie::update(sf::RenderWindow &window){
                 //On vide le tableau des chemins poissibles
                 chemin.clear();
 
-                //on passe au joueur suivant
-                if(joueurCourant< tabJoueur_.size()-1)
-                    joueurCourant++;
-                else
-                    joueurCourant =0;
+                donnees->changerJoueur();
 
-                /*if(gagn){
-                    tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
-                    if(tabJoueur_.size()==1){
-                        partieFini_=true;
-                    }
-                }*/
             }
         }
 
@@ -91,14 +77,14 @@ void Partie::update(sf::RenderWindow &window){
 void Partie::afficher(sf::RenderWindow &window){
 
     std::stringstream sstm;
-    sstm << "De= " << de;
+    sstm << "De= " << donnees->getDe();
 
     std::string result = sstm.str();
     sf::Text* text;
 
-    sf::Text* joueur = new sf::Text("A vous joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
+    /*sf::Text* joueur = new sf::Text("A vous joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
     joueur->setPosition(220,220);
-    joueur->setCharacterSize(11);
+    joueur->setCharacterSize(11);*/
 
     //Le texte depend de ce qui est clique ou pas
     if(!deClique_)
@@ -117,16 +103,16 @@ void Partie::afficher(sf::RenderWindow &window){
 
 
     //affichage du joueur
-    for(unsigned int i=0; i < tabJoueur_.size(); i++){
-        tabJoueur_.at(i).update(window);
+    for(unsigned int i=0; i < donnees->getNbJoueur(); i++){
+        donnees->getJoueurCourant()->update(window);
     }
 
     //afficher les cartes du joueur en cour
-    zoneCarte->afficherCarte(tabJoueur_.at(joueurCourant), window);
+    zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
     zoneText->afficher(window);
 
 
-    window.draw(*joueur);
+    //window.draw(*joueur);
     window.draw(*text);
 
 }

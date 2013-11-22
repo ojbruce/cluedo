@@ -10,7 +10,7 @@
 class EcranJeu : public Ecran
 {
     public:
-        EcranJeu(Donnees &d);
+        EcranJeu(DonneesJeu* d);
         virtual ~EcranJeu();
 
         void update(sf::RenderWindow &window, sf::Event event);

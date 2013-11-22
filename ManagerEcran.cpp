@@ -1,6 +1,6 @@
 #include "ManagerEcran.h"
 
-ManagerEcran::ManagerEcran(Donnees &d)
+ManagerEcran::ManagerEcran(DonneesJeu* d)
 {
     //ctor
     ecranJeu = new EcranJeu(d);

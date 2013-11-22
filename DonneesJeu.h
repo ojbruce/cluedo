@@ -6,6 +6,7 @@
 #include "Plateau.h"
 #include "Donnees.h"
 
+
 class DonneesJeu
 {
     public:
@@ -13,8 +14,27 @@ class DonneesJeu
         virtual ~DonneesJeu();
 
         int lancerDe();     //lancer le De
-
         void preparerPartie(Plateau* plateau);
+        void changerJoueur();
+
+
+
+
+
+
+
+        //Getter- Setter
+        bool getPartieFini();
+        void setPartieFini(bool parti);
+        Joueur* getJoueurCourant();
+
+        int getDe();
+
+        Joueur* getGagnant();
+        void setGagnant(Joueur* j);
+
+        void setNbJoueur(int nb);
+        int getNbJoueur();
 
 
     private:
@@ -22,7 +42,8 @@ class DonneesJeu
         Donnees* donnees;                //la classe contenant les donnees
 
         bool partieFini_;               //Determine si la partie est finie
-        //A rajouter gagnant
+        Joueur* gagnant;                //Le joueur gagnant
+
         unsigned int joueurCourant;     //Le joueur courant
         int de;                         // ?
 

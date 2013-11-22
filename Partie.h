@@ -21,7 +21,7 @@ class Partie
 {
     public:
         //Partie();
-        Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees* d);
+        Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, DonneesJeu* d);
         ~Partie();
 
 

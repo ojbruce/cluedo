@@ -1,6 +1,6 @@
 #include "Jeu.h"
 
-Jeu::Jeu():manEcran(donnees){}
+Jeu::Jeu():donneesJeu(&donnees), manEcran(&donneesJeu){}
 
 Jeu::~Jeu()
 {

@@ -4,6 +4,8 @@
 #include <SFML/Graphics.hpp>
 
 #include "ManagerEcran.h"
+#include "Donnees.h"
+#include "DonneesJeu.h"
 
 using namespace std;
 
@@ -18,8 +20,9 @@ class Jeu
 
 
     private:
-        Donnees donnees;
-        ManagerEcran manEcran;
+        Donnees donnees;            //Les donnees du jeu
+        DonneesJeu donneesJeu;      //Les donnees de la partie
+        ManagerEcran manEcran;      //Le manager d'ecran
 
 
 };
