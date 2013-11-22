@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="Carte.cpp" open="1" top="0" tabpos="3">
+	<File name="Carte.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="376" topLine="13" />
 	</File>
-	<File name="Carte.h" open="1" top="0" tabpos="4">
+	<File name="Carte.h" open="0" top="0" tabpos="4">
 		<Cursor position="514" topLine="0" />
 	</File>
 	<File name="Case.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="727" topLine="24" />
+		<Cursor position="748" topLine="25" />
 	</File>
 	<File name="Case.h" open="0" top="0" tabpos="4">
-		<Cursor position="632" topLine="29" />
+		<Cursor position="639" topLine="17" />
 	</File>
-	<File name="Donnees.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="4294" topLine="9" />
+	<File name="Donnees.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="2133" topLine="0" />
 	</File>
 	<File name="Donnees.h" open="0" top="0" tabpos="1">
-		<Cursor position="791" topLine="5" />
+		<Cursor position="879" topLine="8" />
 	</File>
-	<File name="DonneesJeu.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="2356" topLine="81" />
+	<File name="DonneesJeu.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="602" topLine="12" />
 	</File>
-	<File name="DonneesJeu.h" open="1" top="0" tabpos="8">
-		<Cursor position="627" topLine="15" />
+	<File name="DonneesJeu.h" open="1" top="0" tabpos="5">
+		<Cursor position="495" topLine="24" />
 	</File>
 	<File name="Ecran.h" open="0" top="0" tabpos="12">
 		<Cursor position="0" topLine="0" />
@@ -47,7 +47,7 @@
 		<Cursor position="435" topLine="0" />
 	</File>
 	<File name="Joueur.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1363" topLine="59" />
+		<Cursor position="1363" topLine="0" />
 	</File>
 	<File name="Joueur.h" open="1" top="0" tabpos="2">
 		<Cursor position="944" topLine="14" />
@@ -59,16 +59,16 @@
 		<Cursor position="187" topLine="0" />
 	</File>
 	<File name="Mur.cpp" open="0" top="0" tabpos="9">
-		<Cursor position="398" topLine="0" />
+		<Cursor position="401" topLine="0" />
 	</File>
 	<File name="Mur.h" open="0" top="0" tabpos="6">
-		<Cursor position="221" topLine="0" />
+		<Cursor position="266" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="1" tabpos="7">
-		<Cursor position="3301" topLine="88" />
+	<File name="Partie.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="305" topLine="0" />
 	</File>
-	<File name="Partie.h" open="1" top="0" tabpos="6">
-		<Cursor position="460" topLine="18" />
+	<File name="Partie.h" open="1" top="0" tabpos="3">
+		<Cursor position="460" topLine="0" />
 	</File>
 	<File name="Personnage.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="202" topLine="6" />
@@ -77,10 +77,10 @@
 		<Cursor position="712" topLine="2" />
 	</File>
 	<File name="Piece.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="412" topLine="0" />
+		<Cursor position="415" topLine="0" />
 	</File>
 	<File name="Piece.h" open="0" top="0" tabpos="10">
-		<Cursor position="205" topLine="0" />
+		<Cursor position="347" topLine="0" />
 	</File>
 	<File name="Plateau.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="84" topLine="60" />
@@ -89,10 +89,10 @@
 		<Cursor position="996" topLine="18" />
 	</File>
 	<File name="Porte.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="40" topLine="8" />
+		<Cursor position="918" topLine="47" />
 	</File>
 	<File name="Porte.h" open="0" top="0" tabpos="6">
-		<Cursor position="1035" topLine="6" />
+		<Cursor position="742" topLine="4" />
 	</File>
 	<File name="ZoneAffichageTexte.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="33" topLine="0" />
@@ -100,7 +100,7 @@
 	<File name="ZoneAffichageTexte.h" open="0" top="0" tabpos="5">
 		<Cursor position="483" topLine="0" />
 	</File>
-	<File name="ZoneCarte.cpp" open="1" top="0" tabpos="5">
+	<File name="ZoneCarte.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="280" topLine="0" />
 	</File>
 	<File name="ZoneCarte.h" open="0" top="0" tabpos="0">

@@ -23,9 +23,9 @@ std::string Piece::toString(){
 /**
  * Methode qui va réaliser l'action selon la case
  */
-bool Piece::action(){
+std::string Piece::action(){
     //appeler par une Porte on va appeler un ecran
-    return false;
+    return "";
 }
 
 /**

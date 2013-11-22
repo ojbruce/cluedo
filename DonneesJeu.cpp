@@ -1,14 +1,17 @@
 #include "DonneesJeu.h"
 
-DonneesJeu::DonneesJeu(Donnees* d ): donnees(d), partieFini_(false), joueurCourant(0), de(0)
+DonneesJeu::DonneesJeu(Donnees* d ): donnees(d), partieFini_(false), gagnant(NULL), joueurCourant(0), de(0), nbJoueur_(2)
 {
-    //ctor
-
+  //ctor
 }
+
+
+
 
 DonneesJeu::~DonneesJeu()
 {
     //dtor
+
 }
 
 
@@ -19,13 +22,39 @@ void DonneesJeu::preparerPartie(Plateau* plateau){
 
     //initialise le tableau de joueur
     tabJoueur_= donnees->initJoueur(nbJoueur_);
-
-    //initialise le tableau des cartes mysteres
-    tabMystere_ = donnees->initCarteMystere();
+    cerr<<"DonneesJoueur::initJoueur"<<endl;
 
     //distribution des cartes aux joueurs
-    donnees->distribuerCarte(tabJoueur_);
+    tabMystere_ =donnees->distribuerCarte(tabJoueur_);
+    cerr<<"DonneesJoueur::distribution des cartes"<<endl;
 }
+
+void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
+
+    bool bonneCarte;
+
+    for(unsigned int i; i<tabMystere_.size(); i++){
+        if(tabMystere_[i]->getNom()!=arme || tabMystere_[i]->getNom()!=perso || tabMystere_[i]->getNom()!=lieu){
+            bonneCarte = false;
+        }
+
+    }
+
+    if(!bonneCarte){
+         tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
+         nbJoueur_--;
+    }else{
+        gagnant=&tabJoueur_[joueurCourant];
+    }
+}
+
+void DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu){
+
+}
+
+
+
+
 
 /**
  * Methoque qui prend un nombre aleatoire entre 2 et 12
@@ -33,7 +62,8 @@ void DonneesJeu::preparerPartie(Plateau* plateau){
  **/
 int DonneesJeu::lancerDe(){
 	srand(time(NULL)); // place le rand à un endroit diferent selon le time
-    return rand() % 11+2;
+	de = rand() % 5+2;
+    return de;
 }
 
 /**
@@ -67,6 +97,14 @@ void DonneesJeu::setPartieFini(bool parti){
  */
 Joueur* DonneesJeu::getJoueurCourant(){
     return &tabJoueur_[joueurCourant];
+}
+
+/**
+ * Methode qui retourne le joueur à la position
+ * @return joueurCourant
+ */
+Joueur* DonneesJeu::getJoueurAt(int i){
+    return &tabJoueur_[i];
 }
 
 /**

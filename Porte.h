@@ -25,16 +25,16 @@ class Porte : public Piece
 
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
-        virtual bool action();
+        virtual string action();
 
         string getNom() const;
         virtual ~Porte();
 
     protected:
     private:
-        //Un ensemble de case pièce
-        vector <Piece*> tabPiece_;
-        string nom_;
+
+        vector <Piece*> tabPiece_;  //Un ensemble de case pièce
+        string nom_;                //Le nom de la piece
 
         //Certaines pieces ont un passage secret
         Case* cheminSecret;

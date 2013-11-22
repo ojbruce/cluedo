@@ -42,9 +42,9 @@ Case::~Case(){
 /**
  * Methode qui va réaliser l'action selon la case
  */
-bool Case::action(){
+std::string Case::action(){
     //on renvoie false c'est qu'il n'a pas gagne
-    return false;
+    return "";
 }
 
 /**

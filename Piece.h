@@ -14,14 +14,11 @@ class Piece : public Case{
 		Piece();
 		Piece(int a, int b);
 
-        virtual bool action();
+        virtual std::string action();
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
 
    private:
-
-
-   protected:
 
 };
 

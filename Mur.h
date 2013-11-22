@@ -13,8 +13,8 @@ class Mur : public Case
         Mur(int a, int b);
         virtual ~Mur();
 
-        virtual bool action();
-        virtual string toString();
+        virtual std::string action();
+        virtual std::string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
 
     protected:

@@ -44,16 +44,6 @@ Donnees::Donnees(){
          // On ferme le fichier
         fichier.close();
 
-        //position des persos
-        /*tabPersonnages[0].setPositionDepart(p->getCase(14,0));
-        tabPersonnages[1].setPositionDepart(p->getCase(16,24));
-        tabPersonnages[2].setPositionDepart(p->getCase(0,17));
-        tabPersonnages[3].setPositionDepart(p->getCase(23,6));
-        tabPersonnages[4].setPositionDepart(p->getCase(23,19));
-        tabPersonnages[5].setPositionDepart(p->getCase(0,7));
-        tabPersonnages[6].setPositionDepart(p->getCase(7,24));
-        tabPersonnages[7].setPositionDepart(p->getCase(9,0));*/
-
          cerr << "Donnees:: fin creation" << endl;
     }
     else
@@ -79,21 +69,27 @@ Carte* Donnees::getCarte(int ind){
  *Retourne les cartes mysteres
  *
  */
-vector<Carte*> Donnees::initCarteMystere(){
+vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
     vector<Carte*> res(3);
     srand(time(NULL)); // place le rand à un endroit diferent selon le time
 
     //0-8 piece
     int indice = rand() % 9;
-    res.push_back(&tabCartes[indice]);
+    int carte = temoin[indice];
+    res.push_back(&tabCartes[carte]);
+    temoin.erase(temoin.begin() +indice);
 
     //9-16 persos
-    indice = rand() % 8+9;
-    res.push_back(&tabCartes[indice]);
+    indice = rand() % 8+9 -1;
+    carte = temoin[indice];
+    res.push_back(&tabCartes[carte]);
+    temoin.erase(temoin.begin() +indice);
 
     //17-23 armes
-    indice = rand() % 7+17;
-    res.push_back(&tabCartes[indice]);
+    indice = rand() % 7+17 -2;
+    carte = temoin[indice];
+    res.push_back(&tabCartes[carte]);
+    temoin.erase(temoin.begin() +indice);
 
     return res;
 }
@@ -107,7 +103,7 @@ vector<Joueur> Donnees::initJoueur(int n){
     vector<Joueur> tabJoueur;
     int i =0;
 
-    cerr << "Donnees::initJoueur" << endl;
+
     srand(time(NULL));
 
 
@@ -146,7 +142,7 @@ void Donnees::positionnerPerso(Plateau* p){
  * Methodes qui va distribuer les cartes aux joueurs
  *
  **/
-void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
+vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
     srand(time(NULL));
 
@@ -156,8 +152,13 @@ void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
         temoin.push_back(i);
     }
 
+    vector<Carte*> res(3);
+    res=initCarteMystere(temoin);
+
+    cerr<<"Donnees::init CarteMystere"<<endl;
+
     //On initialise une taille et un indice
-    int taille = 24;
+    int taille = 21;
     int indice;
     int carte;
     unsigned int j =0;
@@ -182,6 +183,6 @@ void Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
     }while(!temoin.empty());
 
-
+    return res;
 }
 

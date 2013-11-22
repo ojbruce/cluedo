@@ -5,7 +5,7 @@ Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donn
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
 
-
+    cerr<<"Partie avant"<<endl;
     donnees->preparerPartie(p);
 
     cerr<<"Creation Partie"<<endl;
@@ -22,10 +22,8 @@ void Partie::update(sf::RenderWindow &window){
 
     sf::Vector2i souris = sf::Mouse::getPosition(window);   //on recupere la position
 
-
 	if(p->positionValide(souris.x,souris.y)){
 
-        //Joueur &j =tabJoueur_.at(joueurCourant);    //on prend le joueur par refernce
         Joueur &j=*donnees->getJoueurCourant();
 
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
@@ -55,23 +53,34 @@ void Partie::update(sf::RenderWindow &window){
                 j.setPosition(nCase);               // deplacer dasn nouvelle case
                 nCase->setEstVide(false);            //nouvelle case pleine
 
+                std::string lieu;
+                lieu=nCase->action();
                 //On est dans la nouvelle case
-                //bool gagn = nCase->action(); // Va renvoyer les 3 cartes et si on soupconne 1 accusation 0 soupcon
+                if(lieu !=""){
+
+                    cout<< "accuser a ou soupconner s?" <<endl;
+                    std::string x;
+                    cin>>x;
+
+                    if(x=="a"){
+                        donnees->accuser("book","Mrs. White",lieu);
+                    }else{
+                        donnees->soupconner("book","Mrs. White",lieu);
+                    }
 
 
+
+
+                }
                 //On change les elements de la classe pour que le jeu continue
-                deClique_ = false;
-
+                    deClique_ = false;
                 //On vide le tableau des chemins poissibles
-                chemin.clear();
+                    chemin.clear();
 
-                donnees->changerJoueur();
-
+                    donnees->changerJoueur();
             }
         }
-
 	}
-
 }
 
 void Partie::afficher(sf::RenderWindow &window){
@@ -82,9 +91,9 @@ void Partie::afficher(sf::RenderWindow &window){
     std::string result = sstm.str();
     sf::Text* text;
 
-    /*sf::Text* joueur = new sf::Text("A vous joueur: \n" +tabJoueur_.at(joueurCourant).getPerso()->getNom(), font);
+    sf::Text* joueur = new sf::Text("A vous joueur: \n" +donnees->getJoueurCourant()->getPerso()->getNom(), font);
     joueur->setPosition(220,220);
-    joueur->setCharacterSize(11);*/
+    joueur->setCharacterSize(11);
 
     //Le texte depend de ce qui est clique ou pas
     if(!deClique_)
@@ -103,8 +112,8 @@ void Partie::afficher(sf::RenderWindow &window){
 
 
     //affichage du joueur
-    for(unsigned int i=0; i < donnees->getNbJoueur(); i++){
-        donnees->getJoueurCourant()->update(window);
+    for(int i=0; i < donnees->getNbJoueur(); i++){
+        donnees->getJoueurAt(i)->update(window);
     }
 
     //afficher les cartes du joueur en cour
@@ -112,7 +121,7 @@ void Partie::afficher(sf::RenderWindow &window){
     zoneText->afficher(window);
 
 
-    //window.draw(*joueur);
+    window.draw(*joueur);
     window.draw(*text);
 
 }
