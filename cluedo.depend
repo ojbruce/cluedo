@@ -1222,7 +1222,7 @@
 1385046121 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
-1384971025 /comptes/E119850X/Desktop/cluedo/Partie.h
+1385117686 /comptes/E119850X/Desktop/cluedo/Partie.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<vector>
@@ -1232,6 +1232,7 @@
 	"Carte.h"
 	"Plateau.h"
 	"Donnees.h"
+	"DonneesJeu.h"
 	"ZoneAffichageTexte.h"
 	"ZoneCarte.h"
 
@@ -1303,4 +1304,10 @@
 
 1385055151 source:/comptes/E119850X/Desktop/cluedo/ZoneCarte.cpp
 	"ZoneCarte.h"
+
+1385117865 /comptes/E119850X/Desktop/cluedo/DonneesJeu.h
+	"Joueur.h"
+	"Carte.h"
+	"Plateau.h"
+	"Donnees.h"
 

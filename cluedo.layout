@@ -19,6 +19,12 @@
 	<File name="Donnees.h" open="0" top="0" tabpos="1">
 		<Cursor position="791" topLine="5" />
 	</File>
+	<File name="DonneesJeu.cpp" open="1" top="1" tabpos="9">
+		<Cursor position="823" topLine="16" />
+	</File>
+	<File name="DonneesJeu.h" open="1" top="0" tabpos="8">
+		<Cursor position="525" topLine="0" />
+	</File>
 	<File name="Ecran.h" open="0" top="0" tabpos="12">
 		<Cursor position="0" topLine="0" />
 	</File>
@@ -40,7 +46,7 @@
 	<File name="Jeu.h" open="0" top="0" tabpos="3">
 		<Cursor position="222" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="1" top="1" tabpos="1">
+	<File name="Joueur.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="1363" topLine="59" />
 	</File>
 	<File name="Joueur.h" open="1" top="0" tabpos="2">
@@ -58,11 +64,11 @@
 	<File name="Mur.h" open="0" top="0" tabpos="6">
 		<Cursor position="221" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="2975" topLine="36" />
+	<File name="Partie.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="368" topLine="9" />
 	</File>
-	<File name="Partie.h" open="0" top="0" tabpos="7">
-		<Cursor position="1202" topLine="21" />
+	<File name="Partie.h" open="1" top="0" tabpos="6">
+		<Cursor position="1045" topLine="15" />
 	</File>
 	<File name="Personnage.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="202" topLine="6" />

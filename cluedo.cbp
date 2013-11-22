@@ -58,6 +58,8 @@
 		<Unit filename="CaseAbstraite.h" />
 		<Unit filename="Donnees.cpp" />
 		<Unit filename="Donnees.h" />
+		<Unit filename="DonneesJeu.cpp" />
+		<Unit filename="DonneesJeu.h" />
 		<Unit filename="Ecran.h" />
 		<Unit filename="EcranAccueil.cpp" />
 		<Unit filename="EcranAccueil.h" />

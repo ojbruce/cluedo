@@ -2,22 +2,14 @@
 
 //Partie::Partie():  donnees(p), partieFini_(false){}
 
-Partie::Partie(int nbJ,  Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees d): donnees(d), partieFini_(false), deClique_(false), joueurCourant(0), de(0),nbJoueur_(nbJ),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
+Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Donnees* d): donnees(d), deClique_(false),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
 
     if (!font.loadFromFile("arial.ttf")){ }
     texte = new sf::Text("Lancer le de", font);
 
-    //Set la position de depart du personnage
-    donnees.positionnerPerso(p);
 
-    //initialise le tableau de joueur
-    tabJoueur_= donnees.initJoueur(nbJ);
+    donnees.preparerPartie(p);
 
-    //initialise le tableau des cartes mysteres
-    tabMystere_ = donnees.initCarteMystere();
-
-    //distribution des cartes aux joueurs
-    donnees.distribuerCarte(tabJoueur_);
     cerr<<"Creation Partie"<<endl;
 }
 
@@ -27,14 +19,6 @@ Partie::~Partie()
     cerr<<"Partie::Destruction"<< endl;
 }
 
-/**
- * Methoque qui prend un nombre aleatoire entre 2 et 12
- * @return rand un random entre 2 et 12
- **/
-int Partie::lancerDe(){
-	srand(time(NULL)); // place le rand à un endroit diferent selon le time
-    return rand() % 11+2;
-}
 
 void Partie::update(sf::RenderWindow &window){
 
@@ -147,8 +131,6 @@ void Partie::afficher(sf::RenderWindow &window){
 
 }
 
-bool Partie::getPartieFini(){
-    return partieFini_;
-}
+
 
 
