@@ -19,7 +19,7 @@ class DonneesJeu
 
 
         void accuser(std::string arme, std::string perso,std::string lieu);
-        void soupconner(std::string arme, std::string perso,std::string lieu);
+        std::string soupconner(std::string arme, std::string perso,std::string lieu);
 
 
 

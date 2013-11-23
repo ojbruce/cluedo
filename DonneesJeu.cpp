@@ -19,6 +19,7 @@ void DonneesJeu::preparerPartie(Plateau* plateau){
 
     //Set la position de depart du personnage
     donnees->positionnerPerso(plateau);
+    cerr<<"DonneesJoueur::positionnerPerso"<<endl;
 
     //initialise le tableau de joueur
     tabJoueur_= donnees->initJoueur(nbJoueur_);
@@ -48,8 +49,45 @@ void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
     }
 }
 
-void DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu){
+std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu){
 
+    unsigned int suivant=joueurCourant+1;
+    if(suivant==nbJoueur_)
+        suivant=0;
+
+    bool trouve =false;
+    std::string res="";
+
+
+
+    while(suivant!=joueurCourant){
+
+        cerr<<joueurCourant<<" "<<suivant<<" "<<nbJoueur_<<endl;
+        Joueur j = tabJoueur_[suivant];
+
+        vector<Carte*> tabCarteDepart = j.getCarteDepart();
+        unsigned int i =0;
+
+        while(i<tabCarteDepart.size() && trouve==false){
+
+            if(tabCarteDepart[i]->getNom() == arme || tabCarteDepart[i]->getNom()==perso || tabCarteDepart[i]->getNom()==lieu){
+
+                res=tabCarteDepart[i]->getChemin();
+                cerr<<"ici "<<res<<endl;
+                trouve = true;
+            }
+            i++;
+        }
+
+        suivant=suivant+1;
+
+         if(suivant==nbJoueur_)
+            suivant=0;
+
+    }
+
+    cerr<<res<<endl;
+    return res;
 }
 
 
@@ -62,7 +100,7 @@ void DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu
  **/
 int DonneesJeu::lancerDe(){
 	srand(time(NULL)); // place le rand à un endroit diferent selon le time
-	de = rand() % 5+2;
+	de = rand() % 11+2;
     return de;
 }
 

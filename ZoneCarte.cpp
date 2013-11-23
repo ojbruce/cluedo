@@ -31,12 +31,10 @@ void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
     }
 
     if(posx != 1296){
-
+        sp.setTexture(texture);
         for(unsigned int j=0; j < vec.size(); j++){
 
-            sp.setTexture(texture);
             sp.setPosition(posx,limY_);
-
             window.draw(sp);
 
             posx+=108;

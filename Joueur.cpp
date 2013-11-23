@@ -26,8 +26,8 @@ Joueur::~Joueur()
 void Joueur::update(sf::RenderWindow &window){
 
 	sf::Sprite joueur1;
-	joueur1.setTexture(im);
 
+	joueur1.setTexture(im);
 	joueur1.setPosition(position_->getX()*20+21,position_->getY()*20+21);
 
     window.draw(joueur1);

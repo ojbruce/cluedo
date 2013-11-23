@@ -55,30 +55,31 @@ void Partie::update(sf::RenderWindow &window){
 
                 std::string lieu;
                 lieu=nCase->action();
+
+                std::string chemin;
+
                 //On est dans la nouvelle case
                 if(lieu !=""){
 
                     cout<< "accuser a ou soupconner s?" <<endl;
                     std::string x;
-                    cin>>x;
+                    x="s";
 
                     if(x=="a"){
                         donnees->accuser("book","Mrs. White",lieu);
                     }else{
-                        donnees->soupconner("book","Mrs. White",lieu);
+                        chemin=donnees->soupconner("book","Mrs. White","Hall");
                     }
-
-
-
-
                 }
-                //On change les elements de la classe pour que le jeu continue
-                    deClique_ = false;
-                //On vide le tableau des chemins poissibles
-                    chemin.clear();
 
-                    donnees->changerJoueur();
+                //On change les elements de la classe pour que le jeu continue
+                deClique_ = false;
+
+                donnees->changerJoueur();
             }
+
+            //On vide le tableau des chemins poissibles
+            chemin.clear();
         }
 	}
 }
@@ -117,8 +118,8 @@ void Partie::afficher(sf::RenderWindow &window){
     }
 
     //afficher les cartes du joueur en cour
-    zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
-    zoneText->afficher(window);
+    //zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
+    //zoneText->afficher(window);
 
 
     window.draw(*joueur);
