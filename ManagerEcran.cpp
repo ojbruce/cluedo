@@ -2,7 +2,7 @@
 
 
 
-ManagerEcran::ManagerEcran(DonneesJeu* d)
+ManagerEcran::ManagerEcran(DonneesJeu* d):donnees(d)
 {
       ecranAccueil = new EcranAccueil(this);
       ecranRegles = new EcranRegles(this);
@@ -10,7 +10,7 @@ ManagerEcran::ManagerEcran(DonneesJeu* d)
       ecranJeu = new EcranJeu(this, d);
 
       ecranCourant = ecranAccueil;
-   }
+}
 
 ManagerEcran::~ManagerEcran()
 {
@@ -20,6 +20,10 @@ ManagerEcran::~ManagerEcran()
 void ManagerEcran::update(sf::RenderWindow &window, sf::Event event){
     //ecranCourant->update(window, event);
     ecranCourant->afficher(window);
+    ecranCourant->update( event);
+}
+
+void ManagerEcran::update(sf::Event event){
     ecranCourant->update( event);
 }
 
@@ -80,4 +84,6 @@ void ManagerEcran::setNombreJoueur(int nb)
 {
     nombreJoueur = nb;
     cerr << nb << endl;
+    donnees->setNbJoueur(nb);
+    cerr << "setdansdonnee" << endl;
 }

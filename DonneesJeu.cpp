@@ -3,6 +3,7 @@
 DonneesJeu::DonneesJeu(Donnees* d ): donnees(d), partieFini_(false), gagnant(NULL), joueurCourant(0), de(0), nbJoueur_(2)
 {
   //ctor
+  cerr<<"DonneesJoueur::Creation des donnees de jeu"<<endl;
 }
 
 
@@ -62,7 +63,6 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
 
     while(suivant!=joueurCourant){
 
-        cerr<<joueurCourant<<" "<<suivant<<" "<<nbJoueur_<<endl;
         Joueur j = tabJoueur_[suivant];
 
         vector<Carte*> tabCarteDepart = j.getCarteDepart();
@@ -73,7 +73,7 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
             if(tabCarteDepart[i]->getNom() == arme || tabCarteDepart[i]->getNom()==perso || tabCarteDepart[i]->getNom()==lieu){
 
                 res=tabCarteDepart[i]->getChemin();
-                cerr<<"ici "<<res<<endl;
+
                 trouve = true;
             }
             i++;

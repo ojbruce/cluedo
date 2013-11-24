@@ -206,7 +206,7 @@ void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4,
     b5.deselection();
     b6.deselection();
     b7.deselection();
-    manager->setNombreJoueur(8);
+    manager->setNombreJoueur(nombre);
 }
 
 

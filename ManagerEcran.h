@@ -30,6 +30,7 @@ class ManagerEcran
 
 
     private:
+        DonneesJeu* donnees;
 
         Ecran* ecranCourant;
 

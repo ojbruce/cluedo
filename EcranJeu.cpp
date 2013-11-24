@@ -1,20 +1,39 @@
 #include "EcranJeu.h"
 #include "ManagerEcran.h"
 
-EcranJeu::EcranJeu(ManagerEcran *manager,DonneesJeu* d): part(&p, &zoneText, &zoneCarte, d)
+EcranJeu::EcranJeu(ManagerEcran *manager,DonneesJeu* d1): d(d1),part(&p, &zoneText, &zoneCarte, d), partLancer(false)
 {
     //ctor
+
     cerr<<"EcranJeu::Crea "<<endl;
 }
+
+
 
 EcranJeu::~EcranJeu()
 {
     //dtor
+
 }
 
 
-void EcranJeu::afficher(sf::RenderWindow &fenetre){}    // Cette fonction lance l'affichage de la fênetre
-void EcranJeu::update(sf::Event event){}
+void EcranJeu::afficher(sf::RenderWindow &window){
+
+    if(!partLancer){
+        part.preparer();
+        partLancer=true;
+    }else{
+        p.afficher(window);
+        part.afficher(window);
+    }
+}
+
+void EcranJeu::update(sf::Event event){
+
+    part.update(event);
+
+
+}
 
 
 /**
@@ -31,14 +50,14 @@ void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
         //si on recoit un evenement souris pressee
         if (event.type == sf::Event::MouseButtonPressed){
             //on retroune la position de la souris et on affiche un pion à la position
-            part.update(window);
+            //part.update(window);
 
         }
     }
 
     //on maj l'affichage du plateau
-    p.afficher(window);
-    part.afficher(window);
+    //p.afficher(window);
+    //part.afficher(window);
 
 
 

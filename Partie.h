@@ -24,8 +24,8 @@ class Partie
         Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, DonneesJeu* d);
         ~Partie();
 
-
-        void update(sf::RenderWindow &window);
+        void preparer();
+        void update(sf::Event event);
         void afficher(sf::RenderWindow &window);
 
 
