@@ -18,7 +18,7 @@ class ManagerEcran
 
         Ecran* ecranCourant;
         EcranJeu* ecranJeu;
-        EcranAccueil* ecranAccueil;
+        //EcranAccueil* ecranAccueil;
 
 
 };

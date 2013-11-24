@@ -1,21 +1,77 @@
 #include "EcranAccueil.h"
+#include "ManagerEcran.h"
 
-EcranAccueil::EcranAccueil()
+
+#include <iostream>
+using namespace std;
+
+/**
+* Constructeur
+* Role : initialise les attribut de l'ecran d'accueil
+*/
+
+EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart.png", "Images/jouerClique.png")), regles(Bouton("Images/reglesDepart.png", "Images/reglesClique.png")) , manager(man)
 {
-    //ctor
-    imFond.loadFromFile("Images/accueil.png");
-	imFond.setSmooth(true);
+    // On charge l'image d'accueil dans la texture "image"
+    image.loadFromFile("Images/accueil.png");
 
-
-	accueil.setTexture(imFond);
+    // On met la texture dans le sprite accueil
+    accueil.setTexture(image);
 
 }
 
-EcranAccueil::~EcranAccueil()
+
+/**
+* Fonction afficher
+*/
+
+void EcranAccueil::afficher(sf::RenderWindow &fenetre)
 {
-    //dtor
+    sf::Event event;
+    while (fenetre.pollEvent(event))
+    {
+        if (event.type == sf::Event::Closed)
+            fenetre.close();
+    }
+
+    // Affichage des elements
+    fenetre.draw(accueil);
+
+    sf::Sprite sp1 = jouer.getSprite();
+    sp1.move(sf::Vector2f(405, 570));
+    fenetre.draw(sp1);
+
+    sf::Sprite sp2 = regles.getSprite();
+    sp2.move(sf::Vector2f(780, 570));
+    fenetre.draw(sp2);
+
+    //Affichage des changements
+    fenetre.display();
+
 }
 
-void EcranAccueil::update(sf::RenderWindow &window,sf::Event event){
-    window.draw(accueil);
+
+/**
+* Fonction update
+* Role :
+*/
+
+void EcranAccueil::update(sf::Event event)
+{
+    int x = event.mouseButton.x;
+    int y = event.mouseButton.y;
+
+    if(405 <= x && x<= 570 && 570<=y && y<=663)
+    {
+        jouer.clique();
+        manager->setEcranCourant(manager->getEcranConfiguration());
+    }
+
+    if(780<=x && x<=890 && 570<=y && y<=663)
+    {
+        regles.clique();
+        manager->setEcranCourant(manager->getEcranRegles());
+    }
+
+
 }

@@ -1,23 +1,33 @@
-#ifndef ECRANACCUEIL_H
-#define ECRANACCUEIL_H
+#ifndef DEF_ECRANACCUEIL
+#define DEF_ECRANACCUEIL
 
-#include "Ecran.h"
+#include <SFML/Graphics.hpp>
+#include <cstdlib>
+#include <vector>
+#include <iostream>
+#include <string>
+
+#include "ManagerEcran.h"
+#include "Bouton.h"
 
 
 class EcranAccueil : public Ecran
 {
-    public:
-        EcranAccueil();
-        void update(sf::RenderWindow &window, sf::Event event);
-        virtual ~EcranAccueil();
+	public:
 
-    protected:
-    private:
+      EcranAccueil(ManagerEcran *manager);
+      void afficher(sf::RenderWindow &fenetre);    // Cette fonction lance l'affichage de la fenetre
+      void update(sf::Event event);                // Cette fonction permet le changement d'ecran en fonction des evenements
 
-        //Image du plateau
-		sf::Texture imFond;
-		sf::Sprite accueil;
+   private :
+
+      sf::Texture image;        // Texture de l'ecran d'accueil
+      sf::Sprite accueil;       // Sprite de l'ecran d'accueil
+
+      Bouton jouer;             //Le bouton jouer pour aller vers l'ecran de config
+      Bouton regles;            //Le bouton pour aller vers l'ecran des regles
+
+      ManagerEcran *manager;    //Un pointeur ver le manager d'ecran
 
 };
-
-#endif // ECRANACCUEIL_H
+#endif
