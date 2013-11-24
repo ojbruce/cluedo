@@ -100,7 +100,7 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
  **/
 int DonneesJeu::lancerDe(){
 	srand(time(NULL)); // place le rand à un endroit diferent selon le time
-	de = rand() % 11+2;
+	de = rand() % 5+2;
     return de;
 }
 

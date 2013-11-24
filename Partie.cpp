@@ -46,6 +46,7 @@ void Partie::update(sf::RenderWindow &window){
                 //chemin ne contient pas la case elle n'est donc pas valide
                 cerr<< "Partie::case en dehors du champ du dé" <<endl;
 
+
             }else{
 
                 //on peut deplacer le joueur
@@ -56,7 +57,7 @@ void Partie::update(sf::RenderWindow &window){
                 std::string lieu;
                 lieu=nCase->action();
 
-                std::string chemin;
+                std::string cheminres;
 
                 //On est dans la nouvelle case
                 if(lieu !=""){
@@ -68,18 +69,18 @@ void Partie::update(sf::RenderWindow &window){
                     if(x=="a"){
                         donnees->accuser("book","Mrs. White",lieu);
                     }else{
-                        chemin=donnees->soupconner("book","Mrs. White","Hall");
+                        cheminres=donnees->soupconner("book","Mrs. White","Hall");
                     }
                 }
 
                 //On change les elements de la classe pour que le jeu continue
                 deClique_ = false;
 
+                //On vide le tableau des chemins poissibles
+                chemin.clear();
+
                 donnees->changerJoueur();
             }
-
-            //On vide le tableau des chemins poissibles
-            chemin.clear();
         }
 	}
 }
@@ -119,7 +120,7 @@ void Partie::afficher(sf::RenderWindow &window){
 
     //afficher les cartes du joueur en cour
     //zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
-    //zoneText->afficher(window);
+    zoneText->afficher(window);
 
 
     window.draw(*joueur);

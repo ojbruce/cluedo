@@ -111,6 +111,7 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
 void Case::update(sf::RenderWindow &window){
    rectangle->setFillColor(sf::Color(0, 90, 240,150));
    rectangle->setPosition(x_*20+20,y_*20+20);
+
    window.draw(*rectangle);
 }
 
