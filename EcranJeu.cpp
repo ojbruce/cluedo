@@ -1,6 +1,7 @@
 #include "EcranJeu.h"
+#include "ManagerEcran.h"
 
-EcranJeu::EcranJeu(DonneesJeu* d): part(&p, &zoneText, &zoneCarte, d)
+EcranJeu::EcranJeu(ManagerEcran *manager,DonneesJeu* d): part(&p, &zoneText, &zoneCarte, d)
 {
     //ctor
     cerr<<"EcranJeu::Crea "<<endl;
@@ -10,6 +11,10 @@ EcranJeu::~EcranJeu()
 {
     //dtor
 }
+
+
+void EcranJeu::afficher(sf::RenderWindow &fenetre){}    // Cette fonction lance l'affichage de la fênetre
+void EcranJeu::update(sf::Event event){}
 
 
 /**

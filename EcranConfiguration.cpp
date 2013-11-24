@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-/** _____________________________________________________
+/**
 * Constructeur
 */
 
@@ -32,13 +32,13 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
 * Fonction afficher
 */
 
-void EcranConfiguration::afficher(RenderWindow &fenetre)
+void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
 {
 
-    Event event;
+    sf::Event event;
     while (fenetre.pollEvent(event))
     {
-        if (event.type == Event::Closed)
+        if (event.type == sf::Event::Closed)
             fenetre.close();
 
     }
@@ -46,7 +46,7 @@ void EcranConfiguration::afficher(RenderWindow &fenetre)
     // Affichage des elements
     fenetre.draw(ecran);
 
-    Sprite sp;
+    sf::Sprite sp;
 
     sp = jouer.getSprite();
     sp.move(sf::Vector2f(595, 550));
@@ -219,7 +219,6 @@ void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4,
 
 bool EcranConfiguration::selectionValide()
 {
-    int cpt = 0;
     bool res;
 
     if(nb2.getClique()==true || nb3.getClique()==true || nb4.getClique()==true ||

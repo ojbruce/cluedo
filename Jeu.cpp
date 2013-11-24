@@ -20,13 +20,19 @@ void Jeu::lancerJeu(){
      	   	//Gere la fermeture de la fenetre
             if (event.type == sf::Event::Closed)
                 window.close();
+            // Si il y a eu un clique
+            if (event.type == sf::Event::MouseButtonPressed){
+
+                if (event.mouseButton.button == sf::Mouse::Left)
+                    manEcran.update(event);
+            }
        	}
 
 
       	window.clear();
 
         //on update l'ecran acec l'evenement
-        manEcran.update(window, event);
+        manEcran.afficher(window);
 
         //On affiche les changements
         window.display();

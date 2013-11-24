@@ -1,15 +1,14 @@
 #include "EcranAccueil.h"
 #include "ManagerEcran.h"
 
-
 #include <iostream>
 using namespace std;
+
 
 /**
 * Constructeur
 * Role : initialise les attribut de l'ecran d'accueil
 */
-
 EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart.png", "Images/jouerClique.png")), regles(Bouton("Images/reglesDepart.png", "Images/reglesClique.png")) , manager(man)
 {
     // On charge l'image d'accueil dans la texture "image"
@@ -24,7 +23,6 @@ EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart
 /**
 * Fonction afficher
 */
-
 void EcranAccueil::afficher(sf::RenderWindow &fenetre)
 {
     sf::Event event;

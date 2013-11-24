@@ -1,5 +1,5 @@
-#ifndef DEF_ECRANCONFIGURATION
-#define DEF_ECRANCONFIGURATION
+#ifndef DEF_ECRANREGLES
+#define DEF_ECRANREGLES
 
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
@@ -11,31 +11,22 @@
 
 class ManagerEcran;
 
-class EcranConfiguration : public Ecran
+class EcranRegles : public Ecran
 {
 	public:
 
-      EcranConfiguration(ManagerEcran *manager);
+      EcranRegles(ManagerEcran *manager);
+
       void afficher(sf::RenderWindow &fenetre);     // Cette fonction lance l'affichage de la fênetre
+
       void update(sf::Event event);                 // Cette fonction permet le changement d'ecran en fonction des evenements
-      bool selectionValide();
 
    private :
 
       sf::Texture image;                // Texture de l'ecran d'accueil
       sf::Sprite ecran;                 // Sprite de l'ecran d'accueil
-      Bouton jouer;
-      Bouton nb2;
-      Bouton nb3;
-      Bouton nb4;
-      Bouton nb5;
-      Bouton nb6;
-      Bouton nb7;
-      Bouton nb8;
+      Bouton fermer;
       ManagerEcran *manager;
-
-      void changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4, Bouton &b5, Bouton &b6,Bouton &b7, int nombre);
-
 
 };
 #endif

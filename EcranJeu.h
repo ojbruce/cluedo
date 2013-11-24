@@ -7,11 +7,16 @@
 #include "Partie.h"
 #include "ZoneAffichageTexte.h"
 
+class ManagerEcran;
+
 class EcranJeu : public Ecran
 {
     public:
-        EcranJeu(DonneesJeu* d);
+        EcranJeu(ManagerEcran *manager,DonneesJeu* d);
         virtual ~EcranJeu();
+
+        void afficher(sf::RenderWindow &fenetre);     // Cette fonction lance l'affichage de la fênetre
+        void update(sf::Event event);
 
         void update(sf::RenderWindow &window, sf::Event event);
 
