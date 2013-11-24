@@ -50,6 +50,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Bouton.cpp" />
+		<Unit filename="Bouton.h" />
 		<Unit filename="Carte.cpp" />
 		<Unit filename="Carte.h" />
 		<Unit filename="Case.cpp" />
@@ -63,14 +65,25 @@
 		<Unit filename="Ecran.h" />
 		<Unit filename="EcranAccueil.cpp" />
 		<Unit filename="EcranAccueil.h" />
+		<Unit filename="EcranConfiguration.cpp" />
+		<Unit filename="EcranConfiguration.h" />
 		<Unit filename="EcranJeu.cpp" />
 		<Unit filename="EcranJeu.h" />
+		<Unit filename="EcranRegles.cpp" />
+		<Unit filename="EcranRegles.h" />
+		<Unit filename="Fenetre.h" />
+		<Unit filename="FenetreChoix.cpp" />
+		<Unit filename="FenetreChoix.h" />
+		<Unit filename="FenetreInfo.cpp" />
+		<Unit filename="FenetreInfo.h" />
 		<Unit filename="Jeu.cpp" />
 		<Unit filename="Jeu.h" />
 		<Unit filename="Joueur.cpp" />
 		<Unit filename="Joueur.h" />
 		<Unit filename="ManagerEcran.cpp" />
 		<Unit filename="ManagerEcran.h" />
+		<Unit filename="ManagerFenetre.cpp" />
+		<Unit filename="ManagerFenetre.h" />
 		<Unit filename="Mur.cpp" />
 		<Unit filename="Mur.h" />
 		<Unit filename="Partie.cpp" />
