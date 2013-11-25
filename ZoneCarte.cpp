@@ -6,10 +6,12 @@ ZoneCarte::ZoneCarte(): limY_(550)
     if(!texture.loadFromFile("Images/carteVide.png")){}
 }
 
+
 ZoneCarte::~ZoneCarte()
 {
     //dtor
 }
+
 
 void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
 
@@ -30,9 +32,11 @@ void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
 
     }
 
-    if(posx != 1296){
+    if(posx < 1296){
+    	//on met la texture par defaut carte vide
         sp.setTexture(texture);
-        for(unsigned int j=0; j < vec.size(); j++){
+
+        for(unsigned int j=0; j < 12-vec.size(); j++){
 
             sp.setPosition(posx,limY_);
             window.draw(sp);

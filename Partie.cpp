@@ -1,9 +1,13 @@
 #include "Partie.h"
 
-Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, DonneesJeu* d): donnees(d), deClique_(false),p(plat), zoneText(zoneT), zoneCarte(zoneC) {
+Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, ZoneChecklist* zoneCheck, DonneesJeu* d): donnees(d), deClique_(false),p(plat), zoneText(zoneT), zoneCarte(zoneC),zoneChecklist(zoneCheck) {
+  	armeCrime="";
+  	persoCrime="";
+  	action="";
+
+  	manFen.observerChoix(this);
 
     if (!font.loadFromFile("arial.ttf")){ }
-    texte = new sf::Text("Lancer le de", font);
 
     cerr<<"Partie::Creation Partie"<<endl;
 }
@@ -14,20 +18,33 @@ Partie::~Partie()
     cerr<<"Partie::Destruction"<< endl;
 }
 
-void Partie::preparer(){
-    donnees->preparerPartie(p);
 
+/**
+* Fonction preparer
+*/
+void Partie::preparer()
+{
+    donnees->preparerPartie(p);
 }
 
-void Partie::update(sf::Event event){
 
+/**
+* Fonction update
+*/
+void Partie::update(sf::Event event)
+{
     int x = event.mouseButton.x;
     int y = event.mouseButton.y;   //on recupere la position
+
+    zoneChecklist->update(donnees->getJoueurCourant(), event);
+
 
 	if(p->positionValide(x,y)){
 
         Joueur &j=*donnees->getJoueurCourant();
         cerr<<j.getNom()<<endl;
+
+
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
         if(y >=220 && y<=360 && x>=220 && x<=320 && !deClique_ ){
 
@@ -64,14 +81,15 @@ void Partie::update(sf::Event event){
                 //On est dans la nouvelle case
                 if(lieu !=""){
 
-                    cout<< "accuser a ou soupconner s?" <<endl;
-                    std::string x;
-                    x="s";
+					manFen.ouvrirFenetreInfo();	//ouvre une fenetre d'info
+					manFen.ouvrirFenetreChoix();//ouvre la fenetre permettant au joueur de faire un choix
 
-                    if(x=="a"){
-                        donnees->accuser("book","Mrs. White",lieu);
+					cerr<<"Partie::obs"<<armeCrime<<" " <<persoCrime<<" " <<lieu<<endl;
+
+                    if(action=="a"){
+                        donnees->accuser(armeCrime,persoCrime,lieu);
                     }else{
-                        cheminres=donnees->soupconner("book","Mrs. White","Hall");
+                        cheminres=donnees->soupconner(armeCrime,persoCrime,lieu);
                     }
                 }
 
@@ -89,45 +107,41 @@ void Partie::update(sf::Event event){
 
 void Partie::afficher(sf::RenderWindow &window){
 
-    std::stringstream sstm;
-    sstm << "De= " << donnees->getDe();
-
-    std::string result = sstm.str();
-    sf::Text* text;
 
     //affichage du chemin bleu
-    for(unsigned int j=0; j < chemin.size(); j++){
+    for(unsigned int j=0; j < chemin.size(); j++)
+    {
         chemin.at(j)->update(window);
     }
 
 
     //affichage du joueur
-    for(int i=0; i < donnees->getNbJoueur(); i++){
+    for(int i=0; i < donnees->getNbJoueur(); i++)
+    {
         donnees->getJoueurAt(i)->update(window);
     }
 
-    //afficher les cartes du joueur en cour
+    //afficher les cartes du joueur en cours
+    zoneChecklist->afficherChecklist(donnees->getJoueurCourant(), window);
     zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
-    zoneText->afficher(window);
+    //zoneText->afficher(window);
 
-    //sf::Text joueur("A vous joueur: \n" +donnees->getJoueurCourant()->getPerso()->getNom(), font);
-    sf::Text joueur(L"Lancer le dé", font);
-    joueur.setPosition(220,220);
-    joueur.setCharacterSize(11);
-    //Le texte depend de ce qui est clique ou pas
-    /*if(!deClique_)
-        text = new sf::Text(L"Cliquer au centre\npour\nlancer le dé", font);
-    else
-        text = new sf::Text(result, font);
+    //sf::Text de(L"Lancer le dé", font);
+    //de.setPosition(820,10);
+    //de.setCharacterSize(11);
 
-    text->setPosition(220,300);
-    text->setCharacterSize(11);*/
 
-    window.draw(joueur);
-    //window.draw(*text);
+    //window.draw(de);
 
 }
 
 
-
+/**
+* Fonction notify
+*/
+void Partie::estNotifie(std::string choix1, std::string choix2, std::string act){
+	    action =act;
+	    persoCrime = choix1;
+	    armeCrime = choix2;
+}
 

@@ -140,7 +140,7 @@ void Plateau::initCases(){
      **/
 
     //La cuisine de [0,0] à [5,6] une porte
-    Porte *kitchen=new Porte("Cuisine",6,4);
+    Porte *kitchen=new Porte("Kitchen",6,4);
 	for(int i=0; i<7;i++){
 		for(int j=0; j<6;j++){
 			Piece* p= new Piece(i,j);
@@ -151,7 +151,7 @@ void Plateau::initCases(){
 	tab[6][4] = kitchen;
 
 	//La salle à manger [0,9][7,15] deux portes
-	Porte *diningRoom1=new Porte("Salle à manger",12,7);
+	Porte *diningRoom1=new Porte("Dining-room",12,7);
     Porte *diningRoom2;
 	for(int i=9; i<16;i++){
 		for(int j=0; j<8;j++){
@@ -166,7 +166,7 @@ void Plateau::initCases(){
     tab[15][6] = diningRoom2 ;
 
     //Le salon [0,19] à [6,24] une porte
-    Porte* lounge= new Porte("Salon",19,6 );
+    Porte* lounge= new Porte("Lounge",19,6 );
 	for(int i=19; i<25;i++){
 		for(int j=0; j<7;j++){
 			Piece* p= new Piece(i,j);
@@ -197,7 +197,7 @@ void Plateau::initCases(){
 	tab[20][14]=hall3;
 
 	//le study [17,21] à [23,24] une porte
-	Porte* study = new Porte("Le study",21,17);
+	Porte* study = new Porte("Study",21,17);
     for(int i=21; i<25;i++){
 		for(int j=17; j<24;j++){
 			Piece* p= new Piece(i,j);
@@ -209,7 +209,7 @@ void Plateau::initCases(){
 
 
 	//la library [17,14] à [23,18] 2 portes
-	Porte* library1 = new Porte("La bibliothèque",16,17);
+	Porte* library1 = new Porte("Library",16,17);
 	Porte* library2;
 
     for(int i=14; i<19;i++){
@@ -225,7 +225,7 @@ void Plateau::initCases(){
 	tab[14][20]=library2;
 
 	//le game room [18,8] à [23,12] deux portes
-	Porte* game1 = new Porte("La salle de jeu",9,18);
+	Porte* game1 = new Porte("Billiard-room",9,18);
 	Porte* game2;
     for(int i=8; i<13;i++){
 		for(int j=18; j<24;j++){
@@ -240,7 +240,7 @@ void Plateau::initCases(){
 	tab[12][22]=game2;
 
 	//la conservatory [18,0] à [23,5] une porte
-	Porte* conservatory = new Porte("Salle de bain",5,19);
+	Porte* conservatory = new Porte("Conservatory",5,19);
     for(int i=0; i<6;i++){
 		for(int j=18; j<24;j++){
 			Piece* p= new Piece(i,j);
@@ -252,7 +252,7 @@ void Plateau::initCases(){
 
 
 	//bedroom [8,2] à [15,7] quatre portes
-	Porte* bedroom1=new Porte("Chambre",5,15);
+	Porte* bedroom1=new Porte("Ballroom",5,15);
 	Porte* bedroom2;
 	Porte* bedroom3;
 	Porte* bedroom4;
@@ -362,5 +362,4 @@ Plateau::~Plateau(){
 
     cerr<<"Destruction du plateau"<<endl;
 }
-
 

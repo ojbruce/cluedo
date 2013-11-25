@@ -15,18 +15,23 @@
 #include "DonneesJeu.h"
 #include "ZoneAffichageTexte.h"
 #include "ZoneCarte.h"
+#include "ZoneChecklist.h"
+#include "Observer.h"
+#include "ManagerFenetre.h"
 
 
-class Partie
+class Partie: public Observer
 {
     public:
         //Partie();
-        Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, DonneesJeu* d);
+        Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC,ZoneChecklist* z, DonneesJeu* d);
         ~Partie();
 
         void preparer();
         void update(sf::Event event);
         void afficher(sf::RenderWindow &window);
+
+        virtual void estNotifie(std::string choix1, std::string choix2, std::string act);
 
 
 
@@ -42,9 +47,15 @@ class Partie
         Plateau* p;                     //Le plateau de jeu
         ZoneAffichageTexte* zoneText;   //La zone de texte
         ZoneCarte* zoneCarte;           //La zone des cartes
+        ZoneChecklist* zoneChecklist;   //Le zone de la checklist
 
-        sf::Text* texte;
         sf::Font font;
+
+        std::string armeCrime;
+        std::string persoCrime;
+		std::string action;
+
+		ManagerFenetre manFen;
 
 
 };
