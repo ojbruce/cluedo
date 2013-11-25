@@ -32,7 +32,7 @@ class Case{
         std::pair<int,int> milieu(int tailleCase, std::pair<int,int> a);
 
 
-        void update(sf::RenderWindow &window);       //coloration de la case
+        void colorier(sf::RenderWindow &window);       //coloration de la case
 
 		//Getter Setter
 		virtual int getX();                         //retroune le x

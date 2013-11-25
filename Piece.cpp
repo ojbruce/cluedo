@@ -1,4 +1,5 @@
 #include "Piece.h"
+#include "Porte.h"
 
 Piece::Piece(std::string n) :Case(),nom_(n){}
 
@@ -28,6 +29,10 @@ std::string Piece::action(){
     return "";
 }
 
+void Piece::setPorte(Porte* p){
+    porte=p;
+}
+
 /**
  * Methode qui trouve tous les chemins possibles
  * @param de le nombre a parcourir
@@ -36,5 +41,4 @@ std::string Piece::action(){
  */
 void Piece::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     //on ne fait rien
-
 }

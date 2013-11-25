@@ -151,6 +151,7 @@ void Plateau::initCases(){
 	}
 	tab[6][4] = kitchen;
 
+
 	//La salle à manger [0,9][7,15] deux portes
 	Porte *diningRoom1=new Porte("Dining-room",12,7);
     Porte *diningRoom2;
@@ -161,7 +162,6 @@ void Plateau::initCases(){
 			diningRoom1->ajouterPiece(p);
 		}
 	}
-
 	tab[12][7] = diningRoom1 ;
     diningRoom2=new Porte(*diningRoom1,15,6);
     tab[15][6] = diningRoom2 ;
@@ -253,34 +253,34 @@ void Plateau::initCases(){
 
 
 	//bedroom [8,2] à [15,7] quatre portes
-	Porte* bedroom1=new Porte("Ballroom",5,15);
-	Porte* bedroom2;
-	Porte* bedroom3;
-	Porte* bedroom4;
+	Porte* ballroom1=new Porte("Ballroom",5,15);
+	Porte* ballroom2;
+	Porte* ballroom3;
+	Porte* ballroom4;
 
     for(int i=2; i<8;i++){
 		for(int j=8; j<16;j++){
 			Piece* p= new Piece(i,j,"Ballroom");
 			tab[i][j] = p;
-			bedroom1->ajouterPiece(p);
+			ballroom1->ajouterPiece(p);
 		}
 	}
     for(int i=0; i<2;i++){
 		for(int j=10; j<14;j++){
 			Piece* p= new Piece(i,j,"Ballroom");
 			tab[i][j] = p;
-			bedroom1->ajouterPiece(p);
+			ballroom1->ajouterPiece(p);
 		}
 	}
 
-	bedroom2 = new Porte(*bedroom1,7,14);
-	bedroom3 = new Porte(*bedroom1,7,9);
-	bedroom4 = new Porte(*bedroom1,5,8);
+	ballroom2 = new Porte(*ballroom1,7,14);
+	ballroom3 = new Porte(*ballroom1,7,9);
+	ballroom4 = new Porte(*ballroom1,5,8);
 
-	tab[5][15]=bedroom1;
-	tab[7][14]=bedroom2;
-	tab[7][9]=bedroom3;
-	tab[5][8]=bedroom4;
+	tab[5][15]=ballroom1;
+	tab[7][14]=ballroom2;
+	tab[7][9]=ballroom3;
+	tab[5][8]=ballroom4;
 
     //La grosse case inutile du milieu [10,10] à [14,16]
     for(int i=10; i<17;i++){
@@ -338,6 +338,20 @@ void Plateau::initCases(){
 		    }
 		}
 	}
+
+	//passage secret
+	/*kitchen->setCheminSecret(tab[21][22]);
+	study->setCheminSecret(tab[1][5]);
+
+	lounge->setCheminSecret(tab[4][23]);
+	conservatory->setCheminSecret(tab[20][1]);*/
+
+    kitchen->setCheminSecret(tab[21][17]);
+	study->setCheminSecret(tab[6][4]);
+
+	lounge->setCheminSecret(tab[5][19]);
+	conservatory->setCheminSecret(tab[20][6]);
+
 }
 
 void Plateau::creerMur(int a, int b){

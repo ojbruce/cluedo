@@ -6,6 +6,8 @@
 //Pour l'heritage
 #include "Case.h"
 
+class Porte;
+
 using namespace std;
 
 class Piece : public Case{
@@ -18,9 +20,13 @@ class Piece : public Case{
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
 
+
+
+        void setPorte(Porte* p);
+
    protected:
         string nom_;                //Le nom de la piece
-        //Porte* p;
+        Porte* porte;
 };
 
 #endif // PIECE_H

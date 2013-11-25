@@ -17,6 +17,7 @@ class Mur : public Case
         virtual std::string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
 
+
     protected:
     private:
 };

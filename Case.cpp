@@ -108,7 +108,7 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
  * Methode qui affiche la case
  *
  */
-void Case::update(sf::RenderWindow &window){
+void Case::colorier(sf::RenderWindow &window){
    rectangle->setFillColor(sf::Color(0, 90, 240,150));
    rectangle->setPosition(x_*20+20,y_*20+20);
 

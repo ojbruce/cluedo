@@ -959,11 +959,11 @@
 	<SFML/Graphics.hpp>
 	<string>
 
-1385251748 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
+1385417530 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1385201905 /home/olivia/Desktop/ProjetCluedo/cluedo/Case.h
+1385417980 /home/olivia/Desktop/ProjetCluedo/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
@@ -980,14 +980,14 @@
 	"Joueur.h"
 	"Donnees.h"
 
-1385413115 /home/olivia/Desktop/ProjetCluedo/cluedo/Piece.h
+1385417980 /home/olivia/Desktop/ProjetCluedo/cluedo/Piece.h
 	<iostream>
 	"Case.h"
 
-1385201905 /home/olivia/Desktop/ProjetCluedo/cluedo/Mur.h
+1385417980 /home/olivia/Desktop/ProjetCluedo/cluedo/Mur.h
 	"Case.h"
 
-1385412984 /home/olivia/Desktop/ProjetCluedo/cluedo/Porte.h
+1385417980 /home/olivia/Desktop/ProjetCluedo/cluedo/Porte.h
 	<vector>
 	<iostream>
 	<cstdlib>
@@ -1026,7 +1026,7 @@
 1385413703 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Donnees.cpp
 	"Donnees.h"
 
-1385413598 source:/home/olivia/Desktop/ProjetCluedo/cluedo/DonneesJeu.cpp
+1385413744 source:/home/olivia/Desktop/ProjetCluedo/cluedo/DonneesJeu.cpp
 	"DonneesJeu.h"
 
 1385410728 /home/olivia/Desktop/ProjetCluedo/cluedo/DonneesJeu.h
@@ -1199,16 +1199,17 @@
 1385201905 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Mur.cpp
 	"Mur.h"
 
-1385413435 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
+1385417555 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
 	"Partie.h"
 
 1384982081 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.cpp
 	"Personnage.h"
 
-1385412619 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Piece.cpp
+1385417002 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Piece.cpp
 	"Piece.h"
+	"Porte.h"
 
-1385413109 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Plateau.cpp
+1385417195 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Plateau.cpp
 	"Plateau.h"
 
 1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneAffichageTexte.cpp
@@ -1222,6 +1223,6 @@
 	"Joueur.h"
 	<iostream>
 
-1385413109 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
+1385417195 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
 	"Porte.h"
 

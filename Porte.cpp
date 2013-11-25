@@ -1,5 +1,8 @@
 #include "Porte.h"
 
+
+
+
 using namespace std;
 
 /**
@@ -15,9 +18,10 @@ Porte::Porte(string nom,int a, int b, Case* c) :Piece(a,b,nom),cheminSecret(c) {
 /**
  *Constructeur
  */
-Porte::Porte(const Porte& p,int a, int b, Case* c):Piece(a,b,p.Porte::nom_), tabPiece_(p.tabPiece_){
+Porte::Porte(const Porte& p,int a, int b):Piece(a,b,p.Porte::nom_), tabPiece_(p.tabPiece_){
     cheminSecret = p.cheminSecret;
 }
+
 
 string Porte::toString(){
 
@@ -37,6 +41,7 @@ string Porte::toString(){
  */
 void Porte::ajouterPiece(Piece* p){
     tabPiece_.push_back(p);
+    p->setPorte(this);
 }
 
 //Getter
@@ -63,14 +68,19 @@ std::string Porte::action(){
  */
 void Porte::trouverChemin(int de, vector<Case*> &res, Plateau* p){
     //tester le taille du res
-    if(res.size() == 0)
+    if(res.size() == 0){
+
         Case::trouverChemin(de, res, p);
-    else
+
+        if(cheminSecret!=NULL)
+            res.push_back(cheminSecret);
+    }
+    else{
         //on insere l'element courant
         if(std::find(res.begin(), res.end(), this) == res.end())
-        res.push_back(this);
+            res.push_back(this);
+   }
 
-    //si il y a plusieurs on trouvechemin a partir de tout cela
 }
 
 

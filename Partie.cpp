@@ -113,7 +113,7 @@ void Partie::afficher(sf::RenderWindow &window){
     //affichage du chemin bleu
     for(unsigned int j=0; j < chemin.size(); j++)
     {
-        chemin.at(j)->update(window);
+        chemin.at(j)->colorier(window);
     }
 
 

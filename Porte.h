@@ -10,14 +10,13 @@
 #include "Piece.h"
 
 
-
 class Porte : public Piece
 {
     public:
         Porte(string nom, Case* c=NULL);                //Constructeur de porte par defaut: appel case
         Porte(string nom, int a, int b, Case* c=NULL);    //Constructeur de porte avec coordonnee : appel case
 
-        Porte(const Porte& p, int a, int b, Case* c=NULL); //Construction d'une porte avec une autre porte=meme piece
+        Porte(const Porte& p, int a, int b); //Construction d'une porte avec une autre porte=meme piece
 
         void ajouterPiece(Piece* p);
         void setCheminSecret(Case* c);
@@ -26,6 +25,8 @@ class Porte : public Piece
         virtual string toString();
         virtual void trouverChemin(int de, vector<Case*> &res, Plateau* p);
         virtual string action();
+
+
 
         string getNom() const;
         virtual ~Porte();
