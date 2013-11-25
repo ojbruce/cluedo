@@ -3,15 +3,26 @@
 
 using namespace std;
 
-Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24){}
+Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24)
+{
+    for(int i=1; i<25 ; i++)
+    {
+        checklist.push_back(false);  
+    }
+}
 
-Joueur::Joueur(Personnage* perso): perso_(perso){
+Joueur::Joueur(Personnage* perso): perso_(perso)
+{
     //La position du joueur
     position_= perso_->getPositionDepart();
 
     //Les images
 	if(!im.loadFromFile(perso_->getPion())){}
 
+    for(int i=1; i<25 ; i++)
+    {
+        checklist.push_back(false);  
+    }
 }
 
 
@@ -78,6 +89,7 @@ std::string Joueur::getNom(){
     return perso_->getNom();
 }
 
+
 /**
  * Getter de la position
  * @param c la posion du joueur
@@ -85,6 +97,7 @@ std::string Joueur::getNom(){
 void Joueur::setPosition(Case* c){
     position_=c;
 }
+
 
 /**
  * Operateur d'egalite
@@ -98,3 +111,28 @@ bool Joueur::operator== (Joueur const &p2)
     return false;
   }
 }
+
+
+/**
+ * Fonction setChecklist
+ **/
+void Joueur::setChecklist(vector<bool> vecteur)
+{
+    checklist = vecteur;
+}
+
+
+/**
+ * Fonction getChecklist
+ **/
+
+vector<bool> Joueur::getChecklist()
+{
+    return checklist;
+}
+
+
+
+
+
+

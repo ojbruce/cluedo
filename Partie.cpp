@@ -4,9 +4,9 @@ Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Zone
   	armeCrime="";
   	persoCrime="";
   	action="";
-
+  	
   	manFen.observerChoix(this);
-
+  	
     if (!font.loadFromFile("arial.ttf")){ }
 
     cerr<<"Partie::Creation Partie"<<endl;
@@ -36,15 +36,15 @@ void Partie::update(sf::Event event)
     int x = event.mouseButton.x;
     int y = event.mouseButton.y;   //on recupere la position
 
-    zoneChecklist->update(donnees->getJoueurCourant(), event);
+    zoneChecklist->update(donnees->getJoueurCourant(), event);  
 
 
 	if(p->positionValide(x,y)){
 
         Joueur &j=*donnees->getJoueurCourant();
         cerr<<j.getNom()<<endl;
-
-
+        
+        
         //Si le joueur clique sur le centre on lance le de et cherche les chemins
         if(y >=220 && y<=360 && x>=220 && x<=320 && !deClique_ ){
 
@@ -83,9 +83,9 @@ void Partie::update(sf::Event event)
 
 					manFen.ouvrirFenetreInfo();	//ouvre une fenetre d'info
 					manFen.ouvrirFenetreChoix();//ouvre la fenetre permettant au joueur de faire un choix
-
+					
 					cerr<<"Partie::obs"<<armeCrime<<" " <<persoCrime<<" " <<lieu<<endl;
-
+					
                     if(action=="a"){
                         donnees->accuser(armeCrime,persoCrime,lieu);
                     }else{
@@ -125,14 +125,14 @@ void Partie::afficher(sf::RenderWindow &window){
     zoneChecklist->afficherChecklist(donnees->getJoueurCourant(), window);
     zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
     //zoneText->afficher(window);
-
+   
     //sf::Text de(L"Lancer le dé", font);
     //de.setPosition(820,10);
     //de.setCharacterSize(11);
-
+    
 
     //window.draw(de);
-
+   
 }
 
 
@@ -144,4 +144,5 @@ void Partie::estNotifie(std::string choix1, std::string choix2, std::string act)
 	    persoCrime = choix1;
 	    armeCrime = choix2;
 }
+ 
 

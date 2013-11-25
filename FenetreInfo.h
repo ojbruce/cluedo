@@ -18,6 +18,7 @@ class FenetreInfo : public Fenetre
       FenetreInfo(ManagerFenetre *manager);
       void afficher(sf::RenderWindow &fenetre);    // Cette fonction lance l'affichage de la fenetre
       void update(sf::Event event, sf::RenderWindow &fenetre);                // Cette fonction permet le changement d'ecran en fonction des evenements
+      void setACliqueFalse();
 
    private :
 
@@ -27,6 +28,8 @@ class FenetreInfo : public Fenetre
       Bouton ok;
 
       ManagerFenetre *manager;
+      
+      bool aClique;
 
 };
 #endif

@@ -1,14 +1,14 @@
 #include "EcranConfiguration.h"
 #include "ManagerEcran.h"
 
-
 #include <iostream>
+
 using namespace std;
+
 
 /**
 * Constructeur
 */
-
 EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
     jouer(Bouton("Images/jouerDepart.png", "Images/jouerClique.png")),
     nb2(Bouton("Images/2Depart.png", "Images/2Clique.png")),
@@ -18,8 +18,8 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
     nb6(Bouton("Images/6Depart.png", "Images/6Clique.png")),
     nb7(Bouton("Images/7Depart.png", "Images/7Clique.png")),
     nb8(Bouton("Images/8Depart.png", "Images/8Clique.png")),
-    manager(man){
-
+    manager(man)
+{
     // On charge l'image dans la texture "image"
     image.loadFromFile("Images/configuration.png");
 
@@ -28,7 +28,7 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
 }
 
 
-/** _____________________________________________________
+/**
 * Fonction afficher
 */
 
@@ -85,11 +85,9 @@ void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
 
 }
 
-/** _____________________________________________________
+/** 
 * Fonction update
-* Role :
 */
-
 void EcranConfiguration::update(sf::Event event)
 {
     int x = event.mouseButton.x;
@@ -106,97 +104,44 @@ void EcranConfiguration::update(sf::Event event)
 
     if(200<=x && x<=256 && 360<=y && y<=423)
     {
-        /*nb2.clique();
-        nb3.deselection();
-        nb4.deselection();
-        nb5.deselection();
-        nb6.deselection();
-        nb7.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(2);*/
         changement(nb2,nb8,nb3,nb4,nb5,nb6,nb7,2);
     }
 
     if(340<=x && x<=403 && 360<=y && y<=423)
     {
-        /*nb3.clique();
-        nb2.deselection();
-        nb4.deselection();
-        nb5.deselection();
-        nb6.deselection();
-        nb7.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(3);*/
         changement(nb3,nb2,nb8,nb4,nb5,nb6,nb7,3);
     }
 
     if(480<=x && x<=543 && 360<=y && y<=423)
     {
-        /*nb4.clique();
-        nb2.deselection();
-        nb3.deselection();
-        nb5.deselection();
-        nb6.deselection();
-        nb7.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(4);*/
         changement(nb4,nb2,nb3,nb8,nb5,nb6,nb7,4);
     }
 
     if(620<=x && x<=683 && 360<=y && y<=423)
     {
-        /*nb5.clique();
-        nb2.deselection();
-        nb3.deselection();
-        nb4.deselection();
-        nb6.deselection();
-        nb7.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(5);*/
         changement(nb5,nb2,nb3,nb4,nb8,nb6,nb7,5);
     }
 
     if(760<=x && x<=823 && 360<=y && y<=423)
     {
-       /*nb6.clique();
-        nb2.deselection();
-        nb3.deselection();
-        nb4.deselection();
-        nb5.deselection();
-        nb7.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(6);*/
         changement(nb6,nb2,nb3,nb4,nb5,nb8,nb7,6);
     }
 
     if(900<=x && x<=963 && 360<=y && y<=423)
     {
-        /*nb7.clique();
-        nb2.deselection();
-        nb3.deselection();
-        nb4.deselection();
-        nb5.deselection();
-        nb6.deselection();
-        nb8.deselection();
-        manager->setNombreJoueur(7);*/
         changement(nb7,nb2,nb3,nb4,nb5,nb6,nb8,7);
     }
 
     if(1040<=x && x<=1103 && 360<=y && y<=423)
     {
-        /*nb8.clique();
-        nb2.deselection();
-        nb3.deselection();
-        nb4.deselection();
-        nb5.deselection();
-        nb6.deselection();
-        nb7.deselection();
-        manager->setNombreJoueur(8);*/
         changement(nb8,nb2,nb3,nb4,nb5,nb6,nb7,8);
     }
 
 }
 
+/** 
+* Fonction changement
+*/
 void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7, int nombre){
 
     b1.clique();
@@ -210,9 +155,7 @@ void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4,
 }
 
 
-
-
-/** _____________________________________________________
+/**
 * Fonction selectionValide
 * Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique
 */

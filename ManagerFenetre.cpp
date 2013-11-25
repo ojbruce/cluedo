@@ -2,40 +2,39 @@
 #include "FenetreChoix.h"
 #include "FenetreInfo.h"
 
-   /** _____________________________________________________
-    * Constructeur
-    */
 
-   ManagerFenetre::ManagerFenetre()
-   {
-      fenetreInfo = new FenetreInfo(this);
-      fenetreChoix = new FenetreChoix(this);
+/**
+* Constructeur
+*/
 
-   }
-
-
-   /** _____________________________________________________
-    *  Destructeur
-    */
-
-   ManagerFenetre::~ManagerFenetre()
-   {
-      //dtor
-   }
+ManagerFenetre::ManagerFenetre()
+{
+    fenetreInfo = new FenetreInfo(this);
+    fenetreChoix = new FenetreChoix(this);
+}
 
 
-   /** _____________________________________________________
-    * Fonction ouvrirFenetreChoix
-    */
+/*
+*  Destructeur
+*/
+ManagerFenetre::~ManagerFenetre()
+{
+    //dtor
+}
 
-   void ManagerFenetre::ouvrirFenetreChoix()
-   {
 
-      // creation de la fenetre
-      sf::RenderWindow window(sf::VideoMode(900, 550), "...");
+/*
+* Fonction ouvrirFenetreChoix
+*/
+void ManagerFenetre::ouvrirFenetreChoix()
+{
+	fenetreChoix->setACliqueFalse();
+	
+    // creation de la fenetre
+    sf::RenderWindow window(sf::VideoMode(900, 570), "...");
 
-      while (window.isOpen())
-      {
+    while (window.isOpen())
+    {
         sf::Event event;
 
         while (window.pollEvent(event))
@@ -43,10 +42,8 @@
             // gestion des cliques
             if (event.type == sf::Event::MouseButtonPressed)
             {
-               if (event.mouseButton.button == sf::Mouse::Left)
-               {
-                  fenetreChoix->update(event,window);
-               }
+                if (event.mouseButton.button == sf::Mouse::Left)
+                    fenetreChoix->update(event,window);
             }
         }
 
@@ -59,18 +56,18 @@
    }
 
 
-   /** _____________________________________________________
-    * Fonction ouvrirFenetreInfo
-    */
+/*
+* Fonction ouvrirFenetreInfo
+*/
+void ManagerFenetre::ouvrirFenetreInfo()
+{
+	fenetreInfo->setACliqueFalse();
 
-   void ManagerFenetre::ouvrirFenetreInfo()
-   {
+    // creation de la fenetre
+    sf::RenderWindow window(sf::VideoMode(900, 550), "...");
 
-      // creation de la fenetre
-      sf::RenderWindow window(sf::VideoMode(900, 550), "...");
-
-      while (window.isOpen())
-      {
+    while (window.isOpen())
+    {
         sf::Event event;
 
         while (window.pollEvent(event))
@@ -78,20 +75,25 @@
             // gestion des cliques
             if (event.type == sf::Event::MouseButtonPressed)
             {
-               if (event.mouseButton.button == sf::Mouse::Left)
-               {
+                if (event.mouseButton.button == sf::Mouse::Left)
                   fenetreInfo->update(event,window);
-               }
             }
         }
-
 
         // affichage de la fenetre
         window.clear();
         fenetreInfo->afficher(window);
 
         window.display();
-      }
-   }
+    }
+}
 
+
+/*
+* Fonction observerChoix
+*/
+void ManagerFenetre::observerChoix(Observer* observer)
+{
+    fenetreChoix->ajouterObs(observer);                    
+}
 

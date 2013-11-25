@@ -35,7 +35,7 @@ void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
 
     bool bonneCarte;
 
-    for(unsigned int i; i<tabMystere_.size(); i++){
+    for(unsigned int i=0; i<tabMystere_.size(); i++){
         if(tabMystere_[i]->getNom()!=arme || tabMystere_[i]->getNom()!=perso || tabMystere_[i]->getNom()!=lieu){
             bonneCarte = false;
         }
@@ -86,7 +86,7 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
 
     }
 
-    cerr<<res<<endl;
+    cerr<<"DonneeJeu::carteContre"<< res <<endl;
     return res;
 }
 

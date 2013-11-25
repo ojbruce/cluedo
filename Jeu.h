@@ -13,6 +13,7 @@ using namespace std;
 class Jeu
 {
     public:
+
         Jeu();
         virtual ~Jeu();
 
@@ -23,7 +24,6 @@ class Jeu
         Donnees donnees;            //Les donnees du jeu
         DonneesJeu donneesJeu;      //Les donnees de la partie
         ManagerEcran manEcran;      //Le manager d'ecran
-
 
 };
 

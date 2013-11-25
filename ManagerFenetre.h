@@ -2,6 +2,7 @@
 #define MANAGERFENETRE_H
 
 #include "Fenetre.h"
+#include "Observer.h"
 
 #include <SFML/Graphics.hpp>
 #include <cstdlib>
@@ -9,7 +10,6 @@
 
 class FenetreInfo;
 class FenetreChoix;
-
 
 
 class ManagerFenetre
@@ -22,12 +22,13 @@ class ManagerFenetre
       void ouvrirFenetreInfo();
       void ouvrirFenetreChoix();
 
+      void observerChoix(Observer* observer);
+
     private:
 
-      Fenetre* fenetreInfo;
-      Fenetre* fenetreChoix;
+      FenetreInfo* fenetreInfo;
+      FenetreChoix* fenetreChoix;
 
-      //fenetreSupposer;
       //fenetreContrer;
 
 };

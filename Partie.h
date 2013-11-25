@@ -30,7 +30,7 @@ class Partie: public Observer
         void preparer();
         void update(sf::Event event);
         void afficher(sf::RenderWindow &window);
-
+        
         virtual void estNotifie(std::string choix1, std::string choix2, std::string act);
 
 
@@ -50,11 +50,11 @@ class Partie: public Observer
         ZoneChecklist* zoneChecklist;   //Le zone de la checklist
 
         sf::Font font;
-
+        
         std::string armeCrime;
         std::string persoCrime;
 		std::string action;
-
+		
 		ManagerFenetre manFen;
 
 

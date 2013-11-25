@@ -1,28 +1,16 @@
-#include <iostream>
-
 #include "Jeu.h"
-
-#include "Partie.h"
-
 
 using namespace std;
 
 
+/**
+* Fonction principale
+* Role : Elle cree un jeu puis le lance
+*/
 int main(void)
 {
-   /* cerr<<"Main:: CreationPlateau"<< endl;
-    Plateau* p = new Plateau();
-    p->afficher();
-
-    cerr<<"Main:: Plateau Creer/ CreationPartie"<< endl;
-
-    Partie partie(2, p);
-    cerr<<"Main:: Partie creer"<< endl << endl;
-
-    partie.lancerPartie();
-    delete p;*/
-
-    Jeu j; j.lancerJeu();
+    Jeu clue;
+    clue.lancerJeu();
 
     return 0;
 }

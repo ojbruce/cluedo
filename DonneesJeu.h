@@ -21,9 +21,6 @@ class DonneesJeu
         void accuser(std::string arme, std::string perso,std::string lieu);
         std::string soupconner(std::string arme, std::string perso,std::string lieu);
 
-
-
-
         //Getter- Setter
         bool getPartieFini();
         void setPartieFini(bool parti);

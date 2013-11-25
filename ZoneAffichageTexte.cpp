@@ -13,12 +13,12 @@ ZoneAffichageTexte::~ZoneAffichageTexte()
 
 void ZoneAffichageTexte::afficher(sf::RenderWindow &window){
 
-    sf::Text* texto = new sf::Text("MMMMM", font);
+    sf::Text texto("MMMMM", font);
 
-    texto->setCharacterSize(11);
-    texto->setPosition(debX,posCouranteX);
+    texto.setCharacterSize(11);
+    texto.setPosition(debX,posCouranteX);
 
-    window.draw(*texto);
+    window.draw(texto);
 
     //posCouranteX+=12;
 

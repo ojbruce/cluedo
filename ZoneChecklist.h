@@ -24,8 +24,8 @@ class ZoneChecklist
 
     private:
 
-        sf::Texture imageCheck;
-        sf::Sprite zoneCheck;
+        sf::Texture imageCheck;               
+        sf::Sprite zoneCheck; 
 
         Bouton c1;
         Bouton c2;

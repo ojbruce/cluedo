@@ -1,61 +1,71 @@
 #include "FenetreInfo.h"
 #include "ManagerFenetre.h"
 
-
 #include <iostream>
+
 using namespace std;
 
-   /** _____________________________________________________
-    * Constructeur
-    * Role : initialise les attribut de l'ecran d'accueil
-    */
+/** 
+* Constructeur
+* Role : initialise les attribut de l'ecran d'accueil
+*/
+FenetreInfo::FenetreInfo(ManagerFenetre *man) :
+    ok(Bouton("Images/okDepart.png", "Images/okClique.png")),
+    manager(man),
+    aClique(false)
+{
+    // On charge l'image d'accueil dans la texture "image"
+    image.loadFromFile("Images/info.png");
 
-   FenetreInfo::FenetreInfo(ManagerFenetre *man) :
-      ok(Bouton("Images/okDepart.png", "Images/okClique.png")),
-      manager(man)
-   {
-      // On charge l'image d'accueil dans la texture "image"
-      image.loadFromFile("Images/info.png");
-
-      // On met la texture dans le sprite accueil
-      fond.setTexture(image);
-   }
-
-
-   /** _____________________________________________________
-    * Fonction afficher
-    */
-
-   void FenetreInfo::afficher(sf::RenderWindow &fenetre)
-   {
-      // Affichage des elements
-
-      fenetre.draw(fond);
-
-      sf::Sprite sp;
-
-      sp = ok.getSprite();
-      sp.move(sf::Vector2f(400, 400));
-      fenetre.draw(sp);
-   }
+    // On met la texture dans le sprite accueil
+    fond.setTexture(image);
+}
 
 
-   /** _____________________________________________________
-    * Fonction update
-    * Role :
-    */
+/** 
+* Fonction afficher
+*/
+void FenetreInfo::afficher(sf::RenderWindow &fenetre)
+{
+	if(aClique==false)
+	{
+		ok.deselection();
+	}
 
-   void FenetreInfo::update(sf::Event event, sf::RenderWindow &fenetre)
-   {
-      int x = event.mouseButton.x;
-      int y = event.mouseButton.y;
+    // Affichage des elements
+    fenetre.draw(fond);
 
-      if(200<=x && x<=370 && 400<=y && y<=470)
-      {
-         ok.clique();
-         fenetre.close();
-      }
+    sf::Sprite sp;
 
-   }
+    sp = ok.getSprite();
+    sp.move(sf::Vector2f(400, 400));
+    fenetre.draw(sp);
+}
 
+
+/*
+* Fonction update 
+*/
+void FenetreInfo::update(sf::Event event, RenderWindow &fenetre)
+{
+    int x = event.mouseButton.x;
+    int y = event.mouseButton.y;
+    
+    aClique = true;
+
+    if(400<=x && x<=470 && 400<=y && y<=470)
+    { 
+        ok.clique();
+        fenetre.close();    
+    }
+}
+
+
+/** 
+* Fonction setAClique
+*/
+void FenetreInfo::setACliqueFalse()
+{
+	aClique = false;
+}
 

@@ -29,10 +29,11 @@ class EcranJeu : public Ecran
         Plateau p;                      //Le plateau
         ZoneAffichageTexte zoneText;    //La zone des textes
         ZoneCarte zoneCarte;            //La zone des cartes
+        ZoneChecklist zoneCheck;		//La zone de la checklist
 
         Partie part;                    //La partie
         bool partLancer;
-
+        
 
 };
 

@@ -6,7 +6,6 @@
 #include <string>
 
 #include "Ecran.h"
-
 #include "Bouton.h"
 
 class ManagerEcran;
@@ -25,6 +24,7 @@ class EcranConfiguration : public Ecran
 
       sf::Texture image;                // Texture de l'ecran d'accueil
       sf::Sprite ecran;                 // Sprite de l'ecran d'accueil
+
       Bouton jouer;
       Bouton nb2;
       Bouton nb3;
@@ -33,6 +33,7 @@ class EcranConfiguration : public Ecran
       Bouton nb6;
       Bouton nb7;
       Bouton nb8;
+
       ManagerEcran *manager;
 
       void changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4, Bouton &b5, Bouton &b6,Bouton &b7, int nombre);

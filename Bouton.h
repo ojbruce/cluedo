@@ -7,6 +7,8 @@
 #include <iostream>
 #include <string>
 
+using namespace sf;
+using namespace std;
 
 class Bouton
 {
@@ -17,6 +19,7 @@ class Bouton
         bool getClique();
         void clique();
         void deselection();
+        void selection();
 
     private :
 

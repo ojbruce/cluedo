@@ -13,10 +13,11 @@
 class ManagerEcran
 {
     public:
+
         ManagerEcran(DonneesJeu* d);
         virtual ~ManagerEcran();
 
-        void update(sf::RenderWindow &window, sf::Event event);
+        //void update(sf::RenderWindow &window, sf::Event event);
 
         void update(sf::Event event);
         void afficher(sf::RenderWindow &fenetre);
@@ -30,10 +31,10 @@ class ManagerEcran
 
 
     private:
+
         DonneesJeu* donnees;
 
         Ecran* ecranCourant;
-
         Ecran* ecranAccueil;
         Ecran* ecranRegles;
         Ecran* ecranConfiguration;

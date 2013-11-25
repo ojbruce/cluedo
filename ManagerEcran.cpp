@@ -1,45 +1,50 @@
 #include "ManagerEcran.h"
 
 
-
+/**
+* Constructeur
+*/
 ManagerEcran::ManagerEcran(DonneesJeu* d):donnees(d)
 {
-      ecranAccueil = new EcranAccueil(this);
-      ecranRegles = new EcranRegles(this);
-      ecranConfiguration = new EcranConfiguration(this);
-      ecranJeu = new EcranJeu(this, d);
+    ecranAccueil = new EcranAccueil(this);
+    ecranRegles = new EcranRegles(this);
+    ecranConfiguration = new EcranConfiguration(this);
+    ecranJeu = new EcranJeu(this, d);
 
-      ecranCourant = ecranAccueil;
+    ecranCourant = ecranAccueil;
 }
 
+
+/**
+* Destructeur
+*/
 ManagerEcran::~ManagerEcran()
 {
     //dtor
-
 }
-void ManagerEcran::update(sf::RenderWindow &window, sf::Event event){
-    //ecranCourant->update(window, event);
-    ecranCourant->afficher(window);
+
+
+/**
+* Fonction update
+*/
+void ManagerEcran::update(sf::Event event)
+{
     ecranCourant->update( event);
 }
 
-void ManagerEcran::update(sf::Event event){
-    ecranCourant->update( event);
-}
 
 /**
 * Fonction afficher
 */
-
 void ManagerEcran::afficher(sf::RenderWindow &fenetre)
 {
     ecranCourant->afficher(fenetre);
 }
 
+
 /**
 *  getEcranConfiguration
 */
-
 Ecran* ManagerEcran::getEcranConfiguration()
 {
     return ecranConfiguration;
@@ -49,7 +54,6 @@ Ecran* ManagerEcran::getEcranConfiguration()
 /**
 *  getEcranRegles
 */
-
 Ecran* ManagerEcran::getEcranRegles()
 {
     return ecranRegles;
@@ -59,7 +63,6 @@ Ecran* ManagerEcran::getEcranRegles()
 /**
 *  getEcranJeu
 */
-
 Ecran* ManagerEcran::getEcranJeu()
 {
     return ecranJeu;
@@ -67,9 +70,8 @@ Ecran* ManagerEcran::getEcranJeu()
 
 
 /**
-*  setEcranConfiguration
+*  setEcranCourant
 */
-
 void ManagerEcran::setEcranCourant(Ecran *ecran)
 {
     ecranCourant = ecran;
@@ -79,7 +81,6 @@ void ManagerEcran::setEcranCourant(Ecran *ecran)
 /**
 *  setNombreJoueur
 */
-
 void ManagerEcran::setNombreJoueur(int nb)
 {
     nombreJoueur = nb;
@@ -87,3 +88,4 @@ void ManagerEcran::setNombreJoueur(int nb)
     donnees->setNbJoueur(nb);
     cerr << "setdansdonnee" << endl;
 }
+

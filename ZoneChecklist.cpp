@@ -9,11 +9,11 @@ using namespace std;
 /**
 * Constructeur
 */
-ZoneChecklist::ZoneChecklist():
-    c1(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
-    c2(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
-     c3(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
-     c4(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
+ZoneChecklist::ZoneChecklist(): 
+    c1(Bouton("Images/checkDepart.png", "Images/checkClique.png")), 
+    c2(Bouton("Images/checkDepart.png", "Images/checkClique.png")), 
+     c3(Bouton("Images/checkDepart.png", "Images/checkClique.png")), 
+     c4(Bouton("Images/checkDepart.png", "Images/checkClique.png")), 
      c5(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
      c6(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
      c7(Bouton("Images/checkDepart.png", "Images/checkClique.png")),
@@ -37,7 +37,7 @@ ZoneChecklist::ZoneChecklist():
 {
     imageCheck.loadFromFile("Images/check.png");
     zoneCheck.setTexture(imageCheck);
-    zoneCheck.move(sf::Vector2f(520,0));
+    zoneCheck.move(sf::Vector2f(520,0));  
 }
 
 
@@ -68,36 +68,36 @@ void ZoneChecklist::afficherChecklist(Joueur* j, sf::RenderWindow &fenetre)
 {
     vector<bool> vec = j->getChecklist();
 
-    // Affichage de la checkliste
+    // Affichage de la checkliste 
     fenetre.draw(zoneCheck);
-
+    
 	//
-	importation(c1,0,vec);
+	importation(c1,0,vec);		
 	importation(c2,1,vec);
 	importation(c3,2,vec);
 	importation(c4,3,vec);
 	importation(c5,4,vec);
-	importation(c6,5,vec);
+	importation(c6,5,vec);	
 	importation(c7,6,vec);
 	importation(c8,7,vec);
-	importation(c9,8,vec);
+	importation(c9,8,vec);	
 	importation(c10,9,vec);
 	importation(c11,10,vec);
-	importation(c12,11,vec);
+	importation(c12,11,vec);	
 	importation(c13,12,vec);
 	importation(c14,13,vec);
-	importation(c15,14,vec);
+	importation(c15,14,vec);	
 	importation(c16,15,vec);
 	importation(c17,16,vec);
 	importation(c18,17,vec);
 	importation(c19,18,vec);
-	importation(c20,19,vec);
+	importation(c20,19,vec);	
 	importation(c21,20,vec);
 	importation(c22,21,vec);
-	importation(c23,22,vec);
-	importation(c24,23,vec);
-
-    // Affichage des case a cocher
+	importation(c23,22,vec);	
+	importation(c24,23,vec);		
+	
+    // Affichage des case a cocher 
     placerCaseCocher(c1,28,fenetre);
 	placerCaseCocher(c2,46,fenetre);
 	placerCaseCocher(c3,65,fenetre);
@@ -143,7 +143,7 @@ void ZoneChecklist::placerCaseCocher(Bouton b, int y, sf::RenderWindow &fenetre)
 
 /*
 * Fonction update
-*/
+*/    
 void ZoneChecklist::update(Joueur* j, sf::Event event)
 {
     int x = event.mouseButton.x;
@@ -214,7 +214,7 @@ void ZoneChecklist::actualiserChecklist(Joueur* j)
     liste.push_back(c21.getClique());
     liste.push_back(c22.getClique());
     liste.push_back(c23.getClique());
-    liste.push_back(c24.getClique());
+    liste.push_back(c24.getClique());    
 
 
     j->setChecklist(liste);
@@ -228,10 +228,11 @@ void ZoneChecklist::actualiserChecklist(Joueur* j)
 * Role : appel la fonction clique du bouton si la souris a clique sur le bouton
 */
 void ZoneChecklist::cliqueConditionnel(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton & b)
-{
+{  
     if(xmin<=x && x<=xmax && ymin<=y && y<=ymax)
     {
         b.clique();
     }
 }
+
 

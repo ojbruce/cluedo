@@ -1,6 +1,5 @@
 #include "Bouton.h"
 
-using namespace std;
 
 /**
 * Constructeur
@@ -57,5 +56,14 @@ void Bouton::deselection()
 {
     if(enfonce == true)
         enfonce = false;
+}
+
+/**
+*  Fonction selection
+*/
+void Bouton::selection()
+{
+    if(enfonce == false)
+        enfonce = true;
 }
 
