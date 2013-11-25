@@ -5,20 +5,17 @@ using namespace std;
 /**
  *Constructeur
  */
-Porte::Porte(string nom, Case* c): Piece(), cheminSecret(c) {
-    nom_=nom;
-}
+Porte::Porte(string nom, Case* c): Piece(nom), cheminSecret(c) {}
 
 /**
  *Constructeur
  */
-Porte::Porte(string nom,int a, int b, Case* c) :Piece(a,b),cheminSecret(c)  {nom_=nom;}
+Porte::Porte(string nom,int a, int b, Case* c) :Piece(a,b,nom),cheminSecret(c) {}
 
 /**
  *Constructeur
  */
-Porte::Porte(const Porte& p,int a, int b, Case* c):Piece(a,b), tabPiece_(p.tabPiece_){
-    nom_=p.getNom();
+Porte::Porte(const Porte& p,int a, int b, Case* c):Piece(a,b,p.Porte::nom_), tabPiece_(p.tabPiece_){
     cheminSecret = p.cheminSecret;
 }
 
@@ -44,7 +41,7 @@ void Porte::ajouterPiece(Piece* p){
 
 //Getter
 string Porte::getNom() const{
-    return nom_;
+    return Porte::nom_;
 }
 
  void Porte::setCheminSecret(Case* c){

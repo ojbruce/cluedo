@@ -1,8 +1,8 @@
 #include "Piece.h"
 
-Piece::Piece() :Case(){}
+Piece::Piece(std::string n) :Case(),nom_(n){}
 
-Piece::Piece(int a, int b) :Case(a,b){}
+Piece::Piece(int a, int b, std::string n) :Case(a,b),nom_(n){}
 
 
 

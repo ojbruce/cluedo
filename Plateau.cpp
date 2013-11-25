@@ -141,9 +141,10 @@ void Plateau::initCases(){
 
     //La cuisine de [0,0] à [5,6] une porte
     Porte *kitchen=new Porte("Kitchen",6,4);
+
 	for(int i=0; i<7;i++){
 		for(int j=0; j<6;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Kitchen");
 			tab[i][j] = p;
 			kitchen->ajouterPiece(p);
 		}
@@ -155,7 +156,7 @@ void Plateau::initCases(){
     Porte *diningRoom2;
 	for(int i=9; i<16;i++){
 		for(int j=0; j<8;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Dining-room");
 			tab[i][j] = p;
 			diningRoom1->ajouterPiece(p);
 		}
@@ -169,7 +170,7 @@ void Plateau::initCases(){
     Porte* lounge= new Porte("Lounge",19,6 );
 	for(int i=19; i<25;i++){
 		for(int j=0; j<7;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Lounge");
 			tab[i][j] = p;
 			lounge->ajouterPiece(p);
 		}
@@ -184,7 +185,7 @@ void Plateau::initCases(){
 	//on cree la piece
 	for(int i=18; i<25;i++){
 		for(int j=9; j<15;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Hall");
 			tab[i][j] = p;
 			hall1->ajouterPiece(p);
 		}
@@ -200,7 +201,7 @@ void Plateau::initCases(){
 	Porte* study = new Porte("Study",21,17);
     for(int i=21; i<25;i++){
 		for(int j=17; j<24;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Study");
 			tab[i][j] = p;
 			study->ajouterPiece(p);
 		}
@@ -214,7 +215,7 @@ void Plateau::initCases(){
 
     for(int i=14; i<19;i++){
 		for(int j=17; j<24;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Library");
 			tab[i][j] = p;
 			library1->ajouterPiece(p);
 		}
@@ -229,7 +230,7 @@ void Plateau::initCases(){
 	Porte* game2;
     for(int i=8; i<13;i++){
 		for(int j=18; j<24;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Billiard-room");
 			tab[i][j] = p;
 			game1->ajouterPiece(p);
 		}
@@ -243,7 +244,7 @@ void Plateau::initCases(){
 	Porte* conservatory = new Porte("Conservatory",5,19);
     for(int i=0; i<6;i++){
 		for(int j=18; j<24;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Conservatory");
 			tab[i][j] = p;
 			conservatory->ajouterPiece(p);
 		}
@@ -259,14 +260,14 @@ void Plateau::initCases(){
 
     for(int i=2; i<8;i++){
 		for(int j=8; j<16;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Ballroom");
 			tab[i][j] = p;
 			bedroom1->ajouterPiece(p);
 		}
 	}
     for(int i=0; i<2;i++){
 		for(int j=10; j<14;j++){
-			Piece* p= new Piece(i,j);
+			Piece* p= new Piece(i,j,"Ballroom");
 			tab[i][j] = p;
 			bedroom1->ajouterPiece(p);
 		}

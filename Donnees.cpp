@@ -70,7 +70,7 @@ Carte* Donnees::getCarte(int ind){
  *
  */
 vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
-    vector<Carte*> res(3);
+    vector<Carte*> res;
     srand(time(NULL)); // place le rand à un endroit diferent selon le time
 
     //0-8 piece
@@ -152,7 +152,7 @@ vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
         temoin.push_back(i);
     }
 
-    vector<Carte*> res(3);
+    vector<Carte*> res;
     res=initCarteMystere(temoin);
 
     cerr<<"Donnees::init CarteMystere"<<endl;

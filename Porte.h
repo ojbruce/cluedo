@@ -30,15 +30,10 @@ class Porte : public Piece
         string getNom() const;
         virtual ~Porte();
 
-    protected:
     private:
 
         vector <Piece*> tabPiece_;  //Un ensemble de case pièce
-        string nom_;                //Le nom de la piece
-
-        //Certaines pieces ont un passage secret
-        Case* cheminSecret;
-        sf::Text porte;
+        Case* cheminSecret;         //Certaines pieces ont un passage secret
 };
 
 #endif // PORTE_H

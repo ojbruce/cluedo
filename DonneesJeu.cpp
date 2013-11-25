@@ -42,6 +42,8 @@ void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
 
     }
 
+
+
     if(!bonneCarte){
          tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
          nbJoueur_--;
