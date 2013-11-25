@@ -20,7 +20,7 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="DonneesJeu.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="875" topLine="20" />
 	</File>
 	<File name="DonneesJeu.h" open="0" top="0" tabpos="3">
 		<Cursor position="0" topLine="0" />
@@ -46,6 +46,9 @@
 	<File name="EcranJeu.h" open="0" top="0" tabpos="8">
 		<Cursor position="0" topLine="0" />
 	</File>
+	<File name="FenetreChoix.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="6777" topLine="169" />
+	</File>
 	<File name="Jeu.cpp" open="0" top="0" tabpos="8">
 		<Cursor position="0" topLine="0" />
 	</File>
@@ -70,10 +73,10 @@
 	<File name="Mur.h" open="0" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="0" tabpos="2">
+	<File name="Partie.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="3970" topLine="113" />
 	</File>
-	<File name="Partie.h" open="1" top="0" tabpos="3">
+	<File name="Partie.h" open="0" top="0" tabpos="3">
 		<Cursor position="1384" topLine="28" />
 	</File>
 	<File name="Personnage.cpp" open="0" top="0" tabpos="7">
@@ -82,23 +85,23 @@
 	<File name="Personnage.h" open="0" top="0" tabpos="8">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Piece.cpp" open="0" top="0" tabpos="8">
+	<File name="Piece.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="6" />
+	</File>
+	<File name="Piece.h" open="1" top="0" tabpos="1">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Piece.h" open="0" top="0" tabpos="10">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="Plateau.cpp" open="1" top="0" tabpos="1">
+	<File name="Plateau.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="7430" topLine="331" />
 	</File>
 	<File name="Plateau.h" open="0" top="0" tabpos="9">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Porte.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="0" topLine="0" />
+	<File name="Porte.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="0" topLine="48" />
 	</File>
-	<File name="Porte.h" open="0" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+	<File name="Porte.h" open="1" top="1" tabpos="3">
+		<Cursor position="966" topLine="9" />
 	</File>
 	<File name="ZoneAffichageTexte.cpp" open="0" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />
@@ -113,3 +116,4 @@
 		<Cursor position="0" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>
+
