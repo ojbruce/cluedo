@@ -6,6 +6,17 @@
 #include "Carte.h"
 
 
+/**
+ * Carte est la classe représentant les cartes armes.
+ *
+ * Une Carte est caractérisé par les informations suivantes :
+ * un nom
+ * un chemin
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class CarteArme : public Carte
 {
     public:

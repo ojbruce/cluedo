@@ -7,6 +7,22 @@
 #include "Donnees.h"
 
 
+/**
+ * DonneesJeu est la classe représentant les donnees avant le debut du jeu.
+ *
+ * Une DonneesJeu est caractérisé par les informations suivantes :
+ * des donnees
+ * un pointeur vers joueur gagnant nul au depart
+ * un tableau de carte* mysteres
+ * un booleen disant si la partie est fini
+ * un joueurCourant
+ * un nombre de joueur
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class DonneesJeu
 {
     public:

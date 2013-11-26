@@ -10,6 +10,18 @@
 
 class ManagerEcran;
 
+/**
+ * EcranAccueil est la classe représentant l'ecran permettant de choisir le nombre de joueur.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * deux boutons
+ * une image
+ * un manager permettant de changer d'ecran
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class EcranConfiguration : public Ecran
 {
 	public:

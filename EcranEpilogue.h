@@ -10,6 +10,18 @@
 
 class ManagerEcran;
 
+/**
+ * EcranEpilogue est la classe représentant l'ecran de fin.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * deux boutons
+ * une image
+ * un manager permettant de changer d'ecran
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class EcranEpilogue : public Ecran
 {
 	public:

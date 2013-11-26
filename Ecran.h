@@ -3,6 +3,14 @@
 
 #include <SFML/Graphics.hpp>
 
+/**
+ * Ecran est la classe abstraite représentant les ecrans.
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Ecran
 {
     public:

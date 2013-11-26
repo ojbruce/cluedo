@@ -7,6 +7,16 @@
 #include "CartePersonnage.h"
 #include "CarteArme.h"
 
+/**
+ * FactoryCarte est la classe représentant la classe concrete de la factory carte.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * une methode pour creer des cartes
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class FactoryCarte : public Factory
 {
     public:

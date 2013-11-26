@@ -15,6 +15,17 @@
 #include "Plateau.h"
 #include "FactoryCarte.h"
 
+/**
+ * Donnees est la classe représentant les donnees avant le debut du jeu.
+ *
+ * Une Donnees est caractérisé par les informations suivantes :
+ * un tableau de cartes distribuer
+ * un tableau de personnage preexistant
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Donnees
 {
 	public:

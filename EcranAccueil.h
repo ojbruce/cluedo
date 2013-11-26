@@ -12,6 +12,18 @@
 
 class ManagerEcran;
 
+/**
+ * EcranAccueil est la classe représentant l'ecran d'accueil du jeu.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * deux boutons
+ * une image
+ * un manager permettant de changer d'ecran
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class EcranAccueil : public Ecran
 {
 	public:

@@ -43,7 +43,7 @@ void Partie::update(sf::Event event)
 	if(p->positionValide(x,y)){
 
         Joueur &j=*donnees->getJoueurCourant();
-        cerr<<j.getNom()<<endl;
+        cerr<<"Le tour du joueur : "<< donnees->getJoueurCourant()<< " dont le nom est " <<j.getNom()<<endl;
 
 
         //Si le joueur clique sur le centre on lance le de et cherche les chemins

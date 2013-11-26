@@ -11,6 +11,18 @@
 
 class ManagerEcran;
 
+/**
+ * EcranFinal est la classe représentant l'ecran qui s'affiche lorsqu'un joueur à gagner.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * deux boutons
+ * une image
+ * un manager permettant de changer d'ecran
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class EcranFinal : public Ecran
 {
 	public:
