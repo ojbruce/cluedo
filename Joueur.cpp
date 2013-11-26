@@ -135,18 +135,21 @@ void Joueur::setChecklistAtTrue(unsigned int i)
 /**
  * Fonction getChecklist
  **/
-
 vector<bool> Joueur::getChecklist()
 {
     return checklist;
 }
 
-//Retourne la dernière pièce
+/**
+*Retourne la dernière pièce
+*/
 Case* Joueur::getDernierePiece(){
     return dernierePiece_;
 }
 
-//Met à jour la derniere piece visite
+/**
+* Met à jour la derniere piece visite
+*/
 void Joueur::setDernierePiece(Case* c){
     dernierePiece_=c;
 }

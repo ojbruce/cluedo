@@ -25,7 +25,8 @@ Plateau::Plateau()
 
 /**
  * Renvoi la case du plateau à la position correspondante niveau graphique
- *
+ * @param x abscisse
+ * @param y ordonnee
  */
 Case* Plateau::trouverCase(int x, int y){
 
@@ -53,7 +54,9 @@ Case* Plateau::trouverCase(int x, int y){
 
 /**
  * Retourne un pointeur vers une case du tableau
- *
+ * @param x abscisse
+ * @param y ordonnee
+ * @return une case en x,y
  */
 Case* Plateau::getCase(int x, int y){
     return tab[y][x];
@@ -61,7 +64,9 @@ Case* Plateau::getCase(int x, int y){
 
 /**
  * Pour Case::trouverChemin verifie si on ne depasse pas les bords du tableau
- *
+ * @param x abscisse
+ * @param y ordonnee
+ * @return si la case est valide
  */
 bool Plateau::caseValide(int x, int y){
     //verification des positions invalides
@@ -76,7 +81,8 @@ bool Plateau::caseValide(int x, int y){
 /**
  * Methode qui affiche l'image du plateau
  * Affichage de l'interface
-**/
+ * @param window la fenetre de rendu
+ **/
 void Plateau::afficher(sf::RenderWindow &window){
     //on affiche le plateau
 	window.draw(plateau);
@@ -86,7 +92,7 @@ void Plateau::afficher(sf::RenderWindow &window){
 /**
  * Methode qui affiche la structure du plateau
  * Affichage d'erreur
- **/
+ */
 void Plateau::afficher(){
 
     cerr<<endl;
@@ -103,8 +109,10 @@ void Plateau::afficher(){
 
 /**
  * Methode qui renvoie si la position de la souris est sur le plateau
- *
-*/
+ * @param x abscisse
+ * @param y ordonnee
+ * @return si la position est valide
+ */
 bool Plateau::positionValide(int x, int y){
 
     bool valid = true;
@@ -339,13 +347,7 @@ void Plateau::initCases(){
 		}
 	}
 
-	//passage secret
-	/*kitchen->setCheminSecret(tab[21][22]);
-	study->setCheminSecret(tab[1][5]);
-
-	lounge->setCheminSecret(tab[4][23]);
-	conservatory->setCheminSecret(tab[20][1]);*/
-
+    //Passage secret
     kitchen->setCheminSecret(tab[21][17]);
 	study->setCheminSecret(tab[6][4]);
 
@@ -354,6 +356,9 @@ void Plateau::initCases(){
 
 }
 
+/**
+ * Methode interne qui cree les murs
+ */
 void Plateau::creerMur(int a, int b){
     Mur* m= new Mur(a,b);
 	tab[m->getY()][m->getX()]= m;
@@ -362,7 +367,6 @@ void Plateau::creerMur(int a, int b){
 
 /**
  *Destructeur
- *
  */
 Plateau::~Plateau(){
 

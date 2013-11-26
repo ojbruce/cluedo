@@ -6,7 +6,9 @@ Piece::Piece(std::string n) :Case(),nom_(n){}
 Piece::Piece(int a, int b, std::string n) :Case(a,b),nom_(n){}
 
 
-
+/**
+ * Affichage d'erreur
+ */
 std::string Piece::toString(){
 
 	std::string res;
@@ -23,12 +25,17 @@ std::string Piece::toString(){
 
 /**
  * Methode qui va réaliser l'action selon la case
+ * @return chaine vide pour une piece
  */
 std::string Piece::action(){
     //appeler par une Porte on va appeler un ecran
     return "";
 }
 
+/**
+ * Modificateur de la porte
+ * @param une porte p
+ */
 void Piece::setPorte(Porte* p){
     porte=p;
 }

@@ -199,11 +199,10 @@ void FenetreChoix::cliqueConditionnel1(int x, int y, int xmin, int xmax, int ymi
 }
 
 
-/*
+/**
 * Fonction cliqueConditionnel2
 * Role : appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons armes
 */
-
 void FenetreChoix::cliqueConditionnel2(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &b1, Bouton &b2, Bouton &b3, Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7)
 {
     if(xmin<=x && x<=xmax && ymin<=y && y<=ymax)
@@ -219,7 +218,7 @@ void FenetreChoix::cliqueConditionnel2(int x, int y, int xmin, int xmax, int ymi
 }
 
 
-/*
+/**
 * Fonction ajouterObs
 * Role : permet d'ajouter un observateur
 */
@@ -229,7 +228,7 @@ void FenetreChoix::ajouterObs(Observer* obs)
 }
 
 
-/*
+/**
 * Fonction enleverObs
 * Role : permet d'enlever un observateur
 */
@@ -243,7 +242,7 @@ void FenetreChoix::enleverObs(Observer* obs)
 }
 
 
-/*
+/**
 * Fonction notifyObs
 * Role : permet aux observateurs d'actualiser leurs donnees concernant les cartes selectionnees dans la fenetre
 */
@@ -257,7 +256,7 @@ void FenetreChoix::notifyObs()
 }
 
 
-/*
+/**
 * Fonction actualiserChoix
 * Role : permet d'actualiser les attributs carte1 et carte2 correspondants aux cartes selectionnees par le joueur
 */
@@ -297,7 +296,7 @@ void FenetreChoix::actualiserChoix()
 }
 
 
-/*
+/**
 * Fonction deselectionnerTout
 */
 void FenetreChoix::deselectionnerTout()

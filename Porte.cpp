@@ -22,7 +22,9 @@ Porte::Porte(const Porte& p,int a, int b):Piece(a,b,p.Porte::nom_), tabPiece_(p.
     cheminSecret = p.cheminSecret;
 }
 
-
+/**
+ * Affichage d'erreur
+ */
 string Porte::toString(){
 
 	string res;
@@ -37,7 +39,7 @@ string Porte::toString(){
 
 /**
  * Methode qui ajoute une piece à la porte
- *
+ * @param une piece a ajouter
  */
 void Porte::ajouterPiece(Piece* p){
     tabPiece_.push_back(p);
@@ -45,16 +47,25 @@ void Porte::ajouterPiece(Piece* p){
 }
 
 //Getter
+/**
+ * Retourne le nom de la porte
+ * @param une case pointant vers la porte de l'autre piece
+ */
 string Porte::getNom() const{
     return Porte::nom_;
 }
 
+/**
+ * Modificateur du chemin secret
+ * @return nom le nom de la porte
+ */
  void Porte::setCheminSecret(Case* c){
     cheminSecret= c;
  }
 
 /**
  * Methode qui va réaliser l'action selon la case
+ * @return le nom
  */
 std::string Porte::action(){
     return nom_;

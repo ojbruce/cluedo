@@ -10,7 +10,18 @@
 
 using namespace std;
 
-
+/**
+ * Jeu est la classe représentant l'instance de jeu
+ *
+ * Une Jeu est caractérisé par les informations suivantes :
+ * un plateau
+ * des donnees
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Jeu
 {
     public:

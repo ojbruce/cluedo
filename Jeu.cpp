@@ -6,7 +6,10 @@ std::mutex Jeu::mu;
 Jeu::Jeu():donneesJeu(&donnees), manEcran(&donneesJeu){}
 
 
-
+/**
+ * Methode qui va retourner une instance de jeu
+ * @return une instance de jeu
+ */
 Jeu* Jeu::getInstance(){
     if(jeu==NULL){
         mu.lock();
@@ -21,6 +24,9 @@ Jeu* Jeu::getInstance(){
 
 }
 
+/**
+* Methode qui lance le jeu.
+*/
 void Jeu::lancerJeu(){
 
     //Creation d'une fenetre

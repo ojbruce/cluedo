@@ -4,6 +4,16 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+
+/**
+ * ZoneAffichageTexte est la classe représentant la partie affichant le deroulement du jeu
+ *
+ * Classe non fonctionnel : probleme sfml sf::text
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class ZoneAffichageTexte
 {
     public:

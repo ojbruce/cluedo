@@ -41,16 +41,12 @@ ZoneChecklist::ZoneChecklist():
 }
 
 
-/**
-* Destructeur
-*/
-ZoneChecklist::~ZoneChecklist()
-{
-}
-
 
 /**
-* Fonction importation
+* Methode de conversion interne
+* @param b le bouton a selectionne ou deselectionne
+* @param int i l'indice
+* @param vec le vecteur de booleen de la checklist
 */
 void ZoneChecklist::importation(Bouton& b, int i, vector<bool> vec)
 {
@@ -62,8 +58,10 @@ void ZoneChecklist::importation(Bouton& b, int i, vector<bool> vec)
 
 
 /**
-* afficherChecklist
-*/
+ * Methode qui affiche la checklist d'un joueur
+ * @param j un pointeur vers joueur
+ * @param fenetre la fenetre de rendu
+ */
 void ZoneChecklist::afficherChecklist(Joueur* j, sf::RenderWindow &fenetre)
 {
     vector<bool> vec = j->getChecklist();

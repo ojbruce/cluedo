@@ -19,7 +19,17 @@
 #include "Observer.h"
 #include "ManagerFenetre.h"
 
-
+/**
+ * Partie est la classe représentant les cases d'une piece.
+ *
+ * Une Piece est caractérisé par les informations suivantes :
+ * un accès au données
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Partie: public Observer
 {
     public:
@@ -27,17 +37,17 @@ class Partie: public Observer
         Partie( Plateau* plat, ZoneAffichageTexte* zoneT, ZoneCarte* zoneC,ZoneChecklist* z, DonneesJeu* d);
         ~Partie();
 
-        void preparer();
-        void update(sf::Event event);
-        void afficher(sf::RenderWindow &window);
-        
+        void preparer(); //prepare la partie en fonction des donnees
+        void update(sf::Event event);//Fonction d'update
+        void afficher(sf::RenderWindow &window);//Fonction d'affichage
+
         virtual void estNotifie(std::string choix1, std::string choix2, std::string act);
 
 
 
     private:
         //Attributs
-        DonneesJeu* donnees;
+        DonneesJeu* donnees;            //Les donnees du jeu
 
         bool deClique_;                 // Determine si le joueur a lancer le de ou pas
 
@@ -50,11 +60,11 @@ class Partie: public Observer
         ZoneChecklist* zoneChecklist;   //Le zone de la checklist
 
         sf::Font font;
-        
+
         std::string armeCrime;
         std::string persoCrime;
 		std::string action;
-		
+
 		ManagerFenetre manFen;
 
 

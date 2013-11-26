@@ -11,6 +11,20 @@
 
 class Plateau;
 
+/**
+ * Case est la classe représentant les cases du plateau.
+ *
+ * Une CAse est caractérisé par les informations suivantes :
+ * un x
+ * un y
+ * un bool estvide
+ *
+ * Herite de Case.
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Case{
 
 	public:

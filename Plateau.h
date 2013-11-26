@@ -11,6 +11,18 @@
 #include "Joueur.h"
 #include "Donnees.h"
 
+/**
+ * Plateau est la classe représentant le plateau de jeu.
+ *
+ * Un Plateau est caractérisé par les informations suivantes :
+ * un tableau à double dimension de case.
+ * une largeur/hauteur
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Plateau{
 
 	public:

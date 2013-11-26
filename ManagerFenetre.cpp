@@ -15,18 +15,18 @@ ManagerFenetre::ManagerFenetre()
 }
 
 
-/*
-*  Destructeur
-*/
+/**
+ *  Destructeur
+ */
 ManagerFenetre::~ManagerFenetre()
 {
     //dtor
 }
 
 
-/*
-* Fonction ouvrirFenetreChoix
-*/
+/**
+ * Fonction ouvrirFenetreChoix
+ */
 void ManagerFenetre::ouvrirFenetreChoix()
 {
 	fenetreChoix->setACliqueFalse();
@@ -57,7 +57,7 @@ void ManagerFenetre::ouvrirFenetreChoix()
    }
 
 
-/*
+/**
 * Fonction ouvrirFenetreInfo
 */
 void ManagerFenetre::ouvrirFenetreInfo()
@@ -90,7 +90,7 @@ void ManagerFenetre::ouvrirFenetreInfo()
 }
 
 
-/*
+/**
 * Fonction ouvrirFenetreContrer
 */
 void ManagerFenetre::ouvrirFenetreContrer(std::string chemin)
@@ -138,7 +138,7 @@ void ManagerFenetre::ouvrirFenetreContrer(std::string chemin)
 }
 
 
-/*
+/**
 * Fonction observerChoix
 */
 void ManagerFenetre::observerChoix(Observer* observer)

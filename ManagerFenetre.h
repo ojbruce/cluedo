@@ -28,9 +28,9 @@ class ManagerFenetre
 
     private:
 
-      FenetreInfo* fenetreInfo;
-      FenetreChoix* fenetreChoix;
-      FenetreContrer* fenetreContrer;
+      FenetreInfo* fenetreInfo;          //La fenetre informant ce qui se passe
+      FenetreChoix* fenetreChoix;        //La fentre permettant de chosir ce qu'on peut faire
+      FenetreContrer* fenetreContrer;   //La fenetre qui montre ce qui a contrer
 
 };
 

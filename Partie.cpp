@@ -29,7 +29,8 @@ void Partie::preparer()
 
 
 /**
-* Fonction update
+* Fonction updatant la partieselon la poistion du clique
+* @param un event
 */
 void Partie::update(sf::Event event)
 {
@@ -116,6 +117,10 @@ void Partie::update(sf::Event event)
 	}
 }
 
+/**
+* Fonction d'affichage de la partie selon la poistion du clique
+* @param une xindow
+*/
 void Partie::afficher(sf::RenderWindow &window){
 
 
@@ -141,6 +146,9 @@ void Partie::afficher(sf::RenderWindow &window){
 
 /**
 * Fonction notify
+* @param choix1 le nom de la carte choisi en premier
+* @param choix2 le nom de la carte choisi en second
+* @param act a ou s selon si accuse ou soupconne
 */
 void Partie::estNotifie(std::string choix1, std::string choix2, std::string act){
 	    action =act;

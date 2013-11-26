@@ -11,7 +11,20 @@
 #include"Personnage.h"
 
 
-
+/**
+ * Joueur est la classe représentant le joueur
+ *
+ * Une Joueur est caractérisé par les informations suivantes :
+ * un perso
+ * une position
+ * une dernierPiece visitee
+ * un tableau des cartes vu/ un tableau des cartes de depart
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Joueur
 {
     public:

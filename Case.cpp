@@ -13,6 +13,8 @@ Case::Case() {
 
 /**
  *Constructeur
+ * @param a ordonnee
+ * @param b abscisse
  */
 Case::Case(int a, int b) : x_(b),y_(a){
 
@@ -22,6 +24,7 @@ Case::Case(int a, int b) : x_(b),y_(a){
 
 /**
  *Constructeur de recopie
+ * Case c une autre case
  */
 Case::Case(const Case& c){
 	x_= c.x_;   //on peut appeler les attributs des memes classes

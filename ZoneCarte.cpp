@@ -1,18 +1,19 @@
 #include "ZoneCarte.h"
 
+/**
+ * Constructeur
+ *
+ */
 ZoneCarte::ZoneCarte(): limY_(550)
 {
     //ctor
     if(!texture.loadFromFile("Images/carteVide.png")){}
 }
 
-
-ZoneCarte::~ZoneCarte()
-{
-    //dtor
-}
-
-
+/**
+ * Methode qui affiche les cartes d'un joueur
+ *@param window la fenetre de rendu
+ */
 void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
 
     vector<Carte*> vec = j.getCarteDepart();
@@ -35,7 +36,7 @@ void ZoneCarte::afficherCarte(Joueur j, sf::RenderWindow &window){
     if(posx < 1296){
     	//on met la texture par defaut carte vide
         sp.setTexture(texture);
-        
+
         for(unsigned int j=0; j < 12-vec.size(); j++){
 
             sp.setPosition(posx,limY_);

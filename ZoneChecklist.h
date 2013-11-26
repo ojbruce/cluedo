@@ -8,12 +8,22 @@
 #include "Joueur.h"
 
 
+/**
+ * ZoneChecklist est la classe représentant la partie affichant la checklist.
+ *
+ * Une zoneChecklist est caractérisé par les informations suivantes :
+ * des boutons à cocher.
+ * une image de fond.
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class ZoneChecklist
 {
     public:
 
         ZoneChecklist();
-        virtual ~ZoneChecklist();
 
         void afficherChecklist(Joueur* j, sf::RenderWindow &window);
         void update(Joueur* j, sf::Event event);
@@ -24,8 +34,8 @@ class ZoneChecklist
 
     private:
 
-        sf::Texture imageCheck;               
-        sf::Sprite zoneCheck; 
+        sf::Texture imageCheck;
+        sf::Sprite zoneCheck;
 
         Bouton c1;
         Bouton c2;

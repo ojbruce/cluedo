@@ -13,12 +13,10 @@ ZoneAffichageTexte::~ZoneAffichageTexte()
 }
 
 
+/**
+ * Methode qui affiche le texte
+ * @param fenetre la fenetre de rendu
+ */
 void ZoneAffichageTexte::afficher(sf::RenderWindow &window){
-
-
-
-
-
-    //posCouranteX+=12;
 
 }
