@@ -6,6 +6,7 @@
 #include "ManagerEcran.h"
 #include "Donnees.h"
 #include "DonneesJeu.h"
+#include <mutex>
 
 using namespace std;
 
@@ -14,10 +15,8 @@ class Jeu
 {
     public:
 
-        Jeu();
-        virtual ~Jeu();
-
         void lancerJeu();
+        static Jeu* getInstance();
 
 
     private:
@@ -25,6 +24,9 @@ class Jeu
         DonneesJeu donneesJeu;      //Les donnees de la partie
         ManagerEcran manEcran;      //Le manager d'ecran
 
+        static Jeu* jeu;
+        Jeu();
+        static mutex mu;
 };
 
 #endif // JEU_H

@@ -1,10 +1,24 @@
 #include "Jeu.h"
 
+Jeu* Jeu::jeu = NULL;
+std::mutex Jeu::mu;
+
 Jeu::Jeu():donneesJeu(&donnees), manEcran(&donneesJeu){}
 
-Jeu::~Jeu()
-{
-    //dtor
+
+
+Jeu* Jeu::getInstance(){
+    if(jeu==NULL){
+        mu.lock();
+
+        jeu = new Jeu();
+
+        mu.unlock();
+
+    }
+
+    return jeu;
+
 }
 
 void Jeu::lancerJeu(){

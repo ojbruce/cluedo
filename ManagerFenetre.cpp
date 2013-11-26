@@ -118,13 +118,20 @@ void ManagerFenetre::ouvrirFenetreContrer(std::string chemin)
         window.clear();
         fenetreContrer->afficher(window);
 
-        sf::Texture im;
-        if(!im.loadFromFile(chemin)){};
+        //On change le fond
+        if(chemin!=""){
+            fenetreContrer->mettreTextureContrer();
+            sf::Texture im;
+            if(!im.loadFromFile(chemin)){};
 
-        sf::Sprite truc;
-        truc.setTexture(im);
-        truc.setPosition(396,210);
-        window.draw(truc);
+            sf::Sprite truc;
+            truc.setTexture(im);
+            truc.setPosition(396,210);
+            window.draw(truc);
+        }else{
+            fenetreContrer->mettreTexturePasContrer();
+        }
+
 
         window.display();
     }

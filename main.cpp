@@ -9,8 +9,17 @@ using namespace std;
 */
 int main(void)
 {
-    Jeu clue;
-    clue.lancerJeu();
+    Jeu* clue= Jeu::getInstance();
+    clue->lancerJeu();
+
+    //En cas de fermeture involontaire
+    bool quitte=false;
+
+    if(quitte==true){
+        Jeu* clue2= Jeu::getInstance();
+        clue2->lancerJeu();
+    }
+
 
     return 0;
 }

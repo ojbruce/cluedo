@@ -523,16 +523,17 @@
 	"ManagerEcran.h"
 	<iostream>
 
-1385289569 source:/comptes/E119850X/Desktop/cluedo/Jeu.cpp
+1385462000 source:/comptes/E119850X/Desktop/cluedo/Jeu.cpp
 	"Jeu.h"
 
-1385288535 /comptes/E119850X/Desktop/cluedo/Jeu.h
+1385461873 /comptes/E119850X/Desktop/cluedo/Jeu.h
 	<SFML/Graphics.hpp>
 	"ManagerEcran.h"
 	"Donnees.h"
 	"DonneesJeu.h"
+	<mutex>
 
-1385449597 source:/comptes/E119850X/Desktop/cluedo/Joueur.cpp
+1385458981 source:/comptes/E119850X/Desktop/cluedo/Joueur.cpp
 	"Joueur.h"
 
 1385458345 source:/comptes/E119850X/Desktop/cluedo/ManagerEcran.cpp
@@ -551,7 +552,7 @@
 1385449597 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
 	"Porte.h"
 
-1385288653 source:/comptes/E119850X/Desktop/cluedo/main.cpp
+1385461926 source:/comptes/E119850X/Desktop/cluedo/main.cpp
 	"Jeu.h"
 
 1385383070 source:/comptes/E119850X/Desktop/cluedo/Bouton.cpp
@@ -1258,17 +1259,17 @@
 	"ManagerEcran.h"
 	<iostream>
 
-1385456812 source:/comptes/E119850X/Desktop/cluedo/EcranFinal.cpp
+1385459210 source:/comptes/E119850X/Desktop/cluedo/EcranFinal.cpp
 	"EcranFinal.h"
 	"ManagerEcran.h"
 	<iostream>
 
-1385457165 source:/comptes/E119850X/Desktop/cluedo/FenetreContrer.cpp
+1385463002 source:/comptes/E119850X/Desktop/cluedo/FenetreContrer.cpp
 	"FenetreContrer.h"
 	"ManagerFenetre.h"
 	<iostream>
 
-1385457165 /comptes/E119850X/Desktop/cluedo/FenetreContrer.h
+1385463002 /comptes/E119850X/Desktop/cluedo/FenetreContrer.h
 	<SFML/Graphics.hpp>
 	<cstdlib>
 	<vector>

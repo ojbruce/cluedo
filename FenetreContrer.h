@@ -20,6 +20,9 @@ class FenetreContrer : public Fenetre
       void update(sf::Event event, sf::RenderWindow &fenetre);                // Cette fonction permet le changement d'ecran en fonction des evenements
       void setACliqueFalse();
 
+      void mettreTextureContrer();
+      void mettreTexturePasContrer();
+
    private :
 
       sf::Texture contrerPossible;

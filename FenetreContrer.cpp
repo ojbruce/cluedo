@@ -68,3 +68,11 @@ void FenetreContrer::setACliqueFalse()
 {
 	aClique = false;
 }
+
+void FenetreContrer::mettreTextureContrer(){
+    fond.setTexture(contrerPossible);
+}
+
+void FenetreContrer::mettreTexturePasContrer(){
+    fond.setTexture(contrerImpossible);
+}
