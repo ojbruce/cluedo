@@ -1,0 +1,213 @@
+\hypertarget{classDonneesJeu}{\section{\-Référence de la classe \-Donnees\-Jeu}
+\label{classDonneesJeu}\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}}
+}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classDonneesJeu_a8481b1b72ec382f7c5b34d564bd6a39c}{{\bfseries \-Donnees\-Jeu} (\hyperlink{classDonnees}{\-Donnees} $\ast$d)}\label{classDonneesJeu_a8481b1b72ec382f7c5b34d564bd6a39c}
+
+\item 
+int \hyperlink{classDonneesJeu_a39169eecf0e197ccf5677c7a1602a172}{lancer\-De} ()
+\begin{DoxyCompactList}\small\item\em \-Methoque qui prend un nombre aleatoire entre 2 et 12. \end{DoxyCompactList}\item 
+\hypertarget{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}{void {\bfseries preparer\-Partie} (\hyperlink{classPlateau}{\-Plateau} $\ast$plateau)}\label{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}
+
+\item 
+void \hyperlink{classDonneesJeu_ae443a7d34f88fe863914746b6e1fefd9}{changer\-Joueur} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le joueur \-Courant. \end{DoxyCompactList}\item 
+\hypertarget{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}{void {\bfseries accuser} (std\-::string arme, std\-::string perso, std\-::string lieu)}\label{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}
+
+\item 
+\hypertarget{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}{std\-::string {\bfseries soupconner} (std\-::string arme, std\-::string perso, std\-::string lieu)}\label{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}
+
+\item 
+bool \hyperlink{classDonneesJeu_a7d47cf2b384712fd2aca3494fc5e23b8}{get\-Partie\-Fini} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne si la partie est finie. \end{DoxyCompactList}\item 
+void \hyperlink{classDonneesJeu_a97ab9601b004cb1ffd4365db0f90e479}{set\-Partie\-Fini} (bool parti)
+\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour l'etat de la partie. \end{DoxyCompactList}\item 
+\hyperlink{classJoueur}{\-Joueur} $\ast$ \hyperlink{classDonneesJeu_a5c71130d171fbd79f39f90d1ab96d82c}{get\-Joueur\-Courant} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne le joueur courant. \end{DoxyCompactList}\item 
+\hyperlink{classJoueur}{\-Joueur} $\ast$ \hyperlink{classDonneesJeu_a94ac64e9b0a6ec3e10a2589bb90830e4}{get\-Joueur\-At} (int i)
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne le joueur à la position. \end{DoxyCompactList}\item 
+int \hyperlink{classDonneesJeu_a9d66541ae27e731bcd4fca1a82b8c94f}{get\-De} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne le de. \end{DoxyCompactList}\item 
+\hyperlink{classJoueur}{\-Joueur} $\ast$ \hyperlink{classDonneesJeu_a1f9959f0eae2138deb88422671c6a1f2}{get\-Gagnant} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne le joueur gagnant. \end{DoxyCompactList}\item 
+void \hyperlink{classDonneesJeu_a2b7a86ddb0732fe79afa5f4ad71af9d2}{set\-Gagnant} (\hyperlink{classJoueur}{\-Joueur} $\ast$j)
+\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le joueur gagnant. \end{DoxyCompactList}\item 
+void \hyperlink{classDonneesJeu_a1da6b561395378b12e3331cb61d1a6ad}{set\-Nb\-Joueur} (int nb)
+\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le nombre de joueur. \end{DoxyCompactList}\item 
+int \hyperlink{classDonneesJeu_a7b698e7aea2dd33cf744b5532c59eb1f}{get\-Nb\-Joueur} ()
+\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le joueur gagnant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classDonneesJeu_ae443a7d34f88fe863914746b6e1fefd9}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!changer\-Joueur@{changer\-Joueur}}
+\index{changer\-Joueur@{changer\-Joueur}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{changer\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::changer\-Joueur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_ae443a7d34f88fe863914746b6e1fefd9}
+
+
+\-Methode qui met a jour le joueur \-Courant. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em joueur\-Courant} & le joueur corant dans le tab\-Joueur\-\_\- \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonneesJeu_a9d66541ae27e731bcd4fca1a82b8c94f}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-De@{get\-De}}
+\index{get\-De@{get\-De}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-De}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Donnees\-Jeu\-::get\-De} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a9d66541ae27e731bcd4fca1a82b8c94f}
+
+
+\-Methode qui retourne le de. 
+
+\begin{DoxyReturn}{\-Renvoie}
+le dé 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a1f9959f0eae2138deb88422671c6a1f2}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-Gagnant@{get\-Gagnant}}
+\index{get\-Gagnant@{get\-Gagnant}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-Gagnant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Donnees\-Jeu\-::get\-Gagnant} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a1f9959f0eae2138deb88422671c6a1f2}
+
+
+\-Methode qui retourne le joueur gagnant. 
+
+\begin{DoxyReturn}{\-Renvoie}
+gagnant 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a94ac64e9b0a6ec3e10a2589bb90830e4}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-Joueur\-At@{get\-Joueur\-At}}
+\index{get\-Joueur\-At@{get\-Joueur\-At}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-Joueur\-At}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Donnees\-Jeu\-::get\-Joueur\-At} (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a94ac64e9b0a6ec3e10a2589bb90830e4}
+
+
+\-Methode qui retourne le joueur à la position. 
+
+\begin{DoxyReturn}{\-Renvoie}
+joueur\-Courant 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a5c71130d171fbd79f39f90d1ab96d82c}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-Joueur\-Courant@{get\-Joueur\-Courant}}
+\index{get\-Joueur\-Courant@{get\-Joueur\-Courant}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-Joueur\-Courant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Donnees\-Jeu\-::get\-Joueur\-Courant} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a5c71130d171fbd79f39f90d1ab96d82c}
+
+
+\-Methode qui retourne le joueur courant. 
+
+\begin{DoxyReturn}{\-Renvoie}
+joueur\-Courant 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a7b698e7aea2dd33cf744b5532c59eb1f}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-Nb\-Joueur@{get\-Nb\-Joueur}}
+\index{get\-Nb\-Joueur@{get\-Nb\-Joueur}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-Nb\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Donnees\-Jeu\-::get\-Nb\-Joueur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a7b698e7aea2dd33cf744b5532c59eb1f}
+
+
+\-Methode qui met a jour le joueur gagnant. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em joueur\-Courant} & le joueur corant dans le tab\-Joueur\-\_\- \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonneesJeu_a7d47cf2b384712fd2aca3494fc5e23b8}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!get\-Partie\-Fini@{get\-Partie\-Fini}}
+\index{get\-Partie\-Fini@{get\-Partie\-Fini}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{get\-Partie\-Fini}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Donnees\-Jeu\-::get\-Partie\-Fini} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a7d47cf2b384712fd2aca3494fc5e23b8}
+
+
+\-Methode qui retourne si la partie est finie. 
+
+\begin{DoxyReturn}{\-Renvoie}
+partie\-Fini\-\_\- true si fini et false si non fini 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a39169eecf0e197ccf5677c7a1602a172}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!lancer\-De@{lancer\-De}}
+\index{lancer\-De@{lancer\-De}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{lancer\-De}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Donnees\-Jeu\-::lancer\-De} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a39169eecf0e197ccf5677c7a1602a172}
+
+
+\-Methoque qui prend un nombre aleatoire entre 2 et 12. 
+
+\begin{DoxyReturn}{\-Renvoie}
+rand un random entre 2 et 12 
+\end{DoxyReturn}
+\hypertarget{classDonneesJeu_a2b7a86ddb0732fe79afa5f4ad71af9d2}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!set\-Gagnant@{set\-Gagnant}}
+\index{set\-Gagnant@{set\-Gagnant}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{set\-Gagnant}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::set\-Gagnant} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a2b7a86ddb0732fe79afa5f4ad71af9d2}
+
+
+\-Methode qui met a jour le joueur gagnant. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em joueur\-Courant} & le joueur corant dans le tab\-Joueur\-\_\- \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonneesJeu_a1da6b561395378b12e3331cb61d1a6ad}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!set\-Nb\-Joueur@{set\-Nb\-Joueur}}
+\index{set\-Nb\-Joueur@{set\-Nb\-Joueur}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{set\-Nb\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::set\-Nb\-Joueur} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a1da6b561395378b12e3331cb61d1a6ad}
+
+
+\-Methode qui met a jour le nombre de joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em joueur\-Courant} & le joueur corant dans le tab\-Joueur\-\_\- \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonneesJeu_a97ab9601b004cb1ffd4365db0f90e479}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!set\-Partie\-Fini@{set\-Partie\-Fini}}
+\index{set\-Partie\-Fini@{set\-Partie\-Fini}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{set\-Partie\-Fini}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::set\-Partie\-Fini} (
+\begin{DoxyParamCaption}
+\item[{bool}]{parti}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a97ab9601b004cb1ffd4365db0f90e479}
+
+
+\-Methode qui met a jour l'etat de la partie. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em parti} & qui est un boolean true si fini et false si non fini \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\-Donnees\-Jeu.\-h\item 
+\-Donnees\-Jeu.\-cpp\end{DoxyCompactItemize}

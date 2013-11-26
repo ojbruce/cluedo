@@ -1,0 +1,133 @@
+\hypertarget{classJoueur}{\section{\-Référence de la classe \-Joueur}
+\label{classJoueur}\index{\-Joueur@{\-Joueur}}
+}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classJoueur_ab45361d82a16b0a7ed98eb60de042869}{{\bfseries \-Joueur} (\hyperlink{classPersonnage}{\-Personnage} $\ast$p)}\label{classJoueur_ab45361d82a16b0a7ed98eb60de042869}
+
+\item 
+bool \hyperlink{classJoueur_aad26191834416db216c91ae6e3139d5c}{operator==} (\hyperlink{classJoueur}{\-Joueur} const \&p2)
+\begin{DoxyCompactList}\small\item\em \-Operateur d'egalite. \end{DoxyCompactList}\item 
+void \hyperlink{classJoueur_a500c9f3b5901d65093e294a451e462f5}{ajouter\-Carte\-Depart} (\hyperlink{classCarte}{\-Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em \-Ajoute des cartes au tableau de depart du joueur. \end{DoxyCompactList}\item 
+void \hyperlink{classJoueur_a2bd5750fd43f489a3ed03aea01eb6e2e}{ajouter\-Carte\-Vu} (\hyperlink{classCarte}{\-Carte} $\ast$c)
+\begin{DoxyCompactList}\small\item\em \-Ajoute des cartes au tableau de depart du joueur. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a76219fe05bcb3bf5bd42f651a1a3c882}{void \hyperlink{classJoueur_a76219fe05bcb3bf5bd42f651a1a3c882}{update} (sf\-::\-Render\-Window \&\-App)}\label{classJoueur_a76219fe05bcb3bf5bd42f651a1a3c882}
+
+\begin{DoxyCompactList}\small\item\em \-Methode qui update le joueur. \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classJoueur_a60ec34b2d62e887fe0e56809b28c9c87}{get\-Carte\-Depart} ()
+\begin{DoxyCompactList}\small\item\em \-Getter des cartes vus. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a255c6e4dc5071a176055ec819080b6d6}{\hyperlink{classPersonnage}{\-Personnage} $\ast$ \hyperlink{classJoueur_a255c6e4dc5071a176055ec819080b6d6}{get\-Perso} ()}\label{classJoueur_a255c6e4dc5071a176055ec819080b6d6}
+
+\begin{DoxyCompactList}\small\item\em \-Getter de la position  position\-\_\- la posion du joueur. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a5ba8036208a35efd6bf37a86b36063b0}{std\-::string {\bfseries get\-Nom} ()}\label{classJoueur_a5ba8036208a35efd6bf37a86b36063b0}
+
+\item 
+void \hyperlink{classJoueur_aff78215b191d488c6555d100060fc2d6}{set\-Position} (\hyperlink{classCase}{\-Case} $\ast$c)
+\begin{DoxyCompactList}\small\item\em \-Getter de la position. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a528cac966c6cfeab47e666ce3b2735c2}{\hyperlink{classCase}{\-Case} $\ast$ \hyperlink{classJoueur_a528cac966c6cfeab47e666ce3b2735c2}{get\-Position} ()}\label{classJoueur_a528cac966c6cfeab47e666ce3b2735c2}
+
+\begin{DoxyCompactList}\small\item\em \-Getter de la position  position\-\_\- la posion du joueur. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a32909e93ab648b236fd670b8a24c5fb6}{\hyperlink{classCase}{\-Case} $\ast$ {\bfseries get\-Derniere\-Piece} ()}\label{classJoueur_a32909e93ab648b236fd670b8a24c5fb6}
+
+\item 
+\hypertarget{classJoueur_ace4248a785b7be8e12bcaaf84e3a41b5}{void {\bfseries set\-Derniere\-Piece} (\hyperlink{classCase}{\-Case} $\ast$c)}\label{classJoueur_ace4248a785b7be8e12bcaaf84e3a41b5}
+
+\item 
+\hypertarget{classJoueur_a5d32e5ba9665404f3b30fa5f548aaf43}{void \hyperlink{classJoueur_a5d32e5ba9665404f3b30fa5f548aaf43}{set\-Checklist} (vector$<$ bool $>$ vecteur)}\label{classJoueur_a5d32e5ba9665404f3b30fa5f548aaf43}
+
+\begin{DoxyCompactList}\small\item\em \-Fonction set\-Checklist. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_a8a94eef8959d5d7f7495429ceaf68124}{void \hyperlink{classJoueur_a8a94eef8959d5d7f7495429ceaf68124}{set\-Checklist\-At\-True} (unsigned int i)}\label{classJoueur_a8a94eef8959d5d7f7495429ceaf68124}
+
+\begin{DoxyCompactList}\small\item\em \-Fonction set\-Checklist. \end{DoxyCompactList}\item 
+\hypertarget{classJoueur_aef8ade4a19666cee6596b35b0b30017a}{vector$<$ bool $>$ \hyperlink{classJoueur_aef8ade4a19666cee6596b35b0b30017a}{get\-Checklist} ()}\label{classJoueur_aef8ade4a19666cee6596b35b0b30017a}
+
+\begin{DoxyCompactList}\small\item\em \-Fonction get\-Checklist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classJoueur_a500c9f3b5901d65093e294a451e462f5}{\index{\-Joueur@{\-Joueur}!ajouter\-Carte\-Depart@{ajouter\-Carte\-Depart}}
+\index{ajouter\-Carte\-Depart@{ajouter\-Carte\-Depart}!Joueur@{\-Joueur}}
+\subsubsection[{ajouter\-Carte\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::ajouter\-Carte\-Depart} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classJoueur_a500c9f3b5901d65093e294a451e462f5}
+
+
+\-Ajoute des cartes au tableau de depart du joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c} & la carte a ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classJoueur_a2bd5750fd43f489a3ed03aea01eb6e2e}{\index{\-Joueur@{\-Joueur}!ajouter\-Carte\-Vu@{ajouter\-Carte\-Vu}}
+\index{ajouter\-Carte\-Vu@{ajouter\-Carte\-Vu}!Joueur@{\-Joueur}}
+\subsubsection[{ajouter\-Carte\-Vu}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::ajouter\-Carte\-Vu} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Carte} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classJoueur_a2bd5750fd43f489a3ed03aea01eb6e2e}
+
+
+\-Ajoute des cartes au tableau de depart du joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c} & la carte a ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classJoueur_a60ec34b2d62e887fe0e56809b28c9c87}{\index{\-Joueur@{\-Joueur}!get\-Carte\-Depart@{get\-Carte\-Depart}}
+\index{get\-Carte\-Depart@{get\-Carte\-Depart}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Carte\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf \-Carte} $\ast$ $>$ {\bf \-Joueur\-::get\-Carte\-Depart} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classJoueur_a60ec34b2d62e887fe0e56809b28c9c87}
+
+
+\-Getter des cartes vus. 
+
+\begin{DoxyReturn}{\-Renvoie}
+le tableau de carte 
+\end{DoxyReturn}
+\hypertarget{classJoueur_aad26191834416db216c91ae6e3139d5c}{\index{\-Joueur@{\-Joueur}!operator==@{operator==}}
+\index{operator==@{operator==}!Joueur@{\-Joueur}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Joueur\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} const \&}]{p2}
+\end{DoxyParamCaption}
+)}}\label{classJoueur_aad26191834416db216c91ae6e3139d5c}
+
+
+\-Operateur d'egalite. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em p2} & le second joueur \\
+\hline
+\end{DoxyParams}
+\hypertarget{classJoueur_aff78215b191d488c6555d100060fc2d6}{\index{\-Joueur@{\-Joueur}!set\-Position@{set\-Position}}
+\index{set\-Position@{set\-Position}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Position} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Case} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classJoueur_aff78215b191d488c6555d100060fc2d6}
+
+
+\-Getter de la position. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c} & la posion du joueur \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\-Joueur.\-h\item 
+\-Joueur.\-cpp\end{DoxyCompactItemize}

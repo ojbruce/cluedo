@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Cluedo:  Fichier source de Plateau.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Cluedo
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">The cluedo game.</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Généré par Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef PLATEAU_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define PLATEAU_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;Case.h&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;Piece.h&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;Mur.h&quot;</span>
+<a name="l00010"></a>00010 <span class="preprocessor">#include &quot;Porte.h&quot;</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#include &quot;Joueur.h&quot;</span>
+<a name="l00012"></a>00012 <span class="preprocessor">#include &quot;Donnees.h&quot;</span>
+<a name="l00013"></a>00013 
+<a name="l00014"></a><a class="code" href="classPlateau.html">00014</a> <span class="keyword">class </span><a class="code" href="classPlateau.html">Plateau</a>{
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016         <span class="keyword">public</span>:
+<a name="l00017"></a>00017                 <a class="code" href="classPlateau.html">Plateau</a>();              <span class="comment">//Constructeur par defaut</span>
+<a name="l00018"></a>00018                 <span class="keyword">virtual</span> <a class="code" href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b" title="Destructeur.">~Plateau</a>(); <span class="comment">//Destructeur du plateau</span>
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>();                                <span class="comment">/*affichage pour eventuel erreur*/</span>
+<a name="l00021"></a>00021                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>(sf::RenderWindow &amp;window);                <span class="comment">//méthode qui va afficher le plateau</span>
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024                 <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a455da594b748a1bbd616537cfb6c5cd5" title="Methode qui renvoie si la position de la souris est sur le plateau.">positionValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);              <span class="comment">//Retourne si la position actuelle de la souris est bien sur le plateau</span>
+<a name="l00025"></a>00025         <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a2feeabd9398101b680bc647fb79b5271" title="Pour Case::trouverChemin verifie si on ne depasse pas les bords du tableau.">caseValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                  <span class="comment">// Renvoie si la case est valide dans le plateau</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027                 <a class="code" href="classCase.html">Case</a>* <a class="code" href="classPlateau.html#ae53f9bb42a1689cb628e7075da5fdb47" title="Renvoi la case du plateau à la position correspondante niveau graphique.">trouverCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                <span class="comment">// trouve la case à la position x et y en fonction de l&#39;ecran</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029         <span class="comment">//accesseur</span>
+<a name="l00030"></a>00030         <a class="code" href="classCase.html">Case</a>* <a class="code" href="classPlateau.html#a009b129c0afc68b42ac80a7b0db92d52" title="Retourne un pointeur vers une case du tableau.">getCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);
+<a name="l00031"></a>00031 
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     <span class="keyword">private</span>:
+<a name="l00034"></a>00034         <span class="comment">//Initier les cases</span>
+<a name="l00035"></a>00035         <span class="keywordtype">void</span> initCases();
+<a name="l00036"></a>00036         <span class="keywordtype">void</span> creerMur(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038                 <span class="comment">//Constantes du plateau</span>
+<a name="l00039"></a>00039                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> largPlateau_ = 24;     <span class="comment">//largeur de plateau</span>
+<a name="l00040"></a>00040                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> hautPlateau_ = 25;             <span class="comment">//hauteur de plateau</span>
+<a name="l00041"></a>00041                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> tailleCase_ =20;       <span class="comment">//taille de case</span>
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartX_=20;
+<a name="l00044"></a>00044                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartY_=20;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046                 <span class="comment">//Image du plateau</span>
+<a name="l00047"></a>00047                 sf::Texture im;
+<a name="l00048"></a>00048                 sf::Sprite plateau;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050                 <span class="comment">//Tableau a deux dimensions de case</span>
+<a name="l00051"></a>00051                 <a class="code" href="classCase.html">Case</a>* tab[hautPlateau_][largPlateau_];
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 };
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 <span class="preprocessor">#endif // PLATEAU_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Généré le Mardi Novembre 26 2013 08:32:08 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

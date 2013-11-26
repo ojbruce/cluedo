@@ -1,0 +1,103 @@
+\hypertarget{classPorte}{\section{\-Référence de la classe \-Porte}
+\label{classPorte}\index{\-Porte@{\-Porte}}
+}
+\-Graphe d'héritage de \-Porte\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classPorte}
+\end{center}
+\end{figure}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPorte_a49db32e64af8caf782fe54bffa572d7b}{\hyperlink{classPorte_a49db32e64af8caf782fe54bffa572d7b}{\-Porte} (string nom, \hyperlink{classCase}{\-Case} $\ast$c=\-N\-U\-L\-L)}\label{classPorte_a49db32e64af8caf782fe54bffa572d7b}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classPorte_a827b8c0f75a4e19c5763523462c6f224}{\hyperlink{classPorte_a827b8c0f75a4e19c5763523462c6f224}{\-Porte} (string nom, int a, int b, \hyperlink{classCase}{\-Case} $\ast$c=\-N\-U\-L\-L)}\label{classPorte_a827b8c0f75a4e19c5763523462c6f224}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classPorte_aa3fdf234c17c43b98bdec5f9d69778a6}{\hyperlink{classPorte_aa3fdf234c17c43b98bdec5f9d69778a6}{\-Porte} (const \hyperlink{classPorte}{\-Porte} \&p, int a, int b)}\label{classPorte_aa3fdf234c17c43b98bdec5f9d69778a6}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{classPorte_adc13e346f7349fd3dc901ff2197f9106}{ajouter\-Piece} (\hyperlink{classPiece}{\-Piece} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \-Methode qui ajoute une piece à la porte. \end{DoxyCompactList}\item 
+\hypertarget{classPorte_ad7f509198fda1bc591bb654b3a3b1fa2}{void {\bfseries set\-Chemin\-Secret} (\hyperlink{classCase}{\-Case} $\ast$c)}\label{classPorte_ad7f509198fda1bc591bb654b3a3b1fa2}
+
+\item 
+virtual string \hyperlink{classPorte_ace3891879a69f2d29ade65d71d869377}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em \-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPorte_a2029ca8cf88e282a6c0a55c49317b738}{trouver\-Chemin} (int de, vector$<$ \hyperlink{classCase}{\-Case} $\ast$ $>$ \&res, \hyperlink{classPlateau}{\-Plateau} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \-Methode qui trouve tous les chemins possibles. \end{DoxyCompactList}\item 
+\hypertarget{classPorte_a71f6ed526931178c012e8653e609e0e7}{virtual string \hyperlink{classPorte_a71f6ed526931178c012e8653e609e0e7}{action} ()}\label{classPorte_a71f6ed526931178c012e8653e609e0e7}
+
+\begin{DoxyCompactList}\small\item\em \-Methode qui va réaliser l'action selon la case. \end{DoxyCompactList}\item 
+\hypertarget{classPorte_abeca2ec41fa7476859b90a944736a20a}{string {\bfseries get\-Nom} () const }\label{classPorte_abeca2ec41fa7476859b90a944736a20a}
+
+\item 
+\hypertarget{classPorte_a7b82ccac24bfd8b7fa701f7601328d6c}{virtual \hyperlink{classPorte_a7b82ccac24bfd8b7fa701f7601328d6c}{$\sim$\-Porte} ()}\label{classPorte_a7b82ccac24bfd8b7fa701f7601328d6c}
+
+\begin{DoxyCompactList}\small\item\em \-Destructeur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classPorte_adc13e346f7349fd3dc901ff2197f9106}{\index{\-Porte@{\-Porte}!ajouter\-Piece@{ajouter\-Piece}}
+\index{ajouter\-Piece@{ajouter\-Piece}!Porte@{\-Porte}}
+\subsubsection[{ajouter\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Porte\-::ajouter\-Piece} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Piece} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classPorte_adc13e346f7349fd3dc901ff2197f9106}
+
+
+\-Methode qui ajoute une piece à la porte. 
+
+\hypertarget{classPorte_ace3891879a69f2d29ade65d71d869377}{\index{\-Porte@{\-Porte}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Porte@{\-Porte}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Porte\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPorte_ace3891879a69f2d29ade65d71d869377}
+
+
+\-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. 
+
+\begin{DoxyReturn}{\-Renvoie}
+res l'emplacement de la case 
+\end{DoxyReturn}
+
+
+\-Réimplémentée à partir de \hyperlink{classPiece_ae18523c400cb72a50bb1293d27cd1432}{\-Piece}.
+
+\hypertarget{classPorte_a2029ca8cf88e282a6c0a55c49317b738}{\index{\-Porte@{\-Porte}!trouver\-Chemin@{trouver\-Chemin}}
+\index{trouver\-Chemin@{trouver\-Chemin}!Porte@{\-Porte}}
+\subsubsection[{trouver\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Porte\-::trouver\-Chemin} (
+\begin{DoxyParamCaption}
+\item[{int}]{de, }
+\item[{vector$<$ {\bf \-Case} $\ast$ $>$ \&}]{res, }
+\item[{{\bf \-Plateau} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPorte_a2029ca8cf88e282a6c0a55c49317b738}
+
+
+\-Methode qui trouve tous les chemins possibles. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em de} & le nombre a parcourir \\
+\hline
+{\em res} & le vetor des chemins \\
+\hline
+{\em p} & le plateau \\
+\hline
+\end{DoxyParams}
+
+
+\-Réimplémentée à partir de \hyperlink{classPiece_ab8f478c95ba4d853c9016d19211e2be1}{\-Piece}.
+
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\-Porte.\-h\item 
+\-Porte.\-cpp\end{DoxyCompactItemize}

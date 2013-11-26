@@ -1,0 +1,189 @@
+\hypertarget{classCase}{\section{\-Référence de la classe \-Case}
+\label{classCase}\index{\-Case@{\-Case}}
+}
+\-Graphe d'héritage de \-Case\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCase}
+\end{center}
+\end{figure}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCase_a14237e17aab1829965adab76b747db6c}{\hyperlink{classCase_a14237e17aab1829965adab76b747db6c}{\-Case} ()}\label{classCase_a14237e17aab1829965adab76b747db6c}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par defaut. \end{DoxyCompactList}\item 
+\hypertarget{classCase_ad61be010b8d3cc841706c989c08aaaac}{\hyperlink{classCase_ad61be010b8d3cc841706c989c08aaaac}{\-Case} (int a, int b)}\label{classCase_ad61be010b8d3cc841706c989c08aaaac}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+bool \hyperlink{classCase_aba81e8660bf4009cc0ddee8e132bce49}{operator==} (\hyperlink{classCase}{\-Case} const \&c2)
+\begin{DoxyCompactList}\small\item\em \-Operateur d'egalite. \end{DoxyCompactList}\item 
+\hypertarget{classCase_ab004564aae3e15db0c7fd5dde0b4c379}{virtual \hyperlink{classCase_ab004564aae3e15db0c7fd5dde0b4c379}{$\sim$\-Case} ()}\label{classCase_ab004564aae3e15db0c7fd5dde0b4c379}
+
+\begin{DoxyCompactList}\small\item\em \-Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{classCase_ad3faa1f96e315587b4fb70de225a8b80}{void {\bfseries afficher} ()}\label{classCase_ad3faa1f96e315587b4fb70de225a8b80}
+
+\item 
+virtual std\-::string \hyperlink{classCase_ad09ca1072f39bcacf06459fc03f026ae}{to\-String} ()
+\begin{DoxyCompactList}\small\item\em \-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classCase_affe73b57a2c81e2f09dc5db45893db3c}{trouver\-Chemin} (int de, std\-::vector$<$ \hyperlink{classCase}{\-Case} $\ast$ $>$ \&res, \hyperlink{classPlateau}{\-Plateau} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \-Methode qui trouve tous les chemins possibles. \end{DoxyCompactList}\item 
+\hypertarget{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{virtual std\-::string \hyperlink{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{action} ()}\label{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}
+
+\begin{DoxyCompactList}\small\item\em \-Methode qui va réaliser l'action selon la case. \end{DoxyCompactList}\item 
+\hypertarget{classCase_ae6ce55820f949e5fae8dbeb62d298291}{std\-::pair$<$ int, int $>$ {\bfseries point\-H\-G} (int taille\-Case, int ecart\-X, int ecart\-Y)}\label{classCase_ae6ce55820f949e5fae8dbeb62d298291}
+
+\item 
+\hypertarget{classCase_a48b794ecbea4155843ce09f53e280237}{std\-::pair$<$ int, int $>$ {\bfseries milieu} (int taille\-Case, std\-::pair$<$ int, int $>$ a)}\label{classCase_a48b794ecbea4155843ce09f53e280237}
+
+\item 
+void \hyperlink{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}{colorier} (sf\-::\-Render\-Window \&window)
+\begin{DoxyCompactList}\small\item\em \-Methode qui affiche la case. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classCase_ab5580b919199dd2ec379672d3390bbff}{get\-X} ()
+\begin{DoxyCompactList}\small\item\em \-Assesseur de x\-\_\-. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classCase_a824f612c5a660a1d55ac06931747c46d}{get\-Y} ()
+\begin{DoxyCompactList}\small\item\em \-Assesseur de y\-\_\-. \end{DoxyCompactList}\item 
+virtual int \hyperlink{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}{get\-Est\-Vide} ()
+\begin{DoxyCompactList}\small\item\em \-Assesseur de est\-Vide. \end{DoxyCompactList}\item 
+\hypertarget{classCase_a292e07394ff0a1c31ebf35940c91f29d}{virtual void \hyperlink{classCase_a292e07394ff0a1c31ebf35940c91f29d}{set\-Est\-Vide} (bool b)}\label{classCase_a292e07394ff0a1c31ebf35940c91f29d}
+
+\begin{DoxyCompactList}\small\item\em \-Modificateur de est\-Vide. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Attributs protégés}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCase_a45ecd9780447322263846abde6b5dfb8}{int {\bfseries x\-\_\-}}\label{classCase_a45ecd9780447322263846abde6b5dfb8}
+
+\item 
+\hypertarget{classCase_a44d580d307f1bacd6e68fc1384afc296}{int {\bfseries y\-\_\-}}\label{classCase_a44d580d307f1bacd6e68fc1384afc296}
+
+\item 
+\hypertarget{classCase_a8a42e3989f79ab7f95635d59e7c20ba5}{bool {\bfseries est\-Vide}}\label{classCase_a8a42e3989f79ab7f95635d59e7c20ba5}
+
+\item 
+\hypertarget{classCase_a09b40766357ec483aa249103c35eaf81}{sf\-::\-Rectangle\-Shape $\ast$ {\bfseries rectangle}}\label{classCase_a09b40766357ec483aa249103c35eaf81}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Attributs protégés statiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCase_a9263e52fca2d5567d0bb07d51bc7d302}{static const int {\bfseries taille\-\_\-} = 20}\label{classCase_a9263e52fca2d5567d0bb07d51bc7d302}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}{\index{\-Case@{\-Case}!colorier@{colorier}}
+\index{colorier@{colorier}!Case@{\-Case}}
+\subsubsection[{colorier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Case\-::colorier} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}
+
+
+\-Methode qui affiche la case. 
+
+\hypertarget{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}{\index{\-Case@{\-Case}!get\-Est\-Vide@{get\-Est\-Vide}}
+\index{get\-Est\-Vide@{get\-Est\-Vide}!Case@{\-Case}}
+\subsubsection[{get\-Est\-Vide}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Case\-::get\-Est\-Vide} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}
+
+
+\-Assesseur de est\-Vide. 
+
+\begin{DoxyReturn}{\-Renvoie}
+est\-Vide si la case estvide ou non 
+\end{DoxyReturn}
+\hypertarget{classCase_ab5580b919199dd2ec379672d3390bbff}{\index{\-Case@{\-Case}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!Case@{\-Case}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Case\-::get\-X} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_ab5580b919199dd2ec379672d3390bbff}
+
+
+\-Assesseur de x\-\_\-. 
+
+\begin{DoxyReturn}{\-Renvoie}
+x\-\_\- l'absisse de la case 
+\end{DoxyReturn}
+\hypertarget{classCase_a824f612c5a660a1d55ac06931747c46d}{\index{\-Case@{\-Case}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!Case@{\-Case}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Case\-::get\-Y} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_a824f612c5a660a1d55ac06931747c46d}
+
+
+\-Assesseur de y\-\_\-. 
+
+\begin{DoxyReturn}{\-Renvoie}
+y\-\_\- l'ordonnee de la case 
+\end{DoxyReturn}
+\hypertarget{classCase_aba81e8660bf4009cc0ddee8e132bce49}{\index{\-Case@{\-Case}!operator==@{operator==}}
+\index{operator==@{operator==}!Case@{\-Case}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Case\-::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Case} const \&}]{c2}
+\end{DoxyParamCaption}
+)}}\label{classCase_aba81e8660bf4009cc0ddee8e132bce49}
+
+
+\-Operateur d'egalite. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c2} & la seconde case \\
+\hline
+\end{DoxyParams}
+\hypertarget{classCase_ad09ca1072f39bcacf06459fc03f026ae}{\index{\-Case@{\-Case}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!Case@{\-Case}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Case\-::to\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_ad09ca1072f39bcacf06459fc03f026ae}
+
+
+\-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. 
+
+\begin{DoxyReturn}{\-Renvoie}
+res l'emplacement de la case 
+\end{DoxyReturn}
+
+
+\-Réimplémentée dans \hyperlink{classPorte_ace3891879a69f2d29ade65d71d869377}{\-Porte}, \hyperlink{classPiece_ae18523c400cb72a50bb1293d27cd1432}{\-Piece}, et \hyperlink{classMur_a8d319947a0158801579dc5f1f8568281}{\-Mur}.
+
+\hypertarget{classCase_affe73b57a2c81e2f09dc5db45893db3c}{\index{\-Case@{\-Case}!trouver\-Chemin@{trouver\-Chemin}}
+\index{trouver\-Chemin@{trouver\-Chemin}!Case@{\-Case}}
+\subsubsection[{trouver\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Case\-::trouver\-Chemin} (
+\begin{DoxyParamCaption}
+\item[{int}]{de, }
+\item[{std\-::vector$<$ {\bf \-Case} $\ast$ $>$ \&}]{res, }
+\item[{{\bf \-Plateau} $\ast$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_affe73b57a2c81e2f09dc5db45893db3c}
+
+
+\-Methode qui trouve tous les chemins possibles. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em de} & le nombre a parcourir \\
+\hline
+{\em res} & le vetor des chemins \\
+\hline
+{\em p} & le plateau \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\-Case.\-h\item 
+\-Case.\-cpp\end{DoxyCompactItemize}
