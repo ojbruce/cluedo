@@ -53,8 +53,13 @@
 		</Compiler>
 		<Unit filename="Bouton.cpp" />
 		<Unit filename="Bouton.h" />
-		<Unit filename="Carte.cpp" />
 		<Unit filename="Carte.h" />
+		<Unit filename="CarteArme.cpp" />
+		<Unit filename="CarteArme.h" />
+		<Unit filename="CartePersonnage.cpp" />
+		<Unit filename="CartePersonnage.h" />
+		<Unit filename="CartePiece.cpp" />
+		<Unit filename="CartePiece.h" />
 		<Unit filename="Case.cpp" />
 		<Unit filename="Case.h" />
 		<Unit filename="CaseAbstraite.cpp" />
@@ -76,6 +81,9 @@
 		<Unit filename="EcranJeu.h" />
 		<Unit filename="EcranRegles.cpp" />
 		<Unit filename="EcranRegles.h" />
+		<Unit filename="Factory.h" />
+		<Unit filename="FactoryCarte.cpp" />
+		<Unit filename="FactoryCarte.h" />
 		<Unit filename="Fenetre.h" />
 		<Unit filename="FenetreChoix.cpp" />
 		<Unit filename="FenetreChoix.h" />
