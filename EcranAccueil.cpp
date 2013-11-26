@@ -12,7 +12,7 @@ using namespace std;
 EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart.png", "Images/jouerClique.png")), regles(Bouton("Images/reglesDepart.png", "Images/reglesClique.png")) , manager(man)
 {
     // on charge l'image d'accueil dans la texture "image"
-    image.loadFromFile("Images/accueil.png");
+    if(!image.loadFromFile("Images/accueil.png")){};
 
     // on met la texture dans le sprite accueil
     accueil.setTexture(image);
@@ -24,12 +24,12 @@ EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart
 */
 void EcranAccueil::afficher(sf::RenderWindow &fenetre)
 {
-    sf::Event event;
+   /* sf::Event event;
     while (fenetre.pollEvent(event))
     {
         if (event.type == sf::Event::Closed)
             fenetre.close();
-    }
+    }*/
 
     // affichage des elements
     fenetre.draw(accueil);

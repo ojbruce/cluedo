@@ -21,7 +21,7 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
     manager(man)
 {
     // On charge l'image dans la texture "image"
-    image.loadFromFile("Images/configuration.png");
+    if(!image.loadFromFile("Images/configuration.png")){};
 
     // On met la texture dans le sprite ecran
     ecran.setTexture(image);
@@ -35,13 +35,13 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
 void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
 {
 
-    sf::Event event;
+    /*sf::Event event;
     while (fenetre.pollEvent(event))
     {
         if (event.type == sf::Event::Closed)
             fenetre.close();
 
-    }
+    }*/
 
     // Affichage des elements
     fenetre.draw(ecran);

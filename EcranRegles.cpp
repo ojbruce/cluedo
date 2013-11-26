@@ -8,7 +8,6 @@ using namespace std;
 /**
 * Constructeur
 */
-
 EcranRegles::EcranRegles(ManagerEcran *man) : fermer(Bouton("Images/fermerDepart.png", "Images/fermerClique.png")), manager(man)
 {
    // On charge l'image dans la texture "image"
@@ -22,15 +21,14 @@ EcranRegles::EcranRegles(ManagerEcran *man) : fermer(Bouton("Images/fermerDepart
 /**
 * Fonction afficher
 */
-
 void EcranRegles::afficher(sf::RenderWindow &fenetre)
 {
-    sf::Event event;
+    /*sf::Event event;
     while (fenetre.pollEvent(event))
     {
         if (event.type == sf::Event::Closed)
             fenetre.close();
-    }
+    }*/
 
     // Affichage des elements
     fenetre.draw(ecran);
@@ -48,7 +46,6 @@ void EcranRegles::afficher(sf::RenderWindow &fenetre)
 * Fonction update
 * Role :
 */
-
 void EcranRegles::update(sf::Event event)
 {
     int x = event.mouseButton.x;
