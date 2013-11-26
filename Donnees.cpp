@@ -53,10 +53,10 @@ Donnees::Donnees(){
 
 }
 
-int Donnees::trouverIndiceCarte(std::string carte){
+unsigned int Donnees::trouverIndiceCarte(std::string carte){
 
-    int res;
-    for(int i=0; i< tabCartes.size();i++){
+    unsigned int res=0;
+    for(unsigned int i=0; i< tabCartes.size();i++){
         if(tabCartes[i].getNom()==carte){
             res=i;
         }

@@ -23,7 +23,7 @@ class Donnees
         ~Donnees();
 
         Carte* getCarte(int indice);                        // Getter d'une carte du tableau de Carte
-        int trouverIndiceCarte(std::string carte);
+        unsigned int trouverIndiceCarte(std::string carte);
         //Personnage getPersonnage(std::string nom);        // Getter d'un personnage du tableau de Personnage
 
         vector<Carte*> initCarteMystere(vector<int> &vec);  // va renvoyer les 3 cartes

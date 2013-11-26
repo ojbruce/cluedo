@@ -65,7 +65,7 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
 
     while(suivant!=joueurCourant){
 
-        Joueur &j = tabJoueur_[suivant];
+        Joueur j = tabJoueur_[suivant];
 
         vector<Carte*> tabCarteDepart = j.getCarteDepart();
         unsigned int i =0;
@@ -76,10 +76,10 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
 
                 res=tabCarteDepart[i]->getChemin();
 
-                int indice = donnees->trouverIndiceCarte(tabCarteDepart[i]->getNom());
+                unsigned int indice = donnees->trouverIndiceCarte(tabCarteDepart[i]->getNom());
 
-                j.setChecklistAtTrue(indice);
-                cerr<<"DonneeJeu::la carte à"<<indice<<endl;
+                tabJoueur_[joueurCourant].setChecklistAtTrue(indice);
+                cerr<<"DonneeJeu::la carte à l'indice"<<indice<<endl;
 
                 trouve = true;
             }
