@@ -83,33 +83,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe Carte</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Carte" -->
+<!-- doxytag: class="Carte" --><div class="dynheader">
+Graphe d'héritage de Carte:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classCarte.png" usemap="#Carte_map" alt=""/>
+  <map id="Carte_map" name="Carte_map">
+<area href="classCarteArme.html" alt="CarteArme" shape="rect" coords="0,56,111,80"/>
+<area href="classCartePersonnage.html" alt="CartePersonnage" shape="rect" coords="121,56,232,80"/>
+<area href="classCartePiece.html" alt="CartePiece" shape="rect" coords="242,56,353,80"/>
+</map>
+ </div></div>
+
 <p><a href="classCarte-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51771441eb54aa18eb62005e2933eca3"></a><!-- doxytag: member="Carte::Carte" ref="a51771441eb54aa18eb62005e2933eca3" args="(string nom, string chemin)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a51771441eb54aa18eb62005e2933eca3">Carte</a> (string nom, string chemin)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a9d9aa4e925a54cf0b830c6d34fea4ad7">operator==</a> (<a class="el" href="classCarte.html">Carte</a> const &amp;c2)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur d'egalite.  <a href="#a9d9aa4e925a54cf0b830c6d34fea4ad7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a3650c2d0ea9877fe29f4673f430daa8e">getNom</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le nom de la carte.  <a href="#a3650c2d0ea9877fe29f4673f430daa8e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a1a252f29ea6970a8aa72ec7739a13101">getChemin</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le chemin vers la carte.  <a href="#a1a252f29ea6970a8aa72ec7739a13101"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">sf::Texture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a813a8fc1e11e43b7f2374c6e1ce77c26">getTexture</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere la texture de la carte.  <a href="#a813a8fc1e11e43b7f2374c6e1ce77c26"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#af8021536db59b0333f4f7dd6c459f781">getNom</a> ()=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le nom de la carte.  <a href="#af8021536db59b0333f4f7dd6c459f781"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#a2ea2b73f93967e0e9ca2da9c7a1b17f1">getChemin</a> ()=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le chemin vers la carte.  <a href="#a2ea2b73f93967e0e9ca2da9c7a1b17f1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual sf::Texture &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCarte.html#ad881bc9e55ab5feb4884d0efdcbf46ed">getTexture</a> ()=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere la texture de la carte.  <a href="#ad881bc9e55ab5feb4884d0efdcbf46ed"></a><br/></td></tr>
 </table>
 <hr/><h2>Documentation des fonctions membres</h2>
-<a class="anchor" id="a1a252f29ea6970a8aa72ec7739a13101"></a><!-- doxytag: member="Carte::getChemin" ref="a1a252f29ea6970a8aa72ec7739a13101" args="()" -->
+<a class="anchor" id="a2ea2b73f93967e0e9ca2da9c7a1b17f1"></a><!-- doxytag: member="Carte::getChemin" ref="a2ea2b73f93967e0e9ca2da9c7a1b17f1" args="()=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classCarte.html#a1a252f29ea6970a8aa72ec7739a13101">Carte::getChemin</a> </td>
+          <td class="memname">string <a class="el" href="classCarte.html#a2ea2b73f93967e0e9ca2da9c7a1b17f1">Carte::getChemin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -118,17 +124,19 @@ Fonctions membres publiques</h2></td></tr>
 <p>Recupere le chemin vers la carte. </p>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>chemin le chemin absolu vers la carte </dd></dl>
 
+<p>Implémenté dans <a class="el" href="classCartePiece.html#aecc861b0aa5cadeb453c0eae266fca37">CartePiece</a>, <a class="el" href="classCarteArme.html#a44c430169a967b9d825644b328e03c3f">CarteArme</a>, et <a class="el" href="classCartePersonnage.html#a7767678c9ba3703f8e17a4469309d77e">CartePersonnage</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a3650c2d0ea9877fe29f4673f430daa8e"></a><!-- doxytag: member="Carte::getNom" ref="a3650c2d0ea9877fe29f4673f430daa8e" args="()" -->
+<a class="anchor" id="af8021536db59b0333f4f7dd6c459f781"></a><!-- doxytag: member="Carte::getNom" ref="af8021536db59b0333f4f7dd6c459f781" args="()=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classCarte.html#a3650c2d0ea9877fe29f4673f430daa8e">Carte::getNom</a> </td>
+          <td class="memname">string <a class="el" href="classCarte.html#af8021536db59b0333f4f7dd6c459f781">Carte::getNom</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -137,17 +145,19 @@ Fonctions membres publiques</h2></td></tr>
 <p>Recupere le nom de la carte. </p>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>nom le nom de la carte </dd></dl>
 
+<p>Implémenté dans <a class="el" href="classCartePiece.html#ac3664a8a367a1d84c8334662a970b2d1">CartePiece</a>, <a class="el" href="classCarteArme.html#a8f736d4e8448d65c57ce589ffb32e68d">CarteArme</a>, et <a class="el" href="classCartePersonnage.html#ab89bb1837aebcbe48e5356579523b695">CartePersonnage</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="a813a8fc1e11e43b7f2374c6e1ce77c26"></a><!-- doxytag: member="Carte::getTexture" ref="a813a8fc1e11e43b7f2374c6e1ce77c26" args="()" -->
+<a class="anchor" id="ad881bc9e55ab5feb4884d0efdcbf46ed"></a><!-- doxytag: member="Carte::getTexture" ref="ad881bc9e55ab5feb4884d0efdcbf46ed" args="()=0" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">sf::Texture &amp; <a class="el" href="classCarte.html#a813a8fc1e11e43b7f2374c6e1ce77c26">Carte::getTexture</a> </td>
+          <td class="memname">sf::Texture &amp; <a class="el" href="classCarte.html#ad881bc9e55ab5feb4884d0efdcbf46ed">Carte::getTexture</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -156,30 +166,7 @@ Fonctions membres publiques</h2></td></tr>
 <p>Recupere la texture de la carte. </p>
 <dl class="return"><dt><b>Renvoie:</b></dt><dd>nom le nom de la carte </dd></dl>
 
-</div>
-</div>
-<a class="anchor" id="a9d9aa4e925a54cf0b830c6d34fea4ad7"></a><!-- doxytag: member="Carte::operator==" ref="a9d9aa4e925a54cf0b830c6d34fea4ad7" args="(Carte const &amp;c2)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Carte::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classCarte.html">Carte</a> const &amp;&#160;</td>
-          <td class="paramname"><em>c2</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Operateur d'egalite. </p>
-<dl class="params"><dt><b>Paramètres:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">c2</td><td>le seconde carte </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Implémenté dans <a class="el" href="classCartePiece.html#ab3c9961822338a255a764b9247989e93">CartePiece</a>, <a class="el" href="classCarteArme.html#ab0b8bfe3079c3565ccedd18a32f5c6a6">CarteArme</a>, et <a class="el" href="classCartePersonnage.html#a3ec927c067fff46b9ba8999d946c50e2">CartePersonnage</a>.</p>
 
 </div>
 </div>
@@ -205,7 +192,7 @@ Fonctions membres publiques</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 08:32:08 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Novembre 26 2013 15:10:23 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

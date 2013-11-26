@@ -16,7 +16,7 @@
 	<File name="Donnees.h" open="1" top="0" tabpos="2">
 		<Cursor position="1127" topLine="0" />
 	</File>
-	<File name="DonneesJeu.cpp" open="0" top="0" tabpos="8">
+	<File name="DonneesJeu.cpp" open="1" top="1" tabpos="5">
 		<Cursor position="2472" topLine="93" />
 	</File>
 	<File name="DonneesJeu.h" open="0" top="0" tabpos="3">
@@ -55,7 +55,7 @@
 	<File name="EcranRegles.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="900" topLine="15" />
 	</File>
-	<File name="FactoryCarte.cpp" open="1" top="1" tabpos="3">
+	<File name="FactoryCarte.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="142" topLine="0" />
 	</File>
 	<File name="FenetreChoix.cpp" open="0" top="0" tabpos="0">
@@ -115,8 +115,8 @@
 	<File name="Piece.h" open="0" top="0" tabpos="1">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Plateau.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="7430" topLine="331" />
+	<File name="Plateau.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="7430" topLine="109" />
 	</File>
 	<File name="Plateau.h" open="0" top="0" tabpos="9">
 		<Cursor position="0" topLine="0" />

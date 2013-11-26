@@ -112,33 +112,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00032"></a>00032         <a class="code" href="classPersonnage.html">Personnage</a>* <a class="code" href="classJoueur.html#a255c6e4dc5071a176055ec819080b6d6" title="Getter de la position  position_ la posion du joueur.">getPerso</a>();             <span class="comment">//Retourne le perso</span>
 <a name="l00033"></a>00033         std::string getNom();               <span class="comment">//Retourne le nom du personnage qu&#39;incarne le joueur</span>
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#aff78215b191d488c6555d100060fc2d6" title="Getter de la position.">setPosition</a>(<a class="code" href="classCase.html">Case</a>* c);          <span class="comment">//Met la position du joueur à jour</span>
-<a name="l00036"></a>00036         <a class="code" href="classCase.html">Case</a>* <a class="code" href="classJoueur.html#a528cac966c6cfeab47e666ce3b2735c2" title="Getter de la position  position_ la posion du joueur.">getPosition</a>();                <span class="comment">//Retourne la positon du joueur</span>
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038         <a class="code" href="classCase.html">Case</a>* getDernierePiece();           <span class="comment">//Retourne la dernière pièce</span>
-<a name="l00039"></a>00039         <span class="keywordtype">void</span> setDernierePiece(<a class="code" href="classCase.html">Case</a>* c);     <span class="comment">//Met à jour la derniere piece visite</span>
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#a5d32e5ba9665404f3b30fa5f548aaf43" title="Fonction setChecklist.">setChecklist</a>(vector&lt;bool&gt; vecteur);
-<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#a8a94eef8959d5d7f7495429ceaf68124" title="Fonction setChecklist.">setChecklistAtTrue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i);
-<a name="l00043"></a>00043         vector&lt;bool&gt; <a class="code" href="classJoueur.html#aef8ade4a19666cee6596b35b0b30017a" title="Fonction getChecklist.">getChecklist</a>();
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046     <span class="keyword">private</span>:
+<a name="l00035"></a>00035         sf::Texture getTexture();
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#aff78215b191d488c6555d100060fc2d6" title="Getter de la position.">setPosition</a>(<a class="code" href="classCase.html">Case</a>* c);          <span class="comment">//Met la position du joueur à jour</span>
+<a name="l00038"></a>00038         <a class="code" href="classCase.html">Case</a>* <a class="code" href="classJoueur.html#a528cac966c6cfeab47e666ce3b2735c2" title="Getter de la position  position_ la posion du joueur.">getPosition</a>();                <span class="comment">//Retourne la positon du joueur</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         <a class="code" href="classCase.html">Case</a>* getDernierePiece();           <span class="comment">//Retourne la dernière pièce</span>
+<a name="l00041"></a>00041         <span class="keywordtype">void</span> setDernierePiece(<a class="code" href="classCase.html">Case</a>* c);     <span class="comment">//Met à jour la derniere piece visite</span>
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#a5d32e5ba9665404f3b30fa5f548aaf43" title="Fonction setChecklist.">setChecklist</a>(vector&lt;bool&gt; vecteur);
+<a name="l00044"></a>00044         <span class="keywordtype">void</span> <a class="code" href="classJoueur.html#a8a94eef8959d5d7f7495429ceaf68124" title="Fonction setChecklist.">setChecklistAtTrue</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i);
+<a name="l00045"></a>00045         vector&lt;bool&gt; <a class="code" href="classJoueur.html#aef8ade4a19666cee6596b35b0b30017a" title="Fonction getChecklist.">getChecklist</a>();
+<a name="l00046"></a>00046 
 <a name="l00047"></a>00047 
-<a name="l00048"></a>00048         <a class="code" href="classPersonnage.html">Personnage</a>* perso_;             <span class="comment">// Le personnage qu&#39;incarne le joueur</span>
-<a name="l00049"></a>00049         <a class="code" href="classCase.html">Case</a>* position_;                <span class="comment">//La position du joueur</span>
-<a name="l00050"></a>00050         <a class="code" href="classCase.html">Case</a>* dernierePiece_;            <span class="comment">//La derniere piece visité</span>
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052         vector&lt;Carte*&gt; tabCarteDepart;  <span class="comment">//tab des cartes de depart max 12</span>
-<a name="l00053"></a>00053         vector&lt;Carte*&gt; tabCarteVu;      <span class="comment">//tab des cartes vus pendant le jeu max 24</span>
-<a name="l00054"></a>00054         vector&lt;bool&gt; checklist;         <span class="comment">// checklist du joueur</span>
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056         sf::Texture im;
+<a name="l00048"></a>00048     <span class="keyword">private</span>:
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050         <a class="code" href="classPersonnage.html">Personnage</a>* perso_;             <span class="comment">// Le personnage qu&#39;incarne le joueur</span>
+<a name="l00051"></a>00051         <a class="code" href="classCase.html">Case</a>* position_;                <span class="comment">//La position du joueur</span>
+<a name="l00052"></a>00052         <a class="code" href="classCase.html">Case</a>* dernierePiece_;            <span class="comment">//La derniere piece visité</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054         vector&lt;Carte*&gt; tabCarteDepart;  <span class="comment">//tab des cartes de depart max 12</span>
+<a name="l00055"></a>00055         vector&lt;Carte*&gt; tabCarteVu;      <span class="comment">//tab des cartes vus pendant le jeu max 24</span>
+<a name="l00056"></a>00056         vector&lt;bool&gt; checklist;         <span class="comment">// checklist du joueur</span>
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058 
-<a name="l00059"></a>00059 };
+<a name="l00058"></a>00058         sf::Texture im;
+<a name="l00059"></a>00059 
 <a name="l00060"></a>00060 
-<a name="l00061"></a>00061 <span class="preprocessor">#endif // JOUEUR_H</span>
+<a name="l00061"></a>00061 };
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 <span class="preprocessor">#endif // JOUEUR_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -157,7 +159,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 08:32:08 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

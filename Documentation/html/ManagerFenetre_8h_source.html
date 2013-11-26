@@ -90,30 +90,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 <span class="keyword">class </span><a class="code" href="classFenetreInfo.html">FenetreInfo</a>;
 <a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classFenetreChoix.html">FenetreChoix</a>;
-<a name="l00013"></a>00013 
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classFenetreContrer.html">FenetreContrer</a>;
 <a name="l00014"></a>00014 
-<a name="l00015"></a><a class="code" href="classManagerFenetre.html">00015</a> <span class="keyword">class </span><a class="code" href="classManagerFenetre.html">ManagerFenetre</a>
-<a name="l00016"></a>00016 {
-<a name="l00017"></a>00017     <span class="keyword">public</span>:
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019       <a class="code" href="classManagerFenetre.html#adde6ceef42d5ed5000cb9dbc76ef1442" title="Constructeur.">ManagerFenetre</a>();
-<a name="l00020"></a>00020       <span class="keyword">virtual</span> ~<a class="code" href="classManagerFenetre.html">ManagerFenetre</a>();
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022       <span class="keywordtype">void</span> ouvrirFenetreInfo();
-<a name="l00023"></a>00023       <span class="keywordtype">void</span> ouvrirFenetreChoix();
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025       <span class="keywordtype">void</span> observerChoix(<a class="code" href="classObserver.html">Observer</a>* observer);
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="classManagerFenetre.html">00016</a> <span class="keyword">class </span><a class="code" href="classManagerFenetre.html">ManagerFenetre</a>
+<a name="l00017"></a>00017 {
+<a name="l00018"></a>00018     <span class="keyword">public</span>:
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020       <a class="code" href="classManagerFenetre.html#adde6ceef42d5ed5000cb9dbc76ef1442" title="Constructeur.">ManagerFenetre</a>();
+<a name="l00021"></a>00021       <span class="keyword">virtual</span> ~<a class="code" href="classManagerFenetre.html">ManagerFenetre</a>();
+<a name="l00022"></a>00022 
+<a name="l00023"></a>00023       <span class="keywordtype">void</span> ouvrirFenetreInfo();
+<a name="l00024"></a>00024       <span class="keywordtype">void</span> ouvrirFenetreChoix();
+<a name="l00025"></a>00025       <span class="keywordtype">void</span> ouvrirFenetreContrer(std::string chemin);
 <a name="l00026"></a>00026 
-<a name="l00027"></a>00027     <span class="keyword">private</span>:
+<a name="l00027"></a>00027       <span class="keywordtype">void</span> observerChoix(<a class="code" href="classObserver.html">Observer</a>* observer);
 <a name="l00028"></a>00028 
-<a name="l00029"></a>00029       <a class="code" href="classFenetreInfo.html">FenetreInfo</a>* fenetreInfo;
-<a name="l00030"></a>00030       <a class="code" href="classFenetreChoix.html">FenetreChoix</a>* fenetreChoix;
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032       <span class="comment">//fenetreContrer;</span>
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034 };
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 <span class="preprocessor">#endif</span>
+<a name="l00029"></a>00029     <span class="keyword">private</span>:
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031       <a class="code" href="classFenetreInfo.html">FenetreInfo</a>* fenetreInfo;
+<a name="l00032"></a>00032       <a class="code" href="classFenetreChoix.html">FenetreChoix</a>* fenetreChoix;
+<a name="l00033"></a>00033       <a class="code" href="classFenetreContrer.html">FenetreContrer</a>* fenetreContrer;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 };
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -132,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 08:32:08 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
