@@ -12,11 +12,6 @@ CartePersonnage::CartePersonnage(string n, string ch){
 
 
 /**
-* Destructeur
-*/
-CartePersonnage::~CartePersonnage(){}
-
-/**
  * Recupere le nom de la carte
  * @return nom le nom de la carte
  */

@@ -26,8 +26,8 @@ class EcranFinal : public Ecran
         sf::Sprite ecran;   // Sprite de l'ecran final
         Bouton ok;
 
-        ManagerEcran *manager;
-        DonneesJeu* donnees;
+        ManagerEcran *manager;  //Le manager qui cree l'ecran
+        DonneesJeu* donnees;    //Les donnees du jeu
 
 };
 #endif

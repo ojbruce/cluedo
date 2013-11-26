@@ -13,7 +13,6 @@ class CartePiece : public Carte
 {
     public:
         CartePiece(string nom, string chemin);   // Constructeur
-        ~CartePiece();                  //Destructeur
 
         // Getter
         string getNom();        //retourne le nom

@@ -11,11 +11,6 @@ CartePiece::CartePiece(string n, string ch){
 }
 
 
-/**
-* Destructeur
-*/
-CartePiece::~CartePiece(){}
-
 
 /**
  * Recupere le nom de la carte

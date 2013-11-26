@@ -22,8 +22,9 @@ EcranEpilogue::EcranEpilogue(ManagerEcran *man) :
 
 
 /**
-* Fonction afficher
-*/
+ * Fonction afficher
+ * @param window la fenetre
+ */
 void EcranEpilogue::afficher(sf::RenderWindow &fenetre)
 {
 
@@ -40,8 +41,9 @@ void EcranEpilogue::afficher(sf::RenderWindow &fenetre)
 
 
 /**
-* Fonction update
-*/
+ * Cette fonction permet le changement d'ecran en fonction des evenements
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void EcranEpilogue::update(sf::Event event)
 {
     int x = event.mouseButton.x;

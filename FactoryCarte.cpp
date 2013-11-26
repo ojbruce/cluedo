@@ -2,8 +2,9 @@
 
 
 /**
-* Fonction creer
-*/
+ * Methode qui va creer les cartes selon leur le type
+ * @return retourne une carte
+ */
 Carte* FactoryCarte::creer(string type, string nom, string chemin)
 {
     Carte* carte=NULL;

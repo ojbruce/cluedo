@@ -5,7 +5,7 @@
 
 using namespace std;
 
-/** 
+/**
 * Constructeur
 * Role : initialise les attribut de l'ecran d'accueil
 */
@@ -22,9 +22,10 @@ FenetreInfo::FenetreInfo(ManagerFenetre *man) :
 }
 
 
-/** 
-* Fonction afficher
-*/
+/**
+ * Cette fonction lance l'affichage de la fênetre
+ * @param window la fenetre
+ */
 void FenetreInfo::afficher(sf::RenderWindow &fenetre)
 {
 	if(aClique==false)
@@ -43,25 +44,26 @@ void FenetreInfo::afficher(sf::RenderWindow &fenetre)
 }
 
 
-/*
-* Fonction update 
-*/
+/**
+ * Cette fonction maj les elements de l'ecran jeu
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void FenetreInfo::update(sf::Event event, RenderWindow &fenetre)
 {
     int x = event.mouseButton.x;
     int y = event.mouseButton.y;
-    
+
     aClique = true;
 
     if(400<=x && x<=470 && 400<=y && y<=470)
-    { 
+    {
         ok.clique();
-        fenetre.close();    
+        fenetre.close();
     }
 }
 
 
-/** 
+/**
 * Fonction setAClique
 */
 void FenetreInfo::setACliqueFalse()

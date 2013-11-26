@@ -41,6 +41,7 @@ Case::~Case(){
 
 /**
  * Methode qui va réaliser l'action selon la case
+ * @return une string vide ici
  */
 std::string Case::action(){
     //on renvoie false c'est qu'il n'a pas gagne
@@ -105,8 +106,8 @@ void Case::trouverChemin(int de, vector<Case*> &res, Plateau* p){
 }
 
 /**
- * Methode qui affiche la case
- *
+ * Methode qui va colorier en bleu la case
+ * @param window la fenetre qui va etre touchée
  */
 void Case::colorier(sf::RenderWindow &window){
    rectangle->setFillColor(sf::Color(0, 90, 240,150));
@@ -132,6 +133,10 @@ std::string Case::toString(){
 	return res;
 }
 
+/**
+ * Renvoie le point en haut à gauche de la case en fonction de l'affichage
+ * @return une pair d'int représentant le point en hautà gauche
+ */
 pair<int,int> Case::pointHG(int tailleCase, int ecartX, int ecartY){
 
     pair<int,int> u;
@@ -141,6 +146,10 @@ pair<int,int> Case::pointHG(int tailleCase, int ecartX, int ecartY){
     return u;
 }
 
+/**
+ * Renvoie le point permettant de mettre le pion au centre de la case
+ * @return une pair d'int représentant l'endroit pour bien placer le pion
+ */
 pair<int,int> Case::milieu(int tailleCase, pair<int,int> a){
 
     pair<int,int> u;
@@ -148,13 +157,10 @@ pair<int,int> Case::milieu(int tailleCase, pair<int,int> a){
     u.second = a.second+(tailleCase/4);
 
     return u;
-
 }
 
 
-
-	/********************************************************/
-	/**********************Getters***************************/
+//Getters Setters
 
 /**
  * Assesseur de x_

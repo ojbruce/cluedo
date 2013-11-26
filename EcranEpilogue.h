@@ -26,7 +26,7 @@ class EcranEpilogue : public Ecran
 
         Bouton fermer;
 
-        ManagerEcran *manager;
+        ManagerEcran *manager;  //Le manager d'ecran qui se charge des ecrans
 
 };
 #endif

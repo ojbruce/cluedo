@@ -13,27 +13,27 @@ class DonneesJeu
         DonneesJeu(Donnees* d);
         virtual ~DonneesJeu();
 
-        int lancerDe();     //lancer le De
-        void preparerPartie(Plateau* plateau);
-        void changerJoueur();
+        int lancerDe();                         //Methode qui retourne le de
+        void preparerPartie(Plateau* plateau);  //Methode qui va preparer la partie
+        void changerJoueur();                   //Methode qui met a jour le joueur Courant
 
 
         void accuser(std::string arme, std::string perso,std::string lieu);
         std::string soupconner(std::string arme, std::string perso,std::string lieu);
 
         //Getter- Setter
-        bool getPartieFini();
-        void setPartieFini(bool parti);
-        Joueur* getJoueurCourant();
-        Joueur* getJoueurAt(int i);
+        bool getPartieFini();           //Methode qui retourne si la partie est finie
+        void setPartieFini(bool parti); //Methode qui met a jour l'etat de la partie
+        Joueur* getJoueurCourant();     //Methode qui retourne le joueur courant
+        Joueur* getJoueurAt(int i);     //Methode qui retourne le joueur à la position
 
         int getDe();
 
-        Joueur* getGagnant();
-        void setGagnant(Joueur* j);
+        Joueur* getGagnant();           //Methode qui retourne le joueur gagnant
+        void setGagnant(Joueur* j);     //Methode qui met a jour le joueur gagnant
 
-        void setNbJoueur(int nb);
-        int getNbJoueur();
+        void setNbJoueur(int nb);       //Methode qui met a jour le nombre de joueur
+        int getNbJoueur();              //Methode qui get le nombre de joueur
 
 
     private:

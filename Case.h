@@ -14,18 +14,18 @@ class Plateau;
 class Case{
 
 	public:
-		Case();                          //Constructeur par defaut
-		Case(int a, int b);              //Constructeur avec x et y
+		Case();                             //Constructeur par defaut
+		Case(int a, int b);                 //Constructeur avec x et y
 
-        bool operator== (Case const &c2); // Operateur d'egalite
+        bool operator== (Case const &c2);   //Operateur d'egalite
 
-		virtual ~Case();                //Destructeur du plateau
+		virtual ~Case();                    //Destructeur du plateau
 
 		void afficher();
 		virtual std::string toString();
 
         virtual void trouverChemin(int de, std::vector<Case*> &res, Plateau* p ); // methode qui trouve tous les chemins possibles
-        virtual std::string action();
+        virtual std::string action();   //Methode qui renvoie un nom par polymorphisme
 
         //renvoie le point en haut à gauche de la case en fonction de l'affichage
 		std::pair<int,int> pointHG(int tailleCase, int ecartX, int ecartY);

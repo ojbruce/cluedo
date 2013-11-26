@@ -23,7 +23,8 @@ EcranFinal::EcranFinal(ManagerEcran *man, DonneesJeu* don) :
 
 
 /**
-* Fonction afficher
+* Cette fonction lance l'affichage de la fênetre
+* @param window la fenetre
 */
 void EcranFinal::afficher(sf::RenderWindow &fenetre)
 {
@@ -54,8 +55,9 @@ void EcranFinal::afficher(sf::RenderWindow &fenetre)
 
 
 /**
-* Fonction update
-*/
+ * Cette fonction permet le changement d'ecran en fonction des evenements
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void EcranFinal::update(sf::Event event)
 {
     int x = event.mouseButton.x;

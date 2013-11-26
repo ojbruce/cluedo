@@ -15,15 +15,10 @@ class EcranJeu : public Ecran
 {
     public:
         EcranJeu(ManagerEcran *manager,DonneesJeu* d);
-        virtual ~EcranJeu();
-        void creerPartie();
 
-        void afficher(sf::RenderWindow &fenetre);     // Cette fonction lance l'affichage de la fênetre
-        void update(sf::Event event);
+        void afficher(sf::RenderWindow &fenetre);   // Cette fonction lance l'affichage de la fênetre
+        void update(sf::Event event);               //Cette fonction maj les elements de l'ecran jeu
 
-        void update(sf::RenderWindow &window, sf::Event event);
-
-    protected:
     private:
         DonneesJeu* d;
         Plateau p;                      //Le plateau

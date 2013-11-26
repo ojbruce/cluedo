@@ -20,25 +20,26 @@ class FenetreChoix : public Observable, public Fenetre
 
         FenetreChoix(ManagerFenetre *manager);
 
-        void afficher(sf::RenderWindow &fenetre);    // Cette fonction lance l'affichage de la fenetre
-        void update(sf::Event event, sf::RenderWindow &fenetre);                // Cette fonction permet le changement d'ecran en fonction des evenements
+        void afficher(sf::RenderWindow &fenetre);                   // Cette fonction lance l'affichage de la fenetre
+        void update(sf::Event event, sf::RenderWindow &fenetre);    // Cette fonction permet le changement d'ecran en fonction des evenements
         void cliqueConditionnel1(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &b1, Bouton &b2, Bouton &b3, Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7, Bouton &b8);
         void cliqueConditionnel2(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &b1, Bouton &b2, Bouton &b3, Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7);
-        void actualiserChoix();
-        void deselectionnerTout();
-        void setACliqueFalse();
+        void actualiserChoix();         //Actualise le choix
+        void deselectionnerTout();      //Deselectionne tous les boutons
+        void setACliqueFalse();         //Met a cliquer à false
 
-        void ajouterObs(Observer* obs);
-        void enleverObs(Observer* obs);
-        void notifyObs();
+        void ajouterObs(Observer* obs); //ajouter un observateu
+        void enleverObs(Observer* obs); //enlever un observateur
+        void notifyObs();               //notifier observateur
 
 
 
     private :
-
+        //Les images
         sf::Texture image;
         sf::Sprite fond;
 
+        //Les boutons
         Bouton accuser;
         Bouton soupcon;
 
@@ -58,14 +59,14 @@ class FenetreChoix : public Observable, public Fenetre
         Bouton c14;
         Bouton c15;
 
-        ManagerFenetre *manager;
+        ManagerFenetre *manager;            //les manager
 
-        vector <Observer*> observateurs;
+        vector <Observer*> observateurs;    //Les observateurs
 
-        std::string carte1;
-        std::string carte2;
-        std::string action;
+        std::string carte1;                 //La carte choisie 1
+        std::string carte2;                 //La carte choisie 2
+        std::string action;                 //La carte l'action choisi
 
-        bool aClique;
+        bool aClique;                       //Le bouton clique ou pas
 };
 #endif

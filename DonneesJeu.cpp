@@ -7,15 +7,15 @@ DonneesJeu::DonneesJeu(Donnees* d ): donnees(d), partieFini_(false), gagnant(NUL
 }
 
 
-
-
 DonneesJeu::~DonneesJeu()
 {
     //dtor
 
 }
 
-
+/**
+ * Methode qui va preparer la partie
+ */
 void DonneesJeu::preparerPartie(Plateau* plateau){
 
     //Set la position de depart du personnage
@@ -31,6 +31,14 @@ void DonneesJeu::preparerPartie(Plateau* plateau){
     cerr<<"DonneesJoueur::distribution des cartes"<<endl;
 }
 
+
+
+/**
+ * Methode qui va permettre au joueur courant d'accuser
+ * @param arme  l'arme du crime
+ * @param lieu  la piece ou est le joueur
+ * @param perso le criminelle
+ */
 void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
 
     bool bonneCarte = true;
@@ -56,8 +64,13 @@ void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
     }
 }
 
+
 /**
- *
+ * Methode qui va permettre au joueur courant de soupconner
+ * @param arme  l'arme du crime
+ * @param lieu  la piece ou est le joueur
+ * @param perso le criminelle
+ * @return cheminres le chemin contrant le soupcon
  */
 std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu){
 
@@ -197,7 +210,7 @@ void DonneesJeu::setNbJoueur(int nb){
 }
 
 /**
- * Methode qui met a jour le joueur gagnant
+ * Methode qui get le nombre de joueur
  * @param joueurCourant le joueur corant dans le tabJoueur_
  */
 int DonneesJeu::getNbJoueur(){

@@ -74,6 +74,10 @@ Donnees::Donnees(){
 
 }
 
+/**
+ * Methode qui va trouver une carte dans le tableau et renvoyer son indice
+ * @return res l'indice de la carte
+ */
 unsigned int Donnees::trouverIndiceCarte(std::string carte){
 
     unsigned int res=0;
@@ -86,20 +90,25 @@ unsigned int Donnees::trouverIndiceCarte(std::string carte){
 
 }
 
+/**
+ * Destructeur
+ */
 Donnees::~Donnees()
 {
     //dtor
+
+    for(unsigned int i=0; i< tabCartes.size();i++){
+        delete tabCartes[i];
+    }
+
     cerr<<"Donnee::destruction des Donnees"<< endl;
 }
 
 
-Carte* Donnees::getCarte(int ind){
-    return tabCartes[ind];
-}
-
 /**
- *Retourne les cartes mysteres
- *
+ * Methode qui retourne les cartes mysteres
+ * @param temoin un vecteur d'int qui va être décrémentée
+ * @return res un vecteur de carte prenant les cartes mysteres
  */
 vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
     vector<Carte*> res;
@@ -128,7 +137,8 @@ vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
 
 /**
  * Va renvoyer un n nombre de joueur avec des persos aléatoires
- *
+ * @param n le nombre de joueur
+ * @return le tableau de joueurs
  **/
 vector<Joueur> Donnees::initJoueur(int n){
     //tableau de joueur à retourner
@@ -136,12 +146,10 @@ vector<Joueur> Donnees::initJoueur(int n){
 
     int i =0;
 
+    srand(time(NULL)); //le rand par rapport au temps
 
-    srand(time(NULL));
-
-
-   do{
-       //8 perso max
+    do{
+        //8 perso max
         int indice = rand() % 8;
         Joueur joueur(&tabPersonnages[indice]);
 
@@ -158,6 +166,10 @@ vector<Joueur> Donnees::initJoueur(int n){
     return tabJoueur;
 }
 
+/**
+ * Methodes qui va positionner les personnages
+ * @param le plateau pour positionner les personnages dessus
+ */
 void Donnees::positionnerPerso(Plateau* p){
 
     tabPersonnages[0].setPositionDepart(p->getCase(14,0));
@@ -173,9 +185,10 @@ void Donnees::positionnerPerso(Plateau* p){
 
 
 /**
- * Methodes qui va distribuer les cartes aux joueurs
- *
- **/
+ * Methodes qui va distribuer les cartes aux joueurs et initialiser la checklist du joueur
+ * @param le tableau de joueur
+ * @return un vecteur représentant les cartes mysteres
+ */
 vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
     srand(time(NULL));

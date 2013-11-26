@@ -340,11 +340,11 @@
 	<string>
 	<vector>
 
-1385449597 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
+1385485994 source:/comptes/E119850X/Desktop/cluedo/Case.cpp
 	"Case.h"
 	"Plateau.h"
 
-1385449597 /comptes/E119850X/Desktop/cluedo/Case.h
+1385485994 /comptes/E119850X/Desktop/cluedo/Case.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<sstream>
@@ -387,7 +387,7 @@
 	<string>
 	"Case.h"
 
-1385473297 /comptes/E119850X/Desktop/cluedo/Donnees.h
+1385487137 /comptes/E119850X/Desktop/cluedo/Donnees.h
 	<iostream>
 	<fstream>
 	<string>
@@ -405,10 +405,10 @@
 
 1384982080 /comptes/E119850X/Desktop/cluedo/CaseAbstraite.h
 
-1385473308 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
+1385487137 source:/comptes/E119850X/Desktop/cluedo/Donnees.cpp
 	"Donnees.h"
 
-1385453479 source:/comptes/E119850X/Desktop/cluedo/EcranAccueil.cpp
+1385485554 source:/comptes/E119850X/Desktop/cluedo/EcranAccueil.cpp
 	"EcranAccueil.h"
 	"ManagerEcran.h"
 	<iostream>
@@ -425,7 +425,7 @@
 1385284209 /comptes/E119850X/Desktop/cluedo/Ecran.h
 	<SFML/Graphics.hpp>
 
-1385383081 /comptes/E119850X/Desktop/cluedo/Bouton.h
+1385484269 /comptes/E119850X/Desktop/cluedo/Bouton.h
 	<SFML/Graphics.hpp>
 	<cstdlib>
 	<vector>
@@ -441,7 +441,7 @@
 	"EcranFinal.h"
 	"EcranEpilogue.h"
 
-1385457354 /comptes/E119850X/Desktop/cluedo/EcranJeu.h
+1385488193 /comptes/E119850X/Desktop/cluedo/EcranJeu.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Ecran.h"
@@ -466,13 +466,13 @@
 	"Observer.h"
 	"ManagerFenetre.h"
 
-1385302535 /comptes/E119850X/Desktop/cluedo/DonneesJeu.h
+1385487664 /comptes/E119850X/Desktop/cluedo/DonneesJeu.h
 	"Joueur.h"
 	"Carte.h"
 	"Plateau.h"
 	"Donnees.h"
 
-1384982080 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
+1385483611 /comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.h
 	<SFML/Graphics.hpp>
 	<iostream>
 
@@ -507,14 +507,14 @@
 	"Ecran.h"
 	"Bouton.h"
 
-1385285657 /comptes/E119850X/Desktop/cluedo/EcranConfiguration.h
+1385487926 /comptes/E119850X/Desktop/cluedo/EcranConfiguration.h
 	<SFML/Graphics.hpp>
 	<cstdlib>
 	<string>
 	"Ecran.h"
 	"Bouton.h"
 
-1385453479 source:/comptes/E119850X/Desktop/cluedo/EcranConfiguration.cpp
+1385487926 source:/comptes/E119850X/Desktop/cluedo/EcranConfiguration.cpp
 	"EcranConfiguration.h"
 	"ManagerEcran.h"
 	<iostream>
@@ -553,13 +553,13 @@
 1385449597 source:/comptes/E119850X/Desktop/cluedo/Porte.cpp
 	"Porte.h"
 
-1385462581 source:/comptes/E119850X/Desktop/cluedo/main.cpp
+1385483898 source:/comptes/E119850X/Desktop/cluedo/main.cpp
 	"Jeu.h"
 
-1385383070 source:/comptes/E119850X/Desktop/cluedo/Bouton.cpp
+1385484715 source:/comptes/E119850X/Desktop/cluedo/Bouton.cpp
 	"Bouton.h"
 
-1385468182 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
+1385487926 source:/comptes/E119850X/Desktop/cluedo/EcranJeu.cpp
 	"EcranJeu.h"
 	"ManagerEcran.h"
 
@@ -597,13 +597,13 @@
 
 1385388407 /comptes/E119850X/Desktop/cluedo/Observable.h
 
-1385469968 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
+1385483988 source:/comptes/E119850X/Desktop/cluedo/Partie.cpp
 	"Partie.h"
 
 1385449597 source:/comptes/E119850X/Desktop/cluedo/Plateau.cpp
 	"Plateau.h"
 
-1385385938 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
+1385483898 source:/comptes/E119850X/Desktop/cluedo/ZoneAffichageTexte.cpp
 	"ZoneAffichageTexte.h"
 
 1385385644 source:/comptes/E119850X/Desktop/cluedo/ZoneCarte.cpp
@@ -1232,7 +1232,7 @@
 1385417980 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
 	"Porte.h"
 
-1385470059 source:/comptes/E119850X/Desktop/cluedo/DonneesJeu.cpp
+1385487664 source:/comptes/E119850X/Desktop/cluedo/DonneesJeu.cpp
 	"DonneesJeu.h"
 
 1385402917 source:/comptes/E119850X/Desktop/cluedo/FenetreChoix.cpp
@@ -1279,26 +1279,26 @@
 	"ManagerFenetre.h"
 	"Bouton.h"
 
-1385472981 source:/comptes/E119850X/Desktop/cluedo/CarteArme.cpp
+1385484998 source:/comptes/E119850X/Desktop/cluedo/CarteArme.cpp
 	"CarteArme.h"
 
-1385472939 /comptes/E119850X/Desktop/cluedo/CarteArme.h
+1385485068 /comptes/E119850X/Desktop/cluedo/CarteArme.h
 	<SFML/Graphics.hpp>
 	<string>
 	"Carte.h"
 
-1385472913 source:/comptes/E119850X/Desktop/cluedo/CartePersonnage.cpp
+1385485086 source:/comptes/E119850X/Desktop/cluedo/CartePersonnage.cpp
 	"CartePersonnage.h"
 
-1385472903 /comptes/E119850X/Desktop/cluedo/CartePersonnage.h
+1385485101 /comptes/E119850X/Desktop/cluedo/CartePersonnage.h
 	<SFML/Graphics.hpp>
 	<string>
 	"Carte.h"
 
-1385472891 source:/comptes/E119850X/Desktop/cluedo/CartePiece.cpp
+1385485085 source:/comptes/E119850X/Desktop/cluedo/CartePiece.cpp
 	"CartePiece.h"
 
-1385472878 /comptes/E119850X/Desktop/cluedo/CartePiece.h
+1385485094 /comptes/E119850X/Desktop/cluedo/CartePiece.h
 	<SFML/Graphics.hpp>
 	<string>
 	"Carte.h"

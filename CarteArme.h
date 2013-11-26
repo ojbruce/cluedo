@@ -5,25 +5,23 @@
 #include<string>
 #include "Carte.h"
 
-using namespace std;
 
 class CarteArme : public Carte
 {
     public:
         CarteArme(string nom, string chemin);   // Constructeur
-        ~CarteArme();                  //Destructeur
 
         // Getter
-        string getNom();        //retourne le nom
-        string getChemin();     //retourne le chemin
+        std::string getNom();           //Methode qui retourne le nom
+        std::string getChemin();        //Methode qui retourne le chemin
 
-        sf::Texture& getTexture();
+        sf::Texture& getTexture();      //Methode qui retourne la texture
 
     private:
 
-        string nom;
-        string chemin;
-        sf::Texture texture;
+        std::string nom;                 //le nom
+        std::string chemin;              //le chemin
+        sf::Texture texture;             //la texture
 };
 
 #endif

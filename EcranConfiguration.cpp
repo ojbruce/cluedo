@@ -30,19 +30,11 @@ EcranConfiguration::EcranConfiguration(ManagerEcran *man) :
 
 /**
 * Fonction afficher
+* @param window la fenetre
 */
 
 void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
 {
-
-    /*sf::Event event;
-    while (fenetre.pollEvent(event))
-    {
-        if (event.type == sf::Event::Closed)
-            fenetre.close();
-
-    }*/
-
     // Affichage des elements
     fenetre.draw(ecran);
 
@@ -80,14 +72,12 @@ void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
     sp.move(sf::Vector2f(1040, 360));
     fenetre.draw(sp);
 
-    //Affichage des changements
-    //fenetre.display();
-
 }
 
 /**
-* Fonction update
-*/
+ * Cette fonction permet le changement d'ecran en fonction des evenements
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void EcranConfiguration::update(sf::Event event)
 {
     int x = event.mouseButton.x;
@@ -158,6 +148,7 @@ void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4,
 /**
 * Fonction selectionValide
 * Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique
+* @return si la selection est valide
 */
 
 bool EcranConfiguration::selectionValide()

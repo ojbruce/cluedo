@@ -1,6 +1,8 @@
 #include "EcranJeu.h"
 #include "ManagerEcran.h"
-
+/**
+ * Constructeur
+ */
 EcranJeu::EcranJeu(ManagerEcran *man,DonneesJeu* d1): d(d1),part(&p, &zoneText, &zoneCarte, &zoneCheck, d), partLancer(false),manager(man)
 {
     //ctor
@@ -9,15 +11,9 @@ EcranJeu::EcranJeu(ManagerEcran *man,DonneesJeu* d1): d(d1),part(&p, &zoneText, 
 }
 
 
-EcranJeu::~EcranJeu()
-{
-    //dtor
-
-}
-
-
 /**
- * Fonction afficher
+ * Cette fonction lance l'affichage de la fênetre
+ * @param window la fenetre
  */
 void EcranJeu::afficher(sf::RenderWindow &window){
 
@@ -35,7 +31,8 @@ void EcranJeu::afficher(sf::RenderWindow &window){
 
 
 /**
- * Fonction update
+ * Cette fonction maj les elements de l'ecran jeu
+ * @param event un evenement envoyé par les classes superieurs
  */
 void EcranJeu::update(sf::Event event)
 {
@@ -46,27 +43,4 @@ void EcranJeu::update(sf::Event event)
 }
 
 
-/**
- *  Fonction update
- */
-void EcranJeu::update(sf::RenderWindow &window, sf::Event event){
 
-    while (window.pollEvent(event))
-    {
-        //Gere la fermeture de la fenetre
-        if (event.type == sf::Event::Closed)
-            window.close();
-        //si on recoit un evenement souris pressee
-        if (event.type == sf::Event::MouseButtonPressed){
-            //on retroune la position de la souris et on affiche un pion à la position
-            //part.update(window);
-            part.update(event);
-
-        }
-    }
-
-    //on maj l'affichage du plateau
-    //p.afficher(window);
-    //part.afficher(window);
-
-}

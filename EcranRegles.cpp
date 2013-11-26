@@ -20,31 +20,22 @@ EcranRegles::EcranRegles(ManagerEcran *man) : fermer(Bouton("Images/fermerDepart
 
 /**
 * Fonction afficher
+* @param window la fenetre
 */
 void EcranRegles::afficher(sf::RenderWindow &fenetre)
 {
-    /*sf::Event event;
-    while (fenetre.pollEvent(event))
-    {
-        if (event.type == sf::Event::Closed)
-            fenetre.close();
-    }*/
-
     // Affichage des elements
     fenetre.draw(ecran);
 
     sf::Sprite sp = fermer.getSprite();
     sp.move(sf::Vector2f(600, 640));
     fenetre.draw(sp);
-
-    //Affichage des changements
-    //fenetre.display();
 }
 
 
 /**
-* Fonction update
-* Role :
+* Cette fonction permet le changement d'ecran en fonction des evenements
+* @param event un evenement envoyé par les classes superieurs
 */
 void EcranRegles::update(sf::Event event)
 {

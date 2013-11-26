@@ -1,5 +1,8 @@
 #include "CarteArme.h"
 
+
+using namespace std;
+
 /**
 * Constructeur
 */
@@ -10,11 +13,6 @@ CarteArme::CarteArme(string n, string ch){
      if(!texture.loadFromFile(chemin)){}
 }
 
-
-/**
-* Destructeur
-*/
-CarteArme::~CarteArme(){}
 
 /**
  * Recupere le nom de la carte

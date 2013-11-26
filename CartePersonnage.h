@@ -11,7 +11,6 @@ class CartePersonnage : public Carte
 {
     public:
         CartePersonnage(string nom, string chemin);   // Constructeur
-        ~CartePersonnage();                  //Destructeur
 
         // Getter
         string getNom();        //retourne le nom

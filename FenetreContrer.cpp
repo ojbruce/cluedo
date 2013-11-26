@@ -23,8 +23,9 @@ FenetreContrer::FenetreContrer(ManagerFenetre *man) :
 
 
 /**
-* Fonction afficher
-*/
+ * Cette fonction lance l'affichage de la fênetre
+ * @param window la fenetre
+ */
 void FenetreContrer::afficher(sf::RenderWindow &fenetre)
 {
 	if(aClique==false)
@@ -43,9 +44,10 @@ void FenetreContrer::afficher(sf::RenderWindow &fenetre)
 }
 
 
-/*
-* Fonction update
-*/
+/**
+ * Cette fonction maj les elements de l'ecran jeu
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void FenetreContrer::update(sf::Event event, RenderWindow &fenetre)
 {
     int x = event.mouseButton.x;
@@ -69,10 +71,16 @@ void FenetreContrer::setACliqueFalse()
 	aClique = false;
 }
 
+/**
+ * Methode qui met la texture lorsque ça contre
+ */
 void FenetreContrer::mettreTextureContrer(){
     fond.setTexture(contrerPossible);
 }
 
+/**
+ * Methode qui met la texture lorsque ça contre pas
+ */
 void FenetreContrer::mettreTexturePasContrer(){
     fond.setTexture(contrerImpossible);
 }

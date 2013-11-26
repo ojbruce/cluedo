@@ -20,36 +20,28 @@ EcranAccueil::EcranAccueil(ManagerEcran *man) : jouer(Bouton("Images/jouerDepart
 
 
 /**
-* Fonction afficher
-*/
+ * Methode qui va afficher l'ecran tel qu'il est
+ * @param fenetre la fenetre sur laquelle on va appliquer les changementd
+ */
 void EcranAccueil::afficher(sf::RenderWindow &fenetre)
 {
-   /* sf::Event event;
-    while (fenetre.pollEvent(event))
-    {
-        if (event.type == sf::Event::Closed)
-            fenetre.close();
-    }*/
-
-    // affichage des elements
-    fenetre.draw(accueil);
-
     sf::Sprite sp1 = jouer.getSprite();
     sp1.move(sf::Vector2f(405, 570));
-    fenetre.draw(sp1);
 
     sf::Sprite sp2 = regles.getSprite();
     sp2.move(sf::Vector2f(780, 570));
-    fenetre.draw(sp2);
 
-    // affichage des changements
-    //fenetre.display();
+    // affichage des elements
+    fenetre.draw(accueil);
+    fenetre.draw(sp1);
+    fenetre.draw(sp2);
 }
 
 
 /**
-* Fonction update
-*/
+ * Methode qui permet le changement d'ecran en fonction des evenements
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void EcranAccueil::update(sf::Event event)
 {
     int x = event.mouseButton.x;
@@ -66,5 +58,4 @@ void EcranAccueil::update(sf::Event event)
         regles.clique();
         manager->setEcranCourant(manager->getEcranRegles());
     }
-
 }

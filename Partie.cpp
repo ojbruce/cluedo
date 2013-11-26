@@ -135,15 +135,7 @@ void Partie::afficher(sf::RenderWindow &window){
     //afficher les cartes du joueur en cours
     zoneChecklist->afficherChecklist(donnees->getJoueurCourant(), window);
     zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
-    //zoneText->afficher(window);
-
-    //sf::Text de(L"Lancer le dé", font);
-    //de.setPosition(820,10);
-    //de.setCharacterSize(11);
-
-
-    //window.draw(de);
-
+    zoneText->afficher(window);
 }
 
 

@@ -19,6 +19,7 @@ class ZoneAffichageTexte
         int posCouranteX;
 
         sf::Font font;
+        sf::Text texto;
 };
 
 #endif // ZONEAFFICHAGETEXTE_H

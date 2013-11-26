@@ -40,9 +40,9 @@ using namespace std;
 
 
 /**
-* Fonction afficher
+* Cette fonction lance l'affichage de la fênetre
+* @param window la fenetre
 */
-
 void FenetreChoix::afficher(RenderWindow &fenetre)
 {
     fenetre.draw(fond);
@@ -130,8 +130,9 @@ void FenetreChoix::afficher(RenderWindow &fenetre)
 
 
 /**
-* Fonction update
-*/
+ * Cette fonction permet le changement d'ecran en fonction des evenements
+ * @param event un evenement envoyé par les classes superieurs
+ */
 void FenetreChoix::update(sf::Event event, sf::RenderWindow &fenetre)
 {
     int x = event.mouseButton.x;
@@ -178,11 +179,10 @@ void FenetreChoix::update(sf::Event event, sf::RenderWindow &fenetre)
 }
 
 
-/*
-* Fonction cliqueConditionnel1
-* Role : appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons personnages
-*/
-
+/**
+ * Fonction cliqueConditionnel1
+ * Role : appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons personnages
+ */
 void FenetreChoix::cliqueConditionnel1(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &b1, Bouton &b2, Bouton &b3, Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7, Bouton &b8)
 {
     if(xmin<=x && x<=xmax && ymin<=y && y<=ymax)
