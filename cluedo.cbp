@@ -67,6 +67,10 @@
 		<Unit filename="EcranAccueil.h" />
 		<Unit filename="EcranConfiguration.cpp" />
 		<Unit filename="EcranConfiguration.h" />
+		<Unit filename="EcranEpilogue.cpp" />
+		<Unit filename="EcranEpilogue.h" />
+		<Unit filename="EcranFinal.cpp" />
+		<Unit filename="EcranFinal.h" />
 		<Unit filename="EcranJeu.cpp" />
 		<Unit filename="EcranJeu.h" />
 		<Unit filename="EcranRegles.cpp" />
@@ -74,6 +78,8 @@
 		<Unit filename="Fenetre.h" />
 		<Unit filename="FenetreChoix.cpp" />
 		<Unit filename="FenetreChoix.h" />
+		<Unit filename="FenetreContrer.cpp" />
+		<Unit filename="FenetreContrer.h" />
 		<Unit filename="FenetreInfo.cpp" />
 		<Unit filename="FenetreInfo.h" />
 		<Unit filename="Jeu.cpp" />

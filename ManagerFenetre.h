@@ -10,6 +10,7 @@
 
 class FenetreInfo;
 class FenetreChoix;
+class FenetreContrer;
 
 
 class ManagerFenetre
@@ -21,6 +22,7 @@ class ManagerFenetre
 
       void ouvrirFenetreInfo();
       void ouvrirFenetreChoix();
+      void ouvrirFenetreContrer(std::string chemin);
 
       void observerChoix(Observer* observer);
 
@@ -28,8 +30,7 @@ class ManagerFenetre
 
       FenetreInfo* fenetreInfo;
       FenetreChoix* fenetreChoix;
-
-      //fenetreContrer;
+      FenetreContrer* fenetreContrer;
 
 };
 

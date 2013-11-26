@@ -32,6 +32,8 @@ class Joueur
         Personnage* getPerso();             //Retourne le perso
         std::string getNom();               //Retourne le nom du personnage qu'incarne le joueur
 
+        sf::Texture getTexture();
+
         void setPosition(Case* c);          //Met la position du joueur à jour
         Case* getPosition();                //Retourne la positon du joueur
 

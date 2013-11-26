@@ -9,6 +9,8 @@ ManagerEcran::ManagerEcran(DonneesJeu* d):donnees(d)
     ecranAccueil = new EcranAccueil(this);
     ecranRegles = new EcranRegles(this);
     ecranConfiguration = new EcranConfiguration(this);
+    ecranFinal = new EcranFinal(this, d);
+    ecranEpilogue = new EcranEpilogue(this);
     ecranJeu = new EcranJeu(this, d);
 
     ecranCourant = ecranAccueil;
@@ -70,6 +72,24 @@ Ecran* ManagerEcran::getEcranJeu()
 
 
 /**
+*  getEcranFinal
+*/
+Ecran* ManagerEcran::getEcranFinal()
+{
+    return ecranFinal;
+}
+
+
+/**
+*  getEcranEpilogue
+*/
+Ecran* ManagerEcran::getEcranEpilogue()
+{
+    return ecranEpilogue;
+}
+
+
+/**
 *  setEcranCourant
 */
 void ManagerEcran::setEcranCourant(Ecran *ecran)
@@ -84,8 +104,8 @@ void ManagerEcran::setEcranCourant(Ecran *ecran)
 void ManagerEcran::setNombreJoueur(int nb)
 {
     nombreJoueur = nb;
-    cerr << nb << endl;
     donnees->setNbJoueur(nb);
+
+    cerr << nb << endl;
     cerr << "setdansdonnee" << endl;
 }
-

@@ -8,7 +8,8 @@
 #include "EcranJeu.h"
 #include "EcranRegles.h"
 #include "EcranConfiguration.h"
-
+#include "EcranFinal.h"
+#include "EcranEpilogue.h"
 
 class ManagerEcran
 {
@@ -26,6 +27,9 @@ class ManagerEcran
         Ecran* getEcranConfiguration();
         Ecran* getEcranRegles();
         Ecran* getEcranJeu();
+        Ecran* getEcranFinal();
+        Ecran* getEcranEpilogue();
+
         void setEcranCourant(Ecran *ecran);
         void setNombreJoueur(int nb);
 
@@ -39,6 +43,8 @@ class ManagerEcran
         Ecran* ecranRegles;
         Ecran* ecranConfiguration;
         Ecran* ecranJeu;
+        Ecran* ecranFinal;
+        Ecran* ecranEpilogue;
 
         int nombreJoueur;
 

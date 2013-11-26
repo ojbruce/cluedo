@@ -27,13 +27,15 @@ class EcranJeu : public Ecran
     private:
         DonneesJeu* d;
         Plateau p;                      //Le plateau
+
         ZoneAffichageTexte zoneText;    //La zone des textes
         ZoneCarte zoneCarte;            //La zone des cartes
         ZoneChecklist zoneCheck;		//La zone de la checklist
 
         Partie part;                    //La partie
         bool partLancer;
-        
+
+        ManagerEcran* manager;
 
 };
 

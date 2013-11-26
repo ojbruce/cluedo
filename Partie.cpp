@@ -86,6 +86,8 @@ void Partie::update(sf::Event event)
 					manFen.ouvrirFenetreInfo();	//ouvre une fenetre d'info
 					manFen.ouvrirFenetreChoix();//ouvre la fenetre permettant au joueur de faire un choix
 
+
+
 					cerr<<"Partie::obs "<<armeCrime<<" " <<persoCrime<<" " <<lieu<<endl;
 
                     if(action=="a"){
@@ -94,6 +96,8 @@ void Partie::update(sf::Event event)
                         cheminres=donnees->soupconner(armeCrime,persoCrime,lieu);
 
                     }
+
+                    manFen.ouvrirFenetreContrer(cheminres);
 
                     //Changer le tableau des cartes vu
 

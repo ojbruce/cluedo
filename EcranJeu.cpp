@@ -1,7 +1,7 @@
 #include "EcranJeu.h"
 #include "ManagerEcran.h"
 
-EcranJeu::EcranJeu(ManagerEcran *manager,DonneesJeu* d1): d(d1),part(&p, &zoneText, &zoneCarte, &zoneCheck, d), partLancer(false)
+EcranJeu::EcranJeu(ManagerEcran *man,DonneesJeu* d1): d(d1),part(&p, &zoneText, &zoneCarte, &zoneCheck, d), partLancer(false),manager(man)
 {
     //ctor
 
@@ -23,13 +23,13 @@ void EcranJeu::afficher(sf::RenderWindow &window){
 
     if(!partLancer)
     {
-        part.preparer();          
+        part.preparer();
         partLancer=true;
     }
     else
     {
-        p.afficher(window);                 
-        part.afficher(window);              
+        p.afficher(window);
+        part.afficher(window);
     }
 }
 
@@ -39,7 +39,10 @@ void EcranJeu::afficher(sf::RenderWindow &window){
  */
 void EcranJeu::update(sf::Event event)
 {
-    part.update(event);     
+    part.update(event);
+
+    if(d->getPartieFini()==true)
+        manager->setEcranCourant(manager->getEcranFinal());
 }
 
 

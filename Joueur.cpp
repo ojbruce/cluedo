@@ -112,6 +112,9 @@ bool Joueur::operator== (Joueur const &p2)
   }
 }
 
+sf::Texture Joueur::getTexture(){
+    return im;
+}
 
 /**
  * Fonction setChecklist

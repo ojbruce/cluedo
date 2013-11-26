@@ -33,25 +33,29 @@ void DonneesJeu::preparerPartie(Plateau* plateau){
 
 void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
 
-    bool bonneCarte;
+    bool bonneCarte = true;
 
     for(unsigned int i=0; i<tabMystere_.size(); i++){
-        if(tabMystere_[i]->getNom()!=arme || tabMystere_[i]->getNom()!=perso || tabMystere_[i]->getNom()!=lieu){
+        if(tabMystere_[i]->getNom()!=arme && tabMystere_[i]->getNom()!=perso && tabMystere_[i]->getNom()!=lieu){
             bonneCarte = false;
         }
-
     }
 
-
-
-    if(!bonneCarte){
+    if(bonneCarte==false)
+    {
          tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
          nbJoueur_--;
-    }else{
+    }
+    else
+    {
         gagnant=&tabJoueur_[joueurCourant];
+        partieFini_ = true;
     }
 }
 
+/**
+ *
+ */
 std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::string lieu){
 
     unsigned int suivant=joueurCourant+1;
