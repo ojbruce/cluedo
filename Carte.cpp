@@ -36,15 +36,4 @@ string Carte::getChemin(){
     return chemin;
 }
 
-/**
- * Operateur d'egalite
- * @param c2 le seconde carte
- **/
-bool Carte::operator== (Carte const &c2)
-{
-  if(nom==c2.nom && chemin==c2.chemin){
-    return true;
-  }else{
-    return false;
-  }
-}
+

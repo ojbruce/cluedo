@@ -45,6 +45,9 @@ void DonneesJeu::accuser(std::string arme, std::string perso,std::string lieu){
     {
          tabJoueur_.erase(tabJoueur_.begin() +joueurCourant);
          nbJoueur_--;
+         if(nbJoueur_==1){
+            gagnant=&tabJoueur_[0];
+         }
     }
     else
     {
@@ -80,13 +83,14 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
 
                 res=tabCarteDepart[i]->getChemin();
 
+                //On met à jour le joueur courant
                 unsigned int indice = donnees->trouverIndiceCarte(tabCarteDepart[i]->getNom());
-
                 tabJoueur_[joueurCourant].setChecklistAtTrue(indice);
-                cerr<<"DonneeJeu::la carte à l'indice"<<indice<<endl;
+                tabJoueur_[joueurCourant].ajouterCarteVu(tabCarteDepart[i]);
 
                 trouve = true;
             }
+
             i++;
         }
 
@@ -100,7 +104,6 @@ std::string DonneesJeu::soupconner(std::string arme, std::string perso,std::stri
     cerr<<"DonneeJeu::carteContre"<< res <<endl;
     return res;
 }
-
 
 
 

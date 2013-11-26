@@ -26,12 +26,9 @@ EcranEpilogue::EcranEpilogue(ManagerEcran *man) :
 */
 void EcranEpilogue::afficher(sf::RenderWindow &fenetre)
 {
-    sf::Event event;
-    while (fenetre.pollEvent(event))
-    {
-        if (fermer.getClique()==true)
-            fenetre.close();
-    }
+
+    if (fermer.getClique()==true)
+        fenetre.close();
 
     // Affichage des elements
     fenetre.draw(ecran);

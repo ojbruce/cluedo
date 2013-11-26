@@ -65,8 +65,8 @@ void Partie::update(sf::Event event)
                 //chemin ne contient pas la case elle n'est donc pas valide
                 cerr<< "Partie::case en dehors du champ du dé" <<endl;
 
-           // }else if(j.getDernierePiece()==nCase){
-            //    cerr<< "Partie:: La case à été visitée au tour précédent" <<endl;
+            }else if(j.getDernierePiece()==nCase){
+                cerr<< "Partie:: La case à été visitée au tour précédent" <<endl;
             }else{
 
                 //on peut deplacer le joueur
@@ -87,9 +87,6 @@ void Partie::update(sf::Event event)
 					manFen.ouvrirFenetreChoix();//ouvre la fenetre permettant au joueur de faire un choix
 
 
-
-					cerr<<"Partie::obs "<<armeCrime<<" " <<persoCrime<<" " <<lieu<<endl;
-
                     if(action=="a"){
                         donnees->accuser(armeCrime,persoCrime,lieu);
                     }else{
@@ -107,8 +104,10 @@ void Partie::update(sf::Event event)
                 //On change les elements de la classe pour que le jeu continue
                 deClique_ = false;
 
-               // j.setDernierePiece(nCase);
-                chemin.clear();         //On vide le tableau des chemins poissibles
+                //on set le dernier lieu visité
+                j.setDernierePiece(nCase);
+                //On vide le tableau des chemins poissibles
+                chemin.clear();
 
                 donnees->changerJoueur();
 

@@ -41,7 +41,7 @@ void EcranJeu::update(sf::Event event)
 {
     part.update(event);
 
-    if(d->getPartieFini()==true)
+    if(d->getGagnant()!=NULL)
         manager->setEcranCourant(manager->getEcranFinal());
 }
 

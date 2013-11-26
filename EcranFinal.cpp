@@ -47,10 +47,9 @@ void EcranFinal::afficher(sf::RenderWindow &fenetre)
 
     sf::Sprite sprite;
     sprite.setTexture(texture);
-    sprite.setPosition(445,250);
+    sprite.setPosition(610,350);
 
-    //Affichage des changements
-    fenetre.display();
+    fenetre.draw(sprite);
 }
 
 
