@@ -101,6 +101,7 @@ vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
 vector<Joueur> Donnees::initJoueur(int n){
     //tableau de joueur à retourner
     vector<Joueur> tabJoueur;
+
     int i =0;
 
 
@@ -111,6 +112,7 @@ vector<Joueur> Donnees::initJoueur(int n){
        //8 perso max
         int indice = rand() % 8;
         Joueur joueur(&tabPersonnages[indice]);
+
 
         if(std::find(tabJoueur.begin(), tabJoueur.end(), joueur) != tabJoueur.end()){
             //tabJoueur contient joueur
@@ -147,6 +149,7 @@ vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
     srand(time(NULL));
 
     vector<int> temoin; //tableau d'int
+    vector<bool> tabCheck;
 
     for(int i =0; i<24; i++){
         temoin.push_back(i);
@@ -170,6 +173,10 @@ vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
 
         Joueur& joueur =lesJoueurs.at(j);
 
+        //la checklist
+        joueur.setChecklistAtTrue(carte);
+
+        //ajout des cartes
         joueur.ajouterCarteDepart(&tabCartes.at(carte));
         joueur.ajouterCarteVu(&tabCartes.at(carte));
 

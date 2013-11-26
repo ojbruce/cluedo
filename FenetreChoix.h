@@ -39,8 +39,8 @@ class FenetreChoix : public Observable, public Fenetre
         sf::Texture image;
         sf::Sprite fond;
 
-        Bouton accuser;    
-        Bouton soupcon; 
+        Bouton accuser;
+        Bouton soupcon;
 
         Bouton c1;
         Bouton c2;
@@ -59,13 +59,13 @@ class FenetreChoix : public Observable, public Fenetre
         Bouton c15;
 
         ManagerFenetre *manager;
-        
+
         vector <Observer*> observateurs;
-        
+
         std::string carte1;
         std::string carte2;
         std::string action;
-        
+
         bool aClique;
 };
 #endif

@@ -3,11 +3,11 @@
 
 using namespace std;
 
-Joueur::Joueur():  perso_ (NULL), position_(NULL),tabCarteDepart(12),tabCarteVu(24)
+Joueur::Joueur():  perso_ (NULL), position_(NULL), dernierePiece_(NULL),tabCarteDepart(12),tabCarteVu(24)
 {
     for(int i=1; i<25 ; i++)
     {
-        checklist.push_back(false);  
+        checklist.push_back(false);
     }
 }
 
@@ -21,7 +21,7 @@ Joueur::Joueur(Personnage* perso): perso_(perso)
 
     for(int i=1; i<25 ; i++)
     {
-        checklist.push_back(false);  
+        checklist.push_back(false);
     }
 }
 
@@ -121,6 +121,13 @@ void Joueur::setChecklist(vector<bool> vecteur)
     checklist = vecteur;
 }
 
+/**
+ * Fonction setChecklist
+ **/
+void Joueur::setChecklistAtTrue(unsigned int i)
+{
+    checklist[i] = true;
+}
 
 /**
  * Fonction getChecklist
@@ -131,7 +138,15 @@ vector<bool> Joueur::getChecklist()
     return checklist;
 }
 
+//Retourne la dernière pièce
+Case* Joueur::getDernierePiece(){
+    return dernierePiece_;
+}
 
+//Met à jour la derniere piece visite
+void Joueur::setDernierePiece(Case* c){
+    dernierePiece_=c;
+}
 
 
 

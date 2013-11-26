@@ -81,11 +81,11 @@ void EcranConfiguration::afficher(sf::RenderWindow &fenetre)
     fenetre.draw(sp);
 
     //Affichage des changements
-    fenetre.display();
+    //fenetre.display();
 
 }
 
-/** 
+/**
 * Fonction update
 */
 void EcranConfiguration::update(sf::Event event)
@@ -139,7 +139,7 @@ void EcranConfiguration::update(sf::Event event)
 
 }
 
-/** 
+/**
 * Fonction changement
 */
 void EcranConfiguration::changement(Bouton &b1,Bouton &b2,Bouton &b3,Bouton &b4, Bouton &b5, Bouton &b6, Bouton &b7, int nombre){

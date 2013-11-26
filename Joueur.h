@@ -28,12 +28,18 @@ class Joueur
 
         //Getter- Setter
         vector<Carte*> getCarteDepart();    //Retourne le tableau de carte
+
         Personnage* getPerso();             //Retourne le perso
-        Case* getPosition();                //Retourne la positon du joueur
         std::string getNom();               //Retourne le nom du personnage qu'incarne le joueur
+
         void setPosition(Case* c);          //Met la position du joueur à jour
+        Case* getPosition();                //Retourne la positon du joueur
+
+        Case* getDernierePiece();           //Retourne la dernière pièce
+        void setDernierePiece(Case* c);     //Met à jour la derniere piece visite
 
         void setChecklist(vector<bool> vecteur);
+        void setChecklistAtTrue(unsigned int i);
         vector<bool> getChecklist();
 
 
@@ -41,6 +47,7 @@ class Joueur
 
         Personnage* perso_;             // Le personnage qu'incarne le joueur
         Case* position_;                //La position du joueur
+        Case* dernierePiece_;            //La derniere piece visité
 
         vector<Carte*> tabCarteDepart;  //tab des cartes de depart max 12
         vector<Carte*> tabCarteVu;      //tab des cartes vus pendant le jeu max 24

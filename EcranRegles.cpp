@@ -5,7 +5,7 @@
 using namespace std;
 
 
-/** 
+/**
 * Constructeur
 */
 
@@ -19,7 +19,7 @@ EcranRegles::EcranRegles(ManagerEcran *man) : fermer(Bouton("Images/fermerDepart
 }
 
 
-/** 
+/**
 * Fonction afficher
 */
 
@@ -40,11 +40,11 @@ void EcranRegles::afficher(sf::RenderWindow &fenetre)
     fenetre.draw(sp);
 
     //Affichage des changements
-    fenetre.display();
+    //fenetre.display();
 }
 
 
-/** 
+/**
 * Fonction update
 * Role :
 */

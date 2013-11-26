@@ -43,7 +43,7 @@ void EcranAccueil::afficher(sf::RenderWindow &fenetre)
     fenetre.draw(sp2);
 
     // affichage des changements
-    fenetre.display();
+    //fenetre.display();
 }
 
 

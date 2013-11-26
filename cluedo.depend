@@ -994,7 +994,7 @@
 	"Case.h"
 	"Piece.h"
 
-1385410728 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
+1385421332 /home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<vector>
@@ -1023,7 +1023,7 @@
 
 1384982081 /home/olivia/Desktop/ProjetCluedo/cluedo/CaseAbstraite.h
 
-1385413703 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Donnees.cpp
+1385421297 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Donnees.cpp
 	"Donnees.h"
 
 1385413744 source:/home/olivia/Desktop/ProjetCluedo/cluedo/DonneesJeu.cpp
@@ -1035,7 +1035,7 @@
 	"Plateau.h"
 	"Donnees.h"
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranAccueil.cpp
+1385420378 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranAccueil.cpp
 	"EcranAccueil.h"
 	"ManagerEcran.h"
 	<iostream>
@@ -1126,7 +1126,7 @@
 	"Ecran.h"
 	"Bouton.h"
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranConfiguration.cpp
+1385420378 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranConfiguration.cpp
 	"EcranConfiguration.h"
 	"ManagerEcran.h"
 	<iostream>
@@ -1135,17 +1135,17 @@
 	"EcranJeu.h"
 	"ManagerEcran.h"
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranRegles.cpp
+1385420378 source:/home/olivia/Desktop/ProjetCluedo/cluedo/EcranRegles.cpp
 	"EcranRegles.h"
 	"ManagerEcran.h"
 	<iostream>
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/FenetreChoix.cpp
+1385419021 source:/home/olivia/Desktop/ProjetCluedo/cluedo/FenetreChoix.cpp
 	"FenetreChoix.h"
 	"ManagerFenetre.h"
 	<iostream>
 
-1385410728 /home/olivia/Desktop/ProjetCluedo/cluedo/FenetreChoix.h
+1385418623 /home/olivia/Desktop/ProjetCluedo/cluedo/FenetreChoix.h
 	<SFML/Graphics.hpp>
 	<cstdlib>
 	<vector>
@@ -1182,7 +1182,7 @@
 	"Donnees.h"
 	"DonneesJeu.h"
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
+1385421353 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Joueur.cpp
 	"Joueur.h"
 
 1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/main.cpp
@@ -1199,13 +1199,13 @@
 1385201905 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Mur.cpp
 	"Mur.h"
 
-1385417555 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
+1385420036 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Partie.cpp
 	"Partie.h"
 
 1384982081 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Personnage.cpp
 	"Personnage.h"
 
-1385417002 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Piece.cpp
+1385417980 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Piece.cpp
 	"Piece.h"
 	"Porte.h"
 
@@ -1218,11 +1218,11 @@
 1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneCarte.cpp
 	"ZoneCarte.h"
 
-1385410728 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneChecklist.cpp
+1385426240 source:/home/olivia/Desktop/ProjetCluedo/cluedo/ZoneChecklist.cpp
 	"ZoneChecklist.h"
 	"Joueur.h"
 	<iostream>
 
-1385417195 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
+1385417980 source:/home/olivia/Desktop/ProjetCluedo/cluedo/Porte.cpp
 	"Porte.h"
 
