@@ -9,20 +9,13 @@ using namespace std;
 class Carte
 {
     public:
-        Carte(string nom, string chemin);   // Constructeur
-        virtual ~Carte();                  //Destructeur
 
         // Getter
-        string getNom();        //retourne le nom
-        string getChemin();     //retourne le chemin
+        virtual string getNom()=0;        //retourne le nom
+        virtual string getChemin()=0;     //retourne le chemin
 
-        sf::Texture& getTexture();
+        virtual sf::Texture& getTexture()=0;
 
-    private:
-
-        string nom;
-        string chemin;
-        sf::Texture texture;
 };
 
 #endif

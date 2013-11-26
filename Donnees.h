@@ -13,6 +13,7 @@
 #include "Personnage.h"
 #include "Joueur.h"
 #include "Plateau.h"
+#include "FactoryCarte.h"
 
 class Donnees
 {
@@ -35,7 +36,7 @@ class Donnees
     private:
 
         //Attributs
-        std::vector<Carte> tabCartes;           // Vecteur contenant les 24 cartes du jeu
+        std::vector<Carte*> tabCartes;           // Vecteur contenant les 24 cartes du jeu
         std::vector<Personnage> tabPersonnages; // Vecteur contenant les 8 personnages
 
 };

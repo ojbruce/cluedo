@@ -5,6 +5,9 @@ using namespace std;
 
 Donnees::Donnees(){
 
+    //La factory pour les cartes
+     FactoryCarte factory;
+
     // Ouverture du fichier contenant les donnees du jeu
     ifstream fichier("Donnees/donnees.txt", ios::in);
 
@@ -19,12 +22,30 @@ Donnees::Donnees(){
         getline(fichier, ligne);
 
         // On initialise le tableau contenant les Cartes du jeu
-        for(i=1 ; i<25 ; ++i)
+
+        // On cree les cartes piece et on les ajoute au tableau
+        for(i=1 ; i<10 ; i++)
         {
             fichier >> ch1 >> ch2;
-            Carte carte(ch1,ch2);
+            Carte* carte = factory.creer("piece",ch1,ch2);
             tabCartes.push_back(carte);
-         }
+        }
+
+        // On cree les cartes personnage et on les ajoute au tableau
+        for(i=1 ; i<9 ; i++)
+        {
+            fichier >> ch1 >> ch2;
+            Carte* carte = factory.creer("personnage",ch1,ch2);
+            tabCartes.push_back(carte);
+        }
+
+        // On cree les cartes arme et on les ajoute au tableau
+        for(i=1 ; i<8 ; i++)
+        {
+            fichier >> ch1 >> ch2;
+            Carte* carte = factory.creer("arme",ch1,ch2);
+            tabCartes.push_back(carte);
+        }
 
          // On passe les lignes de commentaires
          getline(fichier, ligne);
@@ -57,7 +78,7 @@ unsigned int Donnees::trouverIndiceCarte(std::string carte){
 
     unsigned int res=0;
     for(unsigned int i=0; i< tabCartes.size();i++){
-        if(tabCartes[i].getNom()==carte){
+        if(tabCartes[i]->getNom()==carte){
             res=i;
         }
     }
@@ -73,7 +94,7 @@ Donnees::~Donnees()
 
 
 Carte* Donnees::getCarte(int ind){
-    return &tabCartes[ind];
+    return tabCartes[ind];
 }
 
 /**
@@ -87,19 +108,19 @@ vector<Carte*> Donnees::initCarteMystere(vector<int>& temoin){
     //0-8 piece
     int indice = rand() % 9;
     int carte = temoin[indice];
-    res.push_back(&tabCartes[carte]);
+    res.push_back(tabCartes[carte]);
     temoin.erase(temoin.begin() +indice);
 
     //9-16 persos
     indice = rand() % 8+9 -1;
     carte = temoin[indice];
-    res.push_back(&tabCartes[carte]);
+    res.push_back(tabCartes[carte]);
     temoin.erase(temoin.begin() +indice);
 
     //17-23 armes
     indice = rand() % 7+17 -2;
     carte = temoin[indice];
-    res.push_back(&tabCartes[carte]);
+    res.push_back(tabCartes[carte]);
     temoin.erase(temoin.begin() +indice);
 
     return res;
@@ -188,8 +209,8 @@ vector<Carte*> Donnees::distribuerCarte(vector<Joueur> &lesJoueurs){
         joueur.setChecklistAtTrue(carte);
 
         //ajout des cartes
-        joueur.ajouterCarteDepart(&tabCartes.at(carte));
-        joueur.ajouterCarteVu(&tabCartes.at(carte));
+        joueur.ajouterCarteDepart(tabCartes.at(carte));
+        joueur.ajouterCarteVu(tabCartes.at(carte));
 
         temoin.erase(temoin.begin() +indice);
 
