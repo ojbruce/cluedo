@@ -1,6 +1,15 @@
 \hypertarget{classEcranEpilogue}{\section{\-Référence de la classe \-Ecran\-Epilogue}
 \label{classEcranEpilogue}\index{\-Ecran\-Epilogue@{\-Ecran\-Epilogue}}
 }
+
+
+\hyperlink{classEcranEpilogue}{\-Ecran\-Epilogue} est la classe représentant l'ecran de fin.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Epilogue.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Epilogue\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,12 +22,68 @@
 \hypertarget{classEcranEpilogue_a6fca8536eefc58e5f4e28e6da0742384}{\hyperlink{classEcranEpilogue_a6fca8536eefc58e5f4e28e6da0742384}{\-Ecran\-Epilogue} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager)}\label{classEcranEpilogue_a6fca8536eefc58e5f4e28e6da0742384}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}{void \hyperlink{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}
-
+void \hyperlink{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}{afficher} (sf\-::\-Render\-Window \&fenetre)
 \begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}{void \hyperlink{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}{update} (sf\-::\-Event event)}\label{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}
+void \hyperlink{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection{\-Description détaillée}
+\hyperlink{classEcranEpilogue}{\-Ecran\-Epilogue} est la classe représentant l'ecran de fin. 
+
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}{\index{\-Ecran\-Epilogue@{\-Ecran\-Epilogue}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranEpilogue@{\-Ecran\-Epilogue}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Epilogue\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranEpilogue_adc329838b8e9dedbf436396b44e10ac7}
+
+
+\-Fonction afficher. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}{\index{\-Ecran\-Epilogue@{\-Ecran\-Epilogue}!update@{update}}
+\index{update@{update}!EcranEpilogue@{\-Ecran\-Epilogue}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Epilogue\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranEpilogue_a4398f6b82b14fa43f9581b7d37206e20}
+
+
+\-Cette fonction permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

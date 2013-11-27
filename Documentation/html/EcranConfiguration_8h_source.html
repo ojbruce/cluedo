@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -88,39 +88,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;Ecran.h&quot;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &quot;Bouton.h&quot;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keyword">class </span><a class="code" href="classManagerEcran.html">ManagerEcran</a>;
+<a name="l00011"></a>00011 <span class="keyword">class </span><a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a>;
 <a name="l00012"></a>00012 
-<a name="l00013"></a><a class="code" href="classEcranConfiguration.html">00013</a> <span class="keyword">class </span><a class="code" href="classEcranConfiguration.html">EcranConfiguration</a> : <span class="keyword">public</span> <a class="code" href="classEcran.html">Ecran</a>
-<a name="l00014"></a>00014 {
-<a name="l00015"></a>00015         <span class="keyword">public</span>:
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017       <a class="code" href="classEcranConfiguration.html#a40ba51dbd89594164d32ba0dbff817f2" title="Constructeur.">EcranConfiguration</a>(<a class="code" href="classManagerEcran.html">ManagerEcran</a> *manager);
-<a name="l00018"></a>00018       <span class="keyword">virtual</span> <span class="keywordtype">void</span> creerPartie(){};
-<a name="l00019"></a>00019       <span class="keywordtype">void</span> <a class="code" href="classEcranConfiguration.html#ab1a7fd161795e7dd28e359f5b8bb25f7" title="Fonction afficher.">afficher</a>(sf::RenderWindow &amp;fenetre);     <span class="comment">// Cette fonction lance l&#39;affichage de la fênetre</span>
-<a name="l00020"></a>00020       <span class="keywordtype">void</span> <a class="code" href="classEcranConfiguration.html#af6827f55a832c0ea0b8e580e68fc7503" title="Fonction update.">update</a>(sf::Event event);                 <span class="comment">// Cette fonction permet le changement d&#39;ecran en fonction des evenements</span>
-<a name="l00021"></a>00021       <span class="keywordtype">bool</span> <a class="code" href="classEcranConfiguration.html#a72a91a3f504c3047694e06c826c7ee7d" title="Fonction selectionValide Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre ...">selectionValide</a>();
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023    <span class="keyword">private</span> :
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025       sf::Texture image;                <span class="comment">// Texture de l&#39;ecran d&#39;accueil</span>
-<a name="l00026"></a>00026       sf::Sprite ecran;                 <span class="comment">// Sprite de l&#39;ecran d&#39;accueil</span>
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028       <a class="code" href="classBouton.html">Bouton</a> jouer;
-<a name="l00029"></a>00029       <a class="code" href="classBouton.html">Bouton</a> nb2;
-<a name="l00030"></a>00030       <a class="code" href="classBouton.html">Bouton</a> nb3;
-<a name="l00031"></a>00031       <a class="code" href="classBouton.html">Bouton</a> nb4;
-<a name="l00032"></a>00032       <a class="code" href="classBouton.html">Bouton</a> nb5;
-<a name="l00033"></a>00033       <a class="code" href="classBouton.html">Bouton</a> nb6;
-<a name="l00034"></a>00034       <a class="code" href="classBouton.html">Bouton</a> nb7;
-<a name="l00035"></a>00035       <a class="code" href="classBouton.html">Bouton</a> nb8;
+<a name="l00025"></a><a class="code" href="classEcranConfiguration.html">00025</a> <span class="keyword">class </span><a class="code" href="classEcranConfiguration.html" title="EcranAccueil est la classe représentant l&#39;ecran permettant de choisir le nombre de joueur...">EcranConfiguration</a> : <span class="keyword">public</span> <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>
+<a name="l00026"></a>00026 {
+<a name="l00027"></a>00027         <span class="keyword">public</span>:
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029       <a class="code" href="classEcranConfiguration.html#a40ba51dbd89594164d32ba0dbff817f2" title="Constructeur.">EcranConfiguration</a>(<a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a> *manager);
+<a name="l00030"></a>00030       <span class="keyword">virtual</span> <span class="keywordtype">void</span> creerPartie(){};
+<a name="l00031"></a>00031       <span class="keywordtype">void</span> <a class="code" href="classEcranConfiguration.html#ab1a7fd161795e7dd28e359f5b8bb25f7" title="Fonction afficher.">afficher</a>(sf::RenderWindow &amp;fenetre);     <span class="comment">// Cette fonction lance l&#39;affichage de la fênetre</span>
+<a name="l00032"></a>00032       <span class="keywordtype">void</span> <a class="code" href="classEcranConfiguration.html#af6827f55a832c0ea0b8e580e68fc7503" title="Cette fonction permet le changement d&#39;ecran en fonction des evenements.">update</a>(sf::Event event);                 <span class="comment">// Cette fonction permet le changement d&#39;ecran en fonction des evenements</span>
+<a name="l00033"></a>00033       <span class="keywordtype">bool</span> <a class="code" href="classEcranConfiguration.html#a72a91a3f504c3047694e06c826c7ee7d" title="Fonction selectionValide Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre ...">selectionValide</a>();
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035    <span class="keyword">private</span> :
 <a name="l00036"></a>00036 
-<a name="l00037"></a>00037       <a class="code" href="classManagerEcran.html">ManagerEcran</a> *manager;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039       <span class="keywordtype">void</span> changement(<a class="code" href="classBouton.html">Bouton</a> &amp;b1,<a class="code" href="classBouton.html">Bouton</a> &amp;b2,<a class="code" href="classBouton.html">Bouton</a> &amp;b3,<a class="code" href="classBouton.html">Bouton</a> &amp;b4, <a class="code" href="classBouton.html">Bouton</a> &amp;b5, <a class="code" href="classBouton.html">Bouton</a> &amp;b6,<a class="code" href="classBouton.html">Bouton</a> &amp;b7, <span class="keywordtype">int</span> nombre);
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 };
-<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
+<a name="l00037"></a>00037       sf::Texture image;                <span class="comment">// Texture de l&#39;ecran d&#39;accueil</span>
+<a name="l00038"></a>00038       sf::Sprite ecran;                 <span class="comment">// Sprite de l&#39;ecran d&#39;accueil</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040       <span class="comment">//Les boutons</span>
+<a name="l00041"></a>00041       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> jouer;
+<a name="l00042"></a>00042       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb2;
+<a name="l00043"></a>00043       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb3;
+<a name="l00044"></a>00044       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb4;
+<a name="l00045"></a>00045       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb5;
+<a name="l00046"></a>00046       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb6;
+<a name="l00047"></a>00047       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb7;
+<a name="l00048"></a>00048       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> nb8;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050       <a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a> *manager; <span class="comment">//Le manager d&#39;ecran</span>
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052       <span class="keywordtype">void</span> changement(<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b1,<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b2,<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b3,<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b4, <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b5, <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b6,<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp;b7, <span class="keywordtype">int</span> nombre);
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 };
+<a name="l00056"></a>00056 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -139,7 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:20 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

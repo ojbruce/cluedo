@@ -3,6 +3,18 @@
 
 #include <SFML/Graphics.hpp>
 
+/**
+ * Fenetre est la classe abstraite représentant les cases du plateau.
+ *
+ * Elle est caractérisé par les informations suivantes :
+ * une methode qui update la fenetre
+ * une methode qui affiche la fenetre
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Fenetre
 {
     public:

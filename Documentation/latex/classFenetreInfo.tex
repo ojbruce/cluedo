@@ -1,6 +1,15 @@
 \hypertarget{classFenetreInfo}{\section{\-Référence de la classe \-Fenetre\-Info}
 \label{classFenetreInfo}\index{\-Fenetre\-Info@{\-Fenetre\-Info}}
 }
+
+
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre.  
+
+
+
+
+{\ttfamily \#include $<$\-Fenetre\-Info.\-h$>$}
+
 \-Graphe d'héritage de \-Fenetre\-Info\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,15 +22,76 @@
 \hypertarget{classFenetreInfo_aa5ad837d6d17760f287e272e3adf5278}{\hyperlink{classFenetreInfo_aa5ad837d6d17760f287e272e3adf5278}{\-Fenetre\-Info} (\hyperlink{classManagerFenetre}{\-Manager\-Fenetre} $\ast$manager)}\label{classFenetreInfo_aa5ad837d6d17760f287e272e3adf5278}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur \-Role \-: initialise les attribut de l'ecran d'accueil. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}{void \hyperlink{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}
-
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreInfo_a5113582738da07d64a85c2a10eb853f0}{void {\bfseries update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)}\label{classFenetreInfo_a5113582738da07d64a85c2a10eb853f0}
-
-\item 
+void \hyperlink{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction lance l'affichage de la fênetre. \end{DoxyCompactList}\item 
+void \hyperlink{classFenetreInfo_a5113582738da07d64a85c2a10eb853f0}{update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction maj les elements de l'ecran jeu. \end{DoxyCompactList}\item 
 \hypertarget{classFenetreInfo_a14568d1613f5d861aeefa40eab62bfcf}{void \hyperlink{classFenetreInfo_a14568d1613f5d861aeefa40eab62bfcf}{set\-A\-Clique\-False} ()}\label{classFenetreInfo_a14568d1613f5d861aeefa40eab62bfcf}
 
 \begin{DoxyCompactList}\small\item\em \-Fonction set\-A\-Clique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre. 
+
+\-Il est observer par patie et le notifie lorsque les boutons sont selectionné
+
+\-Il est caractérisé par les informations suivantes \-: des boutons des observateurs un manager permettant de changer d'ecran
+
+\-Herite de fenetre
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}{\index{\-Fenetre\-Info@{\-Fenetre\-Info}!afficher@{afficher}}
+\index{afficher@{afficher}!FenetreInfo@{\-Fenetre\-Info}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Info\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreInfo_aa44271e51b95de0c49dcf05ec655927f}
+
+
+\-Cette fonction lance l'affichage de la fênetre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
+\hypertarget{classFenetreInfo_a5113582738da07d64a85c2a10eb853f0}{\index{\-Fenetre\-Info@{\-Fenetre\-Info}!update@{update}}
+\index{update@{update}!FenetreInfo@{\-Fenetre\-Info}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Info\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event, }
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreInfo_a5113582738da07d64a85c2a10eb853f0}
+
+
+\-Cette fonction maj les elements de l'ecran jeu. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

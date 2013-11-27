@@ -29,7 +29,9 @@ class ZoneAffichageTexte
         int posCouranteX;
 
         sf::Font font;
-        sf::Text texto;
+
+        sf::Texture texture;
+        sf::Sprite sp;
 };
 
 #endif // ZONEAFFICHAGETEXTE_H

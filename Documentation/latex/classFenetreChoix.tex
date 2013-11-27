@@ -1,6 +1,15 @@
 \hypertarget{classFenetreChoix}{\section{\-Référence de la classe \-Fenetre\-Choix}
 \label{classFenetreChoix}\index{\-Fenetre\-Choix@{\-Fenetre\-Choix}}
 }
+
+
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre.  
+
+
+
+
+{\ttfamily \#include $<$\-Fenetre\-Choix.\-h$>$}
+
 \-Graphe d'héritage de \-Fenetre\-Choix\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,36 +22,97 @@
 \hypertarget{classFenetreChoix_a6a4e020bf1c6cf245fd14dcf07f99caa}{\hyperlink{classFenetreChoix_a6a4e020bf1c6cf245fd14dcf07f99caa}{\-Fenetre\-Choix} (\hyperlink{classManagerFenetre}{\-Manager\-Fenetre} $\ast$manager)}\label{classFenetreChoix_a6a4e020bf1c6cf245fd14dcf07f99caa}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}{void \hyperlink{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}
+void \hyperlink{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction lance l'affichage de la fênetre. \end{DoxyCompactList}\item 
+void \hyperlink{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}{update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_a0402ba8288130bb9741adff241463c6d}{void \hyperlink{classFenetreChoix_a0402ba8288130bb9741adff241463c6d}{clique\-Conditionnel1} (int x, int y, int xmin, int xmax, int ymin, int ymax, \hyperlink{classBouton}{\-Bouton} \&b1, \hyperlink{classBouton}{\-Bouton} \&b2, \hyperlink{classBouton}{\-Bouton} \&b3, \hyperlink{classBouton}{\-Bouton} \&b4, \hyperlink{classBouton}{\-Bouton} \&b5, \hyperlink{classBouton}{\-Bouton} \&b6, \hyperlink{classBouton}{\-Bouton} \&b7, \hyperlink{classBouton}{\-Bouton} \&b8)}\label{classFenetreChoix_a0402ba8288130bb9741adff241463c6d}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}{void \hyperlink{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}{update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)}\label{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}
+\begin{DoxyCompactList}\small\item\em \-Fonction clique\-Conditionnel1 \-Role \-: appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons personnages. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_a5dc40221cb4023dab8142a5fcfad30c1}{void \hyperlink{classFenetreChoix_a5dc40221cb4023dab8142a5fcfad30c1}{clique\-Conditionnel2} (int x, int y, int xmin, int xmax, int ymin, int ymax, \hyperlink{classBouton}{\-Bouton} \&b1, \hyperlink{classBouton}{\-Bouton} \&b2, \hyperlink{classBouton}{\-Bouton} \&b3, \hyperlink{classBouton}{\-Bouton} \&b4, \hyperlink{classBouton}{\-Bouton} \&b5, \hyperlink{classBouton}{\-Bouton} \&b6, \hyperlink{classBouton}{\-Bouton} \&b7)}\label{classFenetreChoix_a5dc40221cb4023dab8142a5fcfad30c1}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreChoix_a0402ba8288130bb9741adff241463c6d}{void {\bfseries clique\-Conditionnel1} (int x, int y, int xmin, int xmax, int ymin, int ymax, \hyperlink{classBouton}{\-Bouton} \&b1, \hyperlink{classBouton}{\-Bouton} \&b2, \hyperlink{classBouton}{\-Bouton} \&b3, \hyperlink{classBouton}{\-Bouton} \&b4, \hyperlink{classBouton}{\-Bouton} \&b5, \hyperlink{classBouton}{\-Bouton} \&b6, \hyperlink{classBouton}{\-Bouton} \&b7, \hyperlink{classBouton}{\-Bouton} \&b8)}\label{classFenetreChoix_a0402ba8288130bb9741adff241463c6d}
+\begin{DoxyCompactList}\small\item\em \-Fonction clique\-Conditionnel2 \-Role \-: appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons armes. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_a870f277efcd181d452893ecb05a8e5dc}{void \hyperlink{classFenetreChoix_a870f277efcd181d452893ecb05a8e5dc}{actualiser\-Choix} ()}\label{classFenetreChoix_a870f277efcd181d452893ecb05a8e5dc}
 
-\item 
-\hypertarget{classFenetreChoix_a5dc40221cb4023dab8142a5fcfad30c1}{void {\bfseries clique\-Conditionnel2} (int x, int y, int xmin, int xmax, int ymin, int ymax, \hyperlink{classBouton}{\-Bouton} \&b1, \hyperlink{classBouton}{\-Bouton} \&b2, \hyperlink{classBouton}{\-Bouton} \&b3, \hyperlink{classBouton}{\-Bouton} \&b4, \hyperlink{classBouton}{\-Bouton} \&b5, \hyperlink{classBouton}{\-Bouton} \&b6, \hyperlink{classBouton}{\-Bouton} \&b7)}\label{classFenetreChoix_a5dc40221cb4023dab8142a5fcfad30c1}
+\begin{DoxyCompactList}\small\item\em \-Fonction actualiser\-Choix \-Role \-: permet d'actualiser les attributs carte1 et carte2 correspondants aux cartes selectionnees par le joueur. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_ac26f3803e0d74d50e979f26061a607d0}{void \hyperlink{classFenetreChoix_ac26f3803e0d74d50e979f26061a607d0}{deselectionner\-Tout} ()}\label{classFenetreChoix_ac26f3803e0d74d50e979f26061a607d0}
 
-\item 
-\hypertarget{classFenetreChoix_a870f277efcd181d452893ecb05a8e5dc}{void {\bfseries actualiser\-Choix} ()}\label{classFenetreChoix_a870f277efcd181d452893ecb05a8e5dc}
-
-\item 
-\hypertarget{classFenetreChoix_ac26f3803e0d74d50e979f26061a607d0}{void {\bfseries deselectionner\-Tout} ()}\label{classFenetreChoix_ac26f3803e0d74d50e979f26061a607d0}
-
-\item 
+\begin{DoxyCompactList}\small\item\em \-Fonction deselectionner\-Tout. \end{DoxyCompactList}\item 
 \hypertarget{classFenetreChoix_a7b3cb058960b8c32d02cceaacf0c7d36}{void \hyperlink{classFenetreChoix_a7b3cb058960b8c32d02cceaacf0c7d36}{set\-A\-Clique\-False} ()}\label{classFenetreChoix_a7b3cb058960b8c32d02cceaacf0c7d36}
 
 \begin{DoxyCompactList}\small\item\em \-Fonction set\-A\-Clique. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreChoix_a0c446ed2571d5dccc8b2665e6fcbbaee}{void {\bfseries ajouter\-Obs} (\hyperlink{classObserver}{\-Observer} $\ast$obs)}\label{classFenetreChoix_a0c446ed2571d5dccc8b2665e6fcbbaee}
+\hypertarget{classFenetreChoix_a0c446ed2571d5dccc8b2665e6fcbbaee}{void \hyperlink{classFenetreChoix_a0c446ed2571d5dccc8b2665e6fcbbaee}{ajouter\-Obs} (\hyperlink{classObserver}{\-Observer} $\ast$obs)}\label{classFenetreChoix_a0c446ed2571d5dccc8b2665e6fcbbaee}
 
-\item 
-\hypertarget{classFenetreChoix_a0ac736f8823d42629849d08ad39f5a60}{void {\bfseries enlever\-Obs} (\hyperlink{classObserver}{\-Observer} $\ast$obs)}\label{classFenetreChoix_a0ac736f8823d42629849d08ad39f5a60}
+\begin{DoxyCompactList}\small\item\em \-Fonction ajouter\-Obs \-Role \-: permet d'ajouter un observateur. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_a0ac736f8823d42629849d08ad39f5a60}{void \hyperlink{classFenetreChoix_a0ac736f8823d42629849d08ad39f5a60}{enlever\-Obs} (\hyperlink{classObserver}{\-Observer} $\ast$obs)}\label{classFenetreChoix_a0ac736f8823d42629849d08ad39f5a60}
 
-\item 
-\hypertarget{classFenetreChoix_a85b717a64d5878f4f1178addbadcd644}{void {\bfseries notify\-Obs} ()}\label{classFenetreChoix_a85b717a64d5878f4f1178addbadcd644}
+\begin{DoxyCompactList}\small\item\em \-Fonction enlever\-Obs \-Role \-: permet d'enlever un observateur. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreChoix_a85b717a64d5878f4f1178addbadcd644}{void \hyperlink{classFenetreChoix_a85b717a64d5878f4f1178addbadcd644}{notify\-Obs} ()}\label{classFenetreChoix_a85b717a64d5878f4f1178addbadcd644}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-Fonction notify\-Obs \-Role \-: permet aux observateurs d'actualiser leurs donnees concernant les cartes selectionnees dans la fenetre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre. 
+
+\-Il est observer par patie et le notifie lorsque les boutons sont selectionné
+
+\-Il est caractérisé par les informations suivantes \-: des boutons des observateurs un manager permettant de changer d'ecran
+
+\-Herite de observable et de fenetre
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}{\index{\-Fenetre\-Choix@{\-Fenetre\-Choix}!afficher@{afficher}}
+\index{afficher@{afficher}!FenetreChoix@{\-Fenetre\-Choix}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Choix\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreChoix_a05e6aa6b6fd91b446751c8cb88a1a57a}
+
+
+\-Cette fonction lance l'affichage de la fênetre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
+\hypertarget{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}{\index{\-Fenetre\-Choix@{\-Fenetre\-Choix}!update@{update}}
+\index{update@{update}!FenetreChoix@{\-Fenetre\-Choix}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Choix\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event, }
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreChoix_aab1bddc2946e39272d6c56a0a0065b6b}
+
+
+\-Cette fonction permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

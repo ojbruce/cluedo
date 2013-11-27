@@ -1,6 +1,15 @@
 \hypertarget{classEcranConfiguration}{\section{\-Référence de la classe \-Ecran\-Configuration}
 \label{classEcranConfiguration}\index{\-Ecran\-Configuration@{\-Ecran\-Configuration}}
 }
+
+
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran permettant de choisir le nombre de joueur.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Configuration.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Configuration\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,15 +25,84 @@
 \hypertarget{classEcranConfiguration_aa65dbd2aca4c0b3853aea5eb8c92b98f}{virtual void {\bfseries creer\-Partie} ()}\label{classEcranConfiguration_aa65dbd2aca4c0b3853aea5eb8c92b98f}
 
 \item 
-\hypertarget{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}{void \hyperlink{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}
-
+void \hyperlink{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}{afficher} (sf\-::\-Render\-Window \&fenetre)
 \begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}{void \hyperlink{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}{update} (sf\-::\-Event event)}\label{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}
-
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\item 
-\hypertarget{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}{bool \hyperlink{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}{selection\-Valide} ()}\label{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}
-
+void \hyperlink{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\item 
+bool \hyperlink{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}{selection\-Valide} ()
 \begin{DoxyCompactList}\small\item\em \-Fonction selection\-Valide \-Role \-: cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran permettant de choisir le nombre de joueur. 
+
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}{\index{\-Ecran\-Configuration@{\-Ecran\-Configuration}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranConfiguration@{\-Ecran\-Configuration}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Configuration\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranConfiguration_ab1a7fd161795e7dd28e359f5b8bb25f7}
+
+
+\-Fonction afficher. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}{\index{\-Ecran\-Configuration@{\-Ecran\-Configuration}!selection\-Valide@{selection\-Valide}}
+\index{selection\-Valide@{selection\-Valide}!EcranConfiguration@{\-Ecran\-Configuration}}
+\subsubsection[{selection\-Valide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Ecran\-Configuration\-::selection\-Valide} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classEcranConfiguration_a72a91a3f504c3047694e06c826c7ee7d}
+
+
+\-Fonction selection\-Valide \-Role \-: cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique. 
+
+\begin{DoxyReturn}{\-Renvoie}
+si la selection est valide 
+\end{DoxyReturn}
+\hypertarget{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}{\index{\-Ecran\-Configuration@{\-Ecran\-Configuration}!update@{update}}
+\index{update@{update}!EcranConfiguration@{\-Ecran\-Configuration}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Configuration\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranConfiguration_af6827f55a832c0ea0b8e580e68fc7503}
+
+
+\-Cette fonction permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

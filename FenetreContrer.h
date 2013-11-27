@@ -10,7 +10,20 @@
 #include "ManagerFenetre.h"
 #include "Bouton.h"
 
-
+/**
+ * FenetreContrer est la classe représentant l'ecran montrant le contre.
+ *
+ * Il est caractérisé par les informations suivantes :
+ * un bouton
+ * une image de contre
+ * un manager permettant de changer d'ecran
+ *
+ * Herite de fenetre
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class FenetreContrer : public Fenetre
 {
 	public:

@@ -1,16 +1,25 @@
 \hypertarget{classPlateau}{\section{\-Référence de la classe \-Plateau}
 \label{classPlateau}\index{\-Plateau@{\-Plateau}}
 }
+
+
+\hyperlink{classPlateau}{\-Plateau} est la classe représentant le plateau de jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Plateau.\-h$>$}
+
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-virtual \hyperlink{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{$\sim$\-Plateau} ()
+\hypertarget{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{virtual \hyperlink{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{$\sim$\-Plateau} ()}\label{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}
+
 \begin{DoxyCompactList}\small\item\em \-Destructeur. \end{DoxyCompactList}\item 
 \hypertarget{classPlateau_a122c12319a8843a493fa06fe4f6e55d4}{void \hyperlink{classPlateau_a122c12319a8843a493fa06fe4f6e55d4}{afficher} ()}\label{classPlateau_a122c12319a8843a493fa06fe4f6e55d4}
 
 \begin{DoxyCompactList}\small\item\em \-Methode qui affiche la structure du plateau \-Affichage d'erreur. \end{DoxyCompactList}\item 
-\hypertarget{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}{void \hyperlink{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}{afficher} (sf\-::\-Render\-Window \&window)}\label{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}
-
+void \hyperlink{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}{afficher} (sf\-::\-Render\-Window \&window)
 \begin{DoxyCompactList}\small\item\em \-Methode qui affiche l'image du plateau \-Affichage de l'interface. \end{DoxyCompactList}\item 
 bool \hyperlink{classPlateau_a455da594b748a1bbd616537cfb6c5cd5}{position\-Valide} (int x, int y)
 \begin{DoxyCompactList}\small\item\em \-Methode qui renvoie si la position de la souris est sur le plateau. \end{DoxyCompactList}\item 
@@ -22,21 +31,38 @@ bool \hyperlink{classPlateau_a2feeabd9398101b680bc647fb79b5271}{case\-Valide} (i
 \begin{DoxyCompactList}\small\item\em \-Retourne un pointeur vers une case du tableau. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{\-Documentation des constructeurs et destructeur}
-\hypertarget{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}{\index{\-Plateau@{\-Plateau}!$\sim$\-Plateau@{$\sim$\-Plateau}}
-\index{$\sim$\-Plateau@{$\sim$\-Plateau}!Plateau@{\-Plateau}}
-\subsubsection[{$\sim$\-Plateau}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Plateau\-::$\sim$\-Plateau} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPlateau_a0e6ae72e4d7e9923f996c1247e6a6c8b}
+\subsection{\-Description détaillée}
+\hyperlink{classPlateau}{\-Plateau} est la classe représentant le plateau de jeu. 
 
+\-Un \hyperlink{classPlateau}{\-Plateau} est caractérisé par les informations suivantes \-: un tableau à double dimension de case. une largeur/hauteur
 
-\-Destructeur. 
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
 
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
 
 
 \subsection{\-Documentation des fonctions membres}
+\hypertarget{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}{\index{\-Plateau@{\-Plateau}!afficher@{afficher}}
+\index{afficher@{afficher}!Plateau@{\-Plateau}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Plateau\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{classPlateau_a583f37e119a4951cb03b9e5f9ed5b253}
+
+
+\-Methode qui affiche l'image du plateau \-Affichage de l'interface. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre de rendu \\
+\hline
+\end{DoxyParams}
 \hypertarget{classPlateau_a2feeabd9398101b680bc647fb79b5271}{\index{\-Plateau@{\-Plateau}!case\-Valide@{case\-Valide}}
 \index{case\-Valide@{case\-Valide}!Plateau@{\-Plateau}}
 \subsubsection[{case\-Valide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Plateau\-::case\-Valide} (
@@ -49,6 +75,16 @@ bool \hyperlink{classPlateau_a2feeabd9398101b680bc647fb79b5271}{case\-Valide} (i
 
 \-Pour \hyperlink{classCase_affe73b57a2c81e2f09dc5db45893db3c}{\-Case\-::trouver\-Chemin} verifie si on ne depasse pas les bords du tableau. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & abscisse \\
+\hline
+{\em y} & ordonnee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+si la case est valide 
+\end{DoxyReturn}
 \hypertarget{classPlateau_a009b129c0afc68b42ac80a7b0db92d52}{\index{\-Plateau@{\-Plateau}!get\-Case@{get\-Case}}
 \index{get\-Case@{get\-Case}!Plateau@{\-Plateau}}
 \subsubsection[{get\-Case}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Case} $\ast$ {\bf \-Plateau\-::get\-Case} (
@@ -61,6 +97,16 @@ bool \hyperlink{classPlateau_a2feeabd9398101b680bc647fb79b5271}{case\-Valide} (i
 
 \-Retourne un pointeur vers une case du tableau. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & abscisse \\
+\hline
+{\em y} & ordonnee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+une case en x,y 
+\end{DoxyReturn}
 \hypertarget{classPlateau_a455da594b748a1bbd616537cfb6c5cd5}{\index{\-Plateau@{\-Plateau}!position\-Valide@{position\-Valide}}
 \index{position\-Valide@{position\-Valide}!Plateau@{\-Plateau}}
 \subsubsection[{position\-Valide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Plateau\-::position\-Valide} (
@@ -73,6 +119,16 @@ bool \hyperlink{classPlateau_a2feeabd9398101b680bc647fb79b5271}{case\-Valide} (i
 
 \-Methode qui renvoie si la position de la souris est sur le plateau. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & abscisse \\
+\hline
+{\em y} & ordonnee \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+si la position est valide 
+\end{DoxyReturn}
 \hypertarget{classPlateau_ae53f9bb42a1689cb628e7075da5fdb47}{\index{\-Plateau@{\-Plateau}!trouver\-Case@{trouver\-Case}}
 \index{trouver\-Case@{trouver\-Case}!Plateau@{\-Plateau}}
 \subsubsection[{trouver\-Case}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Case} $\ast$ {\bf \-Plateau\-::trouver\-Case} (
@@ -85,6 +141,13 @@ bool \hyperlink{classPlateau_a2feeabd9398101b680bc647fb79b5271}{case\-Valide} (i
 
 \-Renvoi la case du plateau à la position correspondante niveau graphique. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & abscisse \\
+\hline
+{\em y} & ordonnee \\
+\hline
+\end{DoxyParams}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

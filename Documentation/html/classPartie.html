@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe Partie</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Partie" --><!-- doxytag: inherits="Observer" --><div class="dynheader">
+<!-- doxytag: class="Partie" --><!-- doxytag: inherits="Observer" -->
+<p><a class="el" href="classPartie.html" title="Partie est la classe représentant les cases d&#39;une piece.">Partie</a> est la classe représentant les cases d'une piece.  
+ <a href="classPartie.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Partie_8h_source.html">Partie.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de Partie:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classPartie.png" usemap="#Partie_map" alt=""/>
   <map id="Partie_map" name="Partie_map">
-<area href="classObserver.html" alt="Observer" shape="rect" coords="0,0,66,24"/>
+<area href="classObserver.html" title="Observer est la classe abstraite représentant l&#39;observer abstrait." alt="Observer" shape="rect" coords="0,0,66,24"/>
 </map>
  </div></div>
 
@@ -102,15 +107,116 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab76c25c57551613a708ab39816d14a9a"></a><!-- doxytag: member="Partie::preparer" ref="ab76c25c57551613a708ab39816d14a9a" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#ab76c25c57551613a708ab39816d14a9a">preparer</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction preparer. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c868f423c455e1aa0aebc9f3482cf8d"></a><!-- doxytag: member="Partie::update" ref="a2c868f423c455e1aa0aebc9f3482cf8d" args="(sf::Event event)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#a2c868f423c455e1aa0aebc9f3482cf8d">update</a> (sf::Event event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c00254bdd417a300342d1ba1eb5cec3"></a><!-- doxytag: member="Partie::afficher" ref="a2c00254bdd417a300342d1ba1eb5cec3" args="(sf::RenderWindow &amp;window)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>afficher</b> (sf::RenderWindow &amp;window)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39dcf2ff1dc8f4c7c81edea5e4f2cde8"></a><!-- doxytag: member="Partie::estNotifie" ref="a39dcf2ff1dc8f4c7c81edea5e4f2cde8" args="(std::string choix1, std::string choix2, std::string act)" -->
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#a39dcf2ff1dc8f4c7c81edea5e4f2cde8">estNotifie</a> (std::string choix1, std::string choix2, std::string act)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction notify. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#a2c868f423c455e1aa0aebc9f3482cf8d">update</a> (sf::Event event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction updatant la partieselon la poistion du clique.  <a href="#a2c868f423c455e1aa0aebc9f3482cf8d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#a2c00254bdd417a300342d1ba1eb5cec3">afficher</a> (sf::RenderWindow &amp;window)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'affichage de la partie selon la poistion du clique.  <a href="#a2c00254bdd417a300342d1ba1eb5cec3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPartie.html#a39dcf2ff1dc8f4c7c81edea5e4f2cde8">estNotifie</a> (std::string choix1, std::string choix2, std::string act)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction notify.  <a href="#a39dcf2ff1dc8f4c7c81edea5e4f2cde8"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classPartie.html" title="Partie est la classe représentant les cases d&#39;une piece.">Partie</a> est la classe représentant les cases d'une piece. </p>
+<p>Une <a class="el" href="classPiece.html" title="Piece est la classe représentant les cases d&#39;une piece.">Piece</a> est caractérisé par les informations suivantes : un accès au données</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a2c00254bdd417a300342d1ba1eb5cec3"></a><!-- doxytag: member="Partie::afficher" ref="a2c00254bdd417a300342d1ba1eb5cec3" args="(sf::RenderWindow &amp;window)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPartie.html#a2c00254bdd417a300342d1ba1eb5cec3">Partie::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction d'affichage de la partie selon la poistion du clique. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">une</td><td>xindow </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a39dcf2ff1dc8f4c7c81edea5e4f2cde8"></a><!-- doxytag: member="Partie::estNotifie" ref="a39dcf2ff1dc8f4c7c81edea5e4f2cde8" args="(std::string choix1, std::string choix2, std::string act)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPartie.html#a39dcf2ff1dc8f4c7c81edea5e4f2cde8">Partie::estNotifie</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>choix1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>choix2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>act</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction notify. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choix1</td><td>le nom de la carte choisi en premier </td></tr>
+    <tr><td class="paramname">choix2</td><td>le nom de la carte choisi en second </td></tr>
+    <tr><td class="paramname">act</td><td>a ou s selon si accuse ou soupconne </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classObserver.html">Observer</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2c868f423c455e1aa0aebc9f3482cf8d"></a><!-- doxytag: member="Partie::update" ref="a2c868f423c455e1aa0aebc9f3482cf8d" args="(sf::Event event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPartie.html#a2c868f423c455e1aa0aebc9f3482cf8d">Partie::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction updatant la partieselon la poistion du clique. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">un</td><td>event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="Partie_8h_source.html">Partie.h</a></li>
 <li>Partie.cpp</li>
@@ -133,7 +239,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:32 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:49 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

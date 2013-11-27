@@ -10,6 +10,21 @@
 using namespace sf;
 using namespace std;
 
+
+/**
+ * Bouton est la classe représentant les boutons cliquable.
+ *
+ * Un bouton est caractérisé par les informations suivantes :
+ * une image clique
+ * un image pas clique
+ * un bool estvide
+ *
+ * Herite de Case.
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Bouton
 {
     public:

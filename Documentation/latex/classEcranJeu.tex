@@ -1,6 +1,15 @@
 \hypertarget{classEcranJeu}{\section{\-Référence de la classe \-Ecran\-Jeu}
 \label{classEcranJeu}\index{\-Ecran\-Jeu@{\-Ecran\-Jeu}}
 }
+
+
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran du jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Jeu.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Jeu\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,21 +19,71 @@
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classEcranJeu_a9b55b8830b8a1b7261ab440d529f6b6c}{{\bfseries \-Ecran\-Jeu} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager, \hyperlink{classDonneesJeu}{\-Donnees\-Jeu} $\ast$d)}\label{classEcranJeu_a9b55b8830b8a1b7261ab440d529f6b6c}
+\hypertarget{classEcranJeu_a9b55b8830b8a1b7261ab440d529f6b6c}{\hyperlink{classEcranJeu_a9b55b8830b8a1b7261ab440d529f6b6c}{\-Ecran\-Jeu} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager, \hyperlink{classDonneesJeu}{\-Donnees\-Jeu} $\ast$d)}\label{classEcranJeu_a9b55b8830b8a1b7261ab440d529f6b6c}
 
-\item 
-\hypertarget{classEcranJeu_a4acecc89a860064f7cb74e744ec931ff}{void {\bfseries creer\-Partie} ()}\label{classEcranJeu_a4acecc89a860064f7cb74e744ec931ff}
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+void \hyperlink{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction lance l'affichage de la fênetre. \end{DoxyCompactList}\item 
+void \hyperlink{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction maj les elements de l'ecran jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}{void \hyperlink{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}{void \hyperlink{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}{update} (sf\-::\-Event event)}\label{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}
+\subsection{\-Description détaillée}
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran du jeu. 
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\item 
-\hypertarget{classEcranJeu_a1cd502e1daf0689ab931c73ec6103b45}{void \hyperlink{classEcranJeu_a1cd502e1daf0689ab931c73ec6103b45}{update} (sf\-::\-Render\-Window \&window, sf\-::\-Event event)}\label{classEcranJeu_a1cd502e1daf0689ab931c73ec6103b45}
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran des donnees des zones d'affichages
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}{\index{\-Ecran\-Jeu@{\-Ecran\-Jeu}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranJeu@{\-Ecran\-Jeu}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Jeu\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranJeu_a3181ea3bb30364a844c97c8436e89010}
+
+
+\-Cette fonction lance l'affichage de la fênetre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}{\index{\-Ecran\-Jeu@{\-Ecran\-Jeu}!update@{update}}
+\index{update@{update}!EcranJeu@{\-Ecran\-Jeu}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Jeu\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranJeu_a8bfea524e61410dee2a2982d9b01bad4}
+
+
+\-Cette fonction maj les elements de l'ecran jeu. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

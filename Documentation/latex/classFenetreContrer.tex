@@ -1,6 +1,15 @@
 \hypertarget{classFenetreContrer}{\section{\-Référence de la classe \-Fenetre\-Contrer}
 \label{classFenetreContrer}\index{\-Fenetre\-Contrer@{\-Fenetre\-Contrer}}
 }
+
+
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre.  
+
+
+
+
+{\ttfamily \#include $<$\-Fenetre\-Contrer.\-h$>$}
+
 \-Graphe d'héritage de \-Fenetre\-Contrer\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,21 +22,80 @@
 \hypertarget{classFenetreContrer_ad12845e09d71a7a953f6c4c210372a2f}{\hyperlink{classFenetreContrer_ad12845e09d71a7a953f6c4c210372a2f}{\-Fenetre\-Contrer} (\hyperlink{classManagerFenetre}{\-Manager\-Fenetre} $\ast$manager)}\label{classFenetreContrer_ad12845e09d71a7a953f6c4c210372a2f}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}{void \hyperlink{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}
-
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreContrer_af72ced88abfef3118fe2619566635ac3}{void {\bfseries update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)}\label{classFenetreContrer_af72ced88abfef3118fe2619566635ac3}
-
-\item 
+void \hyperlink{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction lance l'affichage de la fênetre. \end{DoxyCompactList}\item 
+void \hyperlink{classFenetreContrer_af72ced88abfef3118fe2619566635ac3}{update} (sf\-::\-Event event, sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction maj les elements de l'ecran jeu. \end{DoxyCompactList}\item 
 \hypertarget{classFenetreContrer_ad3fdefb81ef4bd85a4898070cda895b5}{void \hyperlink{classFenetreContrer_ad3fdefb81ef4bd85a4898070cda895b5}{set\-A\-Clique\-False} ()}\label{classFenetreContrer_ad3fdefb81ef4bd85a4898070cda895b5}
 
 \begin{DoxyCompactList}\small\item\em \-Fonction set\-A\-Clique. \end{DoxyCompactList}\item 
-\hypertarget{classFenetreContrer_a50596263fbf3849d9930e086705e51cc}{void {\bfseries mettre\-Texture\-Contrer} ()}\label{classFenetreContrer_a50596263fbf3849d9930e086705e51cc}
+\hypertarget{classFenetreContrer_a50596263fbf3849d9930e086705e51cc}{void \hyperlink{classFenetreContrer_a50596263fbf3849d9930e086705e51cc}{mettre\-Texture\-Contrer} ()}\label{classFenetreContrer_a50596263fbf3849d9930e086705e51cc}
 
-\item 
-\hypertarget{classFenetreContrer_aa99b1baabdeaf904ac58623223ec1064}{void {\bfseries mettre\-Texture\-Pas\-Contrer} ()}\label{classFenetreContrer_aa99b1baabdeaf904ac58623223ec1064}
+\begin{DoxyCompactList}\small\item\em \-Methode qui met la texture lorsque ça contre. \end{DoxyCompactList}\item 
+\hypertarget{classFenetreContrer_aa99b1baabdeaf904ac58623223ec1064}{void \hyperlink{classFenetreContrer_aa99b1baabdeaf904ac58623223ec1064}{mettre\-Texture\-Pas\-Contrer} ()}\label{classFenetreContrer_aa99b1baabdeaf904ac58623223ec1064}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-Methode qui met la texture lorsque ça contre pas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classFenetreContrer}{\-Fenetre\-Contrer} est la classe représentant l'ecran montrant le contre. 
+
+\-Il est caractérisé par les informations suivantes \-: un bouton une image de contre un manager permettant de changer d'ecran
+
+\-Herite de fenetre
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}{\index{\-Fenetre\-Contrer@{\-Fenetre\-Contrer}!afficher@{afficher}}
+\index{afficher@{afficher}!FenetreContrer@{\-Fenetre\-Contrer}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Contrer\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreContrer_a3682a7b1516367d2ff24e7ebd1ae3994}
+
+
+\-Cette fonction lance l'affichage de la fênetre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
+\hypertarget{classFenetreContrer_af72ced88abfef3118fe2619566635ac3}{\index{\-Fenetre\-Contrer@{\-Fenetre\-Contrer}!update@{update}}
+\index{update@{update}!FenetreContrer@{\-Fenetre\-Contrer}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Fenetre\-Contrer\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event, }
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFenetreContrer_af72ced88abfef3118fe2619566635ac3}
+
+
+\-Cette fonction maj les elements de l'ecran jeu. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classFenetre}{\-Fenetre}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

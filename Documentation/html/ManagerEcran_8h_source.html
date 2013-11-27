@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -91,47 +91,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00011"></a>00011 <span class="preprocessor">#include &quot;EcranFinal.h&quot;</span>
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;EcranEpilogue.h&quot;</span>
 <a name="l00013"></a>00013 
-<a name="l00014"></a><a class="code" href="classManagerEcran.html">00014</a> <span class="keyword">class </span><a class="code" href="classManagerEcran.html">ManagerEcran</a>
-<a name="l00015"></a>00015 {
-<a name="l00016"></a>00016     <span class="keyword">public</span>:
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018         <a class="code" href="classManagerEcran.html#ad9e96d0c51dc6c866eca240f2db1cc88" title="Constructeur.">ManagerEcran</a>(<a class="code" href="classDonneesJeu.html">DonneesJeu</a>* d);
-<a name="l00019"></a>00019         <span class="keyword">virtual</span> <a class="code" href="classManagerEcran.html#a9faf6ff983828f67ba4e0b4c319a3d7e" title="Destructeur.">~ManagerEcran</a>();
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021         <span class="comment">//void update(sf::RenderWindow &amp;window, sf::Event event);</span>
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a2e47bdd001da8f6102e3ce0775d5f401" title="Fonction update.">update</a>(sf::Event event);
-<a name="l00024"></a>00024         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a522b604974166e41863717e6abdc31a1" title="Fonction afficher.">afficher</a>(sf::RenderWindow &amp;fenetre);
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026         <span class="comment">//Getter-Setter</span>
-<a name="l00027"></a>00027         <a class="code" href="classEcran.html">Ecran</a>* <a class="code" href="classManagerEcran.html#a1168854592f21f73624fa87fe839e188" title="getEcranConfiguration">getEcranConfiguration</a>();
-<a name="l00028"></a>00028         <a class="code" href="classEcran.html">Ecran</a>* <a class="code" href="classManagerEcran.html#a2db0c3682e9a3f2649c9fec608ab6335" title="getEcranRegles">getEcranRegles</a>();
-<a name="l00029"></a>00029         <a class="code" href="classEcran.html">Ecran</a>* <a class="code" href="classManagerEcran.html#a503972435828a367d34e8fe45a2f6e94" title="getEcranJeu">getEcranJeu</a>();
-<a name="l00030"></a>00030         <a class="code" href="classEcran.html">Ecran</a>* <a class="code" href="classManagerEcran.html#a27cb41b41c5debeeb1953f837085bc3b" title="getEcranFinal">getEcranFinal</a>();
-<a name="l00031"></a>00031         <a class="code" href="classEcran.html">Ecran</a>* <a class="code" href="classManagerEcran.html#a80445c1fd6d2c51203b4d04804f3fa4e" title="getEcranEpilogue">getEcranEpilogue</a>();
+<a name="l00014"></a>00014 
+<a name="l00026"></a><a class="code" href="classManagerEcran.html">00026</a> <span class="keyword">class </span><a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a>
+<a name="l00027"></a>00027 {
+<a name="l00028"></a>00028     <span class="keyword">public</span>:
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030         <a class="code" href="classManagerEcran.html#ad9e96d0c51dc6c866eca240f2db1cc88" title="Constructeur.">ManagerEcran</a>(<a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>* d);
+<a name="l00031"></a>00031         <span class="keyword">virtual</span> <a class="code" href="classManagerEcran.html#a9faf6ff983828f67ba4e0b4c319a3d7e" title="Destructeur.">~ManagerEcran</a>();
 <a name="l00032"></a>00032 
-<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a5cad423b45182e2640e3ef758164ef6b" title="setEcranCourant">setEcranCourant</a>(<a class="code" href="classEcran.html">Ecran</a> *ecran);
-<a name="l00034"></a>00034         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a5e1c6000fc4baf622b2b460c28986c00" title="setNombreJoueur">setNombreJoueur</a>(<span class="keywordtype">int</span> nb);
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037     <span class="keyword">private</span>:
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039         <a class="code" href="classDonneesJeu.html">DonneesJeu</a>* donnees;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041         <a class="code" href="classEcran.html">Ecran</a>* ecranCourant;
-<a name="l00042"></a>00042         <a class="code" href="classEcran.html">Ecran</a>* ecranAccueil;
-<a name="l00043"></a>00043         <a class="code" href="classEcran.html">Ecran</a>* ecranRegles;
-<a name="l00044"></a>00044         <a class="code" href="classEcran.html">Ecran</a>* ecranConfiguration;
-<a name="l00045"></a>00045         <a class="code" href="classEcran.html">Ecran</a>* ecranJeu;
-<a name="l00046"></a>00046         <a class="code" href="classEcran.html">Ecran</a>* ecranFinal;
-<a name="l00047"></a>00047         <a class="code" href="classEcran.html">Ecran</a>* ecranEpilogue;
+<a name="l00033"></a>00033         <span class="comment">//void update(sf::RenderWindow &amp;window, sf::Event event);</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a2e47bdd001da8f6102e3ce0775d5f401" title="Fonction update.">update</a>(sf::Event event);
+<a name="l00036"></a>00036         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a522b604974166e41863717e6abdc31a1" title="Fonction afficher.">afficher</a>(sf::RenderWindow &amp;fenetre);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038         <span class="comment">//Getter-Setter</span>
+<a name="l00039"></a>00039         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* <a class="code" href="classManagerEcran.html#a1168854592f21f73624fa87fe839e188" title="getEcranConfiguration">getEcranConfiguration</a>();
+<a name="l00040"></a>00040         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* <a class="code" href="classManagerEcran.html#a2db0c3682e9a3f2649c9fec608ab6335" title="getEcranRegles">getEcranRegles</a>();
+<a name="l00041"></a>00041         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* <a class="code" href="classManagerEcran.html#a503972435828a367d34e8fe45a2f6e94" title="getEcranJeu">getEcranJeu</a>();
+<a name="l00042"></a>00042         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* <a class="code" href="classManagerEcran.html#a27cb41b41c5debeeb1953f837085bc3b" title="getEcranFinal">getEcranFinal</a>();
+<a name="l00043"></a>00043         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* <a class="code" href="classManagerEcran.html#a80445c1fd6d2c51203b4d04804f3fa4e" title="getEcranEpilogue">getEcranEpilogue</a>();
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a5cad423b45182e2640e3ef758164ef6b" title="setEcranCourant">setEcranCourant</a>(<a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a> *ecran);
+<a name="l00046"></a>00046         <span class="keywordtype">void</span> <a class="code" href="classManagerEcran.html#a5e1c6000fc4baf622b2b460c28986c00" title="setNombreJoueur">setNombreJoueur</a>(<span class="keywordtype">int</span> nb);
+<a name="l00047"></a>00047 
 <a name="l00048"></a>00048 
-<a name="l00049"></a>00049         <span class="keywordtype">int</span> nombreJoueur;
+<a name="l00049"></a>00049     <span class="keyword">private</span>:
 <a name="l00050"></a>00050 
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052 };
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="preprocessor">#endif // MANAGERECRAN_H</span>
+<a name="l00051"></a>00051         <a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>* donnees;
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranCourant;        <span class="comment">//l&#39;ecran courant</span>
+<a name="l00054"></a>00054         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranAccueil;        <span class="comment">//l&#39;ecran d&#39;accueil du jeu</span>
+<a name="l00055"></a>00055         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranRegles;         <span class="comment">//l&#39;ecran de regles</span>
+<a name="l00056"></a>00056         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranConfiguration;  <span class="comment">//l&#39;ecran de configuration pour creer avec un nombre de joueur</span>
+<a name="l00057"></a>00057         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranJeu;            <span class="comment">//l&#39;ecran de jeu avec la partie</span>
+<a name="l00058"></a>00058         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranFinal;          <span class="comment">//l&#39;ecran final</span>
+<a name="l00059"></a>00059         <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>* ecranEpilogue;       <span class="comment">//l&#39;ecran d&#39;epilogue</span>
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061         <span class="keywordtype">int</span> nombreJoueur;           <span class="comment">//le nombre de joueur</span>
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="preprocessor">#endif // MANAGERECRAN_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -150,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

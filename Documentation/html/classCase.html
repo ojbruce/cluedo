@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -85,15 +85,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe Case</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Case" --><div class="dynheader">
+<!-- doxytag: class="Case" -->
+<p><a class="el" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a> est la classe représentant les cases du plateau.  
+ <a href="classCase.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Case_8h_source.html">Case.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de Case:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCase.png" usemap="#Case_map" alt=""/>
   <map id="Case_map" name="Case_map">
-<area href="classMur.html" alt="Mur" shape="rect" coords="0,56,44,80"/>
-<area href="classPiece.html" alt="Piece" shape="rect" coords="54,56,98,80"/>
-<area href="classPorte.html" alt="Porte" shape="rect" coords="54,112,98,136"/>
+<area href="classMur.html" title="Mur est la classe abstraite représentant les murs les positions ou on ne peut pas deplacer..." alt="Mur" shape="rect" coords="0,56,44,80"/>
+<area href="classPiece.html" title="Piece est la classe représentant les cases d&#39;une piece." alt="Piece" shape="rect" coords="54,56,98,80"/>
+<area href="classPorte.html" title="Porte est la classe représentant l&#39;entree d&#39;une piece et donne accès à toute les cases pièces..." alt="Porte" shape="rect" coords="54,112,98,136"/>
 </map>
  </div></div>
 
@@ -104,9 +109,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14237e17aab1829965adab76b747db6c"></a><!-- doxytag: member="Case::Case" ref="a14237e17aab1829965adab76b747db6c" args="()" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#a14237e17aab1829965adab76b747db6c">Case</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par defaut. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad61be010b8d3cc841706c989c08aaaac"></a><!-- doxytag: member="Case::Case" ref="ad61be010b8d3cc841706c989c08aaaac" args="(int a, int b)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#ad61be010b8d3cc841706c989c08aaaac">Case</a> (int a, int b)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#ad61be010b8d3cc841706c989c08aaaac">Case</a> (int a, int b)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#ad61be010b8d3cc841706c989c08aaaac"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#aba81e8660bf4009cc0ddee8e132bce49">operator==</a> (<a class="el" href="classCase.html">Case</a> const &amp;c2)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur d'egalite.  <a href="#aba81e8660bf4009cc0ddee8e132bce49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab004564aae3e15db0c7fd5dde0b4c379"></a><!-- doxytag: member="Case::~Case" ref="ab004564aae3e15db0c7fd5dde0b4c379" args="()" -->
@@ -118,15 +122,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>afficher</b> ()</td><
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui retrourne une string repésentant la case du type: [x][y].  <a href="#ad09ca1072f39bcacf06459fc03f026ae"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#affe73b57a2c81e2f09dc5db45893db3c">trouverChemin</a> (int de, std::vector&lt; <a class="el" href="classCase.html">Case</a> * &gt; &amp;res, <a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui trouve tous les chemins possibles.  <a href="#affe73b57a2c81e2f09dc5db45893db3c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdbbc0ad8422141cdbf2e647d1ba56e1"></a><!-- doxytag: member="Case::action" ref="acdbbc0ad8422141cdbf2e647d1ba56e1" args="()" -->
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#acdbbc0ad8422141cdbf2e647d1ba56e1">action</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va réaliser l'action selon la case. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6ce55820f949e5fae8dbeb62d298291"></a><!-- doxytag: member="Case::pointHG" ref="ae6ce55820f949e5fae8dbeb62d298291" args="(int tailleCase, int ecartX, int ecartY)" -->
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pointHG</b> (int tailleCase, int ecartX, int ecartY)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48b794ecbea4155843ce09f53e280237"></a><!-- doxytag: member="Case::milieu" ref="a48b794ecbea4155843ce09f53e280237" args="(int tailleCase, std::pair&lt; int, int &gt; a)" -->
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>milieu</b> (int tailleCase, std::pair&lt; int, int &gt; a)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#acdbbc0ad8422141cdbf2e647d1ba56e1">action</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va réaliser l'action selon la case.  <a href="#acdbbc0ad8422141cdbf2e647d1ba56e1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#ae6ce55820f949e5fae8dbeb62d298291">pointHG</a> (int tailleCase, int ecartX, int ecartY)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le point en haut à gauche de la case en fonction de l'affichage.  <a href="#ae6ce55820f949e5fae8dbeb62d298291"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#a48b794ecbea4155843ce09f53e280237">milieu</a> (int tailleCase, std::pair&lt; int, int &gt; a)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Renvoie le point permettant de mettre le pion au centre de la case.  <a href="#a48b794ecbea4155843ce09f53e280237"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#ad7cbf9289ac69b4e1c1f3fc20a6fa540">colorier</a> (sf::RenderWindow &amp;window)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui affiche la case.  <a href="#ad7cbf9289ac69b4e1c1f3fc20a6fa540"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va colorier en bleu la case.  <a href="#ad7cbf9289ac69b4e1c1f3fc20a6fa540"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#ab5580b919199dd2ec379672d3390bbff">getX</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Assesseur de x_.  <a href="#ab5580b919199dd2ec379672d3390bbff"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCase.html#a824f612c5a660a1d55ac06931747c46d">getY</a> ()</td></tr>
@@ -151,7 +154,73 @@ Attributs protégés statiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9263e52fca2d5567d0bb07d51bc7d302"></a><!-- doxytag: member="Case::taille_" ref="a9263e52fca2d5567d0bb07d51bc7d302" args="" -->
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>taille_</b> = 20</td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a> est la classe représentant les cases du plateau. </p>
+<p>Une <a class="el" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a> est caractérisé par les informations suivantes : un x un y un bool estvide</p>
+<p>Herite de <a class="el" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>.</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="ad61be010b8d3cc841706c989c08aaaac"></a><!-- doxytag: member="Case::Case" ref="ad61be010b8d3cc841706c989c08aaaac" args="(int a, int b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCase.html#a14237e17aab1829965adab76b747db6c">Case::Case</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructeur. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>ordonnee </td></tr>
+    <tr><td class="paramname">b</td><td>abscisse </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="acdbbc0ad8422141cdbf2e647d1ba56e1"></a><!-- doxytag: member="Case::action" ref="acdbbc0ad8422141cdbf2e647d1ba56e1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classCase.html#acdbbc0ad8422141cdbf2e647d1ba56e1">Case::action</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va réaliser l'action selon la case. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>une string vide ici </dd></dl>
+
+<p>Réimplémentée dans <a class="el" href="classPorte.html#a71f6ed526931178c012e8653e609e0e7">Porte</a>, <a class="el" href="classPiece.html#ae2bbb51808f5d87be1761df503571e0d">Piece</a>, et <a class="el" href="classMur.html#a0fda0e8825c34a5f06d651e263bff058">Mur</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ad7cbf9289ac69b4e1c1f3fc20a6fa540"></a><!-- doxytag: member="Case::colorier" ref="ad7cbf9289ac69b4e1c1f3fc20a6fa540" args="(sf::RenderWindow &amp;window)" -->
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +236,13 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>taille_</
 </div>
 <div class="memdoc">
 
-<p>Methode qui affiche la case. </p>
+<p>Methode qui va colorier en bleu la case. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre qui va etre touchée </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -228,6 +303,36 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>taille_</
 
 </div>
 </div>
+<a class="anchor" id="a48b794ecbea4155843ce09f53e280237"></a><!-- doxytag: member="Case::milieu" ref="a48b794ecbea4155843ce09f53e280237" args="(int tailleCase, std::pair&lt; int, int &gt; a)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; int, int &gt; <a class="el" href="classCase.html#a48b794ecbea4155843ce09f53e280237">Case::milieu</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tailleCase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le point permettant de mettre le pion au centre de la case. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>une pair d'int représentant l'endroit pour bien placer le pion </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aba81e8660bf4009cc0ddee8e132bce49"></a><!-- doxytag: member="Case::operator==" ref="aba81e8660bf4009cc0ddee8e132bce49" args="(Case const &amp;c2)" -->
 <div class="memitem">
 <div class="memproto">
@@ -250,6 +355,42 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>taille_</
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ae6ce55820f949e5fae8dbeb62d298291"></a><!-- doxytag: member="Case::pointHG" ref="ae6ce55820f949e5fae8dbeb62d298291" args="(int tailleCase, int ecartX, int ecartY)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pair&lt; int, int &gt; <a class="el" href="classCase.html#ae6ce55820f949e5fae8dbeb62d298291">Case::pointHG</a> </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tailleCase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ecartX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ecartY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Renvoie le point en haut à gauche de la case en fonction de l'affichage. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>une pair d'int représentant le point en hautà gauche </dd></dl>
 
 </div>
 </div>
@@ -339,7 +480,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>taille_</
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:25 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:43 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

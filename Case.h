@@ -14,7 +14,7 @@ class Plateau;
 /**
  * Case est la classe représentant les cases du plateau.
  *
- * Une CAse est caractérisé par les informations suivantes :
+ * Une Case est caractérisé par les informations suivantes :
  * un x
  * un y
  * un bool estvide

@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -84,43 +84,181 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="Personnage" -->
+<p><a class="el" href="classPersonnage.html" title="Personnage est la classe représentant les cases d&#39;une piece.">Personnage</a> est la classe représentant les cases d'une piece.  
+ <a href="classPersonnage.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Personnage_8h_source.html">Personnage.h</a>&gt;</code></p>
+
 <p><a href="classPersonnage-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a1535b694f3f69e07b646462d64db4d"></a><!-- doxytag: member="Personnage::Personnage" ref="a2a1535b694f3f69e07b646462d64db4d" args="(string nom, string couleur, string pion)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>Personnage</b> (string nom, string couleur, string pion)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a32ab14d53d8d1c5715af691b494fc9b1">Personnage</a> (std::string nom, std::string couleur, std::string pion)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#a32ab14d53d8d1c5715af691b494fc9b1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40dce2ec7abb60ec4b069c614e85c813"></a><!-- doxytag: member="Personnage::operator==" ref="a40dce2ec7abb60ec4b069c614e85c813" args="(Personnage const &amp;p2)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (<a class="el" href="classPersonnage.html">Personnage</a> const &amp;p2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a05bdf2a469885bb1fbb6c2e8f98972ab">~Personnage</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les cartes mysteres.  <a href="#a05bdf2a469885bb1fbb6c2e8f98972ab"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09a6d250d12b7cde72cef60d6153977d"></a><!-- doxytag: member="Personnage::setPositionDepart" ref="a09a6d250d12b7cde72cef60d6153977d" args="(Case *cas)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPositionDepart</b> (<a class="el" href="classCase.html">Case</a> *cas)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94665cc5f3d0e5d3b30e1039d7970f8c"></a><!-- doxytag: member="Personnage::getPositionDepart" ref="a94665cc5f3d0e5d3b30e1039d7970f8c" args="()" -->
-<a class="el" href="classCase.html">Case</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getPositionDepart</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a519301399a9bee1557858aa50a04a85a"></a><!-- doxytag: member="Personnage::getNom" ref="a519301399a9bee1557858aa50a04a85a" args="()" -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getNom</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebbd390a61c946de43685c810d579c42"></a><!-- doxytag: member="Personnage::getCouleur" ref="aebbd390a61c946de43685c810d579c42" args="()" -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getCouleur</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56fdaf04ef2cebf901c01b284f81f67b"></a><!-- doxytag: member="Personnage::getPion" ref="a56fdaf04ef2cebf901c01b284f81f67b" args="()" -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getPion</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a40dce2ec7abb60ec4b069c614e85c813">operator==</a> (<a class="el" href="classPersonnage.html">Personnage</a> const &amp;p2)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">operateur d'egalite <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a09a6d250d12b7cde72cef60d6153977d">setPositionDepart</a> (<a class="el" href="classCase.html">Case</a> *cas)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Rentre la position de dep.  <a href="#a09a6d250d12b7cde72cef60d6153977d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCase.html">Case</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a94665cc5f3d0e5d3b30e1039d7970f8c">getPositionDepart</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere la position de dep.  <a href="#a94665cc5f3d0e5d3b30e1039d7970f8c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a519301399a9bee1557858aa50a04a85a">getNom</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le nom du personnage.  <a href="#a519301399a9bee1557858aa50a04a85a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#aebbd390a61c946de43685c810d579c42">getCouleur</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere la couleur.  <a href="#aebbd390a61c946de43685c810d579c42"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonnage.html#a56fdaf04ef2cebf901c01b284f81f67b">getPion</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Recupere le chemin menant a l'image du pion.  <a href="#a56fdaf04ef2cebf901c01b284f81f67b"></a><br/></td></tr>
 </table>
-<hr/><h2>Documentation des constructeurs et destructeur</h2>
-<a class="anchor" id="a05bdf2a469885bb1fbb6c2e8f98972ab"></a><!-- doxytag: member="Personnage::~Personnage" ref="a05bdf2a469885bb1fbb6c2e8f98972ab" args="()" -->
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classPersonnage.html" title="Personnage est la classe représentant les cases d&#39;une piece.">Personnage</a> est la classe représentant les cases d'une piece. </p>
+<p>Un <a class="el" href="classPersonnage.html" title="Personnage est la classe représentant les cases d&#39;une piece.">Personnage</a> est caractérisé par les informations suivantes : un nom un chemin vers l'image une position de depart case*</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des constructeurs et destructeur</h2>
+<a class="anchor" id="a32ab14d53d8d1c5715af691b494fc9b1"></a><!-- doxytag: member="Personnage::Personnage" ref="a32ab14d53d8d1c5715af691b494fc9b1" args="(std::string nom, std::string couleur, std::string pion)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classPersonnage.html#a05bdf2a469885bb1fbb6c2e8f98972ab">Personnage::~Personnage</a> </td>
+          <td class="memname"><a class="el" href="classPersonnage.html#a32ab14d53d8d1c5715af691b494fc9b1">Personnage::Personnage</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>couleur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>pion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Retourne les cartes mysteres. </p>
+<p>Constructeur. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>un nom </td></tr>
+    <tr><td class="paramname">c</td><td>la couleur </td></tr>
+    <tr><td class="paramname">pio</td><td>le chemin du pion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="aebbd390a61c946de43685c810d579c42"></a><!-- doxytag: member="Personnage::getCouleur" ref="aebbd390a61c946de43685c810d579c42" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classPersonnage.html#aebbd390a61c946de43685c810d579c42">Personnage::getCouleur</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recupere la couleur. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>couleur </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a519301399a9bee1557858aa50a04a85a"></a><!-- doxytag: member="Personnage::getNom" ref="a519301399a9bee1557858aa50a04a85a" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classPersonnage.html#a519301399a9bee1557858aa50a04a85a">Personnage::getNom</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recupere le nom du personnage. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>nom </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a56fdaf04ef2cebf901c01b284f81f67b"></a><!-- doxytag: member="Personnage::getPion" ref="a56fdaf04ef2cebf901c01b284f81f67b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string <a class="el" href="classPersonnage.html#a56fdaf04ef2cebf901c01b284f81f67b">Personnage::getPion</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recupere le chemin menant a l'image du pion. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>nom </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a94665cc5f3d0e5d3b30e1039d7970f8c"></a><!-- doxytag: member="Personnage::getPositionDepart" ref="a94665cc5f3d0e5d3b30e1039d7970f8c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCase.html">Case</a> * <a class="el" href="classPersonnage.html#a94665cc5f3d0e5d3b30e1039d7970f8c">Personnage::getPositionDepart</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Recupere la position de dep. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>cas la case de depart </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a09a6d250d12b7cde72cef60d6153977d"></a><!-- doxytag: member="Personnage::setPositionDepart" ref="a09a6d250d12b7cde72cef60d6153977d" args="(Case *cas)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPersonnage.html#a09a6d250d12b7cde72cef60d6153977d">Personnage::setPositionDepart</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCase.html">Case</a> *&#160;</td>
+          <td class="paramname"><em>cas</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Rentre la position de dep. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cas</td><td>la case de depart </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -146,7 +284,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>getPion</b> ()</td>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:32 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:49 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

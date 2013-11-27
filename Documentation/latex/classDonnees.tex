@@ -1,24 +1,46 @@
 \hypertarget{classDonnees}{\section{\-Référence de la classe \-Donnees}
 \label{classDonnees}\index{\-Donnees@{\-Donnees}}
 }
+
+
+\hyperlink{classDonnees}{\-Donnees} est la classe représentant les donnees avant le debut du jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Donnees.\-h$>$}
+
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classDonnees_af238721bd5caba48da9d7531f1156f18}{\hyperlink{classCarte}{\-Carte} $\ast$ {\bfseries get\-Carte} (int indice)}\label{classDonnees_af238721bd5caba48da9d7531f1156f18}
+\hypertarget{classDonnees_a32538936d4181628ec1cc7f6533436d0}{\hyperlink{classDonnees_a32538936d4181628ec1cc7f6533436d0}{$\sim$\-Donnees} ()}\label{classDonnees_a32538936d4181628ec1cc7f6533436d0}
 
-\item 
-\hypertarget{classDonnees_a452ba40b985045dbe8d5586514464629}{unsigned int {\bfseries trouver\-Indice\-Carte} (std\-::string carte)}\label{classDonnees_a452ba40b985045dbe8d5586514464629}
-
-\item 
+\begin{DoxyCompactList}\small\item\em \-Destructeur. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classDonnees_a452ba40b985045dbe8d5586514464629}{trouver\-Indice\-Carte} (std\-::string carte)
+\begin{DoxyCompactList}\small\item\em \-Methode qui va trouver une carte dans le tableau et renvoyer son indice. \end{DoxyCompactList}\item 
 vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classDonnees_a574a33fb002aa10927bd97c39b84839b}{init\-Carte\-Mystere} (vector$<$ int $>$ \&vec)
-\begin{DoxyCompactList}\small\item\em \-Retourne les cartes mysteres. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \-Methode qui retourne les cartes mysteres. \end{DoxyCompactList}\item 
 vector$<$ \hyperlink{classJoueur}{\-Joueur} $>$ \hyperlink{classDonnees_a85ad060f19a3f27d07699495b8be4fe0}{init\-Joueur} (int n)
 \begin{DoxyCompactList}\small\item\em \-Va renvoyer un n nombre de joueur avec des persos aléatoires. \end{DoxyCompactList}\item 
-\hypertarget{classDonnees_a1f7c9ce96432a2cb384d4f1fb22c59f7}{void {\bfseries positionner\-Perso} (\hyperlink{classPlateau}{\-Plateau} $\ast$p)}\label{classDonnees_a1f7c9ce96432a2cb384d4f1fb22c59f7}
-
-\item 
+void \hyperlink{classDonnees_a1f7c9ce96432a2cb384d4f1fb22c59f7}{positionner\-Perso} (\hyperlink{classPlateau}{\-Plateau} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \-Methodes qui va positionner les personnages. \end{DoxyCompactList}\item 
 vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classDonnees_ae61912de3804ec0a33be8a3168a41b72}{distribuer\-Carte} (vector$<$ \hyperlink{classJoueur}{\-Joueur} $>$ \&les\-Joueurs)
-\begin{DoxyCompactList}\small\item\em \-Methodes qui va distribuer les cartes aux joueurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-Methodes qui va distribuer les cartes aux joueurs et initialiser la checklist du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classDonnees}{\-Donnees} est la classe représentant les donnees avant le debut du jeu. 
+
+\-Une \hyperlink{classDonnees}{\-Donnees} est caractérisé par les informations suivantes \-: un tableau de cartes distribuer un tableau de personnage preexistant
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
 
 
 \subsection{\-Documentation des fonctions membres}
@@ -31,8 +53,16 @@ vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classDonnees_ae6
 )}}\label{classDonnees_ae61912de3804ec0a33be8a3168a41b72}
 
 
-\-Methodes qui va distribuer les cartes aux joueurs. 
+\-Methodes qui va distribuer les cartes aux joueurs et initialiser la checklist du joueur. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em le} & tableau de joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+un vecteur représentant les cartes mysteres 
+\end{DoxyReturn}
 \hypertarget{classDonnees_a574a33fb002aa10927bd97c39b84839b}{\index{\-Donnees@{\-Donnees}!init\-Carte\-Mystere@{init\-Carte\-Mystere}}
 \index{init\-Carte\-Mystere@{init\-Carte\-Mystere}!Donnees@{\-Donnees}}
 \subsubsection[{init\-Carte\-Mystere}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf \-Carte} $\ast$ $>$ {\bf \-Donnees\-::init\-Carte\-Mystere} (
@@ -42,8 +72,16 @@ vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classDonnees_ae6
 )}}\label{classDonnees_a574a33fb002aa10927bd97c39b84839b}
 
 
-\-Retourne les cartes mysteres. 
+\-Methode qui retourne les cartes mysteres. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em temoin} & un vecteur d'int qui va être décrémentée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+res un vecteur de carte prenant les cartes mysteres 
+\end{DoxyReturn}
 \hypertarget{classDonnees_a85ad060f19a3f27d07699495b8be4fe0}{\index{\-Donnees@{\-Donnees}!init\-Joueur@{init\-Joueur}}
 \index{init\-Joueur@{init\-Joueur}!Donnees@{\-Donnees}}
 \subsubsection[{init\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf \-Joueur} $>$ {\bf \-Donnees\-::init\-Joueur} (
@@ -55,6 +93,44 @@ vector$<$ \hyperlink{classCarte}{\-Carte} $\ast$ $>$ \hyperlink{classDonnees_ae6
 
 \-Va renvoyer un n nombre de joueur avec des persos aléatoires. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em n} & le nombre de joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+le tableau de joueurs 
+\end{DoxyReturn}
+\hypertarget{classDonnees_a1f7c9ce96432a2cb384d4f1fb22c59f7}{\index{\-Donnees@{\-Donnees}!positionner\-Perso@{positionner\-Perso}}
+\index{positionner\-Perso@{positionner\-Perso}!Donnees@{\-Donnees}}
+\subsubsection[{positionner\-Perso}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-::positionner\-Perso} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Plateau} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classDonnees_a1f7c9ce96432a2cb384d4f1fb22c59f7}
+
+
+\-Methodes qui va positionner les personnages. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em le} & plateau pour positionner les personnages dessus \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonnees_a452ba40b985045dbe8d5586514464629}{\index{\-Donnees@{\-Donnees}!trouver\-Indice\-Carte@{trouver\-Indice\-Carte}}
+\index{trouver\-Indice\-Carte@{trouver\-Indice\-Carte}!Donnees@{\-Donnees}}
+\subsubsection[{trouver\-Indice\-Carte}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Donnees\-::trouver\-Indice\-Carte} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{carte}
+\end{DoxyParamCaption}
+)}}\label{classDonnees_a452ba40b985045dbe8d5586514464629}
+
+
+\-Methode qui va trouver une carte dans le tableau et renvoyer son indice. 
+
+\begin{DoxyReturn}{\-Renvoie}
+res l'indice de la carte 
+\end{DoxyReturn}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

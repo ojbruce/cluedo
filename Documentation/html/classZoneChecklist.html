@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -84,6 +84,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="ZoneChecklist" -->
+<p><a class="el" href="classZoneChecklist.html" title="ZoneChecklist est la classe représentant la partie affichant la checklist.">ZoneChecklist</a> est la classe représentant la partie affichant la checklist.  
+ <a href="classZoneChecklist.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="ZoneChecklist_8h_source.html">ZoneChecklist.h</a>&gt;</code></p>
+
 <p><a href="classZoneChecklist-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -91,12 +96,8 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee5e8750e39ef396f708fdfec48eca8c"></a><!-- doxytag: member="ZoneChecklist::ZoneChecklist" ref="aee5e8750e39ef396f708fdfec48eca8c" args="()" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#aee5e8750e39ef396f708fdfec48eca8c">ZoneChecklist</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ffde7f6689c34844d38c527a87a7740"></a><!-- doxytag: member="ZoneChecklist::~ZoneChecklist" ref="a1ffde7f6689c34844d38c527a87a7740" args="()" -->
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#a1ffde7f6689c34844d38c527a87a7740">~ZoneChecklist</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08e07cd3db2e76f1d33a0e3b26ec32eb"></a><!-- doxytag: member="ZoneChecklist::afficherChecklist" ref="a08e07cd3db2e76f1d33a0e3b26ec32eb" args="(Joueur *j, sf::RenderWindow &amp;window)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#a08e07cd3db2e76f1d33a0e3b26ec32eb">afficherChecklist</a> (<a class="el" href="classJoueur.html">Joueur</a> *j, sf::RenderWindow &amp;window)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">afficherChecklist <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#a08e07cd3db2e76f1d33a0e3b26ec32eb">afficherChecklist</a> (<a class="el" href="classJoueur.html">Joueur</a> *j, sf::RenderWindow &amp;window)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui affiche la checklist d'un joueur.  <a href="#a08e07cd3db2e76f1d33a0e3b26ec32eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cb52a1aff880ce982ab002cafecce97"></a><!-- doxytag: member="ZoneChecklist::update" ref="a5cb52a1aff880ce982ab002cafecce97" args="(Joueur *j, sf::Event event)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="classJoueur.html">Joueur</a> *j, sf::Event event)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c52e893fe409f1dd2860eb9f28ce81"></a><!-- doxytag: member="ZoneChecklist::placerCaseCocher" ref="a31c52e893fe409f1dd2860eb9f28ce81" args="(Bouton b, int y, sf::RenderWindow &amp;fenetre)" -->
@@ -107,10 +108,96 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction placerCaseCocher. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a131c733dca0597e4b8a4e24303dc0f25"></a><!-- doxytag: member="ZoneChecklist::cliqueConditionnel" ref="a131c733dca0597e4b8a4e24303dc0f25" args="(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &amp;b)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cliqueConditionnel</b> (int x, int y, int xmin, int xmax, int ymin, int ymax, <a class="el" href="classBouton.html">Bouton</a> &amp;b)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6600a57c75090d99f2efad6b66a5a93"></a><!-- doxytag: member="ZoneChecklist::importation" ref="ab6600a57c75090d99f2efad6b66a5a93" args="(Bouton &amp;b, int i, vector&lt; bool &gt; vec)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#ab6600a57c75090d99f2efad6b66a5a93">importation</a> (<a class="el" href="classBouton.html">Bouton</a> &amp;b, int i, vector&lt; bool &gt; vec)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction importation. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZoneChecklist.html#ab6600a57c75090d99f2efad6b66a5a93">importation</a> (<a class="el" href="classBouton.html">Bouton</a> &amp;b, int i, vector&lt; bool &gt; vec)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode de conversion interne.  <a href="#ab6600a57c75090d99f2efad6b66a5a93"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classZoneChecklist.html" title="ZoneChecklist est la classe représentant la partie affichant la checklist.">ZoneChecklist</a> est la classe représentant la partie affichant la checklist. </p>
+<p>Une zoneChecklist est caractérisé par les informations suivantes : des boutons à cocher. une image de fond.</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a08e07cd3db2e76f1d33a0e3b26ec32eb"></a><!-- doxytag: member="ZoneChecklist::afficherChecklist" ref="a08e07cd3db2e76f1d33a0e3b26ec32eb" args="(Joueur *j, sf::RenderWindow &amp;window)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classZoneChecklist.html#a08e07cd3db2e76f1d33a0e3b26ec32eb">ZoneChecklist::afficherChecklist</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui affiche la checklist d'un joueur. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td>un pointeur vers joueur </td></tr>
+    <tr><td class="paramname">fenetre</td><td>la fenetre de rendu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab6600a57c75090d99f2efad6b66a5a93"></a><!-- doxytag: member="ZoneChecklist::importation" ref="ab6600a57c75090d99f2efad6b66a5a93" args="(Bouton &amp;b, int i, vector&lt; bool &gt; vec)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classZoneChecklist.html#ab6600a57c75090d99f2efad6b66a5a93">ZoneChecklist::importation</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBouton.html">Bouton</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>vec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode de conversion interne. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">b</td><td>le bouton a selectionne ou deselectionne </td></tr>
+    <tr><td class="paramname">int</td><td>i l'indice </td></tr>
+    <tr><td class="paramname">vec</td><td>le vecteur de booleen de la checklist </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="ZoneChecklist_8h_source.html">ZoneChecklist.h</a></li>
 <li>ZoneChecklist.cpp</li>
@@ -133,7 +220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:33 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:50 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

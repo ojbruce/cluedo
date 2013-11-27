@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe FactoryCarte</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FactoryCarte" --><!-- doxytag: inherits="Factory" --><div class="dynheader">
+<!-- doxytag: class="FactoryCarte" --><!-- doxytag: inherits="Factory" -->
+<p><a class="el" href="classFactoryCarte.html" title="FactoryCarte est la classe représentant la classe concrete de la factory carte.">FactoryCarte</a> est la classe représentant la classe concrete de la factory carte.  
+ <a href="classFactoryCarte.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FactoryCarte_8h_source.html">FactoryCarte.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de FactoryCarte:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classFactoryCarte.png" usemap="#FactoryCarte_map" alt=""/>
   <map id="FactoryCarte_map" name="FactoryCarte_map">
-<area href="classFactory.html" alt="Factory" shape="rect" coords="0,0,87,24"/>
+<area href="classFactory.html" title="Factory est la classe abstraite représentant la factory carte." alt="Factory" shape="rect" coords="0,0,87,24"/>
 </map>
  </div></div>
 
@@ -97,10 +102,55 @@ Graphe d'héritage de FactoryCarte:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaca6e8fe045a19c4ac1a6746abfb23bc"></a><!-- doxytag: member="FactoryCarte::creer" ref="aaca6e8fe045a19c4ac1a6746abfb23bc" args="(string type, string nom, string chemin)" -->
-virtual <a class="el" href="classCarte.html">Carte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFactoryCarte.html#aaca6e8fe045a19c4ac1a6746abfb23bc">creer</a> (string type, string nom, string chemin)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction creer. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classCarte.html">Carte</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFactoryCarte.html#aaca6e8fe045a19c4ac1a6746abfb23bc">creer</a> (string type, string nom, string chemin)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va creer les cartes selon leur le type.  <a href="#aaca6e8fe045a19c4ac1a6746abfb23bc"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classFactoryCarte.html" title="FactoryCarte est la classe représentant la classe concrete de la factory carte.">FactoryCarte</a> est la classe représentant la classe concrete de la factory carte. </p>
+<p>Il est caractérisé par les informations suivantes : une methode pour creer des cartes</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="aaca6e8fe045a19c4ac1a6746abfb23bc"></a><!-- doxytag: member="FactoryCarte::creer" ref="aaca6e8fe045a19c4ac1a6746abfb23bc" args="(string type, string nom, string chemin)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCarte.html">Carte</a> * <a class="el" href="classFactoryCarte.html#aaca6e8fe045a19c4ac1a6746abfb23bc">FactoryCarte::creer</a> </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>chemin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va creer les cartes selon leur le type. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>retourne une carte </dd></dl>
+
+<p>Implémente <a class="el" href="classFactory.html">Factory</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="FactoryCarte_8h_source.html">FactoryCarte.h</a></li>
 <li>FactoryCarte.cpp</li>
@@ -123,7 +173,7 @@ virtual <a class="el" href="classCarte.html">Carte</a> *&#160;</td><td class="me
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:29 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:46 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

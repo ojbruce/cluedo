@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -99,48 +99,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00019"></a>00019 <span class="preprocessor">#include &quot;Observer.h&quot;</span>
 <a name="l00020"></a>00020 <span class="preprocessor">#include &quot;ManagerFenetre.h&quot;</span>
 <a name="l00021"></a>00021 
-<a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="classPartie.html">00023</a> <span class="keyword">class </span><a class="code" href="classPartie.html">Partie</a>: <span class="keyword">public</span> <a class="code" href="classObserver.html">Observer</a>
-<a name="l00024"></a>00024 {
-<a name="l00025"></a>00025     <span class="keyword">public</span>:
-<a name="l00026"></a>00026         <span class="comment">//Partie();</span>
-<a name="l00027"></a>00027         <a class="code" href="classPartie.html">Partie</a>( <a class="code" href="classPlateau.html">Plateau</a>* plat, <a class="code" href="classZoneAffichageTexte.html">ZoneAffichageTexte</a>* zoneT, <a class="code" href="classZoneCarte.html">ZoneCarte</a>* zoneC,<a class="code" href="classZoneChecklist.html">ZoneChecklist</a>* z, <a class="code" href="classDonneesJeu.html">DonneesJeu</a>* d);
-<a name="l00028"></a>00028         ~<a class="code" href="classPartie.html">Partie</a>();
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030         <span class="keywordtype">void</span> <a class="code" href="classPartie.html#ab76c25c57551613a708ab39816d14a9a" title="Fonction preparer.">preparer</a>();
-<a name="l00031"></a>00031         <span class="keywordtype">void</span> <a class="code" href="classPartie.html#a2c868f423c455e1aa0aebc9f3482cf8d" title="Fonction update.">update</a>(sf::Event event);
-<a name="l00032"></a>00032         <span class="keywordtype">void</span> afficher(sf::RenderWindow &amp;window);
-<a name="l00033"></a>00033         
-<a name="l00034"></a>00034         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPartie.html#a39dcf2ff1dc8f4c7c81edea5e4f2cde8" title="Fonction notify.">estNotifie</a>(std::string choix1, std::string choix2, std::string act);
-<a name="l00035"></a>00035 
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038     <span class="keyword">private</span>:
-<a name="l00039"></a>00039         <span class="comment">//Attributs</span>
-<a name="l00040"></a>00040         <a class="code" href="classDonneesJeu.html">DonneesJeu</a>* donnees;
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042         <span class="keywordtype">bool</span> deClique_;                 <span class="comment">// Determine si le joueur a lancer le de ou pas</span>
+<a name="l00033"></a><a class="code" href="classPartie.html">00033</a> <span class="keyword">class </span><a class="code" href="classPartie.html" title="Partie est la classe représentant les cases d&#39;une piece.">Partie</a>: <span class="keyword">public</span> <a class="code" href="classObserver.html" title="Observer est la classe abstraite représentant l&#39;observer abstrait.">Observer</a>
+<a name="l00034"></a>00034 {
+<a name="l00035"></a>00035     <span class="keyword">public</span>:
+<a name="l00036"></a>00036         <span class="comment">//Partie();</span>
+<a name="l00037"></a>00037         <a class="code" href="classPartie.html" title="Partie est la classe représentant les cases d&#39;une piece.">Partie</a>( <a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>* plat, <a class="code" href="classZoneAffichageTexte.html" title="ZoneAffichageTexte est la classe représentant la partie affichant le deroulement du jeu...">ZoneAffichageTexte</a>* zoneT, <a class="code" href="classZoneCarte.html" title="ZoneCarte est la classe représentant la partie affichant les cartes en dessous du plateau...">ZoneCarte</a>* zoneC,<a class="code" href="classZoneChecklist.html" title="ZoneChecklist est la classe représentant la partie affichant la checklist.">ZoneChecklist</a>* z, <a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>* d);
+<a name="l00038"></a>00038         ~<a class="code" href="classPartie.html" title="Partie est la classe représentant les cases d&#39;une piece.">Partie</a>();
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         <span class="keywordtype">void</span> <a class="code" href="classPartie.html#ab76c25c57551613a708ab39816d14a9a" title="Fonction preparer.">preparer</a>(); <span class="comment">//prepare la partie en fonction des donnees</span>
+<a name="l00041"></a>00041         <span class="keywordtype">void</span> <a class="code" href="classPartie.html#a2c868f423c455e1aa0aebc9f3482cf8d" title="Fonction updatant la partieselon la poistion du clique.">update</a>(sf::Event event);<span class="comment">//Fonction d&#39;update</span>
+<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="classPartie.html#a2c00254bdd417a300342d1ba1eb5cec3" title="Fonction d&#39;affichage de la partie selon la poistion du clique.">afficher</a>(sf::RenderWindow &amp;window);<span class="comment">//Fonction d&#39;affichage</span>
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044         <span class="keywordtype">int</span> de;
-<a name="l00045"></a>00045         vector&lt;Case*&gt; chemin;           <span class="comment">//Le tableau de chemin</span>
+<a name="l00044"></a>00044         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPartie.html#a39dcf2ff1dc8f4c7c81edea5e4f2cde8" title="Fonction notify.">estNotifie</a>(std::string choix1, std::string choix2, std::string act);
+<a name="l00045"></a>00045 
 <a name="l00046"></a>00046 
-<a name="l00047"></a>00047         <a class="code" href="classPlateau.html">Plateau</a>* p;                     <span class="comment">//Le plateau de jeu</span>
-<a name="l00048"></a>00048         <a class="code" href="classZoneAffichageTexte.html">ZoneAffichageTexte</a>* zoneText;   <span class="comment">//La zone de texte</span>
-<a name="l00049"></a>00049         <a class="code" href="classZoneCarte.html">ZoneCarte</a>* zoneCarte;           <span class="comment">//La zone des cartes</span>
-<a name="l00050"></a>00050         <a class="code" href="classZoneChecklist.html">ZoneChecklist</a>* zoneChecklist;   <span class="comment">//Le zone de la checklist</span>
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048     <span class="keyword">private</span>:
+<a name="l00049"></a>00049         <span class="comment">//Attributs</span>
+<a name="l00050"></a>00050         <a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>* donnees;            <span class="comment">//Les donnees du jeu</span>
 <a name="l00051"></a>00051 
-<a name="l00052"></a>00052         sf::Font font;
-<a name="l00053"></a>00053         
-<a name="l00054"></a>00054         std::string armeCrime;
-<a name="l00055"></a>00055         std::string persoCrime;
-<a name="l00056"></a>00056                 std::string action;
-<a name="l00057"></a>00057                 
-<a name="l00058"></a>00058                 <a class="code" href="classManagerFenetre.html">ManagerFenetre</a> manFen;
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061 };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="preprocessor">#endif // PARTIE_H</span>
+<a name="l00052"></a>00052         <span class="keywordtype">bool</span> deClique_;                 <span class="comment">// Determine si le joueur a lancer le de ou pas</span>
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054         <span class="keywordtype">int</span> de;
+<a name="l00055"></a>00055         vector&lt;Case*&gt; chemin;           <span class="comment">//Le tableau de chemin</span>
+<a name="l00056"></a>00056 
+<a name="l00057"></a>00057         <a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>* p;                     <span class="comment">//Le plateau de jeu</span>
+<a name="l00058"></a>00058         <a class="code" href="classZoneAffichageTexte.html" title="ZoneAffichageTexte est la classe représentant la partie affichant le deroulement du jeu...">ZoneAffichageTexte</a>* zoneText;   <span class="comment">//La zone de texte</span>
+<a name="l00059"></a>00059         <a class="code" href="classZoneCarte.html" title="ZoneCarte est la classe représentant la partie affichant les cartes en dessous du plateau...">ZoneCarte</a>* zoneCarte;           <span class="comment">//La zone des cartes</span>
+<a name="l00060"></a>00060         <a class="code" href="classZoneChecklist.html" title="ZoneChecklist est la classe représentant la partie affichant la checklist.">ZoneChecklist</a>* zoneChecklist;   <span class="comment">//Le zone de la checklist</span>
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062         sf::Font font;
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064         std::string armeCrime;
+<a name="l00065"></a>00065         std::string persoCrime;
+<a name="l00066"></a>00066                 std::string action;
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068                 <a class="code" href="classManagerFenetre.html" title="ManagerFenetre est la classe représentant la classe qui fait les transitions entre les fenetres...">ManagerFenetre</a> manFen;
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 };
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="preprocessor">#endif // PARTIE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -159,7 +158,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

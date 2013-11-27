@@ -12,7 +12,18 @@ class FenetreInfo;
 class FenetreChoix;
 class FenetreContrer;
 
-
+/**
+ * ManagerFenetre est la classe représentant la classe qui fait les transitions entre les fenetres.
+ *
+ * Elle est caractérisé par les informations suivantes :
+ * des methodes qui ouvre des fenetres
+ * une methode qui observe les choix
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class ManagerFenetre
 {
     public:

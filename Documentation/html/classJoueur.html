@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -84,6 +84,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="Joueur" -->
+<p><a class="el" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a> est la classe représentant le joueur.  
+ <a href="classJoueur.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Joueur_8h_source.html">Joueur.h</a>&gt;</code></p>
+
 <p><a href="classJoueur-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -114,9 +119,11 @@ sf::Texture&#160;</td><td class="memItemRight" valign="bottom"><b>getTexture</b>
 <a class="el" href="classCase.html">Case</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJoueur.html#a528cac966c6cfeab47e666ce3b2735c2">getPosition</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter de la position  position_ la posion du joueur. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32909e93ab648b236fd670b8a24c5fb6"></a><!-- doxytag: member="Joueur::getDernierePiece" ref="a32909e93ab648b236fd670b8a24c5fb6" args="()" -->
-<a class="el" href="classCase.html">Case</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getDernierePiece</b> ()</td></tr>
+<a class="el" href="classCase.html">Case</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJoueur.html#a32909e93ab648b236fd670b8a24c5fb6">getDernierePiece</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la dernière pièce. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace4248a785b7be8e12bcaaf84e3a41b5"></a><!-- doxytag: member="Joueur::setDernierePiece" ref="ace4248a785b7be8e12bcaaf84e3a41b5" args="(Case *c)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDernierePiece</b> (<a class="el" href="classCase.html">Case</a> *c)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJoueur.html#ace4248a785b7be8e12bcaaf84e3a41b5">setDernierePiece</a> (<a class="el" href="classCase.html">Case</a> *c)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la derniere piece visite. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d32e5ba9665404f3b30fa5f548aaf43"></a><!-- doxytag: member="Joueur::setChecklist" ref="a5d32e5ba9665404f3b30fa5f548aaf43" args="(vector&lt; bool &gt; vecteur)" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJoueur.html#a5d32e5ba9665404f3b30fa5f548aaf43">setChecklist</a> (vector&lt; bool &gt; vecteur)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction setChecklist. <br/></td></tr>
@@ -127,7 +134,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJoueur.html#aef8ade4a19666cee6596b35b0b30017a">getChecklist</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction getChecklist. <br/></td></tr>
 </table>
-<hr/><h2>Documentation des fonctions membres</h2>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a> est la classe représentant le joueur. </p>
+<p>Une <a class="el" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a> est caractérisé par les informations suivantes : un perso une position une dernierPiece visitee un tableau des cartes vu/ un tableau des cartes de depart</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
 <a class="anchor" id="a500c9f3b5901d65093e294a451e462f5"></a><!-- doxytag: member="Joueur::ajouterCarteDepart" ref="a500c9f3b5901d65093e294a451e462f5" args="(Carte *c)" -->
 <div class="memitem">
 <div class="memproto">
@@ -269,7 +283,7 @@ vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:30 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:48 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

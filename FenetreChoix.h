@@ -14,6 +14,22 @@
 #include "Observable.h"
 
 
+/**
+ * FenetreContrer est la classe représentant l'ecran montrant le contre.
+ *
+ * Il est observer par patie et le notifie lorsque les boutons sont selectionné
+ *
+ * Il est caractérisé par les informations suivantes :
+ * des boutons
+ * des observateurs
+ * un manager permettant de changer d'ecran
+ *
+ *Herite de observable et de fenetre
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class FenetreChoix : public Observable, public Fenetre
 {
     public:

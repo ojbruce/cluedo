@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -90,28 +90,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00010"></a>00010 <span class="keyword">using namespace </span>sf;
 <a name="l00011"></a>00011 <span class="keyword">using namespace </span>std;
 <a name="l00012"></a>00012 
-<a name="l00013"></a><a class="code" href="classBouton.html">00013</a> <span class="keyword">class </span><a class="code" href="classBouton.html">Bouton</a>
-<a name="l00014"></a>00014 {
-<a name="l00015"></a>00015     <span class="keyword">public</span>:
-<a name="l00016"></a>00016 
-<a name="l00017"></a>00017         <a class="code" href="classBouton.html">Bouton</a>(std::string imageDep, std::string imageClique);
-<a name="l00018"></a>00018         sf::Sprite getSprite();
-<a name="l00019"></a>00019         <span class="keywordtype">bool</span> getClique();
-<a name="l00020"></a>00020         <span class="keywordtype">void</span> clique();
-<a name="l00021"></a>00021         <span class="keywordtype">void</span> deselection();
-<a name="l00022"></a>00022         <span class="keywordtype">void</span> selection();
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024     <span class="keyword">private</span> :
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026         sf::Texture imageDepart;    <span class="comment">// Chemin de l&#39;image du bouton initial</span>
-<a name="l00027"></a>00027         sf::Texture imageClique;    <span class="comment">// Chemin de l&#39;image du bouton clique</span>
-<a name="l00028"></a>00028         sf::Sprite cadreDepart;
-<a name="l00029"></a>00029         sf::Sprite cadreClique;
-<a name="l00030"></a>00030         <span class="keywordtype">bool</span> enfonce;           <span class="comment">// Booleen indiquant si le bouton est enfonce</span>
+<a name="l00013"></a>00013 
+<a name="l00028"></a><a class="code" href="classBouton.html">00028</a> <span class="keyword">class </span><a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a>
+<a name="l00029"></a>00029 {
+<a name="l00030"></a>00030     <span class="keyword">public</span>:
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 };
+<a name="l00032"></a>00032         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a>(std::string imageDep, std::string imageClique);  <span class="comment">//Constructeur par defaut de bouton</span>
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="preprocessor">#endif</span>
+<a name="l00034"></a>00034         <span class="keywordtype">void</span> clique();                  <span class="comment">//Methode qui va cliquer le bouton</span>
+<a name="l00035"></a>00035         <span class="keywordtype">void</span> deselection();             <span class="comment">//Methode qui va deselectionner le bouton</span>
+<a name="l00036"></a>00036         <span class="keywordtype">void</span> selection();               <span class="comment">//Methode qui va selectionner le bouton</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038         <span class="comment">//Getter-Setter</span>
+<a name="l00039"></a>00039         sf::Sprite getSprite();         <span class="comment">//Methode qui recupere le sprite du bouton</span>
+<a name="l00040"></a>00040         <span class="keywordtype">bool</span> getClique();               <span class="comment">//Methode qui recupere le bouton clique</span>
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <span class="keyword">private</span> :
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045         sf::Texture imageDepart;        <span class="comment">// La texture de l&#39;image du bouton initial</span>
+<a name="l00046"></a>00046         sf::Texture imageClique;        <span class="comment">// La texture de l&#39;image du bouton clique</span>
+<a name="l00047"></a>00047         sf::Sprite cadreDepart;         <span class="comment">// Le sprite de l&#39;image de depart</span>
+<a name="l00048"></a>00048         sf::Sprite cadreClique;         <span class="comment">// Le sprite de l&#39;image clique</span>
+<a name="l00049"></a>00049         <span class="keywordtype">bool</span> enfonce;                   <span class="comment">// Booleen indiquant si le bouton est enfonce</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -130,7 +135,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:20 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:41 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

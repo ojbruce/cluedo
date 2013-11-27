@@ -1,6 +1,15 @@
 \hypertarget{classFactoryCarte}{\section{\-Référence de la classe \-Factory\-Carte}
 \label{classFactoryCarte}\index{\-Factory\-Carte@{\-Factory\-Carte}}
 }
+
+
+\hyperlink{classFactoryCarte}{\-Factory\-Carte} est la classe représentant la classe concrete de la factory carte.  
+
+
+
+
+{\ttfamily \#include $<$\-Factory\-Carte.\-h$>$}
+
 \-Graphe d'héritage de \-Factory\-Carte\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,9 +19,46 @@
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}{virtual \hyperlink{classCarte}{\-Carte} $\ast$ \hyperlink{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}{creer} (string type, string nom, string chemin)}\label{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}
+virtual \hyperlink{classCarte}{\-Carte} $\ast$ \hyperlink{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}{creer} (string type, string nom, string chemin)
+\begin{DoxyCompactList}\small\item\em \-Methode qui va creer les cartes selon leur le type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction creer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection{\-Description détaillée}
+\hyperlink{classFactoryCarte}{\-Factory\-Carte} est la classe représentant la classe concrete de la factory carte. 
+
+\-Il est caractérisé par les informations suivantes \-: une methode pour creer des cartes
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}{\index{\-Factory\-Carte@{\-Factory\-Carte}!creer@{creer}}
+\index{creer@{creer}!FactoryCarte@{\-Factory\-Carte}}
+\subsubsection[{creer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Carte} $\ast$ {\bf \-Factory\-Carte\-::creer} (
+\begin{DoxyParamCaption}
+\item[{string}]{type, }
+\item[{string}]{nom, }
+\item[{string}]{chemin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classFactoryCarte_aaca6e8fe045a19c4ac1a6746abfb23bc}
+
+
+\-Methode qui va creer les cartes selon leur le type. 
+
+\begin{DoxyReturn}{\-Renvoie}
+retourne une carte 
+\end{DoxyReturn}
+
+
+\-Implémente \hyperlink{classFactory}{\-Factory}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

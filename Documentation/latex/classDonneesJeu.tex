@@ -1,6 +1,15 @@
 \hypertarget{classDonneesJeu}{\section{\-Référence de la classe \-Donnees\-Jeu}
 \label{classDonneesJeu}\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}}
 }
+
+
+\hyperlink{classDonneesJeu}{\-Donnees\-Jeu} est la classe représentant les donnees avant le debut du jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Donnees\-Jeu.\-h$>$}
+
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
@@ -9,17 +18,15 @@
 \item 
 int \hyperlink{classDonneesJeu_a39169eecf0e197ccf5677c7a1602a172}{lancer\-De} ()
 \begin{DoxyCompactList}\small\item\em \-Methoque qui prend un nombre aleatoire entre 2 et 12. \end{DoxyCompactList}\item 
-\hypertarget{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}{void {\bfseries preparer\-Partie} (\hyperlink{classPlateau}{\-Plateau} $\ast$plateau)}\label{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}
+\hypertarget{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}{void \hyperlink{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}{preparer\-Partie} (\hyperlink{classPlateau}{\-Plateau} $\ast$plateau)}\label{classDonneesJeu_aa8f22aa69faeb3e54d76a5aaa3d4444f}
 
-\item 
+\begin{DoxyCompactList}\small\item\em \-Methode qui va preparer la partie. \end{DoxyCompactList}\item 
 void \hyperlink{classDonneesJeu_ae443a7d34f88fe863914746b6e1fefd9}{changer\-Joueur} ()
 \begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le joueur \-Courant. \end{DoxyCompactList}\item 
-\hypertarget{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}{void {\bfseries accuser} (std\-::string arme, std\-::string perso, std\-::string lieu)}\label{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}
-
-\item 
-\hypertarget{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}{std\-::string {\bfseries soupconner} (std\-::string arme, std\-::string perso, std\-::string lieu)}\label{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}
-
-\item 
+void \hyperlink{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}{accuser} (std\-::string arme, std\-::string perso, std\-::string lieu)
+\begin{DoxyCompactList}\small\item\em \-Methode qui va permettre au joueur courant d'accuser. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}{soupconner} (std\-::string arme, std\-::string perso, std\-::string lieu)
+\begin{DoxyCompactList}\small\item\em \-Methode qui va permettre au joueur courant de soupconner. \end{DoxyCompactList}\item 
 bool \hyperlink{classDonneesJeu_a7d47cf2b384712fd2aca3494fc5e23b8}{get\-Partie\-Fini} ()
 \begin{DoxyCompactList}\small\item\em \-Methode qui retourne si la partie est finie. \end{DoxyCompactList}\item 
 void \hyperlink{classDonneesJeu_a97ab9601b004cb1ffd4365db0f90e479}{set\-Partie\-Fini} (bool parti)
@@ -37,10 +44,47 @@ void \hyperlink{classDonneesJeu_a2b7a86ddb0732fe79afa5f4ad71af9d2}{set\-Gagnant}
 void \hyperlink{classDonneesJeu_a1da6b561395378b12e3331cb61d1a6ad}{set\-Nb\-Joueur} (int nb)
 \begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le nombre de joueur. \end{DoxyCompactList}\item 
 int \hyperlink{classDonneesJeu_a7b698e7aea2dd33cf744b5532c59eb1f}{get\-Nb\-Joueur} ()
-\begin{DoxyCompactList}\small\item\em \-Methode qui met a jour le joueur gagnant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-Methode qui get le nombre de joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classDonneesJeu}{\-Donnees\-Jeu} est la classe représentant les donnees avant le debut du jeu. 
+
+\-Une \hyperlink{classDonneesJeu}{\-Donnees\-Jeu} est caractérisé par les informations suivantes \-: des donnees un pointeur vers joueur gagnant nul au depart un tableau de carte$\ast$ mysteres un booleen disant si la partie est fini un joueur\-Courant un nombre de joueur
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
 
 
 \subsection{\-Documentation des fonctions membres}
+\hypertarget{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!accuser@{accuser}}
+\index{accuser@{accuser}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{accuser}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::accuser} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{arme, }
+\item[{std\-::string}]{perso, }
+\item[{std\-::string}]{lieu}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a0329e6f5906aca754330ee17d7b4ab56}
+
+
+\-Methode qui va permettre au joueur courant d'accuser. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em arme} & l'arme du crime \\
+\hline
+{\em lieu} & la piece ou est le joueur \\
+\hline
+{\em perso} & le criminelle \\
+\hline
+\end{DoxyParams}
 \hypertarget{classDonneesJeu_ae443a7d34f88fe863914746b6e1fefd9}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!changer\-Joueur@{changer\-Joueur}}
 \index{changer\-Joueur@{changer\-Joueur}!DonneesJeu@{\-Donnees\-Jeu}}
 \subsubsection[{changer\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Donnees\-Jeu\-::changer\-Joueur} (
@@ -122,7 +166,7 @@ joueur\-Courant
 )}}\label{classDonneesJeu_a7b698e7aea2dd33cf744b5532c59eb1f}
 
 
-\-Methode qui met a jour le joueur gagnant. 
+\-Methode qui get le nombre de joueur. 
 
 
 \begin{DoxyParams}{\-Paramètres}
@@ -205,6 +249,31 @@ rand un random entre 2 et 12
 {\em parti} & qui est un boolean true si fini et false si non fini \\
 \hline
 \end{DoxyParams}
+\hypertarget{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}{\index{\-Donnees\-Jeu@{\-Donnees\-Jeu}!soupconner@{soupconner}}
+\index{soupconner@{soupconner}!DonneesJeu@{\-Donnees\-Jeu}}
+\subsubsection[{soupconner}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Donnees\-Jeu\-::soupconner} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{arme, }
+\item[{std\-::string}]{perso, }
+\item[{std\-::string}]{lieu}
+\end{DoxyParamCaption}
+)}}\label{classDonneesJeu_a5db87f4ec8d3d5b790ec58b6b17931e1}
+
+
+\-Methode qui va permettre au joueur courant de soupconner. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em arme} & l'arme du crime \\
+\hline
+{\em lieu} & la piece ou est le joueur \\
+\hline
+{\em perso} & le criminelle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+cheminres le chemin contrant le soupcon 
+\end{DoxyReturn}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

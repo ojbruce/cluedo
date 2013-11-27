@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe EcranFinal</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="EcranFinal" --><!-- doxytag: inherits="Ecran" --><div class="dynheader">
+<!-- doxytag: class="EcranFinal" --><!-- doxytag: inherits="Ecran" -->
+<p><a class="el" href="classEcranFinal.html" title="EcranFinal est la classe représentant l&#39;ecran qui s&#39;affiche lorsqu&#39;un joueur à gagner.">EcranFinal</a> est la classe représentant l'ecran qui s'affiche lorsqu'un joueur à gagner.  
+ <a href="classEcranFinal.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EcranFinal_8h_source.html">EcranFinal.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de EcranFinal:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classEcranFinal.png" usemap="#EcranFinal_map" alt=""/>
   <map id="EcranFinal_map" name="EcranFinal_map">
-<area href="classEcran.html" alt="Ecran" shape="rect" coords="0,0,74,24"/>
+<area href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans." alt="Ecran" shape="rect" coords="0,0,74,24"/>
 </map>
  </div></div>
 
@@ -100,13 +105,73 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceb5934bfd3afcf020a6628e00538a56"></a><!-- doxytag: member="EcranFinal::EcranFinal" ref="aceb5934bfd3afcf020a6628e00538a56" args="(ManagerEcran *manager, DonneesJeu *d)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranFinal.html#aceb5934bfd3afcf020a6628e00538a56">EcranFinal</a> (<a class="el" href="classManagerEcran.html">ManagerEcran</a> *manager, <a class="el" href="classDonneesJeu.html">DonneesJeu</a> *d)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1643c9d5712d527559d05ba548e7e6fc"></a><!-- doxytag: member="EcranFinal::afficher" ref="a1643c9d5712d527559d05ba548e7e6fc" args="(sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranFinal.html#a1643c9d5712d527559d05ba548e7e6fc">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35714c3da483c95442106381041b53a6"></a><!-- doxytag: member="EcranFinal::update" ref="a35714c3da483c95442106381041b53a6" args="(sf::Event event)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranFinal.html#a35714c3da483c95442106381041b53a6">update</a> (sf::Event event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranFinal.html#a1643c9d5712d527559d05ba548e7e6fc">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction lance l'affichage de la fênetre.  <a href="#a1643c9d5712d527559d05ba548e7e6fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranFinal.html#a35714c3da483c95442106381041b53a6">update</a> (sf::Event event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet le changement d'ecran en fonction des evenements.  <a href="#a35714c3da483c95442106381041b53a6"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classEcranFinal.html" title="EcranFinal est la classe représentant l&#39;ecran qui s&#39;affiche lorsqu&#39;un joueur à gagner.">EcranFinal</a> est la classe représentant l'ecran qui s'affiche lorsqu'un joueur à gagner. </p>
+<p>Il est caractérisé par les informations suivantes : deux boutons une image un manager permettant de changer d'ecran</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a1643c9d5712d527559d05ba548e7e6fc"></a><!-- doxytag: member="EcranFinal::afficher" ref="a1643c9d5712d527559d05ba548e7e6fc" args="(sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranFinal.html#a1643c9d5712d527559d05ba548e7e6fc">EcranFinal::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction lance l'affichage de la fênetre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35714c3da483c95442106381041b53a6"></a><!-- doxytag: member="EcranFinal::update" ref="a35714c3da483c95442106381041b53a6" args="(sf::Event event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranFinal.html#a35714c3da483c95442106381041b53a6">EcranFinal::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction permet le changement d'ecran en fonction des evenements. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>un evenement envoyé par les classes superieurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="EcranFinal_8h_source.html">EcranFinal.h</a></li>
 <li>EcranFinal.cpp</li>
@@ -129,7 +194,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:27 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:45 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

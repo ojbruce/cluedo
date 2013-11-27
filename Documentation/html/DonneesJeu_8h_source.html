@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -87,53 +87,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00007"></a>00007 <span class="preprocessor">#include &quot;Donnees.h&quot;</span>
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 
-<a name="l00010"></a><a class="code" href="classDonneesJeu.html">00010</a> <span class="keyword">class </span><a class="code" href="classDonneesJeu.html">DonneesJeu</a>
-<a name="l00011"></a>00011 {
-<a name="l00012"></a>00012     <span class="keyword">public</span>:
-<a name="l00013"></a>00013         <a class="code" href="classDonneesJeu.html">DonneesJeu</a>(<a class="code" href="classDonnees.html">Donnees</a>* d);
-<a name="l00014"></a>00014         <span class="keyword">virtual</span> ~<a class="code" href="classDonneesJeu.html">DonneesJeu</a>();
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a39169eecf0e197ccf5677c7a1602a172" title="Methoque qui prend un nombre aleatoire entre 2 et 12.">lancerDe</a>();     <span class="comment">//lancer le De</span>
-<a name="l00017"></a>00017         <span class="keywordtype">void</span> preparerPartie(<a class="code" href="classPlateau.html">Plateau</a>* plateau);
-<a name="l00018"></a>00018         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#ae443a7d34f88fe863914746b6e1fefd9" title="Methode qui met a jour le joueur Courant.">changerJoueur</a>();
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021         <span class="keywordtype">void</span> accuser(std::string arme, std::string perso,std::string lieu);
-<a name="l00022"></a>00022         std::string soupconner(std::string arme, std::string perso,std::string lieu);
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024         <span class="comment">//Getter- Setter</span>
-<a name="l00025"></a>00025         <span class="keywordtype">bool</span> <a class="code" href="classDonneesJeu.html#a7d47cf2b384712fd2aca3494fc5e23b8" title="Methode qui retourne si la partie est finie.">getPartieFini</a>();
-<a name="l00026"></a>00026         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a97ab9601b004cb1ffd4365db0f90e479" title="Methode qui met a jour l&#39;etat de la partie.">setPartieFini</a>(<span class="keywordtype">bool</span> parti);
-<a name="l00027"></a>00027         <a class="code" href="classJoueur.html">Joueur</a>* <a class="code" href="classDonneesJeu.html#a5c71130d171fbd79f39f90d1ab96d82c" title="Methode qui retourne le joueur courant.">getJoueurCourant</a>();
-<a name="l00028"></a>00028         <a class="code" href="classJoueur.html">Joueur</a>* <a class="code" href="classDonneesJeu.html#a94ac64e9b0a6ec3e10a2589bb90830e4" title="Methode qui retourne le joueur à la position.">getJoueurAt</a>(<span class="keywordtype">int</span> i);
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a9d66541ae27e731bcd4fca1a82b8c94f" title="Methode qui retourne le de.">getDe</a>();
+<a name="l00026"></a><a class="code" href="classDonneesJeu.html">00026</a> <span class="keyword">class </span><a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>
+<a name="l00027"></a>00027 {
+<a name="l00028"></a>00028     <span class="keyword">public</span>:
+<a name="l00029"></a>00029         <a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>(<a class="code" href="classDonnees.html" title="Donnees est la classe représentant les donnees avant le debut du jeu.">Donnees</a>* d);
+<a name="l00030"></a>00030         <span class="keyword">virtual</span> ~<a class="code" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a>();
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032         <a class="code" href="classJoueur.html">Joueur</a>* <a class="code" href="classDonneesJeu.html#a1f9959f0eae2138deb88422671c6a1f2" title="Methode qui retourne le joueur gagnant.">getGagnant</a>();
-<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a2b7a86ddb0732fe79afa5f4ad71af9d2" title="Methode qui met a jour le joueur gagnant.">setGagnant</a>(<a class="code" href="classJoueur.html">Joueur</a>* j);
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a1da6b561395378b12e3331cb61d1a6ad" title="Methode qui met a jour le nombre de joueur.">setNbJoueur</a>(<span class="keywordtype">int</span> nb);
-<a name="l00036"></a>00036         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a7b698e7aea2dd33cf744b5532c59eb1f" title="Methode qui met a jour le joueur gagnant.">getNbJoueur</a>();
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039     <span class="keyword">private</span>:
-<a name="l00040"></a>00040         <span class="comment">//Attributs</span>
-<a name="l00041"></a>00041         <a class="code" href="classDonnees.html">Donnees</a>* donnees;                <span class="comment">//la classe contenant les donnees</span>
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043         <span class="keywordtype">bool</span> partieFini_;               <span class="comment">//Determine si la partie est finie</span>
-<a name="l00044"></a>00044         <a class="code" href="classJoueur.html">Joueur</a>* gagnant;                <span class="comment">//Le joueur gagnant</span>
+<a name="l00032"></a>00032         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a39169eecf0e197ccf5677c7a1602a172" title="Methoque qui prend un nombre aleatoire entre 2 et 12.">lancerDe</a>();                         <span class="comment">//Methode qui retourne le de</span>
+<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#aa8f22aa69faeb3e54d76a5aaa3d4444f" title="Methode qui va preparer la partie.">preparerPartie</a>(<a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>* plateau);  <span class="comment">//Methode qui va preparer la partie</span>
+<a name="l00034"></a>00034         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#ae443a7d34f88fe863914746b6e1fefd9" title="Methode qui met a jour le joueur Courant.">changerJoueur</a>();                   <span class="comment">//Methode qui met a jour le joueur Courant</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a0329e6f5906aca754330ee17d7b4ab56" title="Methode qui va permettre au joueur courant d&#39;accuser.">accuser</a>(std::string arme, std::string perso,std::string lieu);
+<a name="l00038"></a>00038         std::string <a class="code" href="classDonneesJeu.html#a5db87f4ec8d3d5b790ec58b6b17931e1" title="Methode qui va permettre au joueur courant de soupconner.">soupconner</a>(std::string arme, std::string perso,std::string lieu);
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         <span class="comment">//Getter- Setter</span>
+<a name="l00041"></a>00041         <span class="keywordtype">bool</span> <a class="code" href="classDonneesJeu.html#a7d47cf2b384712fd2aca3494fc5e23b8" title="Methode qui retourne si la partie est finie.">getPartieFini</a>();           <span class="comment">//Methode qui retourne si la partie est finie</span>
+<a name="l00042"></a>00042         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a97ab9601b004cb1ffd4365db0f90e479" title="Methode qui met a jour l&#39;etat de la partie.">setPartieFini</a>(<span class="keywordtype">bool</span> parti); <span class="comment">//Methode qui met a jour l&#39;etat de la partie</span>
+<a name="l00043"></a>00043         <a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* <a class="code" href="classDonneesJeu.html#a5c71130d171fbd79f39f90d1ab96d82c" title="Methode qui retourne le joueur courant.">getJoueurCourant</a>();     <span class="comment">//Methode qui retourne le joueur courant</span>
+<a name="l00044"></a>00044         <a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* <a class="code" href="classDonneesJeu.html#a94ac64e9b0a6ec3e10a2589bb90830e4" title="Methode qui retourne le joueur à la position.">getJoueurAt</a>(<span class="keywordtype">int</span> i);     <span class="comment">//Methode qui retourne le joueur à la position</span>
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> joueurCourant;     <span class="comment">//Le joueur courant</span>
-<a name="l00047"></a>00047         <span class="keywordtype">int</span> de;                         <span class="comment">// ?</span>
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbJoueur_;         <span class="comment">//Le nombre de joueur</span>
-<a name="l00050"></a>00050         vector&lt;Carte*&gt; tabMystere_;     <span class="comment">//Les 3 cartes désignant le lieu, le crimier, l&#39;arme</span>
-<a name="l00051"></a>00051         vector &lt;Joueur&gt; tabJoueur_;     <span class="comment">//Le tableau contenant les joueurs</span>
-<a name="l00052"></a>00052 
+<a name="l00046"></a>00046         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a9d66541ae27e731bcd4fca1a82b8c94f" title="Methode qui retourne le de.">getDe</a>();
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048         <a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* <a class="code" href="classDonneesJeu.html#a1f9959f0eae2138deb88422671c6a1f2" title="Methode qui retourne le joueur gagnant.">getGagnant</a>();           <span class="comment">//Methode qui retourne le joueur gagnant</span>
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a2b7a86ddb0732fe79afa5f4ad71af9d2" title="Methode qui met a jour le joueur gagnant.">setGagnant</a>(<a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* j);     <span class="comment">//Methode qui met a jour le joueur gagnant</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051         <span class="keywordtype">void</span> <a class="code" href="classDonneesJeu.html#a1da6b561395378b12e3331cb61d1a6ad" title="Methode qui met a jour le nombre de joueur.">setNbJoueur</a>(<span class="keywordtype">int</span> nb);       <span class="comment">//Methode qui met a jour le nombre de joueur</span>
+<a name="l00052"></a>00052         <span class="keywordtype">int</span> <a class="code" href="classDonneesJeu.html#a7b698e7aea2dd33cf744b5532c59eb1f" title="Methode qui get le nombre de joueur.">getNbJoueur</a>();              <span class="comment">//Methode qui get le nombre de joueur</span>
 <a name="l00053"></a>00053 
-<a name="l00054"></a>00054 };
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="preprocessor">#endif // DONNEESJEU_H</span>
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055     <span class="keyword">private</span>:
+<a name="l00056"></a>00056         <span class="comment">//Attributs</span>
+<a name="l00057"></a>00057         <a class="code" href="classDonnees.html" title="Donnees est la classe représentant les donnees avant le debut du jeu.">Donnees</a>* donnees;                <span class="comment">//la classe contenant les donnees</span>
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059         <span class="keywordtype">bool</span> partieFini_;               <span class="comment">//Determine si la partie est finie</span>
+<a name="l00060"></a>00060         <a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* gagnant;                <span class="comment">//Le joueur gagnant</span>
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> joueurCourant;     <span class="comment">//Le joueur courant</span>
+<a name="l00063"></a>00063         <span class="keywordtype">int</span> de;                         <span class="comment">// ?</span>
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbJoueur_;         <span class="comment">//Le nombre de joueur</span>
+<a name="l00066"></a>00066         vector&lt;Carte*&gt; tabMystere_;     <span class="comment">//Les 3 cartes désignant le lieu, le crimier, l&#39;arme</span>
+<a name="l00067"></a>00067         vector &lt;Joueur&gt; tabJoueur_;     <span class="comment">//Le tableau contenant les joueurs</span>
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069 
+<a name="l00070"></a>00070 };
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072 <span class="preprocessor">#endif // DONNEESJEU_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:20 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:41 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

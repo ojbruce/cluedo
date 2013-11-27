@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -91,48 +91,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00011"></a>00011 <span class="preprocessor">#include &quot;Joueur.h&quot;</span>
 <a name="l00012"></a>00012 <span class="preprocessor">#include &quot;Donnees.h&quot;</span>
 <a name="l00013"></a>00013 
-<a name="l00014"></a><a class="code" href="classPlateau.html">00014</a> <span class="keyword">class </span><a class="code" href="classPlateau.html">Plateau</a>{
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016         <span class="keyword">public</span>:
-<a name="l00017"></a>00017                 <a class="code" href="classPlateau.html">Plateau</a>();              <span class="comment">//Constructeur par defaut</span>
-<a name="l00018"></a>00018                 <span class="keyword">virtual</span> <a class="code" href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b" title="Destructeur.">~Plateau</a>(); <span class="comment">//Destructeur du plateau</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>();                                <span class="comment">/*affichage pour eventuel erreur*/</span>
-<a name="l00021"></a>00021                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>(sf::RenderWindow &amp;window);                <span class="comment">//méthode qui va afficher le plateau</span>
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024                 <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a455da594b748a1bbd616537cfb6c5cd5" title="Methode qui renvoie si la position de la souris est sur le plateau.">positionValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);              <span class="comment">//Retourne si la position actuelle de la souris est bien sur le plateau</span>
-<a name="l00025"></a>00025         <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a2feeabd9398101b680bc647fb79b5271" title="Pour Case::trouverChemin verifie si on ne depasse pas les bords du tableau.">caseValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                  <span class="comment">// Renvoie si la case est valide dans le plateau</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027                 <a class="code" href="classCase.html">Case</a>* <a class="code" href="classPlateau.html#ae53f9bb42a1689cb628e7075da5fdb47" title="Renvoi la case du plateau à la position correspondante niveau graphique.">trouverCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                <span class="comment">// trouve la case à la position x et y en fonction de l&#39;ecran</span>
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029         <span class="comment">//accesseur</span>
-<a name="l00030"></a>00030         <a class="code" href="classCase.html">Case</a>* <a class="code" href="classPlateau.html#a009b129c0afc68b42ac80a7b0db92d52" title="Retourne un pointeur vers une case du tableau.">getCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);
+<a name="l00026"></a><a class="code" href="classPlateau.html">00026</a> <span class="keyword">class </span><a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>{
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028         <span class="keyword">public</span>:
+<a name="l00029"></a>00029                 <a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>();              <span class="comment">//Constructeur par defaut</span>
+<a name="l00030"></a>00030                 <span class="keyword">virtual</span> <a class="code" href="classPlateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b" title="Destructeur.">~Plateau</a>(); <span class="comment">//Destructeur du plateau</span>
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033     <span class="keyword">private</span>:
-<a name="l00034"></a>00034         <span class="comment">//Initier les cases</span>
-<a name="l00035"></a>00035         <span class="keywordtype">void</span> initCases();
-<a name="l00036"></a>00036         <span class="keywordtype">void</span> creerMur(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038                 <span class="comment">//Constantes du plateau</span>
-<a name="l00039"></a>00039                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> largPlateau_ = 24;     <span class="comment">//largeur de plateau</span>
-<a name="l00040"></a>00040                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> hautPlateau_ = 25;             <span class="comment">//hauteur de plateau</span>
-<a name="l00041"></a>00041                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> tailleCase_ =20;       <span class="comment">//taille de case</span>
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartX_=20;
-<a name="l00044"></a>00044                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartY_=20;
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046                 <span class="comment">//Image du plateau</span>
-<a name="l00047"></a>00047                 sf::Texture im;
-<a name="l00048"></a>00048                 sf::Sprite plateau;
+<a name="l00032"></a>00032                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>();                                <span class="comment">/*affichage pour eventuel erreur*/</span>
+<a name="l00033"></a>00033                 <span class="keywordtype">void</span> <a class="code" href="classPlateau.html#a122c12319a8843a493fa06fe4f6e55d4" title="Methode qui affiche la structure du plateau Affichage d&#39;erreur.">afficher</a>(sf::RenderWindow &amp;window);                <span class="comment">//méthode qui va afficher le plateau</span>
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036                 <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a455da594b748a1bbd616537cfb6c5cd5" title="Methode qui renvoie si la position de la souris est sur le plateau.">positionValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);              <span class="comment">//Retourne si la position actuelle de la souris est bien sur le plateau</span>
+<a name="l00037"></a>00037         <span class="keywordtype">bool</span> <a class="code" href="classPlateau.html#a2feeabd9398101b680bc647fb79b5271" title="Pour Case::trouverChemin verifie si on ne depasse pas les bords du tableau.">caseValide</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                  <span class="comment">// Renvoie si la case est valide dans le plateau</span>
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039                 <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* <a class="code" href="classPlateau.html#ae53f9bb42a1689cb628e7075da5fdb47" title="Renvoi la case du plateau à la position correspondante niveau graphique.">trouverCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);                <span class="comment">// trouve la case à la position x et y en fonction de l&#39;ecran</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041         <span class="comment">//accesseur</span>
+<a name="l00042"></a>00042         <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* <a class="code" href="classPlateau.html#a009b129c0afc68b42ac80a7b0db92d52" title="Retourne un pointeur vers une case du tableau.">getCase</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045     <span class="keyword">private</span>:
+<a name="l00046"></a>00046         <span class="comment">//Initier les cases</span>
+<a name="l00047"></a>00047         <span class="keywordtype">void</span> initCases();
+<a name="l00048"></a>00048         <span class="keywordtype">void</span> creerMur(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);
 <a name="l00049"></a>00049 
-<a name="l00050"></a>00050                 <span class="comment">//Tableau a deux dimensions de case</span>
-<a name="l00051"></a>00051                 <a class="code" href="classCase.html">Case</a>* tab[hautPlateau_][largPlateau_];
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 };
+<a name="l00050"></a>00050                 <span class="comment">//Constantes du plateau</span>
+<a name="l00051"></a>00051                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> largPlateau_ = 24;     <span class="comment">//largeur de plateau</span>
+<a name="l00052"></a>00052                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> hautPlateau_ = 25;             <span class="comment">//hauteur de plateau</span>
+<a name="l00053"></a>00053                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> tailleCase_ =20;       <span class="comment">//taille de case</span>
 <a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="preprocessor">#endif // PLATEAU_H</span>
+<a name="l00055"></a>00055                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartX_=20;
+<a name="l00056"></a>00056                 <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> ecartY_=20;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058                 <span class="comment">//Image du plateau</span>
+<a name="l00059"></a>00059                 sf::Texture im;
+<a name="l00060"></a>00060                 sf::Sprite plateau;
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062                 <span class="comment">//Tableau a deux dimensions de case</span>
+<a name="l00063"></a>00063                 <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* tab[hautPlateau_][largPlateau_];
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 };
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="preprocessor">#endif // PLATEAU_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -151,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

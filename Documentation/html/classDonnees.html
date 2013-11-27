@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -84,24 +84,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="Donnees" -->
+<p><a class="el" href="classDonnees.html" title="Donnees est la classe représentant les donnees avant le debut du jeu.">Donnees</a> est la classe représentant les donnees avant le debut du jeu.  
+ <a href="classDonnees.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Donnees_8h_source.html">Donnees.h</a>&gt;</code></p>
+
 <p><a href="classDonnees-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af238721bd5caba48da9d7531f1156f18"></a><!-- doxytag: member="Donnees::getCarte" ref="af238721bd5caba48da9d7531f1156f18" args="(int indice)" -->
-<a class="el" href="classCarte.html">Carte</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getCarte</b> (int indice)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a452ba40b985045dbe8d5586514464629"></a><!-- doxytag: member="Donnees::trouverIndiceCarte" ref="a452ba40b985045dbe8d5586514464629" args="(std::string carte)" -->
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>trouverIndiceCarte</b> (std::string carte)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32538936d4181628ec1cc7f6533436d0"></a><!-- doxytag: member="Donnees::~Donnees" ref="a32538936d4181628ec1cc7f6533436d0" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#a32538936d4181628ec1cc7f6533436d0">~Donnees</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#a452ba40b985045dbe8d5586514464629">trouverIndiceCarte</a> (std::string carte)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va trouver une carte dans le tableau et renvoyer son indice.  <a href="#a452ba40b985045dbe8d5586514464629"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classCarte.html">Carte</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#a574a33fb002aa10927bd97c39b84839b">initCarteMystere</a> (vector&lt; int &gt; &amp;vec)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne les cartes mysteres.  <a href="#a574a33fb002aa10927bd97c39b84839b"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui retourne les cartes mysteres.  <a href="#a574a33fb002aa10927bd97c39b84839b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classJoueur.html">Joueur</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#a85ad060f19a3f27d07699495b8be4fe0">initJoueur</a> (int n)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Va renvoyer un n nombre de joueur avec des persos aléatoires.  <a href="#a85ad060f19a3f27d07699495b8be4fe0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f7c9ce96432a2cb384d4f1fb22c59f7"></a><!-- doxytag: member="Donnees::positionnerPerso" ref="a1f7c9ce96432a2cb384d4f1fb22c59f7" args="(Plateau *p)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>positionnerPerso</b> (<a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#a1f7c9ce96432a2cb384d4f1fb22c59f7">positionnerPerso</a> (<a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methodes qui va positionner les personnages.  <a href="#a1f7c9ce96432a2cb384d4f1fb22c59f7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classCarte.html">Carte</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonnees.html#ae61912de3804ec0a33be8a3168a41b72">distribuerCarte</a> (vector&lt; <a class="el" href="classJoueur.html">Joueur</a> &gt; &amp;lesJoueurs)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methodes qui va distribuer les cartes aux joueurs.  <a href="#ae61912de3804ec0a33be8a3168a41b72"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methodes qui va distribuer les cartes aux joueurs et initialiser la checklist du joueur.  <a href="#ae61912de3804ec0a33be8a3168a41b72"></a><br/></td></tr>
 </table>
-<hr/><h2>Documentation des fonctions membres</h2>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classDonnees.html" title="Donnees est la classe représentant les donnees avant le debut du jeu.">Donnees</a> est la classe représentant les donnees avant le debut du jeu. </p>
+<p>Une <a class="el" href="classDonnees.html" title="Donnees est la classe représentant les donnees avant le debut du jeu.">Donnees</a> est caractérisé par les informations suivantes : un tableau de cartes distribuer un tableau de personnage preexistant</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
 <a class="anchor" id="ae61912de3804ec0a33be8a3168a41b72"></a><!-- doxytag: member="Donnees::distribuerCarte" ref="ae61912de3804ec0a33be8a3168a41b72" args="(vector&lt; Joueur &gt; &amp;lesJoueurs)" -->
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +130,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>positionnerPerso</b> 
 </div>
 <div class="memdoc">
 
-<p>Methodes qui va distribuer les cartes aux joueurs. </p>
+<p>Methodes qui va distribuer les cartes aux joueurs et initialiser la checklist du joueur. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>tableau de joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>un vecteur représentant les cartes mysteres </dd></dl>
 
 </div>
 </div>
@@ -136,7 +156,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>positionnerPerso</b> 
 </div>
 <div class="memdoc">
 
-<p>Retourne les cartes mysteres. </p>
+<p>Methode qui retourne les cartes mysteres. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temoin</td><td>un vecteur d'int qui va être décrémentée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>res un vecteur de carte prenant les cartes mysteres </dd></dl>
 
 </div>
 </div>
@@ -156,6 +183,58 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>positionnerPerso</b> 
 <div class="memdoc">
 
 <p>Va renvoyer un n nombre de joueur avec des persos aléatoires. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>le nombre de joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>le tableau de joueurs </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1f7c9ce96432a2cb384d4f1fb22c59f7"></a><!-- doxytag: member="Donnees::positionnerPerso" ref="a1f7c9ce96432a2cb384d4f1fb22c59f7" args="(Plateau *p)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDonnees.html#a1f7c9ce96432a2cb384d4f1fb22c59f7">Donnees::positionnerPerso</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPlateau.html">Plateau</a> *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methodes qui va positionner les personnages. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">le</td><td>plateau pour positionner les personnages dessus </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a452ba40b985045dbe8d5586514464629"></a><!-- doxytag: member="Donnees::trouverIndiceCarte" ref="a452ba40b985045dbe8d5586514464629" args="(std::string carte)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classDonnees.html#a452ba40b985045dbe8d5586514464629">Donnees::trouverIndiceCarte</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>carte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va trouver une carte dans le tableau et renvoyer son indice. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>res l'indice de la carte </dd></dl>
 
 </div>
 </div>
@@ -181,7 +260,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>positionnerPerso</b> 
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:25 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:43 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

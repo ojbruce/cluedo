@@ -62,8 +62,6 @@
 		<Unit filename="CartePiece.h" />
 		<Unit filename="Case.cpp" />
 		<Unit filename="Case.h" />
-		<Unit filename="CaseAbstraite.cpp" />
-		<Unit filename="CaseAbstraite.h" />
 		<Unit filename="Donnees.cpp" />
 		<Unit filename="Donnees.h" />
 		<Unit filename="DonneesJeu.cpp" />

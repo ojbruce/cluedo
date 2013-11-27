@@ -1,6 +1,15 @@
 \hypertarget{classCase}{\section{\-Référence de la classe \-Case}
 \label{classCase}\index{\-Case@{\-Case}}
 }
+
+
+\hyperlink{classCase}{\-Case} est la classe représentant les cases du plateau.  
+
+
+
+
+{\ttfamily \#include $<$\-Case.\-h$>$}
+
 \-Graphe d'héritage de \-Case\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,8 +22,7 @@
 \hypertarget{classCase_a14237e17aab1829965adab76b747db6c}{\hyperlink{classCase_a14237e17aab1829965adab76b747db6c}{\-Case} ()}\label{classCase_a14237e17aab1829965adab76b747db6c}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur par defaut. \end{DoxyCompactList}\item 
-\hypertarget{classCase_ad61be010b8d3cc841706c989c08aaaac}{\hyperlink{classCase_ad61be010b8d3cc841706c989c08aaaac}{\-Case} (int a, int b)}\label{classCase_ad61be010b8d3cc841706c989c08aaaac}
-
+\hyperlink{classCase_ad61be010b8d3cc841706c989c08aaaac}{\-Case} (int a, int b)
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
 bool \hyperlink{classCase_aba81e8660bf4009cc0ddee8e132bce49}{operator==} (\hyperlink{classCase}{\-Case} const \&c2)
 \begin{DoxyCompactList}\small\item\em \-Operateur d'egalite. \end{DoxyCompactList}\item 
@@ -28,17 +36,14 @@ virtual std\-::string \hyperlink{classCase_ad09ca1072f39bcacf06459fc03f026ae}{to
 \begin{DoxyCompactList}\small\item\em \-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classCase_affe73b57a2c81e2f09dc5db45893db3c}{trouver\-Chemin} (int de, std\-::vector$<$ \hyperlink{classCase}{\-Case} $\ast$ $>$ \&res, \hyperlink{classPlateau}{\-Plateau} $\ast$p)
 \begin{DoxyCompactList}\small\item\em \-Methode qui trouve tous les chemins possibles. \end{DoxyCompactList}\item 
-\hypertarget{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{virtual std\-::string \hyperlink{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{action} ()}\label{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}
-
+virtual std\-::string \hyperlink{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{action} ()
 \begin{DoxyCompactList}\small\item\em \-Methode qui va réaliser l'action selon la case. \end{DoxyCompactList}\item 
-\hypertarget{classCase_ae6ce55820f949e5fae8dbeb62d298291}{std\-::pair$<$ int, int $>$ {\bfseries point\-H\-G} (int taille\-Case, int ecart\-X, int ecart\-Y)}\label{classCase_ae6ce55820f949e5fae8dbeb62d298291}
-
-\item 
-\hypertarget{classCase_a48b794ecbea4155843ce09f53e280237}{std\-::pair$<$ int, int $>$ {\bfseries milieu} (int taille\-Case, std\-::pair$<$ int, int $>$ a)}\label{classCase_a48b794ecbea4155843ce09f53e280237}
-
-\item 
+std\-::pair$<$ int, int $>$ \hyperlink{classCase_ae6ce55820f949e5fae8dbeb62d298291}{point\-H\-G} (int taille\-Case, int ecart\-X, int ecart\-Y)
+\begin{DoxyCompactList}\small\item\em \-Renvoie le point en haut à gauche de la case en fonction de l'affichage. \end{DoxyCompactList}\item 
+std\-::pair$<$ int, int $>$ \hyperlink{classCase_a48b794ecbea4155843ce09f53e280237}{milieu} (int taille\-Case, std\-::pair$<$ int, int $>$ a)
+\begin{DoxyCompactList}\small\item\em \-Renvoie le point permettant de mettre le pion au centre de la case. \end{DoxyCompactList}\item 
 void \hyperlink{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}{colorier} (sf\-::\-Render\-Window \&window)
-\begin{DoxyCompactList}\small\item\em \-Methode qui affiche la case. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \-Methode qui va colorier en bleu la case. \end{DoxyCompactList}\item 
 virtual int \hyperlink{classCase_ab5580b919199dd2ec379672d3390bbff}{get\-X} ()
 \begin{DoxyCompactList}\small\item\em \-Assesseur de x\-\_\-. \end{DoxyCompactList}\item 
 virtual int \hyperlink{classCase_a824f612c5a660a1d55ac06931747c46d}{get\-Y} ()
@@ -71,7 +76,64 @@ virtual int \hyperlink{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}{get\-Est\-Vi
 \end{DoxyCompactItemize}
 
 
+\subsection{\-Description détaillée}
+\hyperlink{classCase}{\-Case} est la classe représentant les cases du plateau. 
+
+\-Une \hyperlink{classCase}{\-Case} est caractérisé par les informations suivantes \-: un x un y un bool estvide
+
+\-Herite de \hyperlink{classCase}{\-Case}.
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des constructeurs et destructeur}
+\hypertarget{classCase_ad61be010b8d3cc841706c989c08aaaac}{\index{\-Case@{\-Case}!\-Case@{\-Case}}
+\index{\-Case@{\-Case}!Case@{\-Case}}
+\subsubsection[{\-Case}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Case\-::\-Case} (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)}}\label{classCase_ad61be010b8d3cc841706c989c08aaaac}
+
+
+\-Constructeur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em a} & ordonnee \\
+\hline
+{\em b} & abscisse \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{\-Documentation des fonctions membres}
+\hypertarget{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{\index{\-Case@{\-Case}!action@{action}}
+\index{action@{action}!Case@{\-Case}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Case\-::action} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}
+
+
+\-Methode qui va réaliser l'action selon la case. 
+
+\begin{DoxyReturn}{\-Renvoie}
+une string vide ici 
+\end{DoxyReturn}
+
+
+\-Réimplémentée dans \hyperlink{classPorte_a71f6ed526931178c012e8653e609e0e7}{\-Porte}, \hyperlink{classPiece_ae2bbb51808f5d87be1761df503571e0d}{\-Piece}, et \hyperlink{classMur_a0fda0e8825c34a5f06d651e263bff058}{\-Mur}.
+
 \hypertarget{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}{\index{\-Case@{\-Case}!colorier@{colorier}}
 \index{colorier@{colorier}!Case@{\-Case}}
 \subsubsection[{colorier}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Case\-::colorier} (
@@ -81,8 +143,13 @@ virtual int \hyperlink{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}{get\-Est\-Vi
 )}}\label{classCase_ad7cbf9289ac69b4e1c1f3fc20a6fa540}
 
 
-\-Methode qui affiche la case. 
+\-Methode qui va colorier en bleu la case. 
 
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre qui va etre touchée \\
+\hline
+\end{DoxyParams}
 \hypertarget{classCase_a80ae0e9d1a9c575bee4c8a7b984deb59}{\index{\-Case@{\-Case}!get\-Est\-Vide@{get\-Est\-Vide}}
 \index{get\-Est\-Vide@{get\-Est\-Vide}!Case@{\-Case}}
 \subsubsection[{get\-Est\-Vide}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Case\-::get\-Est\-Vide} (
@@ -125,6 +192,21 @@ x\-\_\- l'absisse de la case
 \begin{DoxyReturn}{\-Renvoie}
 y\-\_\- l'ordonnee de la case 
 \end{DoxyReturn}
+\hypertarget{classCase_a48b794ecbea4155843ce09f53e280237}{\index{\-Case@{\-Case}!milieu@{milieu}}
+\index{milieu@{milieu}!Case@{\-Case}}
+\subsubsection[{milieu}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ int, int $>$ {\bf \-Case\-::milieu} (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\-Case, }
+\item[{std\-::pair$<$ int, int $>$}]{a}
+\end{DoxyParamCaption}
+)}}\label{classCase_a48b794ecbea4155843ce09f53e280237}
+
+
+\-Renvoie le point permettant de mettre le pion au centre de la case. 
+
+\begin{DoxyReturn}{\-Renvoie}
+une pair d'int représentant l'endroit pour bien placer le pion 
+\end{DoxyReturn}
 \hypertarget{classCase_aba81e8660bf4009cc0ddee8e132bce49}{\index{\-Case@{\-Case}!operator==@{operator==}}
 \index{operator==@{operator==}!Case@{\-Case}}
 \subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool \-Case\-::operator== (
@@ -141,6 +223,22 @@ y\-\_\- l'ordonnee de la case
 {\em c2} & la seconde case \\
 \hline
 \end{DoxyParams}
+\hypertarget{classCase_ae6ce55820f949e5fae8dbeb62d298291}{\index{\-Case@{\-Case}!point\-H\-G@{point\-H\-G}}
+\index{point\-H\-G@{point\-H\-G}!Case@{\-Case}}
+\subsubsection[{point\-H\-G}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$ int, int $>$ {\bf \-Case\-::point\-H\-G} (
+\begin{DoxyParamCaption}
+\item[{int}]{taille\-Case, }
+\item[{int}]{ecart\-X, }
+\item[{int}]{ecart\-Y}
+\end{DoxyParamCaption}
+)}}\label{classCase_ae6ce55820f949e5fae8dbeb62d298291}
+
+
+\-Renvoie le point en haut à gauche de la case en fonction de l'affichage. 
+
+\begin{DoxyReturn}{\-Renvoie}
+une pair d'int représentant le point en hautà gauche 
+\end{DoxyReturn}
 \hypertarget{classCase_ad09ca1072f39bcacf06459fc03f026ae}{\index{\-Case@{\-Case}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!Case@{\-Case}}
 \subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Case\-::to\-String} (

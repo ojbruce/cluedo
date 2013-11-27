@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -88,33 +88,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &lt;cstdlib&gt;</span>
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;string&gt;</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="keyword">class </span><a class="code" href="classFenetreInfo.html">FenetreInfo</a>;
-<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classFenetreChoix.html">FenetreChoix</a>;
-<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classFenetreContrer.html">FenetreContrer</a>;
+<a name="l00011"></a>00011 <span class="keyword">class </span><a class="code" href="classFenetreInfo.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreInfo</a>;
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classFenetreChoix.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreChoix</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a>;
 <a name="l00014"></a>00014 
-<a name="l00015"></a>00015 
-<a name="l00016"></a><a class="code" href="classManagerFenetre.html">00016</a> <span class="keyword">class </span><a class="code" href="classManagerFenetre.html">ManagerFenetre</a>
-<a name="l00017"></a>00017 {
-<a name="l00018"></a>00018     <span class="keyword">public</span>:
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020       <a class="code" href="classManagerFenetre.html#adde6ceef42d5ed5000cb9dbc76ef1442" title="Constructeur.">ManagerFenetre</a>();
-<a name="l00021"></a>00021       <span class="keyword">virtual</span> ~<a class="code" href="classManagerFenetre.html">ManagerFenetre</a>();
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023       <span class="keywordtype">void</span> ouvrirFenetreInfo();
-<a name="l00024"></a>00024       <span class="keywordtype">void</span> ouvrirFenetreChoix();
-<a name="l00025"></a>00025       <span class="keywordtype">void</span> ouvrirFenetreContrer(std::string chemin);
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027       <span class="keywordtype">void</span> observerChoix(<a class="code" href="classObserver.html">Observer</a>* observer);
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029     <span class="keyword">private</span>:
+<a name="l00027"></a><a class="code" href="classManagerFenetre.html">00027</a> <span class="keyword">class </span><a class="code" href="classManagerFenetre.html" title="ManagerFenetre est la classe représentant la classe qui fait les transitions entre les fenetres...">ManagerFenetre</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029     <span class="keyword">public</span>:
 <a name="l00030"></a>00030 
-<a name="l00031"></a>00031       <a class="code" href="classFenetreInfo.html">FenetreInfo</a>* fenetreInfo;
-<a name="l00032"></a>00032       <a class="code" href="classFenetreChoix.html">FenetreChoix</a>* fenetreChoix;
-<a name="l00033"></a>00033       <a class="code" href="classFenetreContrer.html">FenetreContrer</a>* fenetreContrer;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035 };
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 <span class="preprocessor">#endif</span>
+<a name="l00031"></a>00031       <a class="code" href="classManagerFenetre.html#adde6ceef42d5ed5000cb9dbc76ef1442" title="Constructeur.">ManagerFenetre</a>();
+<a name="l00032"></a>00032       <span class="keyword">virtual</span> <a class="code" href="classManagerFenetre.html#a17257657b182d8d8c9bc001684d388e4" title="Destructeur.">~ManagerFenetre</a>();
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034       <span class="keywordtype">void</span> <a class="code" href="classManagerFenetre.html#a946bf5d3b2fba1cdca3713a0d850c0c2" title="Fonction ouvrirFenetreInfo.">ouvrirFenetreInfo</a>();
+<a name="l00035"></a>00035       <span class="keywordtype">void</span> <a class="code" href="classManagerFenetre.html#a28623b59c8cca914ba1c91a8b17999ff" title="Fonction ouvrirFenetreChoix.">ouvrirFenetreChoix</a>();
+<a name="l00036"></a>00036       <span class="keywordtype">void</span> <a class="code" href="classManagerFenetre.html#a180deb18bd2f3754d1f0e85eeeab414f" title="Fonction ouvrirFenetreContrer.">ouvrirFenetreContrer</a>(std::string chemin);
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038       <span class="keywordtype">void</span> <a class="code" href="classManagerFenetre.html#a400a128ee4377b13c4e680e6eba18921" title="Fonction observerChoix.">observerChoix</a>(<a class="code" href="classObserver.html" title="Observer est la classe abstraite représentant l&#39;observer abstrait.">Observer</a>* observer);
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040     <span class="keyword">private</span>:
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042       <a class="code" href="classFenetreInfo.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreInfo</a>* fenetreInfo;          <span class="comment">//La fenetre informant ce qui se passe</span>
+<a name="l00043"></a>00043       <a class="code" href="classFenetreChoix.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreChoix</a>* fenetreChoix;        <span class="comment">//La fentre permettant de chosir ce qu&#39;on peut faire</span>
+<a name="l00044"></a>00044       <a class="code" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a>* fenetreContrer;   <span class="comment">//La fenetre qui montre ce qui a contrer</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -133,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

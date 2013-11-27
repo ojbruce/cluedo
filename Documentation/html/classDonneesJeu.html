@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -84,6 +84,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="DonneesJeu" -->
+<p><a class="el" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a> est la classe représentant les donnees avant le debut du jeu.  
+ <a href="classDonneesJeu.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="DonneesJeu_8h_source.html">DonneesJeu.h</a>&gt;</code></p>
+
 <p><a href="classDonneesJeu-members.html">Liste de tous les membres</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -93,13 +98,14 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a39169eecf0e197ccf5677c7a1602a172">lancerDe</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methoque qui prend un nombre aleatoire entre 2 et 12.  <a href="#a39169eecf0e197ccf5677c7a1602a172"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8f22aa69faeb3e54d76a5aaa3d4444f"></a><!-- doxytag: member="DonneesJeu::preparerPartie" ref="aa8f22aa69faeb3e54d76a5aaa3d4444f" args="(Plateau *plateau)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preparerPartie</b> (<a class="el" href="classPlateau.html">Plateau</a> *plateau)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#aa8f22aa69faeb3e54d76a5aaa3d4444f">preparerPartie</a> (<a class="el" href="classPlateau.html">Plateau</a> *plateau)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va preparer la partie. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#ae443a7d34f88fe863914746b6e1fefd9">changerJoueur</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui met a jour le joueur Courant.  <a href="#ae443a7d34f88fe863914746b6e1fefd9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0329e6f5906aca754330ee17d7b4ab56"></a><!-- doxytag: member="DonneesJeu::accuser" ref="a0329e6f5906aca754330ee17d7b4ab56" args="(std::string arme, std::string perso, std::string lieu)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>accuser</b> (std::string arme, std::string perso, std::string lieu)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5db87f4ec8d3d5b790ec58b6b17931e1"></a><!-- doxytag: member="DonneesJeu::soupconner" ref="a5db87f4ec8d3d5b790ec58b6b17931e1" args="(std::string arme, std::string perso, std::string lieu)" -->
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>soupconner</b> (std::string arme, std::string perso, std::string lieu)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a0329e6f5906aca754330ee17d7b4ab56">accuser</a> (std::string arme, std::string perso, std::string lieu)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va permettre au joueur courant d'accuser.  <a href="#a0329e6f5906aca754330ee17d7b4ab56"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a5db87f4ec8d3d5b790ec58b6b17931e1">soupconner</a> (std::string arme, std::string perso, std::string lieu)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va permettre au joueur courant de soupconner.  <a href="#a5db87f4ec8d3d5b790ec58b6b17931e1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a7d47cf2b384712fd2aca3494fc5e23b8">getPartieFini</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui retourne si la partie est finie.  <a href="#a7d47cf2b384712fd2aca3494fc5e23b8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a97ab9601b004cb1ffd4365db0f90e479">setPartieFini</a> (bool parti)</td></tr>
@@ -117,9 +123,59 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>soupconner</b>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a1da6b561395378b12e3331cb61d1a6ad">setNbJoueur</a> (int nb)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui met a jour le nombre de joueur.  <a href="#a1da6b561395378b12e3331cb61d1a6ad"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDonneesJeu.html#a7b698e7aea2dd33cf744b5532c59eb1f">getNbJoueur</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui met a jour le joueur gagnant.  <a href="#a7b698e7aea2dd33cf744b5532c59eb1f"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui get le nombre de joueur.  <a href="#a7b698e7aea2dd33cf744b5532c59eb1f"></a><br/></td></tr>
 </table>
-<hr/><h2>Documentation des fonctions membres</h2>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a> est la classe représentant les donnees avant le debut du jeu. </p>
+<p>Une <a class="el" href="classDonneesJeu.html" title="DonneesJeu est la classe représentant les donnees avant le debut du jeu.">DonneesJeu</a> est caractérisé par les informations suivantes : des donnees un pointeur vers joueur gagnant nul au depart un tableau de carte* mysteres un booleen disant si la partie est fini un joueurCourant un nombre de joueur</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a0329e6f5906aca754330ee17d7b4ab56"></a><!-- doxytag: member="DonneesJeu::accuser" ref="a0329e6f5906aca754330ee17d7b4ab56" args="(std::string arme, std::string perso, std::string lieu)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDonneesJeu.html#a0329e6f5906aca754330ee17d7b4ab56">DonneesJeu::accuser</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>arme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>lieu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va permettre au joueur courant d'accuser. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arme</td><td>l'arme du crime </td></tr>
+    <tr><td class="paramname">lieu</td><td>la piece ou est le joueur </td></tr>
+    <tr><td class="paramname">perso</td><td>le criminelle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ae443a7d34f88fe863914746b6e1fefd9"></a><!-- doxytag: member="DonneesJeu::changerJoueur" ref="ae443a7d34f88fe863914746b6e1fefd9" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +291,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>soupconner</b>
 </div>
 <div class="memdoc">
 
-<p>Methode qui met a jour le joueur gagnant. </p>
+<p>Methode qui get le nombre de joueur. </p>
 <dl class="params"><dt><b>Paramètres:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">joueurCourant</td><td>le joueur corant dans le tabJoueur_ </td></tr>
@@ -358,6 +414,50 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>soupconner</b>
 
 </div>
 </div>
+<a class="anchor" id="a5db87f4ec8d3d5b790ec58b6b17931e1"></a><!-- doxytag: member="DonneesJeu::soupconner" ref="a5db87f4ec8d3d5b790ec58b6b17931e1" args="(std::string arme, std::string perso, std::string lieu)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classDonneesJeu.html#a5db87f4ec8d3d5b790ec58b6b17931e1">DonneesJeu::soupconner</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>arme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>perso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>lieu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va permettre au joueur courant de soupconner. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">arme</td><td>l'arme du crime </td></tr>
+    <tr><td class="paramname">lieu</td><td>la piece ou est le joueur </td></tr>
+    <tr><td class="paramname">perso</td><td>le criminelle </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>cheminres le chemin contrant le soupcon </dd></dl>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="DonneesJeu_8h_source.html">DonneesJeu.h</a></li>
 <li>DonneesJeu.cpp</li>
@@ -380,7 +480,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>soupconner</b>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:25 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:43 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

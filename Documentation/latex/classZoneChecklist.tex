@@ -1,18 +1,23 @@
 \hypertarget{classZoneChecklist}{\section{\-Référence de la classe \-Zone\-Checklist}
 \label{classZoneChecklist}\index{\-Zone\-Checklist@{\-Zone\-Checklist}}
 }
+
+
+\hyperlink{classZoneChecklist}{\-Zone\-Checklist} est la classe représentant la partie affichant la checklist.  
+
+
+
+
+{\ttfamily \#include $<$\-Zone\-Checklist.\-h$>$}
+
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classZoneChecklist_aee5e8750e39ef396f708fdfec48eca8c}{\hyperlink{classZoneChecklist_aee5e8750e39ef396f708fdfec48eca8c}{\-Zone\-Checklist} ()}\label{classZoneChecklist_aee5e8750e39ef396f708fdfec48eca8c}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classZoneChecklist_a1ffde7f6689c34844d38c527a87a7740}{virtual \hyperlink{classZoneChecklist_a1ffde7f6689c34844d38c527a87a7740}{$\sim$\-Zone\-Checklist} ()}\label{classZoneChecklist_a1ffde7f6689c34844d38c527a87a7740}
-
-\begin{DoxyCompactList}\small\item\em \-Destructeur. \end{DoxyCompactList}\item 
-\hypertarget{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}{void \hyperlink{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}{afficher\-Checklist} (\hyperlink{classJoueur}{\-Joueur} $\ast$j, sf\-::\-Render\-Window \&window)}\label{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}
-
-\begin{DoxyCompactList}\small\item\em afficher\-Checklist \end{DoxyCompactList}\item 
+void \hyperlink{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}{afficher\-Checklist} (\hyperlink{classJoueur}{\-Joueur} $\ast$j, sf\-::\-Render\-Window \&window)
+\begin{DoxyCompactList}\small\item\em \-Methode qui affiche la checklist d'un joueur. \end{DoxyCompactList}\item 
 \hypertarget{classZoneChecklist_a5cb52a1aff880ce982ab002cafecce97}{void {\bfseries update} (\hyperlink{classJoueur}{\-Joueur} $\ast$j, sf\-::\-Event event)}\label{classZoneChecklist_a5cb52a1aff880ce982ab002cafecce97}
 
 \item 
@@ -25,9 +30,67 @@
 \hypertarget{classZoneChecklist_a131c733dca0597e4b8a4e24303dc0f25}{void {\bfseries clique\-Conditionnel} (int x, int y, int xmin, int xmax, int ymin, int ymax, \hyperlink{classBouton}{\-Bouton} \&b)}\label{classZoneChecklist_a131c733dca0597e4b8a4e24303dc0f25}
 
 \item 
-\hypertarget{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}{void \hyperlink{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}{importation} (\hyperlink{classBouton}{\-Bouton} \&b, int i, vector$<$ bool $>$ vec)}\label{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}
+void \hyperlink{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}{importation} (\hyperlink{classBouton}{\-Bouton} \&b, int i, vector$<$ bool $>$ vec)
+\begin{DoxyCompactList}\small\item\em \-Methode de conversion interne. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction importation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection{\-Description détaillée}
+\hyperlink{classZoneChecklist}{\-Zone\-Checklist} est la classe représentant la partie affichant la checklist. 
+
+\-Une zone\-Checklist est caractérisé par les informations suivantes \-: des boutons à cocher. une image de fond.
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}{\index{\-Zone\-Checklist@{\-Zone\-Checklist}!afficher\-Checklist@{afficher\-Checklist}}
+\index{afficher\-Checklist@{afficher\-Checklist}!ZoneChecklist@{\-Zone\-Checklist}}
+\subsubsection[{afficher\-Checklist}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Zone\-Checklist\-::afficher\-Checklist} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j, }
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)}}\label{classZoneChecklist_a08e07cd3db2e76f1d33a0e3b26ec32eb}
+
+
+\-Methode qui affiche la checklist d'un joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & un pointeur vers joueur \\
+\hline
+{\em fenetre} & la fenetre de rendu \\
+\hline
+\end{DoxyParams}
+\hypertarget{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}{\index{\-Zone\-Checklist@{\-Zone\-Checklist}!importation@{importation}}
+\index{importation@{importation}!ZoneChecklist@{\-Zone\-Checklist}}
+\subsubsection[{importation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Zone\-Checklist\-::importation} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Bouton} \&}]{b, }
+\item[{int}]{i, }
+\item[{vector$<$ bool $>$}]{vec}
+\end{DoxyParamCaption}
+)}}\label{classZoneChecklist_ab6600a57c75090d99f2efad6b66a5a93}
+
+
+\-Methode de conversion interne. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em b} & le bouton a selectionne ou deselectionne \\
+\hline
+{\em int} & i l'indice \\
+\hline
+{\em vec} & le vecteur de booleen de la checklist \\
+\hline
+\end{DoxyParams}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

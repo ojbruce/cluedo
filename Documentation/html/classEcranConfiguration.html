@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe EcranConfiguration</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="EcranConfiguration" --><!-- doxytag: inherits="Ecran" --><div class="dynheader">
+<!-- doxytag: class="EcranConfiguration" --><!-- doxytag: inherits="Ecran" -->
+<p><a class="el" href="classEcranAccueil.html" title="EcranAccueil est la classe représentant l&#39;ecran d&#39;accueil du jeu.">EcranAccueil</a> est la classe représentant l'ecran permettant de choisir le nombre de joueur.  
+ <a href="classEcranConfiguration.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EcranConfiguration_8h_source.html">EcranConfiguration.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de EcranConfiguration:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classEcranConfiguration.png" usemap="#EcranConfiguration_map" alt=""/>
   <map id="EcranConfiguration_map" name="EcranConfiguration_map">
-<area href="classEcran.html" alt="Ecran" shape="rect" coords="0,0,122,24"/>
+<area href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans." alt="Ecran" shape="rect" coords="0,0,122,24"/>
 </map>
  </div></div>
 
@@ -102,16 +107,94 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65dbd2aca4c0b3853aea5eb8c92b98f"></a><!-- doxytag: member="EcranConfiguration::creerPartie" ref="aa65dbd2aca4c0b3853aea5eb8c92b98f" args="()" -->
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>creerPartie</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1a7fd161795e7dd28e359f5b8bb25f7"></a><!-- doxytag: member="EcranConfiguration::afficher" ref="ab1a7fd161795e7dd28e359f5b8bb25f7" args="(sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#ab1a7fd161795e7dd28e359f5b8bb25f7">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6827f55a832c0ea0b8e580e68fc7503"></a><!-- doxytag: member="EcranConfiguration::update" ref="af6827f55a832c0ea0b8e580e68fc7503" args="(sf::Event event)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#af6827f55a832c0ea0b8e580e68fc7503">update</a> (sf::Event event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72a91a3f504c3047694e06c826c7ee7d"></a><!-- doxytag: member="EcranConfiguration::selectionValide" ref="a72a91a3f504c3047694e06c826c7ee7d" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#a72a91a3f504c3047694e06c826c7ee7d">selectionValide</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction selectionValide Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#ab1a7fd161795e7dd28e359f5b8bb25f7">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher.  <a href="#ab1a7fd161795e7dd28e359f5b8bb25f7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#af6827f55a832c0ea0b8e580e68fc7503">update</a> (sf::Event event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet le changement d'ecran en fonction des evenements.  <a href="#af6827f55a832c0ea0b8e580e68fc7503"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranConfiguration.html#a72a91a3f504c3047694e06c826c7ee7d">selectionValide</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction selectionValide Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique.  <a href="#a72a91a3f504c3047694e06c826c7ee7d"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classEcranAccueil.html" title="EcranAccueil est la classe représentant l&#39;ecran d&#39;accueil du jeu.">EcranAccueil</a> est la classe représentant l'ecran permettant de choisir le nombre de joueur. </p>
+<p>Il est caractérisé par les informations suivantes : deux boutons une image un manager permettant de changer d'ecran</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="ab1a7fd161795e7dd28e359f5b8bb25f7"></a><!-- doxytag: member="EcranConfiguration::afficher" ref="ab1a7fd161795e7dd28e359f5b8bb25f7" args="(sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranConfiguration.html#ab1a7fd161795e7dd28e359f5b8bb25f7">EcranConfiguration::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction afficher. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72a91a3f504c3047694e06c826c7ee7d"></a><!-- doxytag: member="EcranConfiguration::selectionValide" ref="a72a91a3f504c3047694e06c826c7ee7d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classEcranConfiguration.html#a72a91a3f504c3047694e06c826c7ee7d">EcranConfiguration::selectionValide</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Fonction selectionValide Role : cette fonction renvoie vrai si un seul bouton selectionant le nombre de joueurs est clique. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>si la selection est valide </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af6827f55a832c0ea0b8e580e68fc7503"></a><!-- doxytag: member="EcranConfiguration::update" ref="af6827f55a832c0ea0b8e580e68fc7503" args="(sf::Event event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranConfiguration.html#af6827f55a832c0ea0b8e580e68fc7503">EcranConfiguration::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction permet le changement d'ecran en fonction des evenements. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>un evenement envoyé par les classes superieurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="EcranConfiguration_8h_source.html">EcranConfiguration.h</a></li>
 <li>EcranConfiguration.cpp</li>
@@ -134,7 +217,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:26 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:44 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

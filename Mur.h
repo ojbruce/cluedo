@@ -6,6 +6,14 @@
 
 using namespace std;
 
+/**
+ * Mur est la classe abstraite représentant les murs les positions ou on ne peut pas deplacer.
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class Mur : public Case
 {
     public:

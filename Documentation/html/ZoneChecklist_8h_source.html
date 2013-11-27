@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -88,53 +88,52 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00008"></a>00008 <span class="preprocessor">#include &quot;Joueur.h&quot;</span>
 <a name="l00009"></a>00009 
 <a name="l00010"></a>00010 
-<a name="l00011"></a><a class="code" href="classZoneChecklist.html">00011</a> <span class="keyword">class </span><a class="code" href="classZoneChecklist.html">ZoneChecklist</a>
-<a name="l00012"></a>00012 {
-<a name="l00013"></a>00013     <span class="keyword">public</span>:
-<a name="l00014"></a>00014 
-<a name="l00015"></a>00015         <a class="code" href="classZoneChecklist.html#aee5e8750e39ef396f708fdfec48eca8c" title="Constructeur.">ZoneChecklist</a>();
-<a name="l00016"></a>00016         <span class="keyword">virtual</span> <a class="code" href="classZoneChecklist.html#a1ffde7f6689c34844d38c527a87a7740" title="Destructeur.">~ZoneChecklist</a>();
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a08e07cd3db2e76f1d33a0e3b26ec32eb" title="afficherChecklist">afficherChecklist</a>(<a class="code" href="classJoueur.html">Joueur</a>* j, sf::RenderWindow &amp;window);
-<a name="l00019"></a>00019         <span class="keywordtype">void</span> update(<a class="code" href="classJoueur.html">Joueur</a>* j, sf::Event event);
-<a name="l00020"></a>00020         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a31c52e893fe409f1dd2860eb9f28ce81" title="Fonction placerCaseCocher.">placerCaseCocher</a>(<a class="code" href="classBouton.html">Bouton</a> b,<span class="keywordtype">int</span> y, sf::RenderWindow &amp;fenetre);
-<a name="l00021"></a>00021         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a2d22b4546f136a703da6fb0c6b8c0dcb" title="Fonction placerCaseCocher.">actualiserChecklist</a>(<a class="code" href="classJoueur.html">Joueur</a>* j);
-<a name="l00022"></a>00022         <span class="keywordtype">void</span> cliqueConditionnel(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> xmin, <span class="keywordtype">int</span> xmax, <span class="keywordtype">int</span> ymin, <span class="keywordtype">int</span> ymax, <a class="code" href="classBouton.html">Bouton</a> &amp; b);
-<a name="l00023"></a>00023         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#ab6600a57c75090d99f2efad6b66a5a93" title="Fonction importation.">importation</a>(<a class="code" href="classBouton.html">Bouton</a>&amp; b, <span class="keywordtype">int</span> i, vector&lt;bool&gt; vec);
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025     <span class="keyword">private</span>:
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027         sf::Texture imageCheck;               
-<a name="l00028"></a>00028         sf::Sprite zoneCheck; 
-<a name="l00029"></a>00029 
-<a name="l00030"></a>00030         <a class="code" href="classBouton.html">Bouton</a> c1;
-<a name="l00031"></a>00031         <a class="code" href="classBouton.html">Bouton</a> c2;
-<a name="l00032"></a>00032         <a class="code" href="classBouton.html">Bouton</a> c3;
-<a name="l00033"></a>00033         <a class="code" href="classBouton.html">Bouton</a> c4;
-<a name="l00034"></a>00034         <a class="code" href="classBouton.html">Bouton</a> c5;
-<a name="l00035"></a>00035         <a class="code" href="classBouton.html">Bouton</a> c6;
-<a name="l00036"></a>00036         <a class="code" href="classBouton.html">Bouton</a> c7;
-<a name="l00037"></a>00037         <a class="code" href="classBouton.html">Bouton</a> c8;
-<a name="l00038"></a>00038         <a class="code" href="classBouton.html">Bouton</a> c9;
-<a name="l00039"></a>00039         <a class="code" href="classBouton.html">Bouton</a> c10;
-<a name="l00040"></a>00040         <a class="code" href="classBouton.html">Bouton</a> c11;
-<a name="l00041"></a>00041         <a class="code" href="classBouton.html">Bouton</a> c12;
-<a name="l00042"></a>00042         <a class="code" href="classBouton.html">Bouton</a> c13;
-<a name="l00043"></a>00043         <a class="code" href="classBouton.html">Bouton</a> c14;
-<a name="l00044"></a>00044         <a class="code" href="classBouton.html">Bouton</a> c15;
-<a name="l00045"></a>00045         <a class="code" href="classBouton.html">Bouton</a> c16;
-<a name="l00046"></a>00046         <a class="code" href="classBouton.html">Bouton</a> c17;
-<a name="l00047"></a>00047         <a class="code" href="classBouton.html">Bouton</a> c18;
-<a name="l00048"></a>00048         <a class="code" href="classBouton.html">Bouton</a> c19;
-<a name="l00049"></a>00049         <a class="code" href="classBouton.html">Bouton</a> c20;
-<a name="l00050"></a>00050         <a class="code" href="classBouton.html">Bouton</a> c21;
-<a name="l00051"></a>00051         <a class="code" href="classBouton.html">Bouton</a> c22;
-<a name="l00052"></a>00052         <a class="code" href="classBouton.html">Bouton</a> c23;
-<a name="l00053"></a>00053         <a class="code" href="classBouton.html">Bouton</a> c24;
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 };
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057 <span class="preprocessor">#endif // ZONECHECKLIST_H</span>
+<a name="l00022"></a><a class="code" href="classZoneChecklist.html">00022</a> <span class="keyword">class </span><a class="code" href="classZoneChecklist.html" title="ZoneChecklist est la classe représentant la partie affichant la checklist.">ZoneChecklist</a>
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024     <span class="keyword">public</span>:
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026         <a class="code" href="classZoneChecklist.html#aee5e8750e39ef396f708fdfec48eca8c" title="Constructeur.">ZoneChecklist</a>();
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a08e07cd3db2e76f1d33a0e3b26ec32eb" title="Methode qui affiche la checklist d&#39;un joueur.">afficherChecklist</a>(<a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* j, sf::RenderWindow &amp;window);
+<a name="l00029"></a>00029         <span class="keywordtype">void</span> update(<a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* j, sf::Event event);
+<a name="l00030"></a>00030         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a31c52e893fe409f1dd2860eb9f28ce81" title="Fonction placerCaseCocher.">placerCaseCocher</a>(<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> b,<span class="keywordtype">int</span> y, sf::RenderWindow &amp;fenetre);
+<a name="l00031"></a>00031         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#a2d22b4546f136a703da6fb0c6b8c0dcb" title="Fonction placerCaseCocher.">actualiserChecklist</a>(<a class="code" href="classJoueur.html" title="Joueur est la classe représentant le joueur.">Joueur</a>* j);
+<a name="l00032"></a>00032         <span class="keywordtype">void</span> cliqueConditionnel(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> xmin, <span class="keywordtype">int</span> xmax, <span class="keywordtype">int</span> ymin, <span class="keywordtype">int</span> ymax, <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> &amp; b);
+<a name="l00033"></a>00033         <span class="keywordtype">void</span> <a class="code" href="classZoneChecklist.html#ab6600a57c75090d99f2efad6b66a5a93" title="Methode de conversion interne.">importation</a>(<a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a>&amp; b, <span class="keywordtype">int</span> i, vector&lt;bool&gt; vec);
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035     <span class="keyword">private</span>:
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037         sf::Texture imageCheck;
+<a name="l00038"></a>00038         sf::Sprite zoneCheck;
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c1;
+<a name="l00041"></a>00041         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c2;
+<a name="l00042"></a>00042         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c3;
+<a name="l00043"></a>00043         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c4;
+<a name="l00044"></a>00044         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c5;
+<a name="l00045"></a>00045         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c6;
+<a name="l00046"></a>00046         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c7;
+<a name="l00047"></a>00047         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c8;
+<a name="l00048"></a>00048         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c9;
+<a name="l00049"></a>00049         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c10;
+<a name="l00050"></a>00050         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c11;
+<a name="l00051"></a>00051         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c12;
+<a name="l00052"></a>00052         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c13;
+<a name="l00053"></a>00053         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c14;
+<a name="l00054"></a>00054         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c15;
+<a name="l00055"></a>00055         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c16;
+<a name="l00056"></a>00056         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c17;
+<a name="l00057"></a>00057         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c18;
+<a name="l00058"></a>00058         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c19;
+<a name="l00059"></a>00059         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c20;
+<a name="l00060"></a>00060         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c21;
+<a name="l00061"></a>00061         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c22;
+<a name="l00062"></a>00062         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c23;
+<a name="l00063"></a>00063         <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> c24;
+<a name="l00064"></a>00064 
+<a name="l00065"></a>00065 };
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="preprocessor">#endif // ZONECHECKLIST_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -153,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -90,29 +90,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00010"></a>00010 <span class="preprocessor">#include &quot;Ecran.h&quot;</span>
 <a name="l00011"></a>00011 <span class="preprocessor">#include &quot;Bouton.h&quot;</span>
 <a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classManagerEcran.html">ManagerEcran</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a>;
 <a name="l00014"></a>00014 
-<a name="l00015"></a><a class="code" href="classEcranAccueil.html">00015</a> <span class="keyword">class </span><a class="code" href="classEcranAccueil.html">EcranAccueil</a> : <span class="keyword">public</span> <a class="code" href="classEcran.html">Ecran</a>
-<a name="l00016"></a>00016 {
-<a name="l00017"></a>00017         <span class="keyword">public</span>:
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019       <a class="code" href="classEcranAccueil.html#a53449fe44e756cbfe0d19c372fab9783" title="Constructeur.">EcranAccueil</a>(<a class="code" href="classManagerEcran.html">ManagerEcran</a>* manager);
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021       <span class="keywordtype">void</span> <a class="code" href="classEcranAccueil.html#acc1f211002209380daa8d13f5664c118" title="Fonction afficher.">afficher</a>(sf::RenderWindow &amp;fenetre);    <span class="comment">// Cette fonction lance l&#39;affichage de la fenetre</span>
-<a name="l00022"></a>00022       <span class="keywordtype">void</span> <a class="code" href="classEcranAccueil.html#ac03953623402740bab58ab7fbb54fc3a" title="Fonction update.">update</a>(sf::Event event);                <span class="comment">// Cette fonction permet le changement d&#39;ecran en fonction des evenements</span>
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024    <span class="keyword">private</span> :
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026       sf::Texture image;        <span class="comment">// Texture de l&#39;ecran d&#39;accueil</span>
-<a name="l00027"></a>00027       sf::Sprite accueil;       <span class="comment">// Sprite de l&#39;ecran d&#39;accueil</span>
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029       <a class="code" href="classBouton.html">Bouton</a> jouer;             <span class="comment">//Le bouton jouer pour aller vers l&#39;ecran de configuration</span>
-<a name="l00030"></a>00030       <a class="code" href="classBouton.html">Bouton</a> regles;            <span class="comment">//Le bouton pour aller vers l&#39;ecran des regles</span>
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032       <a class="code" href="classManagerEcran.html">ManagerEcran</a>* manager;    <span class="comment">//Un pointeur ver le manager d&#39;ecran</span>
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034 };
-<a name="l00035"></a>00035 <span class="preprocessor">#endif</span>
+<a name="l00027"></a><a class="code" href="classEcranAccueil.html">00027</a> <span class="keyword">class </span><a class="code" href="classEcranAccueil.html" title="EcranAccueil est la classe représentant l&#39;ecran d&#39;accueil du jeu.">EcranAccueil</a> : <span class="keyword">public</span> <a class="code" href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans.">Ecran</a>
+<a name="l00028"></a>00028 {
+<a name="l00029"></a>00029         <span class="keyword">public</span>:
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031       <a class="code" href="classEcranAccueil.html#a53449fe44e756cbfe0d19c372fab9783" title="Constructeur.">EcranAccueil</a>(<a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a>* manager);
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033       <span class="keywordtype">void</span> <a class="code" href="classEcranAccueil.html#acc1f211002209380daa8d13f5664c118" title="Methode qui va afficher l&#39;ecran tel qu&#39;il est.">afficher</a>(sf::RenderWindow &amp;fenetre);    <span class="comment">// Cette fonction lance l&#39;affichage de la fenetre</span>
+<a name="l00034"></a>00034       <span class="keywordtype">void</span> <a class="code" href="classEcranAccueil.html#ac03953623402740bab58ab7fbb54fc3a" title="Methode qui permet le changement d&#39;ecran en fonction des evenements.">update</a>(sf::Event event);                <span class="comment">// Cette fonction permet le changement d&#39;ecran en fonction des evenements</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036    <span class="keyword">private</span> :
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038       sf::Texture image;        <span class="comment">// Texture de l&#39;ecran d&#39;accueil</span>
+<a name="l00039"></a>00039       sf::Sprite accueil;       <span class="comment">// Sprite de l&#39;ecran d&#39;accueil</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> jouer;             <span class="comment">//Le bouton jouer pour aller vers l&#39;ecran de configuration</span>
+<a name="l00042"></a>00042       <a class="code" href="classBouton.html" title="Bouton est la classe représentant les boutons cliquable.">Bouton</a> regles;            <span class="comment">//Le bouton pour aller vers l&#39;ecran des regles</span>
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044       <a class="code" href="classManagerEcran.html" title="ManagerEcran est la classe représentant les transitions entre les fenetres.">ManagerEcran</a>* manager;    <span class="comment">//Un pointeur ver le manager d&#39;ecran</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -131,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:20 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:41 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

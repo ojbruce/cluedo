@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe EcranJeu</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="EcranJeu" --><!-- doxytag: inherits="Ecran" --><div class="dynheader">
+<!-- doxytag: class="EcranJeu" --><!-- doxytag: inherits="Ecran" -->
+<p><a class="el" href="classEcranAccueil.html" title="EcranAccueil est la classe représentant l&#39;ecran d&#39;accueil du jeu.">EcranAccueil</a> est la classe représentant l'ecran du jeu.  
+ <a href="classEcranJeu.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EcranJeu_8h_source.html">EcranJeu.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de EcranJeu:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classEcranJeu.png" usemap="#EcranJeu_map" alt=""/>
   <map id="EcranJeu_map" name="EcranJeu_map">
-<area href="classEcran.html" alt="Ecran" shape="rect" coords="0,0,67,24"/>
+<area href="classEcran.html" title="Ecran est la classe abstraite représentant les ecrans." alt="Ecran" shape="rect" coords="0,0,67,24"/>
 </map>
  </div></div>
 
@@ -98,19 +103,75 @@ Graphe d'héritage de EcranJeu:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b55b8830b8a1b7261ab440d529f6b6c"></a><!-- doxytag: member="EcranJeu::EcranJeu" ref="a9b55b8830b8a1b7261ab440d529f6b6c" args="(ManagerEcran *manager, DonneesJeu *d)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>EcranJeu</b> (<a class="el" href="classManagerEcran.html">ManagerEcran</a> *manager, <a class="el" href="classDonneesJeu.html">DonneesJeu</a> *d)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4acecc89a860064f7cb74e744ec931ff"></a><!-- doxytag: member="EcranJeu::creerPartie" ref="a4acecc89a860064f7cb74e744ec931ff" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>creerPartie</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3181ea3bb30364a844c97c8436e89010"></a><!-- doxytag: member="EcranJeu::afficher" ref="a3181ea3bb30364a844c97c8436e89010" args="(sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a3181ea3bb30364a844c97c8436e89010">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8bfea524e61410dee2a2982d9b01bad4"></a><!-- doxytag: member="EcranJeu::update" ref="a8bfea524e61410dee2a2982d9b01bad4" args="(sf::Event event)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a8bfea524e61410dee2a2982d9b01bad4">update</a> (sf::Event event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cd502e1daf0689ab931c73ec6103b45"></a><!-- doxytag: member="EcranJeu::update" ref="a1cd502e1daf0689ab931c73ec6103b45" args="(sf::RenderWindow &amp;window, sf::Event event)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a1cd502e1daf0689ab931c73ec6103b45">update</a> (sf::RenderWindow &amp;window, sf::Event event)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a9b55b8830b8a1b7261ab440d529f6b6c">EcranJeu</a> (<a class="el" href="classManagerEcran.html">ManagerEcran</a> *manager, <a class="el" href="classDonneesJeu.html">DonneesJeu</a> *d)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a3181ea3bb30364a844c97c8436e89010">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction lance l'affichage de la fênetre.  <a href="#a3181ea3bb30364a844c97c8436e89010"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcranJeu.html#a8bfea524e61410dee2a2982d9b01bad4">update</a> (sf::Event event)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction maj les elements de l'ecran jeu.  <a href="#a8bfea524e61410dee2a2982d9b01bad4"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classEcranAccueil.html" title="EcranAccueil est la classe représentant l&#39;ecran d&#39;accueil du jeu.">EcranAccueil</a> est la classe représentant l'ecran du jeu. </p>
+<p>Il est caractérisé par les informations suivantes : deux boutons une image un manager permettant de changer d'ecran des donnees des zones d'affichages</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a3181ea3bb30364a844c97c8436e89010"></a><!-- doxytag: member="EcranJeu::afficher" ref="a3181ea3bb30364a844c97c8436e89010" args="(sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranJeu.html#a3181ea3bb30364a844c97c8436e89010">EcranJeu::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction lance l'affichage de la fênetre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bfea524e61410dee2a2982d9b01bad4"></a><!-- doxytag: member="EcranJeu::update" ref="a8bfea524e61410dee2a2982d9b01bad4" args="(sf::Event event)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classEcranJeu.html#a8bfea524e61410dee2a2982d9b01bad4">EcranJeu::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction maj les elements de l'ecran jeu. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>un evenement envoyé par les classes superieurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classEcran.html">Ecran</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="EcranJeu_8h_source.html">EcranJeu.h</a></li>
 <li>EcranJeu.cpp</li>
@@ -133,7 +194,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:27 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:45 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

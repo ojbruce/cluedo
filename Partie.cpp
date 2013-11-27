@@ -7,7 +7,7 @@ Partie::Partie(Plateau* plat,  ZoneAffichageTexte* zoneT, ZoneCarte* zoneC, Zone
 
   	manFen.observerChoix(this);
 
-    if (!font.loadFromFile("arial.ttf")){ }
+    if (!font.loadFromFile("arial.ttf")){ exit (EXIT_FAILURE);}
 
     cerr<<"Partie::Creation Partie"<<endl;
 }
@@ -140,7 +140,16 @@ void Partie::afficher(sf::RenderWindow &window){
     //afficher les cartes du joueur en cours
     zoneChecklist->afficherChecklist(donnees->getJoueurCourant(), window);
     zoneCarte->afficherCarte(*donnees->getJoueurCourant(), window);
-    zoneText->afficher(window);
+    //zoneText->afficher(window);
+
+    sf::Texture texture;
+    sf::Sprite sp;
+    if (!texture.loadFromFile("Images/lancerDe.png")){ }
+    texture.setSmooth(true);
+    sp.setTexture(texture);
+    sp.setPosition(900,50);
+
+    window.draw(sp);
 }
 
 

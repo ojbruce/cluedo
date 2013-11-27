@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,14 +83,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe FenetreChoix</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FenetreChoix" --><!-- doxytag: inherits="Observable,Fenetre" --><div class="dynheader">
+<!-- doxytag: class="FenetreChoix" --><!-- doxytag: inherits="Observable,Fenetre" -->
+<p><a class="el" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a> est la classe représentant l'ecran montrant le contre.  
+ <a href="classFenetreChoix.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FenetreChoix_8h_source.html">FenetreChoix.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de FenetreChoix:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classFenetreChoix.png" usemap="#FenetreChoix_map" alt=""/>
   <map id="FenetreChoix_map" name="FenetreChoix_map">
-<area href="classObservable.html" alt="Observable" shape="rect" coords="0,0,88,24"/>
-<area href="classFenetre.html" alt="Fenetre" shape="rect" coords="98,0,186,24"/>
+<area href="classObservable.html" title="Observable est la classe abstraite représentant le sujet observer." alt="Observable" shape="rect" coords="0,0,88,24"/>
+<area href="classFenetre.html" title="Fenetre est la classe abstraite représentant les cases du plateau." alt="Fenetre" shape="rect" coords="98,0,186,24"/>
 </map>
  </div></div>
 
@@ -101,30 +106,109 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a4e020bf1c6cf245fd14dcf07f99caa"></a><!-- doxytag: member="FenetreChoix::FenetreChoix" ref="a6a4e020bf1c6cf245fd14dcf07f99caa" args="(ManagerFenetre *manager)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a6a4e020bf1c6cf245fd14dcf07f99caa">FenetreChoix</a> (<a class="el" href="classManagerFenetre.html">ManagerFenetre</a> *manager)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05e6aa6b6fd91b446751c8cb88a1a57a"></a><!-- doxytag: member="FenetreChoix::afficher" ref="a05e6aa6b6fd91b446751c8cb88a1a57a" args="(sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a05e6aa6b6fd91b446751c8cb88a1a57a">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab1bddc2946e39272d6c56a0a0065b6b"></a><!-- doxytag: member="FenetreChoix::update" ref="aab1bddc2946e39272d6c56a0a0065b6b" args="(sf::Event event, sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#aab1bddc2946e39272d6c56a0a0065b6b">update</a> (sf::Event event, sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction update. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a05e6aa6b6fd91b446751c8cb88a1a57a">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction lance l'affichage de la fênetre.  <a href="#a05e6aa6b6fd91b446751c8cb88a1a57a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#aab1bddc2946e39272d6c56a0a0065b6b">update</a> (sf::Event event, sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction permet le changement d'ecran en fonction des evenements.  <a href="#aab1bddc2946e39272d6c56a0a0065b6b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0402ba8288130bb9741adff241463c6d"></a><!-- doxytag: member="FenetreChoix::cliqueConditionnel1" ref="a0402ba8288130bb9741adff241463c6d" args="(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &amp;b1, Bouton &amp;b2, Bouton &amp;b3, Bouton &amp;b4, Bouton &amp;b5, Bouton &amp;b6, Bouton &amp;b7, Bouton &amp;b8)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cliqueConditionnel1</b> (int x, int y, int xmin, int xmax, int ymin, int ymax, <a class="el" href="classBouton.html">Bouton</a> &amp;b1, <a class="el" href="classBouton.html">Bouton</a> &amp;b2, <a class="el" href="classBouton.html">Bouton</a> &amp;b3, <a class="el" href="classBouton.html">Bouton</a> &amp;b4, <a class="el" href="classBouton.html">Bouton</a> &amp;b5, <a class="el" href="classBouton.html">Bouton</a> &amp;b6, <a class="el" href="classBouton.html">Bouton</a> &amp;b7, <a class="el" href="classBouton.html">Bouton</a> &amp;b8)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a0402ba8288130bb9741adff241463c6d">cliqueConditionnel1</a> (int x, int y, int xmin, int xmax, int ymin, int ymax, <a class="el" href="classBouton.html">Bouton</a> &amp;b1, <a class="el" href="classBouton.html">Bouton</a> &amp;b2, <a class="el" href="classBouton.html">Bouton</a> &amp;b3, <a class="el" href="classBouton.html">Bouton</a> &amp;b4, <a class="el" href="classBouton.html">Bouton</a> &amp;b5, <a class="el" href="classBouton.html">Bouton</a> &amp;b6, <a class="el" href="classBouton.html">Bouton</a> &amp;b7, <a class="el" href="classBouton.html">Bouton</a> &amp;b8)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction cliqueConditionnel1 Role : appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons personnages. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5dc40221cb4023dab8142a5fcfad30c1"></a><!-- doxytag: member="FenetreChoix::cliqueConditionnel2" ref="a5dc40221cb4023dab8142a5fcfad30c1" args="(int x, int y, int xmin, int xmax, int ymin, int ymax, Bouton &amp;b1, Bouton &amp;b2, Bouton &amp;b3, Bouton &amp;b4, Bouton &amp;b5, Bouton &amp;b6, Bouton &amp;b7)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cliqueConditionnel2</b> (int x, int y, int xmin, int xmax, int ymin, int ymax, <a class="el" href="classBouton.html">Bouton</a> &amp;b1, <a class="el" href="classBouton.html">Bouton</a> &amp;b2, <a class="el" href="classBouton.html">Bouton</a> &amp;b3, <a class="el" href="classBouton.html">Bouton</a> &amp;b4, <a class="el" href="classBouton.html">Bouton</a> &amp;b5, <a class="el" href="classBouton.html">Bouton</a> &amp;b6, <a class="el" href="classBouton.html">Bouton</a> &amp;b7)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a5dc40221cb4023dab8142a5fcfad30c1">cliqueConditionnel2</a> (int x, int y, int xmin, int xmax, int ymin, int ymax, <a class="el" href="classBouton.html">Bouton</a> &amp;b1, <a class="el" href="classBouton.html">Bouton</a> &amp;b2, <a class="el" href="classBouton.html">Bouton</a> &amp;b3, <a class="el" href="classBouton.html">Bouton</a> &amp;b4, <a class="el" href="classBouton.html">Bouton</a> &amp;b5, <a class="el" href="classBouton.html">Bouton</a> &amp;b6, <a class="el" href="classBouton.html">Bouton</a> &amp;b7)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction cliqueConditionnel2 Role : appel la fonction clique du bouton si la souris a clique sur le bouton et deselectionne les autres boutons armes. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a870f277efcd181d452893ecb05a8e5dc"></a><!-- doxytag: member="FenetreChoix::actualiserChoix" ref="a870f277efcd181d452893ecb05a8e5dc" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>actualiserChoix</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a870f277efcd181d452893ecb05a8e5dc">actualiserChoix</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction actualiserChoix Role : permet d'actualiser les attributs carte1 et carte2 correspondants aux cartes selectionnees par le joueur. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac26f3803e0d74d50e979f26061a607d0"></a><!-- doxytag: member="FenetreChoix::deselectionnerTout" ref="ac26f3803e0d74d50e979f26061a607d0" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deselectionnerTout</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#ac26f3803e0d74d50e979f26061a607d0">deselectionnerTout</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction deselectionnerTout. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b3cb058960b8c32d02cceaacf0c7d36"></a><!-- doxytag: member="FenetreChoix::setACliqueFalse" ref="a7b3cb058960b8c32d02cceaacf0c7d36" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a7b3cb058960b8c32d02cceaacf0c7d36">setACliqueFalse</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction setAClique. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c446ed2571d5dccc8b2665e6fcbbaee"></a><!-- doxytag: member="FenetreChoix::ajouterObs" ref="a0c446ed2571d5dccc8b2665e6fcbbaee" args="(Observer *obs)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ajouterObs</b> (<a class="el" href="classObserver.html">Observer</a> *obs)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a0c446ed2571d5dccc8b2665e6fcbbaee">ajouterObs</a> (<a class="el" href="classObserver.html">Observer</a> *obs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction ajouterObs Role : permet d'ajouter un observateur. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ac736f8823d42629849d08ad39f5a60"></a><!-- doxytag: member="FenetreChoix::enleverObs" ref="a0ac736f8823d42629849d08ad39f5a60" args="(Observer *obs)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enleverObs</b> (<a class="el" href="classObserver.html">Observer</a> *obs)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a0ac736f8823d42629849d08ad39f5a60">enleverObs</a> (<a class="el" href="classObserver.html">Observer</a> *obs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction enleverObs Role : permet d'enlever un observateur. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85b717a64d5878f4f1178addbadcd644"></a><!-- doxytag: member="FenetreChoix::notifyObs" ref="a85b717a64d5878f4f1178addbadcd644" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObs</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreChoix.html#a85b717a64d5878f4f1178addbadcd644">notifyObs</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction notifyObs Role : permet aux observateurs d'actualiser leurs donnees concernant les cartes selectionnees dans la fenetre. <br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a> est la classe représentant l'ecran montrant le contre. </p>
+<p>Il est observer par patie et le notifie lorsque les boutons sont selectionné</p>
+<p>Il est caractérisé par les informations suivantes : des boutons des observateurs un manager permettant de changer d'ecran</p>
+<p>Herite de observable et de fenetre</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a05e6aa6b6fd91b446751c8cb88a1a57a"></a><!-- doxytag: member="FenetreChoix::afficher" ref="a05e6aa6b6fd91b446751c8cb88a1a57a" args="(sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classFenetreChoix.html#a05e6aa6b6fd91b446751c8cb88a1a57a">FenetreChoix::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction lance l'affichage de la fênetre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classFenetre.html">Fenetre</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab1bddc2946e39272d6c56a0a0065b6b"></a><!-- doxytag: member="FenetreChoix::update" ref="aab1bddc2946e39272d6c56a0a0065b6b" args="(sf::Event event, sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classFenetreChoix.html#aab1bddc2946e39272d6c56a0a0065b6b">FenetreChoix::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction permet le changement d'ecran en fonction des evenements. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>un evenement envoyé par les classes superieurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classFenetre.html">Fenetre</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="FenetreChoix_8h_source.html">FenetreChoix.h</a></li>
 <li>FenetreChoix.cpp</li>
@@ -147,7 +231,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>notifyObs</b> ()</td>
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:30 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:47 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

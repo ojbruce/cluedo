@@ -1,6 +1,15 @@
 \hypertarget{classPiece}{\section{\-Référence de la classe \-Piece}
 \label{classPiece}\index{\-Piece@{\-Piece}}
 }
+
+
+\hyperlink{classPiece}{\-Piece} est la classe représentant les cases d'une piece.  
+
+
+
+
+{\ttfamily \#include $<$\-Piece.\-h$>$}
+
 \-Graphe d'héritage de \-Piece\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,16 +25,15 @@
 \hypertarget{classPiece_a853e5114a396a009ff046af8e3ba6f5b}{{\bfseries \-Piece} (int a, int b, std\-::string n)}\label{classPiece_a853e5114a396a009ff046af8e3ba6f5b}
 
 \item 
-\hypertarget{classPiece_ae2bbb51808f5d87be1761df503571e0d}{virtual std\-::string \hyperlink{classPiece_ae2bbb51808f5d87be1761df503571e0d}{action} ()}\label{classPiece_ae2bbb51808f5d87be1761df503571e0d}
-
+virtual std\-::string \hyperlink{classPiece_ae2bbb51808f5d87be1761df503571e0d}{action} ()
 \begin{DoxyCompactList}\small\item\em \-Methode qui va réaliser l'action selon la case. \end{DoxyCompactList}\item 
-virtual string \hyperlink{classPiece_ae18523c400cb72a50bb1293d27cd1432}{to\-String} ()
-\begin{DoxyCompactList}\small\item\em \-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. \end{DoxyCompactList}\item 
+\hypertarget{classPiece_ae18523c400cb72a50bb1293d27cd1432}{virtual string \hyperlink{classPiece_ae18523c400cb72a50bb1293d27cd1432}{to\-String} ()}\label{classPiece_ae18523c400cb72a50bb1293d27cd1432}
+
+\begin{DoxyCompactList}\small\item\em \-Affichage d'erreur. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classPiece_ab8f478c95ba4d853c9016d19211e2be1}{trouver\-Chemin} (int de, vector$<$ \hyperlink{classCase}{\-Case} $\ast$ $>$ \&res, \hyperlink{classPlateau}{\-Plateau} $\ast$p)
 \begin{DoxyCompactList}\small\item\em \-Methode qui trouve tous les chemins possibles. \end{DoxyCompactList}\item 
-\hypertarget{classPiece_afd9fcbb17752f925bd3104acbf271190}{void {\bfseries set\-Porte} (\hyperlink{classPorte}{\-Porte} $\ast$p)}\label{classPiece_afd9fcbb17752f925bd3104acbf271190}
-
-\end{DoxyCompactItemize}
+void \hyperlink{classPiece_afd9fcbb17752f925bd3104acbf271190}{set\-Porte} (\hyperlink{classPorte}{\-Porte} $\ast$p)
+\begin{DoxyCompactList}\small\item\em \-Modificateur de la porte. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{\-Attributs protégés}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,29 +45,62 @@ virtual void \hyperlink{classPiece_ab8f478c95ba4d853c9016d19211e2be1}{trouver\-C
 \end{DoxyCompactItemize}
 
 
+\subsection{\-Description détaillée}
+\hyperlink{classPiece}{\-Piece} est la classe représentant les cases d'une piece. 
+
+\-Une \hyperlink{classPiece}{\-Piece} est caractérisé par les informations suivantes \-: un nom un pointeur vers la porte de la case (pas pris en charge)
+
+\-Herite de \hyperlink{classCase}{\-Case}.
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
 \subsection{\-Documentation des fonctions membres}
-\hypertarget{classPiece_ae18523c400cb72a50bb1293d27cd1432}{\index{\-Piece@{\-Piece}!to\-String@{to\-String}}
-\index{to\-String@{to\-String}!Piece@{\-Piece}}
-\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Piece\-::to\-String} (
+\hypertarget{classPiece_ae2bbb51808f5d87be1761df503571e0d}{\index{\-Piece@{\-Piece}!action@{action}}
+\index{action@{action}!Piece@{\-Piece}}
+\subsubsection[{action}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Piece\-::action} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPiece_ae18523c400cb72a50bb1293d27cd1432}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPiece_ae2bbb51808f5d87be1761df503571e0d}
 
 
-\-Méthode qui retrourne une string repésentant la case du type\-: \mbox{[}x\mbox{]}\mbox{[}y\mbox{]}. 
+\-Methode qui va réaliser l'action selon la case. 
 
 \begin{DoxyReturn}{\-Renvoie}
-res l'emplacement de la case 
+chaine vide pour une piece 
 \end{DoxyReturn}
 
 
-\-Réimplémentée à partir de \hyperlink{classCase_ad09ca1072f39bcacf06459fc03f026ae}{\-Case}.
+\-Réimplémentée à partir de \hyperlink{classCase_acdbbc0ad8422141cdbf2e647d1ba56e1}{\-Case}.
 
 
 
-\-Réimplémentée dans \hyperlink{classPorte_ace3891879a69f2d29ade65d71d869377}{\-Porte}.
+\-Réimplémentée dans \hyperlink{classPorte_a71f6ed526931178c012e8653e609e0e7}{\-Porte}.
 
+\hypertarget{classPiece_afd9fcbb17752f925bd3104acbf271190}{\index{\-Piece@{\-Piece}!set\-Porte@{set\-Porte}}
+\index{set\-Porte@{set\-Porte}!Piece@{\-Piece}}
+\subsubsection[{set\-Porte}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::set\-Porte} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Porte} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}}\label{classPiece_afd9fcbb17752f925bd3104acbf271190}
+
+
+\-Modificateur de la porte. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em une} & porte p \\
+\hline
+\end{DoxyParams}
 \hypertarget{classPiece_ab8f478c95ba4d853c9016d19211e2be1}{\index{\-Piece@{\-Piece}!trouver\-Chemin@{trouver\-Chemin}}
 \index{trouver\-Chemin@{trouver\-Chemin}!Piece@{\-Piece}}
 \subsubsection[{trouver\-Chemin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Piece\-::trouver\-Chemin} (

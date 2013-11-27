@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,13 +83,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe FenetreInfo</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="FenetreInfo" --><!-- doxytag: inherits="Fenetre" --><div class="dynheader">
+<!-- doxytag: class="FenetreInfo" --><!-- doxytag: inherits="Fenetre" -->
+<p><a class="el" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a> est la classe représentant l'ecran montrant le contre.  
+ <a href="classFenetreInfo.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FenetreInfo_8h_source.html">FenetreInfo.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de FenetreInfo:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classFenetreInfo.png" usemap="#FenetreInfo_map" alt=""/>
   <map id="FenetreInfo_map" name="FenetreInfo_map">
-<area href="classFenetre.html" alt="Fenetre" shape="rect" coords="0,0,77,24"/>
+<area href="classFenetre.html" title="Fenetre est la classe abstraite représentant les cases du plateau." alt="Fenetre" shape="rect" coords="0,0,77,24"/>
 </map>
  </div></div>
 
@@ -100,15 +105,88 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5ad837d6d17760f287e272e3adf5278"></a><!-- doxytag: member="FenetreInfo::FenetreInfo" ref="aa5ad837d6d17760f287e272e3adf5278" args="(ManagerFenetre *manager)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreInfo.html#aa5ad837d6d17760f287e272e3adf5278">FenetreInfo</a> (<a class="el" href="classManagerFenetre.html">ManagerFenetre</a> *manager)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur Role : initialise les attribut de l'ecran d'accueil. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa44271e51b95de0c49dcf05ec655927f"></a><!-- doxytag: member="FenetreInfo::afficher" ref="aa44271e51b95de0c49dcf05ec655927f" args="(sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreInfo.html#aa44271e51b95de0c49dcf05ec655927f">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction afficher. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5113582738da07d64a85c2a10eb853f0"></a><!-- doxytag: member="FenetreInfo::update" ref="a5113582738da07d64a85c2a10eb853f0" args="(sf::Event event, sf::RenderWindow &amp;fenetre)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (sf::Event event, sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreInfo.html#aa44271e51b95de0c49dcf05ec655927f">afficher</a> (sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction lance l'affichage de la fênetre.  <a href="#aa44271e51b95de0c49dcf05ec655927f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreInfo.html#a5113582738da07d64a85c2a10eb853f0">update</a> (sf::Event event, sf::RenderWindow &amp;fenetre)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Cette fonction maj les elements de l'ecran jeu.  <a href="#a5113582738da07d64a85c2a10eb853f0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14568d1613f5d861aeefa40eab62bfcf"></a><!-- doxytag: member="FenetreInfo::setACliqueFalse" ref="a14568d1613f5d861aeefa40eab62bfcf" args="()" -->
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFenetreInfo.html#a14568d1613f5d861aeefa40eab62bfcf">setACliqueFalse</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction setAClique. <br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classFenetreContrer.html" title="FenetreContrer est la classe représentant l&#39;ecran montrant le contre.">FenetreContrer</a> est la classe représentant l'ecran montrant le contre. </p>
+<p>Il est observer par patie et le notifie lorsque les boutons sont selectionné</p>
+<p>Il est caractérisé par les informations suivantes : des boutons des observateurs un manager permettant de changer d'ecran</p>
+<p>Herite de fenetre</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="aa44271e51b95de0c49dcf05ec655927f"></a><!-- doxytag: member="FenetreInfo::afficher" ref="aa44271e51b95de0c49dcf05ec655927f" args="(sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classFenetreInfo.html#aa44271e51b95de0c49dcf05ec655927f">FenetreInfo::afficher</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction lance l'affichage de la fênetre. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>la fenetre </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classFenetre.html">Fenetre</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5113582738da07d64a85c2a10eb853f0"></a><!-- doxytag: member="FenetreInfo::update" ref="a5113582738da07d64a85c2a10eb853f0" args="(sf::Event event, sf::RenderWindow &amp;fenetre)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classFenetreInfo.html#a5113582738da07d64a85c2a10eb853f0">FenetreInfo::update</a> </td>
+          <td>(</td>
+          <td class="paramtype">sf::Event&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>fenetre</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cette fonction maj les elements de l'ecran jeu. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>un evenement envoyé par les classes superieurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implémente <a class="el" href="classFenetre.html">Fenetre</a>.</p>
+
+</div>
+</div>
 <hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
 <li><a class="el" href="FenetreInfo_8h_source.html">FenetreInfo.h</a></li>
 <li>FenetreInfo.cpp</li>
@@ -131,7 +209,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:30 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:48 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

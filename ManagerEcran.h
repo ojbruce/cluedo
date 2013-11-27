@@ -11,6 +11,18 @@
 #include "EcranFinal.h"
 #include "EcranEpilogue.h"
 
+
+/**
+ * ManagerEcran est la classe représentant les transitions entre les fenetres.
+ *
+ * Elle est caractérisé par les informations suivantes :
+ * elles instancie toutes ces ecrans concrets heritant de fenetre
+ *
+ *
+ * @author Olivia Bruce
+ * @author Cassandre Gloria
+ * @version 1.0
+ */
 class ManagerEcran
 {
     public:
@@ -38,15 +50,15 @@ class ManagerEcran
 
         DonneesJeu* donnees;
 
-        Ecran* ecranCourant;
-        Ecran* ecranAccueil;
-        Ecran* ecranRegles;
-        Ecran* ecranConfiguration;
-        Ecran* ecranJeu;
-        Ecran* ecranFinal;
-        Ecran* ecranEpilogue;
+        Ecran* ecranCourant;        //l'ecran courant
+        Ecran* ecranAccueil;        //l'ecran d'accueil du jeu
+        Ecran* ecranRegles;         //l'ecran de regles
+        Ecran* ecranConfiguration;  //l'ecran de configuration pour creer avec un nombre de joueur
+        Ecran* ecranJeu;            //l'ecran de jeu avec la partie
+        Ecran* ecranFinal;          //l'ecran final
+        Ecran* ecranEpilogue;       //l'ecran d'epilogue
 
-        int nombreJoueur;
+        int nombreJoueur;           //le nombre de joueur
 
 
 };

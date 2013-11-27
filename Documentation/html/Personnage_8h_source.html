@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -86,37 +86,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00006"></a>00006 <span class="preprocessor">#include &quot;Case.h&quot;</span>
 <a name="l00007"></a>00007 
 <a name="l00008"></a>00008 
-<a name="l00009"></a>00009 <span class="keyword">using namespace </span>std;
+<a name="l00009"></a>00009 
 <a name="l00010"></a>00010 
-<a name="l00011"></a><a class="code" href="classPersonnage.html">00011</a> <span class="keyword">class </span><a class="code" href="classPersonnage.html">Personnage</a>
-<a name="l00012"></a>00012 {
-<a name="l00013"></a>00013     <span class="keyword">public</span>:
-<a name="l00014"></a>00014 
-<a name="l00015"></a>00015         <a class="code" href="classPersonnage.html">Personnage</a>(<span class="keywordtype">string</span> nom, <span class="keywordtype">string</span> couleur,<span class="keywordtype">string</span> pion); <span class="comment">//Constructeur</span>
-<a name="l00016"></a>00016         <span class="keywordtype">bool</span> operator== (<a class="code" href="classPersonnage.html">Personnage</a> <span class="keyword">const</span> &amp;p2);             <span class="comment">//Operateur egalite</span>
-<a name="l00017"></a>00017         <span class="keyword">virtual</span> ~<a class="code" href="classPersonnage.html">Personnage</a>();                              <span class="comment">//destructeur</span>
-<a name="l00018"></a>00018 
-<a name="l00019"></a>00019         <span class="comment">//Setters</span>
-<a name="l00020"></a>00020         <span class="keywordtype">void</span> setPositionDepart(<a class="code" href="classCase.html">Case</a>* cas);
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022         <span class="comment">//Getters</span>
-<a name="l00023"></a>00023         <a class="code" href="classCase.html">Case</a>* getPositionDepart();  <span class="comment">//Recupere la position de depart</span>
-<a name="l00024"></a>00024         <span class="keywordtype">string</span> getNom();            <span class="comment">//Recupere le nom</span>
-<a name="l00025"></a>00025         <span class="keywordtype">string</span> getCouleur();        <span class="comment">//Recupere la couleur</span>
-<a name="l00026"></a>00026         <span class="keywordtype">string</span> getPion();           <span class="comment">//Recupere le chemin vers le pion</span>
+<a name="l00024"></a><a class="code" href="classPersonnage.html">00024</a> <span class="keyword">class </span><a class="code" href="classPersonnage.html" title="Personnage est la classe représentant les cases d&#39;une piece.">Personnage</a>
+<a name="l00025"></a>00025 {
+<a name="l00026"></a>00026     <span class="keyword">public</span>:
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029     <span class="keyword">private</span>:
-<a name="l00030"></a>00030         <span class="keywordtype">string</span> nom;     <span class="comment">// le nom du personnage</span>
-<a name="l00031"></a>00031         <span class="keywordtype">string</span> couleur; <span class="comment">// la couleur du personnage</span>
-<a name="l00032"></a>00032         <span class="keywordtype">string</span> pion;    <span class="comment">// Chemin menant a l&#39;image du pion du personnage</span>
+<a name="l00028"></a>00028         <a class="code" href="classPersonnage.html#a32ab14d53d8d1c5715af691b494fc9b1" title="Constructeur.">Personnage</a>(std::string nom, std::string couleur,std::string pion); <span class="comment">//Constructeur</span>
+<a name="l00029"></a>00029         <span class="keywordtype">bool</span> <a class="code" href="classPersonnage.html#a40dce2ec7abb60ec4b069c614e85c813" title="operateur d&#39;egalite">operator== </a>(<a class="code" href="classPersonnage.html" title="Personnage est la classe représentant les cases d&#39;une piece.">Personnage</a> <span class="keyword">const</span> &amp;p2);             <span class="comment">//Operateur egalite</span>
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031         <span class="comment">//Setters</span>
+<a name="l00032"></a>00032         <span class="keywordtype">void</span> <a class="code" href="classPersonnage.html#a09a6d250d12b7cde72cef60d6153977d" title="Rentre la position de dep.">setPositionDepart</a>(<a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* cas);
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034         <a class="code" href="classCase.html">Case</a>* posDepart;    <span class="comment">//la position de depart</span>
-<a name="l00035"></a>00035 };
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 <span class="preprocessor">#endif // PERSONNAGE_H</span>
+<a name="l00034"></a>00034         <span class="comment">//Getters</span>
+<a name="l00035"></a>00035         <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* <a class="code" href="classPersonnage.html#a94665cc5f3d0e5d3b30e1039d7970f8c" title="Recupere la position de dep.">getPositionDepart</a>();  <span class="comment">//Recupere la position de depart</span>
+<a name="l00036"></a>00036         std::string <a class="code" href="classPersonnage.html#a519301399a9bee1557858aa50a04a85a" title="Recupere le nom du personnage.">getNom</a>();            <span class="comment">//Recupere le nom</span>
+<a name="l00037"></a>00037         std::string <a class="code" href="classPersonnage.html#aebbd390a61c946de43685c810d579c42" title="Recupere la couleur.">getCouleur</a>();        <span class="comment">//Recupere la couleur</span>
+<a name="l00038"></a>00038         std::string <a class="code" href="classPersonnage.html#a56fdaf04ef2cebf901c01b284f81f67b" title="Recupere le chemin menant a l&#39;image du pion.">getPion</a>();           <span class="comment">//Recupere le chemin vers le pion</span>
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041     <span class="keyword">private</span>:
+<a name="l00042"></a>00042         std::string nom;     <span class="comment">// le nom du personnage</span>
+<a name="l00043"></a>00043         std::string couleur; <span class="comment">// la couleur du personnage</span>
+<a name="l00044"></a>00044         std::string pion;    <span class="comment">// Chemin menant a l&#39;image du pion du personnage</span>
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046         <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>* posDepart;    <span class="comment">//la position de depart</span>
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051 <span class="preprocessor">#endif // PERSONNAGE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -135,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:21 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:42 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

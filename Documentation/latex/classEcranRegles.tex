@@ -1,6 +1,15 @@
 \hypertarget{classEcranRegles}{\section{\-Référence de la classe \-Ecran\-Regles}
 \label{classEcranRegles}\index{\-Ecran\-Regles@{\-Ecran\-Regles}}
 }
+
+
+\hyperlink{classEcranRegles}{\-Ecran\-Regles} est la classe représentant l'ecran des regles du jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Regles.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Regles\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,12 +22,68 @@
 \hypertarget{classEcranRegles_af76f933a8096f76456612a610c0f9bff}{\hyperlink{classEcranRegles_af76f933a8096f76456612a610c0f9bff}{\-Ecran\-Regles} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager)}\label{classEcranRegles_af76f933a8096f76456612a610c0f9bff}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}{void \hyperlink{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}
-
+void \hyperlink{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}{afficher} (sf\-::\-Render\-Window \&fenetre)
 \begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}{void \hyperlink{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}{update} (sf\-::\-Event event)}\label{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}
+void \hyperlink{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update \-Role \-: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+\subsection{\-Description détaillée}
+\hyperlink{classEcranRegles}{\-Ecran\-Regles} est la classe représentant l'ecran des regles du jeu. 
+
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}{\index{\-Ecran\-Regles@{\-Ecran\-Regles}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranRegles@{\-Ecran\-Regles}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Regles\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranRegles_aae93ff98faa75574547434e0e9aba41d}
+
+
+\-Fonction afficher. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}{\index{\-Ecran\-Regles@{\-Ecran\-Regles}!update@{update}}
+\index{update@{update}!EcranRegles@{\-Ecran\-Regles}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Regles\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranRegles_ad7029efa29a7584bd9aaee5051672a97}
+
+
+\-Cette fonction permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

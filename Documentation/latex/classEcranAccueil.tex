@@ -1,6 +1,15 @@
 \hypertarget{classEcranAccueil}{\section{\-Référence de la classe \-Ecran\-Accueil}
 \label{classEcranAccueil}\index{\-Ecran\-Accueil@{\-Ecran\-Accueil}}
 }
+
+
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran d'accueil du jeu.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Accueil.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Accueil\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,12 +22,68 @@
 \hypertarget{classEcranAccueil_a53449fe44e756cbfe0d19c372fab9783}{\hyperlink{classEcranAccueil_a53449fe44e756cbfe0d19c372fab9783}{\-Ecran\-Accueil} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager)}\label{classEcranAccueil_a53449fe44e756cbfe0d19c372fab9783}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classEcranAccueil_acc1f211002209380daa8d13f5664c118}{void \hyperlink{classEcranAccueil_acc1f211002209380daa8d13f5664c118}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranAccueil_acc1f211002209380daa8d13f5664c118}
+void \hyperlink{classEcranAccueil_acc1f211002209380daa8d13f5664c118}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Methode qui va afficher l'ecran tel qu'il est. \end{DoxyCompactList}\item 
+void \hyperlink{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Methode qui permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}{void \hyperlink{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}{update} (sf\-::\-Event event)}\label{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection{\-Description détaillée}
+\hyperlink{classEcranAccueil}{\-Ecran\-Accueil} est la classe représentant l'ecran d'accueil du jeu. 
+
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranAccueil_acc1f211002209380daa8d13f5664c118}{\index{\-Ecran\-Accueil@{\-Ecran\-Accueil}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranAccueil@{\-Ecran\-Accueil}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Accueil\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranAccueil_acc1f211002209380daa8d13f5664c118}
+
+
+\-Methode qui va afficher l'ecran tel qu'il est. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em fenetre} & la fenetre sur laquelle on va appliquer les changementd \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}{\index{\-Ecran\-Accueil@{\-Ecran\-Accueil}!update@{update}}
+\index{update@{update}!EcranAccueil@{\-Ecran\-Accueil}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Accueil\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranAccueil_ac03953623402740bab58ab7fbb54fc3a}
+
+
+\-Methode qui permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

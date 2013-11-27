@@ -1,6 +1,15 @@
 \hypertarget{classEcranFinal}{\section{\-Référence de la classe \-Ecran\-Final}
 \label{classEcranFinal}\index{\-Ecran\-Final@{\-Ecran\-Final}}
 }
+
+
+\hyperlink{classEcranFinal}{\-Ecran\-Final} est la classe représentant l'ecran qui s'affiche lorsqu'un joueur à gagner.  
+
+
+
+
+{\ttfamily \#include $<$\-Ecran\-Final.\-h$>$}
+
 \-Graphe d'héritage de \-Ecran\-Final\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,12 +22,68 @@
 \hypertarget{classEcranFinal_aceb5934bfd3afcf020a6628e00538a56}{\hyperlink{classEcranFinal_aceb5934bfd3afcf020a6628e00538a56}{\-Ecran\-Final} (\hyperlink{classManagerEcran}{\-Manager\-Ecran} $\ast$manager, \hyperlink{classDonneesJeu}{\-Donnees\-Jeu} $\ast$d)}\label{classEcranFinal_aceb5934bfd3afcf020a6628e00538a56}
 
 \begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
-\hypertarget{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}{void \hyperlink{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}{afficher} (sf\-::\-Render\-Window \&fenetre)}\label{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}
+void \hyperlink{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}{afficher} (sf\-::\-Render\-Window \&fenetre)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction lance l'affichage de la fênetre. \end{DoxyCompactList}\item 
+void \hyperlink{classEcranFinal_a35714c3da483c95442106381041b53a6}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet le changement d'ecran en fonction des evenements. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction afficher. \end{DoxyCompactList}\item 
-\hypertarget{classEcranFinal_a35714c3da483c95442106381041b53a6}{void \hyperlink{classEcranFinal_a35714c3da483c95442106381041b53a6}{update} (sf\-::\-Event event)}\label{classEcranFinal_a35714c3da483c95442106381041b53a6}
 
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection{\-Description détaillée}
+\hyperlink{classEcranFinal}{\-Ecran\-Final} est la classe représentant l'ecran qui s'affiche lorsqu'un joueur à gagner. 
+
+\-Il est caractérisé par les informations suivantes \-: deux boutons une image un manager permettant de changer d'ecran
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}{\index{\-Ecran\-Final@{\-Ecran\-Final}!afficher@{afficher}}
+\index{afficher@{afficher}!EcranFinal@{\-Ecran\-Final}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Final\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{fenetre}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranFinal_a1643c9d5712d527559d05ba548e7e6fc}
+
+
+\-Cette fonction lance l'affichage de la fênetre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em window} & la fenetre \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
+\hypertarget{classEcranFinal_a35714c3da483c95442106381041b53a6}{\index{\-Ecran\-Final@{\-Ecran\-Final}!update@{update}}
+\index{update@{update}!EcranFinal@{\-Ecran\-Final}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Ecran\-Final\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classEcranFinal_a35714c3da483c95442106381041b53a6}
+
+
+\-Cette fonction permet le changement d'ecran en fonction des evenements. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em event} & un evenement envoyé par les classes superieurs \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classEcran}{\-Ecran}.
+
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

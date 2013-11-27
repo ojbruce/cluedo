@@ -1,46 +1,148 @@
 \hypertarget{classPersonnage}{\section{\-Référence de la classe \-Personnage}
 \label{classPersonnage}\index{\-Personnage@{\-Personnage}}
 }
+
+
+\hyperlink{classPersonnage}{\-Personnage} est la classe représentant les cases d'une piece.  
+
+
+
+
+{\ttfamily \#include $<$\-Personnage.\-h$>$}
+
 \subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classPersonnage_a2a1535b694f3f69e07b646462d64db4d}{{\bfseries \-Personnage} (string nom, string couleur, string pion)}\label{classPersonnage_a2a1535b694f3f69e07b646462d64db4d}
+\hyperlink{classPersonnage_a32ab14d53d8d1c5715af691b494fc9b1}{\-Personnage} (std\-::string nom, std\-::string couleur, std\-::string pion)
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classPersonnage_a40dce2ec7abb60ec4b069c614e85c813}{bool \hyperlink{classPersonnage_a40dce2ec7abb60ec4b069c614e85c813}{operator==} (\hyperlink{classPersonnage}{\-Personnage} const \&p2)}\label{classPersonnage_a40dce2ec7abb60ec4b069c614e85c813}
 
-\item 
-\hypertarget{classPersonnage_a40dce2ec7abb60ec4b069c614e85c813}{bool {\bfseries operator==} (\hyperlink{classPersonnage}{\-Personnage} const \&p2)}\label{classPersonnage_a40dce2ec7abb60ec4b069c614e85c813}
+\begin{DoxyCompactList}\small\item\em operateur d'egalite \end{DoxyCompactList}\item 
+void \hyperlink{classPersonnage_a09a6d250d12b7cde72cef60d6153977d}{set\-Position\-Depart} (\hyperlink{classCase}{\-Case} $\ast$cas)
+\begin{DoxyCompactList}\small\item\em \-Rentre la position de dep. \end{DoxyCompactList}\item 
+\hyperlink{classCase}{\-Case} $\ast$ \hyperlink{classPersonnage_a94665cc5f3d0e5d3b30e1039d7970f8c}{get\-Position\-Depart} ()
+\begin{DoxyCompactList}\small\item\em \-Recupere la position de dep. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classPersonnage_a519301399a9bee1557858aa50a04a85a}{get\-Nom} ()
+\begin{DoxyCompactList}\small\item\em \-Recupere le nom du personnage. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classPersonnage_aebbd390a61c946de43685c810d579c42}{get\-Couleur} ()
+\begin{DoxyCompactList}\small\item\em \-Recupere la couleur. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classPersonnage_a56fdaf04ef2cebf901c01b284f81f67b}{get\-Pion} ()
+\begin{DoxyCompactList}\small\item\em \-Recupere le chemin menant a l'image du pion. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-virtual \hyperlink{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}{$\sim$\-Personnage} ()
-\begin{DoxyCompactList}\small\item\em \-Retourne les cartes mysteres. \end{DoxyCompactList}\item 
-\hypertarget{classPersonnage_a09a6d250d12b7cde72cef60d6153977d}{void {\bfseries set\-Position\-Depart} (\hyperlink{classCase}{\-Case} $\ast$cas)}\label{classPersonnage_a09a6d250d12b7cde72cef60d6153977d}
 
-\item 
-\hypertarget{classPersonnage_a94665cc5f3d0e5d3b30e1039d7970f8c}{\hyperlink{classCase}{\-Case} $\ast$ {\bfseries get\-Position\-Depart} ()}\label{classPersonnage_a94665cc5f3d0e5d3b30e1039d7970f8c}
+\subsection{\-Description détaillée}
+\hyperlink{classPersonnage}{\-Personnage} est la classe représentant les cases d'une piece. 
 
-\item 
-\hypertarget{classPersonnage_a519301399a9bee1557858aa50a04a85a}{string {\bfseries get\-Nom} ()}\label{classPersonnage_a519301399a9bee1557858aa50a04a85a}
+\-Un \hyperlink{classPersonnage}{\-Personnage} est caractérisé par les informations suivantes \-: un nom un chemin vers l'image une position de depart case$\ast$
 
-\item 
-\hypertarget{classPersonnage_aebbd390a61c946de43685c810d579c42}{string {\bfseries get\-Couleur} ()}\label{classPersonnage_aebbd390a61c946de43685c810d579c42}
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
 
-\item 
-\hypertarget{classPersonnage_a56fdaf04ef2cebf901c01b284f81f67b}{string {\bfseries get\-Pion} ()}\label{classPersonnage_a56fdaf04ef2cebf901c01b284f81f67b}
-
-\end{DoxyCompactItemize}
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
 
 
 \subsection{\-Documentation des constructeurs et destructeur}
-\hypertarget{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}{\index{\-Personnage@{\-Personnage}!$\sim$\-Personnage@{$\sim$\-Personnage}}
-\index{$\sim$\-Personnage@{$\sim$\-Personnage}!Personnage@{\-Personnage}}
-\subsubsection[{$\sim$\-Personnage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Personnage\-::$\sim$\-Personnage} (
+\hypertarget{classPersonnage_a32ab14d53d8d1c5715af691b494fc9b1}{\index{\-Personnage@{\-Personnage}!\-Personnage@{\-Personnage}}
+\index{\-Personnage@{\-Personnage}!Personnage@{\-Personnage}}
+\subsubsection[{\-Personnage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Personnage\-::\-Personnage} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{nom, }
+\item[{std\-::string}]{couleur, }
+\item[{std\-::string}]{pion}
+\end{DoxyParamCaption}
+)}}\label{classPersonnage_a32ab14d53d8d1c5715af691b494fc9b1}
+
+
+\-Constructeur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em n} & un nom \\
+\hline
+{\em c} & la couleur \\
+\hline
+{\em pio} & le chemin du pion \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classPersonnage_aebbd390a61c946de43685c810d579c42}{\index{\-Personnage@{\-Personnage}!get\-Couleur@{get\-Couleur}}
+\index{get\-Couleur@{get\-Couleur}!Personnage@{\-Personnage}}
+\subsubsection[{get\-Couleur}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Personnage\-::get\-Couleur} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPersonnage_a05bdf2a469885bb1fbb6c2e8f98972ab}
+)}}\label{classPersonnage_aebbd390a61c946de43685c810d579c42}
 
 
-\-Retourne les cartes mysteres. 
+\-Recupere la couleur. 
 
+\begin{DoxyReturn}{\-Renvoie}
+couleur 
+\end{DoxyReturn}
+\hypertarget{classPersonnage_a519301399a9bee1557858aa50a04a85a}{\index{\-Personnage@{\-Personnage}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Personnage@{\-Personnage}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Personnage\-::get\-Nom} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnage_a519301399a9bee1557858aa50a04a85a}
+
+
+\-Recupere le nom du personnage. 
+
+\begin{DoxyReturn}{\-Renvoie}
+nom 
+\end{DoxyReturn}
+\hypertarget{classPersonnage_a56fdaf04ef2cebf901c01b284f81f67b}{\index{\-Personnage@{\-Personnage}!get\-Pion@{get\-Pion}}
+\index{get\-Pion@{get\-Pion}!Personnage@{\-Personnage}}
+\subsubsection[{get\-Pion}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Personnage\-::get\-Pion} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnage_a56fdaf04ef2cebf901c01b284f81f67b}
+
+
+\-Recupere le chemin menant a l'image du pion. 
+
+\begin{DoxyReturn}{\-Renvoie}
+nom 
+\end{DoxyReturn}
+\hypertarget{classPersonnage_a94665cc5f3d0e5d3b30e1039d7970f8c}{\index{\-Personnage@{\-Personnage}!get\-Position\-Depart@{get\-Position\-Depart}}
+\index{get\-Position\-Depart@{get\-Position\-Depart}!Personnage@{\-Personnage}}
+\subsubsection[{get\-Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Case} $\ast$ {\bf \-Personnage\-::get\-Position\-Depart} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnage_a94665cc5f3d0e5d3b30e1039d7970f8c}
+
+
+\-Recupere la position de dep. 
+
+\begin{DoxyReturn}{\-Renvoie}
+cas la case de depart 
+\end{DoxyReturn}
+\hypertarget{classPersonnage_a09a6d250d12b7cde72cef60d6153977d}{\index{\-Personnage@{\-Personnage}!set\-Position\-Depart@{set\-Position\-Depart}}
+\index{set\-Position\-Depart@{set\-Position\-Depart}!Personnage@{\-Personnage}}
+\subsubsection[{set\-Position\-Depart}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Personnage\-::set\-Position\-Depart} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Case} $\ast$}]{cas}
+\end{DoxyParamCaption}
+)}}\label{classPersonnage_a09a6d250d12b7cde72cef60d6153977d}
+
+
+\-Rentre la position de dep. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em cas} & la case de depart \\
+\hline
+\end{DoxyParams}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

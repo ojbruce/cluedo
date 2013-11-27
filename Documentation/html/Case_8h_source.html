@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -89,61 +89,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;vector&gt;</span>
 <a name="l00010"></a>00010 
 <a name="l00011"></a>00011 
-<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classPlateau.html">Plateau</a>;
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>;
 <a name="l00013"></a>00013 
-<a name="l00014"></a><a class="code" href="classCase.html">00014</a> <span class="keyword">class </span><a class="code" href="classCase.html">Case</a>{
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016         <span class="keyword">public</span>:
-<a name="l00017"></a>00017                 <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>();                          <span class="comment">//Constructeur par defaut</span>
-<a name="l00018"></a>00018                 <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);              <span class="comment">//Constructeur avec x et y</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020         <span class="keywordtype">bool</span> <a class="code" href="classCase.html#aba81e8660bf4009cc0ddee8e132bce49" title="Operateur d&#39;egalite.">operator== </a>(<a class="code" href="classCase.html">Case</a> <span class="keyword">const</span> &amp;c2); <span class="comment">// Operateur d&#39;egalite</span>
-<a name="l00021"></a>00021 
-<a name="l00022"></a>00022                 <span class="keyword">virtual</span> <a class="code" href="classCase.html#ab004564aae3e15db0c7fd5dde0b4c379" title="Destructeur.">~Case</a>();                <span class="comment">//Destructeur du plateau</span>
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024                 <span class="keywordtype">void</span> afficher();
-<a name="l00025"></a>00025                 <span class="keyword">virtual</span> std::string <a class="code" href="classCase.html#ad09ca1072f39bcacf06459fc03f026ae" title="Méthode qui retrourne une string repésentant la case du type: [x][y].">toString</a>();
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCase.html#affe73b57a2c81e2f09dc5db45893db3c" title="Methode qui trouve tous les chemins possibles.">trouverChemin</a>(<span class="keywordtype">int</span> de, std::vector&lt;Case*&gt; &amp;res, <a class="code" href="classPlateau.html">Plateau</a>* p ); <span class="comment">// methode qui trouve tous les chemins possibles</span>
-<a name="l00028"></a>00028         <span class="keyword">virtual</span> std::string <a class="code" href="classCase.html#acdbbc0ad8422141cdbf2e647d1ba56e1" title="Methode qui va réaliser l&#39;action selon la case.">action</a>();
+<a name="l00028"></a><a class="code" href="classCase.html">00028</a> <span class="keyword">class </span><a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>{
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030         <span class="comment">//renvoie le point en haut à gauche de la case en fonction de l&#39;affichage</span>
-<a name="l00031"></a>00031                 std::pair&lt;int,int&gt; pointHG(<span class="keywordtype">int</span> tailleCase, <span class="keywordtype">int</span> ecartX, <span class="keywordtype">int</span> ecartY);
-<a name="l00032"></a>00032         std::pair&lt;int,int&gt; milieu(<span class="keywordtype">int</span> tailleCase, std::pair&lt;int,int&gt; a);
+<a name="l00030"></a>00030         <span class="keyword">public</span>:
+<a name="l00031"></a>00031                 <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>();                             <span class="comment">//Constructeur par defaut</span>
+<a name="l00032"></a>00032                 <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);                 <span class="comment">//Constructeur avec x et y</span>
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035         <span class="keywordtype">void</span> <a class="code" href="classCase.html#ad7cbf9289ac69b4e1c1f3fc20a6fa540" title="Methode qui affiche la case.">colorier</a>(sf::RenderWindow &amp;window);       <span class="comment">//coloration de la case</span>
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037                 <span class="comment">//Getter Setter</span>
-<a name="l00038"></a>00038                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#ab5580b919199dd2ec379672d3390bbff" title="Assesseur de x_.">getX</a>();                         <span class="comment">//retroune le x</span>
-<a name="l00039"></a>00039                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#a824f612c5a660a1d55ac06931747c46d" title="Assesseur de y_.">getY</a>();                         <span class="comment">//Retourne le y</span>
-<a name="l00040"></a>00040                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#a80ae0e9d1a9c575bee4c8a7b984deb59" title="Assesseur de estVide.">getEstVide</a>();                   <span class="comment">//Retroune si la case est vide</span>
-<a name="l00041"></a>00041                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCase.html#a292e07394ff0a1c31ebf35940c91f29d" title="Modificateur de estVide.">setEstVide</a>(<span class="keywordtype">bool</span> b);            <span class="comment">//Modifie lsi la case est vide</span>
-<a name="l00042"></a>00042 
+<a name="l00034"></a>00034         <span class="keywordtype">bool</span> <a class="code" href="classCase.html#aba81e8660bf4009cc0ddee8e132bce49" title="Operateur d&#39;egalite.">operator== </a>(<a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a> <span class="keyword">const</span> &amp;c2);   <span class="comment">//Operateur d&#39;egalite</span>
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036                 <span class="keyword">virtual</span> <a class="code" href="classCase.html#ab004564aae3e15db0c7fd5dde0b4c379" title="Destructeur.">~Case</a>();                    <span class="comment">//Destructeur du plateau</span>
+<a name="l00037"></a>00037 
+<a name="l00038"></a>00038                 <span class="keywordtype">void</span> afficher();
+<a name="l00039"></a>00039                 <span class="keyword">virtual</span> std::string <a class="code" href="classCase.html#ad09ca1072f39bcacf06459fc03f026ae" title="Méthode qui retrourne une string repésentant la case du type: [x][y].">toString</a>();
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041         <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCase.html#affe73b57a2c81e2f09dc5db45893db3c" title="Methode qui trouve tous les chemins possibles.">trouverChemin</a>(<span class="keywordtype">int</span> de, std::vector&lt;Case*&gt; &amp;res, <a class="code" href="classPlateau.html" title="Plateau est la classe représentant le plateau de jeu.">Plateau</a>* p ); <span class="comment">// methode qui trouve tous les chemins possibles</span>
+<a name="l00042"></a>00042         <span class="keyword">virtual</span> std::string <a class="code" href="classCase.html#acdbbc0ad8422141cdbf2e647d1ba56e1" title="Methode qui va réaliser l&#39;action selon la case.">action</a>();   <span class="comment">//Methode qui renvoie un nom par polymorphisme</span>
 <a name="l00043"></a>00043 
-<a name="l00044"></a>00044 
-<a name="l00045"></a>00045    <span class="keyword">protected</span>:
-<a name="l00046"></a>00046         <span class="comment">//Coordonnee</span>
-<a name="l00047"></a>00047         <span class="keywordtype">int</span> x_;     <span class="comment">//largeur du point en haut</span>
-<a name="l00048"></a>00048         <span class="keywordtype">int</span> y_;     <span class="comment">//hauteur du point en bas</span>
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050         <span class="comment">//Etat plein/vide</span>
-<a name="l00051"></a>00051         <span class="keywordtype">bool</span> estVide;
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053         <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> taille_ =20;   <span class="comment">//taille de case</span>
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055         sf::RectangleShape* rectangle;  <span class="comment">//La forme s&#39;affichant sur la case</span>
+<a name="l00044"></a>00044         <span class="comment">//renvoie le point en haut à gauche de la case en fonction de l&#39;affichage</span>
+<a name="l00045"></a>00045                 std::pair&lt;int,int&gt; <a class="code" href="classCase.html#ae6ce55820f949e5fae8dbeb62d298291" title="Renvoie le point en haut à gauche de la case en fonction de l&#39;affichage.">pointHG</a>(<span class="keywordtype">int</span> tailleCase, <span class="keywordtype">int</span> ecartX, <span class="keywordtype">int</span> ecartY);
+<a name="l00046"></a>00046         std::pair&lt;int,int&gt; <a class="code" href="classCase.html#a48b794ecbea4155843ce09f53e280237" title="Renvoie le point permettant de mettre le pion au centre de la case.">milieu</a>(<span class="keywordtype">int</span> tailleCase, std::pair&lt;int,int&gt; a);
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="classCase.html#ad7cbf9289ac69b4e1c1f3fc20a6fa540" title="Methode qui va colorier en bleu la case.">colorier</a>(sf::RenderWindow &amp;window);       <span class="comment">//coloration de la case</span>
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051                 <span class="comment">//Getter Setter</span>
+<a name="l00052"></a>00052                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#ab5580b919199dd2ec379672d3390bbff" title="Assesseur de x_.">getX</a>();                         <span class="comment">//retroune le x</span>
+<a name="l00053"></a>00053                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#a824f612c5a660a1d55ac06931747c46d" title="Assesseur de y_.">getY</a>();                         <span class="comment">//Retourne le y</span>
+<a name="l00054"></a>00054                 <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classCase.html#a80ae0e9d1a9c575bee4c8a7b984deb59" title="Assesseur de estVide.">getEstVide</a>();                   <span class="comment">//Retroune si la case est vide</span>
+<a name="l00055"></a>00055                 <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classCase.html#a292e07394ff0a1c31ebf35940c91f29d" title="Modificateur de estVide.">setEstVide</a>(<span class="keywordtype">bool</span> b);            <span class="comment">//Modifie lsi la case est vide</span>
 <a name="l00056"></a>00056 
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058     <span class="keyword">private</span>:
-<a name="l00059"></a>00059         <span class="comment">//On empeche l&#39;appel du constructeur de copie et de operator</span>
-<a name="l00060"></a>00060         <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>(<span class="keyword">const</span> <a class="code" href="classCase.html">Case</a>&amp; c);            <span class="comment">//Constructeur de recopie</span>
-<a name="l00061"></a>00061         <a class="code" href="classCase.html">Case</a>&amp; operator=(<a class="code" href="classCase.html">Case</a> <span class="keyword">const</span>&amp;);   <span class="comment">// opérateur d&#39;affectation</span>
-<a name="l00062"></a>00062 
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059    <span class="keyword">protected</span>:
+<a name="l00060"></a>00060         <span class="comment">//Coordonnee</span>
+<a name="l00061"></a>00061         <span class="keywordtype">int</span> x_;     <span class="comment">//largeur du point en haut</span>
+<a name="l00062"></a>00062         <span class="keywordtype">int</span> y_;     <span class="comment">//hauteur du point en bas</span>
 <a name="l00063"></a>00063 
-<a name="l00064"></a>00064 };
-<a name="l00065"></a>00065 
-<a name="l00066"></a>00066 <span class="preprocessor">#endif // CASE_H</span>
+<a name="l00064"></a>00064         <span class="comment">//Etat plein/vide</span>
+<a name="l00065"></a>00065         <span class="keywordtype">bool</span> estVide;
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067         <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> taille_ =20;   <span class="comment">//taille de case</span>
+<a name="l00068"></a>00068 
+<a name="l00069"></a>00069         sf::RectangleShape* rectangle;  <span class="comment">//La forme s&#39;affichant sur la case</span>
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072     <span class="keyword">private</span>:
+<a name="l00073"></a>00073         <span class="comment">//On empeche l&#39;appel du constructeur de copie et de operator</span>
+<a name="l00074"></a>00074         <a class="code" href="classCase.html#a14237e17aab1829965adab76b747db6c" title="Constructeur par defaut.">Case</a>(<span class="keyword">const</span> <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>&amp; c);            <span class="comment">//Constructeur de recopie</span>
+<a name="l00075"></a>00075         <a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a>&amp; operator=(<a class="code" href="classCase.html" title="Case est la classe représentant les cases du plateau.">Case</a> <span class="keyword">const</span>&amp;);   <span class="comment">// opérateur d&#39;affectation</span>
+<a name="l00076"></a>00076 
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 };
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif // CASE_H</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -162,7 +162,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:20 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:41 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

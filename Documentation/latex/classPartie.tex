@@ -1,6 +1,15 @@
 \hypertarget{classPartie}{\section{\-Référence de la classe \-Partie}
 \label{classPartie}\index{\-Partie@{\-Partie}}
 }
+
+
+\hyperlink{classPartie}{\-Partie} est la classe représentant les cases d'une piece.  
+
+
+
+
+{\ttfamily \#include $<$\-Partie.\-h$>$}
+
 \-Graphe d'héritage de \-Partie\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,15 +25,88 @@
 \hypertarget{classPartie_ab76c25c57551613a708ab39816d14a9a}{void \hyperlink{classPartie_ab76c25c57551613a708ab39816d14a9a}{preparer} ()}\label{classPartie_ab76c25c57551613a708ab39816d14a9a}
 
 \begin{DoxyCompactList}\small\item\em \-Fonction preparer. \end{DoxyCompactList}\item 
-\hypertarget{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}{void \hyperlink{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}{update} (sf\-::\-Event event)}\label{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}
-
-\begin{DoxyCompactList}\small\item\em \-Fonction update. \end{DoxyCompactList}\item 
-\hypertarget{classPartie_a2c00254bdd417a300342d1ba1eb5cec3}{void {\bfseries afficher} (sf\-::\-Render\-Window \&window)}\label{classPartie_a2c00254bdd417a300342d1ba1eb5cec3}
-
-\item 
-\hypertarget{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}{virtual void \hyperlink{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}{est\-Notifie} (std\-::string choix1, std\-::string choix2, std\-::string act)}\label{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}
-
+void \hyperlink{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}{update} (sf\-::\-Event event)
+\begin{DoxyCompactList}\small\item\em \-Fonction updatant la partieselon la poistion du clique. \end{DoxyCompactList}\item 
+void \hyperlink{classPartie_a2c00254bdd417a300342d1ba1eb5cec3}{afficher} (sf\-::\-Render\-Window \&window)
+\begin{DoxyCompactList}\small\item\em \-Fonction d'affichage de la partie selon la poistion du clique. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}{est\-Notifie} (std\-::string choix1, std\-::string choix2, std\-::string act)
 \begin{DoxyCompactList}\small\item\em \-Fonction notify. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\hyperlink{classPartie}{\-Partie} est la classe représentant les cases d'une piece. 
+
+\-Une \hyperlink{classPiece}{\-Piece} est caractérisé par les informations suivantes \-: un accès au données
+
+\begin{DoxyAuthor}{\-Auteur}
+\-Olivia \-Bruce 
+
+\-Cassandre \-Gloria 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{classPartie_a2c00254bdd417a300342d1ba1eb5cec3}{\index{\-Partie@{\-Partie}!afficher@{afficher}}
+\index{afficher@{afficher}!Partie@{\-Partie}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Partie\-::afficher} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Render\-Window \&}]{window}
+\end{DoxyParamCaption}
+)}}\label{classPartie_a2c00254bdd417a300342d1ba1eb5cec3}
+
+
+\-Fonction d'affichage de la partie selon la poistion du clique. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em une} & xindow \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}{\index{\-Partie@{\-Partie}!est\-Notifie@{est\-Notifie}}
+\index{est\-Notifie@{est\-Notifie}!Partie@{\-Partie}}
+\subsubsection[{est\-Notifie}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Partie\-::est\-Notifie} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{choix1, }
+\item[{std\-::string}]{choix2, }
+\item[{std\-::string}]{act}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classPartie_a39dcf2ff1dc8f4c7c81edea5e4f2cde8}
+
+
+\-Fonction notify. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em choix1} & le nom de la carte choisi en premier \\
+\hline
+{\em choix2} & le nom de la carte choisi en second \\
+\hline
+{\em act} & a ou s selon si accuse ou soupconne \\
+\hline
+\end{DoxyParams}
+
+
+\-Implémente \hyperlink{classObserver}{\-Observer}.
+
+\hypertarget{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}{\index{\-Partie@{\-Partie}!update@{update}}
+\index{update@{update}!Partie@{\-Partie}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Partie\-::update} (
+\begin{DoxyParamCaption}
+\item[{sf\-::\-Event}]{event}
+\end{DoxyParamCaption}
+)}}\label{classPartie_a2c868f423c455e1aa0aebc9f3482cf8d}
+
+
+\-Fonction updatant la partieselon la poistion du clique. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em un} & event \\
+\hline
+\end{DoxyParams}
 
 
 \-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}

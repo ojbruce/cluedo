@@ -28,9 +28,9 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">Cluedo
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">The cluedo game.</div>
+   <div id="projectbrief">The cluedo game.Mystery and investigation.</div>
   </td>
   
   
@@ -83,14 +83,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <div class="title">Référence de la classe Porte</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="Porte" --><!-- doxytag: inherits="Piece" --><div class="dynheader">
+<!-- doxytag: class="Porte" --><!-- doxytag: inherits="Piece" -->
+<p><a class="el" href="classPorte.html" title="Porte est la classe représentant l&#39;entree d&#39;une piece et donne accès à toute les cases pièces...">Porte</a> est la classe représentant l'entree d'une piece et donne accès à toute les cases pièces.  
+ <a href="classPorte.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Porte_8h_source.html">Porte.h</a>&gt;</code></p>
+<div class="dynheader">
 Graphe d'héritage de Porte:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classPorte.png" usemap="#Porte_map" alt=""/>
   <map id="Porte_map" name="Porte_map">
-<area href="classPiece.html" alt="Piece" shape="rect" coords="0,56,44,80"/>
-<area href="classCase.html" alt="Case" shape="rect" coords="0,0,44,24"/>
+<area href="classPiece.html" title="Piece est la classe représentant les cases d&#39;une piece." alt="Piece" shape="rect" coords="0,56,44,80"/>
+<area href="classCase.html" title="Case est la classe représentant les cases du plateau." alt="Case" shape="rect" coords="0,0,44,24"/>
 </map>
  </div></div>
 
@@ -107,24 +112,53 @@ Fonctions membres publiques</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3fdf234c17c43b98bdec5f9d69778a6"></a><!-- doxytag: member="Porte::Porte" ref="aa3fdf234c17c43b98bdec5f9d69778a6" args="(const Porte &amp;p, int a, int b)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#aa3fdf234c17c43b98bdec5f9d69778a6">Porte</a> (const <a class="el" href="classPorte.html">Porte</a> &amp;p, int a, int b)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#adc13e346f7349fd3dc901ff2197f9106">ajouterPiece</a> (<a class="el" href="classPiece.html">Piece</a> *p)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui ajoute une piece à la porte.  <a href="#adc13e346f7349fd3dc901ff2197f9106"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7f509198fda1bc591bb654b3a3b1fa2"></a><!-- doxytag: member="Porte::setCheminSecret" ref="ad7f509198fda1bc591bb654b3a3b1fa2" args="(Case *c)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setCheminSecret</b> (<a class="el" href="classCase.html">Case</a> *c)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#ace3891879a69f2d29ade65d71d869377">toString</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Méthode qui retrourne une string repésentant la case du type: [x][y].  <a href="#ace3891879a69f2d29ade65d71d869377"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#a2029ca8cf88e282a6c0a55c49317b738">trouverChemin</a> (int de, vector&lt; <a class="el" href="classCase.html">Case</a> * &gt; &amp;res, <a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui trouve tous les chemins possibles.  <a href="#a2029ca8cf88e282a6c0a55c49317b738"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71f6ed526931178c012e8653e609e0e7"></a><!-- doxytag: member="Porte::action" ref="a71f6ed526931178c012e8653e609e0e7" args="()" -->
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#a71f6ed526931178c012e8653e609e0e7">action</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va réaliser l'action selon la case. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeca2ec41fa7476859b90a944736a20a"></a><!-- doxytag: member="Porte::getNom" ref="abeca2ec41fa7476859b90a944736a20a" args="() const " -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>getNom</b> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b82ccac24bfd8b7fa701f7601328d6c"></a><!-- doxytag: member="Porte::~Porte" ref="a7b82ccac24bfd8b7fa701f7601328d6c" args="()" -->
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#a7b82ccac24bfd8b7fa701f7601328d6c">~Porte</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#adc13e346f7349fd3dc901ff2197f9106">ajouterPiece</a> (<a class="el" href="classPiece.html">Piece</a> *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui ajoute une piece à la porte.  <a href="#adc13e346f7349fd3dc901ff2197f9106"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#ad7f509198fda1bc591bb654b3a3b1fa2">setCheminSecret</a> (<a class="el" href="classCase.html">Case</a> *c)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Modificateur du chemin secret.  <a href="#ad7f509198fda1bc591bb654b3a3b1fa2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace3891879a69f2d29ade65d71d869377"></a><!-- doxytag: member="Porte::toString" ref="ace3891879a69f2d29ade65d71d869377" args="()" -->
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#ace3891879a69f2d29ade65d71d869377">toString</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage d'erreur. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#a2029ca8cf88e282a6c0a55c49317b738">trouverChemin</a> (int de, vector&lt; <a class="el" href="classCase.html">Case</a> * &gt; &amp;res, <a class="el" href="classPlateau.html">Plateau</a> *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui trouve tous les chemins possibles.  <a href="#a2029ca8cf88e282a6c0a55c49317b738"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#a71f6ed526931178c012e8653e609e0e7">action</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Methode qui va réaliser l'action selon la case.  <a href="#a71f6ed526931178c012e8653e609e0e7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPorte.html#abeca2ec41fa7476859b90a944736a20a">getNom</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne le nom de la porte.  <a href="#abeca2ec41fa7476859b90a944736a20a"></a><br/></td></tr>
 </table>
-<hr/><h2>Documentation des fonctions membres</h2>
+<hr/><a name="details" id="details"></a><h2>Description détaillée</h2>
+<div class="textblock"><p><a class="el" href="classPorte.html" title="Porte est la classe représentant l&#39;entree d&#39;une piece et donne accès à toute les cases pièces...">Porte</a> est la classe représentant l'entree d'une piece et donne accès à toute les cases pièces. </p>
+<p>Une <a class="el" href="classPorte.html" title="Porte est la classe représentant l&#39;entree d&#39;une piece et donne accès à toute les cases pièces...">Porte</a> est caractérisé par les informations suivantes : un tableau de piece un pointeur vers case pour un chemin secret</p>
+<p>Herite de <a class="el" href="classPiece.html" title="Piece est la classe représentant les cases d&#39;une piece.">Piece</a>.</p>
+<dl class="author"><dt><b>Auteur:</b></dt><dd>Olivia Bruce </dd>
+<dd>
+Cassandre Gloria </dd></dl>
+<dl class="version"><dt><b>Version:</b></dt><dd>1.0 </dd></dl>
+</div><hr/><h2>Documentation des fonctions membres</h2>
+<a class="anchor" id="a71f6ed526931178c012e8653e609e0e7"></a><!-- doxytag: member="Porte::action" ref="a71f6ed526931178c012e8653e609e0e7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classPorte.html#a71f6ed526931178c012e8653e609e0e7">Porte::action</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Methode qui va réaliser l'action selon la case. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>le nom </dd></dl>
+
+<p>Réimplémentée à partir de <a class="el" href="classPiece.html#ae2bbb51808f5d87be1761df503571e0d">Piece</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="adc13e346f7349fd3dc901ff2197f9106"></a><!-- doxytag: member="Porte::ajouterPiece" ref="adc13e346f7349fd3dc901ff2197f9106" args="(Piece *p)" -->
 <div class="memitem">
 <div class="memproto">
@@ -141,27 +175,56 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div class="memdoc">
 
 <p>Methode qui ajoute une piece à la porte. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">une</td><td>piece a ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="ace3891879a69f2d29ade65d71d869377"></a><!-- doxytag: member="Porte::toString" ref="ace3891879a69f2d29ade65d71d869377" args="()" -->
+<a class="anchor" id="abeca2ec41fa7476859b90a944736a20a"></a><!-- doxytag: member="Porte::getNom" ref="abeca2ec41fa7476859b90a944736a20a" args="() const " -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string <a class="el" href="classPorte.html#ace3891879a69f2d29ade65d71d869377">Porte::toString</a> </td>
+          <td class="memname">string <a class="el" href="classPorte.html#abeca2ec41fa7476859b90a944736a20a">Porte::getNom</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Méthode qui retrourne une string repésentant la case du type: [x][y]. </p>
-<dl class="return"><dt><b>Renvoie:</b></dt><dd>res l'emplacement de la case </dd></dl>
+<p>Retourne le nom de la porte. </p>
+<dl class="params"><dt><b>Paramètres:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">une</td><td>case pointant vers la porte de l'autre piece </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Réimplémentée à partir de <a class="el" href="classPiece.html#ae18523c400cb72a50bb1293d27cd1432">Piece</a>.</p>
+</div>
+</div>
+<a class="anchor" id="ad7f509198fda1bc591bb654b3a3b1fa2"></a><!-- doxytag: member="Porte::setCheminSecret" ref="ad7f509198fda1bc591bb654b3a3b1fa2" args="(Case *c)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classPorte.html#ad7f509198fda1bc591bb654b3a3b1fa2">Porte::setCheminSecret</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCase.html">Case</a> *&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Modificateur du chemin secret. </p>
+<dl class="return"><dt><b>Renvoie:</b></dt><dd>nom le nom de la porte </dd></dl>
 
 </div>
 </div>
@@ -232,7 +295,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 
 <hr class="footer"/><address class="footer"><small>
-Généré le Mardi Novembre 26 2013 15:10:33 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
+Généré le Mercredi Novembre 27 2013 11:16:50 pour Cluedo par &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
