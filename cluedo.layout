@@ -37,11 +37,11 @@
 	<File name="Donnees.h" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="DonneesJeu.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="0" topLine="0" />
+	<File name="DonneesJeu.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="0" topLine="63" />
 	</File>
-	<File name="DonneesJeu.h" open="0" top="0" tabpos="6">
-		<Cursor position="0" topLine="0" />
+	<File name="DonneesJeu.h" open="1" top="0" tabpos="3">
+		<Cursor position="0" topLine="30" />
 	</File>
 	<File name="Ecran.h" open="0" top="0" tabpos="7">
 		<Cursor position="0" topLine="0" />
@@ -112,11 +112,11 @@
 	<File name="Jeu.h" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Joueur.cpp" open="0" top="0" tabpos="6">
+	<File name="Joueur.cpp" open="1" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="Joueur.h" open="0" top="0" tabpos="7">
-		<Cursor position="0" topLine="0" />
+	<File name="Joueur.h" open="1" top="0" tabpos="5">
+		<Cursor position="0" topLine="27" />
 	</File>
 	<File name="ManagerEcran.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
@@ -142,8 +142,8 @@
 	<File name="Observer.h" open="0" top="0" tabpos="0">
 		<Cursor position="154" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="1" tabpos="0">
-		<Cursor position="391" topLine="0" />
+	<File name="Partie.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="1054" topLine="27" />
 	</File>
 	<File name="Partie.h" open="0" top="0" tabpos="3">
 		<Cursor position="0" topLine="0" />
