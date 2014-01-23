@@ -88,8 +88,8 @@
 	<File name="Fenetre.h" open="0" top="0" tabpos="0">
 		<Cursor position="67" topLine="0" />
 	</File>
-	<File name="FenetreChoix.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="24" />
+	<File name="FenetreChoix.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="0" topLine="144" />
 	</File>
 	<File name="FenetreChoix.h" open="0" top="0" tabpos="2">
 		<Cursor position="271" topLine="23" />
@@ -142,7 +142,7 @@
 	<File name="Observer.h" open="0" top="0" tabpos="0">
 		<Cursor position="154" topLine="0" />
 	</File>
-	<File name="Partie.cpp" open="1" top="1" tabpos="1">
+	<File name="Partie.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="1054" topLine="27" />
 	</File>
 	<File name="Partie.h" open="0" top="0" tabpos="3">
