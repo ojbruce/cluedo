@@ -1,5 +1,5 @@
-cluedo
+Cluedo
 ======
-This project is the clue game made in c++.
+This project is the cluedo game made in C++.
 
 Used library : SFML
